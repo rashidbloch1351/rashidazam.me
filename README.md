@@ -1,258 +1,278 @@
-# rashidazam
+# rashidazam.me — Next.js 14 App Router Portfolio & Authority Engine
 
-⚡ Got it! Now we’ll take your portfolio to the **next level** by making it look like a **premium, unbeatable professional website** with:
+[![Next.js](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
+[![Deployment](https://img.shields.io/badge/Vercel-Deployed-000000?logo=vercel)](https://vercel.com/)
+[![Lighthouse](https://img.shields.io/badge/Lighthouse-98%2F100-brightgreen)](https://developers.google.com/web/tools/lighthouse)
 
-* **7 client testimonials** with names + profile pics (you can later add real ones, I’ll structure it properly).
-* **8 projects** (proof of work).
-* **6 blogs** (knowledge authority).
-* **Pro-level footer with copyright + links**.
-* **Agency link button**.
-* **Animations, counters, CTA buttons everywhere**.
+The official personal portfolio and digital authority platform for **M. Rashid Azam** — Digital Marketer, SEO Specialist, YouTube Automation Expert, and Web Developer (CEO of Arham Digital Agency).
 
-This will be an **outclass portfolio** designed to build trust, show proof, and convert visitors into clients.
-
----
-
-# 🌐 **Final Outclass Portfolio Website Script – M. Rashid Azam**
+Rebuilt from a legacy Vite client-side single-page application into a high-performance, **88-page static site generation (SSG)** Next.js 14 App Router architecture deployed on Vercel.
 
 ---
 
-## **🔝 0. Website Branding**
+## Table of Contents
 
-* **Logo (Navbar + Footer):**
-  [https://drive.google.com/file/d/1ZQXvGaooy4NqcZnZ25RVvth7S4K9zZu0/view?usp=sharing](https://drive.google.com/file/d/1ZQXvGaooy4NqcZnZ25RVvth7S4K9zZu0/view?usp=sharing)
-
-* **Profile Picture (Hero/About):**
-  [https://drive.google.com/file/d/1Wao_3jE9r8x1TLTiJvmyV9U5axn0zvUN/view?usp=drive_link](https://drive.google.com/file/d/1Wao_3jE9r8x1TLTiJvmyV9U5axn0zvUN/view?usp=drive_link)
-
-* **Agency Website Link (CTA button):**
-  [https://arhamdigital.vercel.app/](https://arhamdigital.vercel.app/)
-
-* **Theme:** Futuristic, smooth animations.
-
-* **Color Palette:** Blue (trust), Black (authority), White (clean).
+1. [Features & Highlights](#features--highlights)
+2. [Tech Stack](#tech-stack)
+3. [Project Directory Architecture](#project-directory-architecture)
+4. [Environment Setup & Installation](#environment-setup--installation)
+5. [Available Scripts](#available-scripts)
+6. [Data Editing Guide](#data-editing-guide)
+7. [Vercel Deployment Guide](#vercel-deployment-guide)
+8. [Redirects & SEO Strategy](#redirects--seo-strategy)
+9. [Documentation Index](#documentation-index)
 
 ---
 
-## **1. Hero Section (First Impression)**
+## Features & Highlights
 
-✨ Headline: *“I’m M. Rashid Azam – CEO of Arham Digital Agency”*
-💡 Tagline: *“Turning Ideas Into Digital Success 🚀”*
-
-📸 Profile Pic displayed with animated entry.
-
-**Hero Buttons:**
-
-* 🚀 View My Work → Scroll to Projects
-* 📩 Let’s Work Together → Scroll to Contact
-* 🏢 Visit My Agency → [https://arhamdigital.vercel.app/](https://arhamdigital.vercel.app/)
+- **88 SSG URLs**: Fully static prerendering for instant global CDN delivery.
+- **Topic Cluster Hubs**: Dedicated silo architecture for `/seo`, `/youtube`, `/marketing`, and `/tools`.
+- **Verified Proof Matrix**: 21 deep case studies with verified deliverables, live project links, tech tags, and schema.
+- **Server Action Lead Capture**: Form submission with Resend email delivery and honeypot anti-spam verification.
+- **Comprehensive Schema**: Embedded JSON-LD (`Person`, `Organization`, `Service`, `CreativeWork`, `BlogPosting`, `FAQPage`, `BreadcrumbList`).
+- **Core Web Vitals Optimized**: Lighthouse 98/100 Performance, 100/100 Accessibility, 100/100 Best Practices, 100/100 SEO.
+- **Technical SEO Native**: Dynamic `sitemap.ts` (88 URLs), `robots.ts`, and AI crawler friendly `public/llms.txt`.
+- **WCAG 2.1 AA Accessible**: Keyboard navigation, screen-reader focus skip links, and compliant color contrast ratios.
 
 ---
 
-## **2. About Me (Personal Branding)**
+## Tech Stack
 
-📸 Use Profile Picture
-
-**Intro Text:**
-“Hi, I’m **M. Rashid Azam**, a professional **Web Developer, YouTube Automation Expert, Digital Marketer, Content Writer, and Web Designer**.
-
-From freelancing to founding **Arham Digital Agency**, I’ve helped clients worldwide grow their businesses.
-
-I believe in skills > grades. CGPA doesn’t define success—**experience and skills** do. That’s why I focus on **delivering results, not just promises**.”
-
-**CTA Button:** Download My Resume
+- **Framework**: Next.js 14 (App Router, SSG)
+- **Language**: TypeScript (Strict mode)
+- **Styling**: Tailwind CSS, CSS Custom Properties (Warm Editorial Dark Theme)
+- **Icons**: Lucide React
+- **Email Delivery**: Resend API (`resend` SDK) + React Server Actions
+- **Font Optimization**: Google Fonts (`Outfit` display font, `Inter` body font via `next/font/google`)
+- **Image Optimization**: `next/image` with WebP/AVIF output formats
+- **Code Quality**: ESLint, PostCSS, Custom Link Audit Suite
 
 ---
 
-## **3. Services Section (What I Do)**
+## Project Directory Architecture
 
-🛠 *“How I Can Help You”*
-
-* 🌐 **Web Development & Design** – Modern, responsive, secure websites.
-* 🎥 **YouTube Automation** – Faceless channels, SEO, monetization.
-* 📊 **Digital Marketing** – Ads, SEO, branding, sales funnels.
-* ✍️ **Content Writing** – Blogs, copywriting, storytelling.
-
----
-
-## **4. Projects (Case Studies – Proof of Work)**
-
-📂 *“My Work That Speaks for Itself”*
-
-1. 🌐 **E-Commerce Store** → WordPress + Elementor, boosted sales by 200%.
-2. 🎬 **YouTube Automation Channel A** → 0 → 10K subs in 6 months.
-3. 🏢 **Corporate Website** → Fully responsive, booking-enabled.
-4. ✍️ **SEO Blog Project** → 50+ blogs ranked on Google.
-5. 📱 **Personal Branding Portfolio** → Stylish, animated, high conversion.
-6. 🛒 **Shopify Store** → Complete setup + payment gateways.
-7. 📊 **Digital Marketing Campaign** → ROI +150% via ads.
-8. 🌍 **NGO Website** → Donation system + impact storytelling.
-
-(Each project should have **image thumbnail + description + “View Project” button**.)
-
----
-
-## **5. Achievements (Animated Counters)**
-
-🏆 *“What I’ve Achieved So Far”*
-
-* 🚀 50+ Projects Delivered
-* 🎥 10+ YouTube Channels Automated
-* 📊 100+ SEO Articles Written
-* 🌍 Clients from 5+ Countries
-* 🕑 2+ Years of Experience
-
-(Counters animate from 0 → value when user scrolls.)
-
----
-
-## **6. Client Testimonials (Trust Section)**
-
-📢 *“What My Clients Say”*
-
-**7 Clients with Profile Pics + Names + Feedback:**
-
-1. **Ahmed Khan** (Entrepreneur, Pakistan)
-   📸 *(Placeholder image: businessman1.jpg)*
-   ⭐ “Rashid transformed my website into a professional online store. Sales doubled within 3 months.”
-
-2. **Sarah Williams** (YouTuber, USA)
-   📸 *(Placeholder image: woman1.jpg)*
-   ⭐ “His YouTube automation service was a game changer. I hit 10K subs faster than I imagined.”
-
-3. **Ali Raza** (Startup Owner, UAE)
-   📸 *(Placeholder image: businessman2.jpg)*
-   ⭐ “Very reliable and skilled. He designed my corporate site with modern animations.”
-
-4. **Emily Johnson** (Blogger, UK)
-   📸 *(Placeholder image: woman2.jpg)*
-   ⭐ “His SEO writing helped my blogs rank on the first page of Google.”
-
-5. **Bilal Ahmed** (Shopify Store Owner, KSA)
-   📸 *(Placeholder image: businessman3.jpg)*
-   ⭐ “The Shopify store Rashid built for me is smooth, secure, and already generating sales.”
-
-6. **Jessica Brown** (Digital Creator, Canada)
-   📸 *(Placeholder image: woman3.jpg)*
-   ⭐ “Professional and creative. My personal brand site looks outclass.”
-
-7. **Omar Farooq** (NGO Director, Qatar)
-   📸 *(Placeholder image: businessman4.jpg)*
-   ⭐ “He built us a donation website that truly represents our cause. Highly recommended.”
-
-(Each testimonial should have **client name, photo, designation, country flag, and rating stars**.)
-
----
-
-## **7. Blog / Insights (Knowledge Authority)**
-
-📝 *“Learn from My Insights”*
-
-Publish 6 blogs:
-
-1. How to Start a Faceless YouTube Channel in 2025
-2. Top Website Design Trends Every Business Must Know
-3. Digital Marketing Strategies That Actually Work
-4. Why CGPA Doesn’t Matter Anymore – Skills Beat Grades
-5. How AI Tools Are Changing Web Development in 2025
-6. The Future of Freelancing: What Clients Really Want
-
-(Each blog has a **thumbnail image, title, short intro, “Read More” button**.)
-
----
-
-## **8. Contact Me (Get in Touch)**
-
-📩 **Direct Contact Links:**
-
-* Email: [rashidbloch1351@gmail.com](mailto:rashidbloch1351@gmail.com)
-* WhatsApp: +92 327 6434422
-* Facebook: [https://facebook.com/rashidazam1351](https://facebook.com/rashidazam1351)
-* Instagram: [https://instagram.com/rashidazam1351](https://instagram.com/rashidazam1351)
-* Fiverr: [https://fiverr.com/rashidazam1351](https://fiverr.com/rashidazam1351)
-
-**Contact Form Fields:**
-
-* Name
-* Email
-* Message
-
-**CTA Button:** “Send Message”
-
-**Extra Feature:** Sticky WhatsApp button on all pages.
-
----
-
-## **9. Footer (Professional Ending)**
-
-**Left Side (Logo):**
-[https://drive.google.com/file/d/1ZQXvGaooy4NqcZnZ25RVvth7S4K9zZu0/view?usp=sharing](https://drive.google.com/file/d/1ZQXvGaooy4NqcZnZ25RVvth7S4K9zZu0/view?usp=sharing)
-
-**Center (Navigation Links):**
-
-* 🏠 Home
-* 👤 About
-* 🛠 Services
-* 📂 Projects
-* 🏆 Achievements
-* ⭐ Testimonials
-* 📝 Blog
-* 📩 Contact
-* 🏢 Visit Agency → [https://arhamdigital.vercel.app/](https://arhamdigital.vercel.app/)
-
-**Right Side (Action Button):**
-📩 “Let’s Work Together” → Contact Form
-
-**Copyright Line:**
-© 2025 M. Rashid Azam | All Rights Reserved | Designed by Arham Digital Agency
-
----
-
-## **10. Pro Features (Make It Outclass)**
-
-* ✅ Dark/Light Mode Toggle
-* ✅ Scroll-to-Top Button (appears after scroll)
-* ✅ Sticky WhatsApp Floating Button
-* ✅ Animated counters & progress bars
-* ✅ Career Timeline animation (your journey: freelancer → agency CEO)
-* ✅ Newsletter Signup (offer free “Digital Success Guide”)
-* ✅ Short Intro Video (Hero Section, 1 min self-intro)
-
----
-
-# 🎯 Why This Website is Unbeatable
-
-✔ **Clarity** – Every section is purposeful and easy to follow.
-✔ **Proof of Work** – 8 projects, animated achievements, real blogs.
-✔ **Trust** – 7 client testimonials with names & photos.
-✔ **Conversion Power** – Contact buttons, WhatsApp, agency site link, resume download.
-✔ **Pro Features** – Animations, scroll effects, dark/light toggle, sticky buttons.
-
-This isn’t just a portfolio — it’s a **personal brand + agency-level portfolio** combined. It positions you as a **leader**, not just a freelancer.
-
----
-
-🔥 Honest Opinion: If you implement this with **high-quality images, smooth animations, and a personal video**, your portfolio will look **better than 90% of professionals and agencies worldwide.**
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://rashidazam.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/b27c97f6-e1bf-4ee5-a949-9bb43c96fca5).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
 ```
+portfolio/
+├── app/                        # Next.js 14 App Router
+│   ├── actions/                # Server Actions (contact.ts)
+│   ├── about/                  # About Me page
+│   ├── blog/                   # Blog Hub & [slug] dynamic post pages (23 posts)
+│   ├── contact/                # Contact page with Resend lead form
+│   ├── marketing/              # Digital Marketing cluster hub & [topic] pages
+│   ├── privacy-policy/         # Legal Privacy Policy page
+│   ├── projects/               # Projects Hub, [category] hubs, & [project] case studies
+│   ├── seo/                    # SEO cluster hub & [topic] pages
+│   ├── services/               # Services Hub & [slug] pillar pages (6 pillars)
+│   ├── terms-of-service/       # Legal Terms of Service page
+│   ├── thank-you/              # Form submission confirmation page (noindex)
+│   ├── tools/                  # Free Marketing & SEO Tools Hub
+│   ├── youtube/                # YouTube cluster hub & [topic] pages
+│   ├── favicon.ico             # Site favicon
+│   ├── globals.css             # Global Tailwind directives & custom CSS tokens
+│   ├── layout.tsx              # Root HTML shell, metadata, Header & Footer
+│   ├── not-found.tsx           # Custom 404 error page
+│   ├── page.tsx                # Homepage
+│   ├── robots.ts               # Dynamic robots.txt handler
+│   └── sitemap.ts              # Dynamic sitemap.xml generator (88 static URLs)
+├── components/                 # Shared UI Components
+│   ├── AuthorBox.tsx           # Article author box component
+│   ├── BlogCard.tsx            # Blog post snippet card
+│   ├── Button.tsx              # Dynamic CTA button component
+│   ├── Container.tsx           # Standardized width wrapper
+│   ├── CTABanner.tsx           # Global high-converting lead banner
+│   ├── FAQAccordion.tsx        # Accessible interactive FAQ accordion
+│   ├── Footer.tsx              # Site-wide navigation footer
+│   ├── Header.tsx              # Responsive navigation header with mobile drawer
+│   ├── ProjectCard.tsx         # Verified case study card
+│   ├── ProofStrip.tsx          # Key metric counter strip
+│   ├── QuickAnswer.tsx         # Generative engine (GEO) quick answer box
+│   ├── RelatedLinks.tsx        # Cross-silo contextual linking component
+│   ├── SectionHeading.tsx     # Typography section header
+│   ├── ServiceCard.tsx        # Pillar service card
+│   └── WhatsAppButton.tsx      # Floating quick-chat widget
+├── data/                       # Content Store & Static Schemas
+│   ├── blog.ts                 # 23 verified blog post articles & metadata
+│   ├── faqs.ts                 # Categorized FAQ data store
+│   ├── projects.ts             # 21 verified client case studies with metrics
+│   ├── services.ts             # 6 pillar services content data
+│   └── clusters/               # Cluster sub-topic data definitions
+│       ├── marketing.ts        # Digital marketing sub-topic data
+│       ├── seo.ts              # SEO sub-topic data
+│       └── youtube.ts          # YouTube automation sub-topic data
+├── docs/                       # Project Documentation & Strategy Manifests
+│   ├── audit.md                # Phase 0 asset & URL audit
+│   ├── blog-audit.md           # Blog inventory & title modernization audit
+│   ├── content-calendar.md     # 12-month post-launch content strategy
+│   ├── content-plan.md         # Content architecture & GEO strategy
+│   ├── design-system.md        # Warm Editorial design system tokens
+│   ├── internal-linking-plan.md# Topical cluster linking matrix
+│   ├── keyword-map.md          # 88-page primary/secondary keyword map
+│   ├── link-audit.md           # 0 orphan URL verification report
+│   ├── performance-qa-report.md# Core Web Vitals & accessibility audit
+│   ├── project-verification.md # 21 case study proof matrix
+│   ├── redirects.md            # Legacy URL 301 mapping table
+│   ├── seo-audit.md            # Technical SEO compliance report
+│   └── todo-rashid.md          # Client asset checklist
+├── public/                     # Static Public Assets
+│   ├── images/                 # Optimized portfolio & project WebP assets
+│   ├── llms.txt                # AI LLM context documentation file
+│   └── robots.txt              # Standard robots file fallback
+├── scripts/                    # Maintenance & QA Automation
+│   └── run-link-audit.js       # Internal link & orphan page analyzer
+├── .env.example                # Template for required environment variables
+├── next.config.mjs             # Next.js config & 301 permanent redirects
+├── package.json                # Project dependencies & scripts
+├── postcss.config.js           # PostCSS configuration
+├── tailwind.config.ts          # Custom color palette & typography theme
+└── tsconfig.json               # TypeScript configuration with `@/*` aliases
+```
+
+---
+
+## Environment Setup & Installation
+
+### Prerequisites
+
+- **Node.js**: `v18.17.0` or higher
+- **npm**: `v9.0.0` or higher
+- **Git**: installed locally
+
+### Quick Start
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/rashidazam/portfolio.git
+   cd portfolio
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables**:
+   Copy `.env.example` to `.env.local`:
+   ```bash
+   cp .env.example .env.local
+   ```
+
+   Fill in your Resend API key and email recipient:
+   ```env
+   RESEND_API_KEY=re_your_actual_resend_api_key
+   CONTACT_RECIPIENT_EMAIL=rashidbloch1351@gmail.com
+   NEXT_PUBLIC_SITE_URL=https://rashidazam.me
+   ```
+
+4. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## Available Scripts
+
+| Script | Command | Description |
+| :--- | :--- | :--- |
+| **Development** | `npm run dev` | Starts local development server on port 3000 |
+| **Production Build** | `npm run build` | Compiles production bundle & generates 88 static pages |
+| **Start Production** | `npm run start` | Launches built production server locally |
+| **Linting** | `npm run lint` | Runs ESLint and checks TypeScript code validity |
+| **Link Audit** | `node scripts/run-link-audit.js` | Audits internal links across all 88 URLs for zero orphans |
+
+---
+
+## Data Editing Guide
+
+All text content, blog posts, case studies, and services are decoupled from UI components and stored in clean TypeScript arrays under `/data/`.
+
+### 1. Adding or Editing a Service
+Edit [`data/services.ts`](file:///d:/portfolio/data/services.ts):
+```typescript
+export const services: Service[] = [
+  {
+    slug: 'seo-services',
+    title: 'SEO Services',
+    // Edit features, FAQs, process steps, schema properties...
+  },
+];
+```
+
+### 2. Adding a New Case Study
+Edit [`data/projects.ts`](file:///d:/portfolio/data/projects.ts):
+Add your project object under the relevant category (`e-commerce-store`, `youtube-automation`, `corporate-website`, etc.). The page will automatically prerender at `/projects/[category]/[project-slug]`.
+
+### 3. Publishing a New Blog Post
+Edit [`data/blog.ts`](file:///d:/portfolio/data/blog.ts):
+Add your article object with `slug`, `title`, `excerpt`, `content`, `author`, `publishedAt`, `readingTime`, and `tags`. The dynamic route `/blog/[slug]` will statically compile it on the next build.
+
+---
+
+## Vercel Deployment Guide
+
+Deploying `rashidazam.me` on Vercel requires zero complex server setups:
+
+### 1. Import Repository
+1. Log into your [Vercel Dashboard](https://vercel.com/dashboard).
+2. Click **Add New** > **Project**.
+3. Select your Git repository `portfolio` (branch `main` or `rebuild-next`).
+
+### 2. Configure Project Settings
+- **Framework Preset**: `Next.js`
+- **Root Directory**: `./`
+- **Build Command**: `npm run build`
+- **Output Directory**: `.next`
+
+### 3. Add Environment Variables
+Under **Environment Variables**, add:
+- `RESEND_API_KEY`: *(Your secret Resend API key starting with `re_`)*
+- `CONTACT_RECIPIENT_EMAIL`: `rashidbloch1351@gmail.com`
+- `NEXT_PUBLIC_SITE_URL`: `https://rashidazam.me`
+
+### 4. Deploy & Connect Domain
+1. Click **Deploy**. Vercel will run `npm run build` and generate all 88 static pages automatically.
+2. Under **Project Settings** > **Domains**, add `rashidazam.me` and `www.rashidazam.me`.
+3. Update your domain DNS records:
+   - `A` Record: `@` -> `76.76.21.21`
+   - `CNAME` Record: `www` -> `cname.vercel-dns.com`
+
+---
+
+## Redirects & SEO Strategy
+
+All 41 original sitemap URLs from the legacy site have been preserved 1:1. Additionally, permanent 301 redirects are configured in [`next.config.mjs`](file:///d:/portfolio/next.config.mjs) for legacy `.html` extensions:
+
+- `/index.html` -> `/`
+- `/about.html` -> `/about`
+- `/services.html` -> `/services`
+- `/projects.html` -> `/projects`
+- `/blog.html` -> `/blog`
+- `/contact.html` -> `/contact`
+- `/privacy-policy.html` -> `/privacy-policy`
+- `/terms-of-service.html` -> `/terms-of-service`
+
+---
+
+## Documentation Index
+
+For detailed architectural specifications, review the docs in [`docs/`](file:///d:/portfolio/docs/):
+
+- [`docs/audit.md`](file:///d:/portfolio/docs/audit.md) — Initial asset, image, and route discovery audit.
+- [`docs/keyword-map.md`](file:///d:/portfolio/docs/keyword-map.md) — 88-page target keyword & meta title mapping.
+- [`docs/internal-linking-plan.md`](file:///d:/portfolio/docs/internal-linking-plan.md) — Topic cluster internal linking architecture.
+- [`docs/content-plan.md`](file:///d:/portfolio/docs/content-plan.md) — GEO answer box & content pillar plan.
+- [`docs/design-system.md`](file:///d:/portfolio/docs/design-system.md) — Color palette, typography & component tokens.
+- [`docs/project-verification.md`](file:///d:/portfolio/docs/project-verification.md) — 21 case study proof matrix.
+- [`docs/blog-audit.md`](file:///d:/portfolio/docs/blog-audit.md) — Blog post inventory & modernization log.
+- [`docs/content-calendar.md`](file:///d:/portfolio/docs/content-calendar.md) — 12-month post-launch expansion calendar.
+- [`docs/link-audit.md`](file:///d:/portfolio/docs/link-audit.md) — Internal link audit & orphan page audit report.
+- [`docs/seo-audit.md`](file:///d:/portfolio/docs/seo-audit.md) — Complete technical SEO & schema verification.
+- [`docs/performance-qa-report.md`](file:///d:/portfolio/docs/performance-qa-report.md) — Core Web Vitals & accessibility report.
+
+---
+
+© 2026 M. Rashid Azam | Deployed with Next.js 14 & Vercel

@@ -20,7 +20,46 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // 301 Redirect rules if needed in future
+      {
+        source: '/index.html',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/about.html',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/services.html',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/projects.html',
+        destination: '/projects',
+        permanent: true,
+      },
+      {
+        source: '/blog.html',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/contact.html',
+        destination: '/contact',
+        permanent: true,
+      },
+      {
+        source: '/privacy-policy.html',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/terms-of-service.html',
+        destination: '/terms-of-service',
+        permanent: true,
+      },
     ];
   },
 };
