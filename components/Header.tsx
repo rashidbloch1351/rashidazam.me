@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ArrowUpRight, ChevronDown, ArrowRight } from 'lucide-react';
 
@@ -74,18 +75,25 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0f1012]/90 backdrop-blur-md border-b border-[#272a30]">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Brand / Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-lg bg-[#d97706]/10 border border-[#d97706]/30 flex items-center justify-center font-heading font-bold text-xl text-[#d97706] group-hover:scale-105 transition-transform">
-            RA
+          <div className="relative w-9 h-9 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform">
+            <Image
+              src="/android-chrome-192x192.png"
+              alt="Rashid Azam logo"
+              width={36}
+              height={36}
+              className="object-cover w-full h-full"
+              priority
+            />
           </div>
           <div>
-            <span className="font-heading font-bold text-lg text-[#f3f4f6] tracking-tight block">
+            <span className="font-heading font-bold text-lg text-slate-900 tracking-tight block">
               Rashid Azam
             </span>
-            <span className="text-xs text-[#9ca3af] block">
+            <span className="text-xs text-slate-500 block">
               Web Developer & SEO Expert
             </span>
           </div>
@@ -99,7 +107,7 @@ export function Header() {
             className={`text-sm font-medium transition-colors ${
               pathname === '/'
                 ? 'text-[#d97706] font-semibold'
-                : 'text-[#9ca3af] hover:text-[#f3f4f6]'
+                : 'text-slate-600 hover:text-slate-900'
             }`}
           >
             Home
@@ -118,7 +126,7 @@ export function Header() {
                 className={`text-sm font-medium transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md ${
                   pathname.startsWith('/services')
                     ? 'text-[#d97706] font-semibold'
-                    : 'text-[#9ca3af] hover:text-[#f3f4f6]'
+                    : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
                 Services
@@ -129,7 +137,7 @@ export function Header() {
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
                 aria-label="Toggle Services Menu"
-                className="p-1 text-[#9ca3af] hover:text-[#f3f4f6] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md"
+                className="p-1 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md"
               >
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-200 ${
@@ -158,7 +166,7 @@ export function Header() {
                       className={`flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                         isActive
                           ? 'bg-amber-50 text-[#d97706] font-semibold'
-                          : 'text-gray-800 hover:bg-gray-50 hover:text-[#d97706]'
+                          : 'text-slate-700 hover:bg-slate-50 hover:text-[#d97706]'
                       }`}
                     >
                       <span>{service.label}</span>
@@ -174,7 +182,7 @@ export function Header() {
                     className={`flex items-center justify-between px-4 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-colors ${
                       pathname === '/services'
                         ? 'bg-amber-50 text-[#d97706]'
-                        : 'text-gray-600 hover:bg-gray-50 hover:text-[#d97706]'
+                        : 'text-slate-600 hover:bg-slate-50 hover:text-[#d97706]'
                     }`}
                   >
                     <span>All Services</span>
@@ -195,7 +203,7 @@ export function Header() {
                 className={`text-sm font-medium transition-colors ${
                   isActive
                     ? 'text-[#d97706] font-semibold'
-                    : 'text-[#9ca3af] hover:text-[#f3f4f6]'
+                    : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
                 {link.label}
@@ -208,7 +216,7 @@ export function Header() {
         <div className="hidden md:flex items-center gap-4">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[#d97706] hover:bg-[#b45309] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 bg-[#d97706] hover:bg-[#b45309] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors shadow-xs"
           >
             <span>Let&apos;s Talk</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -218,7 +226,7 @@ export function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-[#9ca3af] hover:text-white rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706]"
+          className="md:hidden p-2 text-slate-600 hover:text-slate-900 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706]"
           aria-label="Toggle Navigation Menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -227,14 +235,14 @@ export function Header() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#17181c] border-b border-[#272a30] px-4 pt-4 pb-6 space-y-3">
+        <div className="md:hidden bg-white border-b border-gray-200 px-4 pt-4 pb-6 space-y-3 shadow-lg">
           <nav className="flex flex-col space-y-2">
             {/* 1. Home */}
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}
-              className={`flex items-center min-h-[44px] text-base font-medium px-3 py-2 rounded-md hover:bg-[#202228] transition-colors ${
-                pathname === '/' ? 'text-[#d97706] font-semibold' : 'text-[#9ca3af] hover:text-[#f3f4f6]'
+              className={`flex items-center min-h-[44px] text-base font-medium px-3 py-2 rounded-md hover:bg-slate-50 transition-colors ${
+                pathname === '/' ? 'text-[#d97706] font-semibold bg-amber-50/60' : 'text-slate-700 hover:text-slate-900'
               }`}
             >
               Home
@@ -242,12 +250,12 @@ export function Header() {
 
             {/* 2. Services Accordion */}
             <div className="space-y-1">
-              <div className="flex items-center justify-between min-h-[44px] px-3 py-2 rounded-md hover:bg-[#202228]">
+              <div className="flex items-center justify-between min-h-[44px] px-3 py-2 rounded-md hover:bg-slate-50">
                 <Link
                   href="/services"
                   onClick={() => setMobileMenuOpen(false)}
                   className={`text-base font-medium transition-colors ${
-                    pathname.startsWith('/services') ? 'text-[#d97706] font-semibold' : 'text-[#9ca3af] hover:text-[#f3f4f6]'
+                    pathname.startsWith('/services') ? 'text-[#d97706] font-semibold' : 'text-slate-700 hover:text-slate-900'
                   }`}
                 >
                   Services
@@ -257,7 +265,7 @@ export function Header() {
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                   aria-expanded={mobileServicesOpen}
                   aria-label="Expand Services Submenu"
-                  className="p-2 text-[#9ca3af] hover:text-[#f3f4f6]"
+                  className="p-2 text-slate-500 hover:text-slate-900"
                 >
                   <ChevronDown
                     className={`w-5 h-5 transition-transform duration-200 ${
@@ -268,7 +276,7 @@ export function Header() {
               </div>
 
               {mobileServicesOpen && (
-                <div className="pl-4 space-y-1 border-l-2 border-[#d97706]/40 my-1">
+                <div className="pl-4 space-y-1 border-l-2 border-amber-500/40 my-1">
                   {serviceLinks.map((service) => {
                     const isActive = pathname === service.href;
                     return (
@@ -281,8 +289,8 @@ export function Header() {
                         }}
                         className={`flex items-center min-h-[44px] px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                           isActive
-                            ? 'text-[#d97706] font-semibold bg-[#d97706]/10'
-                            : 'text-[#9ca3af] hover:text-[#f3f4f6] hover:bg-[#202228]'
+                            ? 'text-[#d97706] font-semibold bg-amber-50'
+                            : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
                         }`}
                       >
                         {service.label}
@@ -295,7 +303,7 @@ export function Header() {
                       setMobileMenuOpen(false);
                       setMobileServicesOpen(false);
                     }}
-                    className="flex items-center min-h-[44px] px-3 py-2 text-xs font-semibold uppercase tracking-wider text-[#d97706] hover:bg-[#202228] rounded-md"
+                    className="flex items-center min-h-[44px] px-3 py-2 text-xs font-semibold uppercase tracking-wider text-[#d97706] hover:bg-slate-50 rounded-md"
                   >
                     All Services →
                   </Link>
@@ -311,8 +319,8 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center min-h-[44px] text-base font-medium px-3 py-2 rounded-md hover:bg-[#202228] transition-colors ${
-                    isActive ? 'text-[#d97706] font-semibold' : 'text-[#9ca3af] hover:text-[#f3f4f6]'
+                  className={`flex items-center min-h-[44px] text-base font-medium px-3 py-2 rounded-md hover:bg-slate-50 transition-colors ${
+                    isActive ? 'text-[#d97706] font-semibold bg-amber-50/60' : 'text-slate-700 hover:text-slate-900'
                   }`}
                 >
                   {link.label}
@@ -336,5 +344,3 @@ export function Header() {
     </header>
   );
 }
-
-

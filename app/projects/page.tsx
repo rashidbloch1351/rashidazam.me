@@ -12,8 +12,8 @@ import { ProofStrip } from '@/components/ProofStrip';
 import { projectCategories } from '@/data/projectsData';
 
 export const metadata: Metadata = {
-  title: 'Case Studies & Selected Work | Rashid Azam Portfolio',
-  description: 'Explore verified web development, technical SEO, YouTube automation, and AI application case studies by Rashid Azam.',
+  title: 'Case Studies & Selected Work Worldwide | Rashid Azam Portfolio',
+  description: 'Explore verified web development, technical SEO, YouTube automation, and AI application case studies delivered for clients worldwide by Rashid Azam.',
   alternates: {
     canonical: 'https://rashidazam.me/projects',
   },
@@ -21,18 +21,18 @@ export const metadata: Metadata = {
 
 export default function ProjectsHubPage() {
   return (
-    <div className="py-12 space-y-16">
+    <div className="py-12 space-y-16 bg-white">
       <Container>
         <Breadcrumbs items={[{ label: 'Projects & Case Studies' }]} />
 
         <div className="max-w-3xl space-y-4 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
             Verified Case Studies
           </span>
-          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-[#f3f4f6] tracking-tight">
+          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight">
             Selected Work & Verified Output
           </h1>
-          <p className="text-lg text-[#9ca3af] leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             Real live web applications, e-commerce stores, YouTube channel automation pipelines, and digital marketing performance dashboards.
           </p>
         </div>
@@ -55,10 +55,10 @@ export default function ProjectsHubPage() {
             {projectCategories.map((cat) => (
               <div
                 key={cat.slug}
-                className="bg-[#17181c] border border-[#272a30] rounded-xl overflow-hidden flex flex-col justify-between group hover:border-[#d97706]/40 transition-all"
+                className="bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-amber-400 hover:shadow-md transition-all shadow-xs"
               >
                 <div className="space-y-4">
-                  <div className="relative aspect-video w-full overflow-hidden bg-[#0f1012]">
+                  <div className="relative aspect-video w-full overflow-hidden bg-slate-100 border-b border-gray-100">
                     <Image
                       src={cat.image}
                       alt={cat.title}
@@ -73,22 +73,22 @@ export default function ProjectsHubPage() {
                       {cat.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="text-[10px] font-medium bg-[#202228] text-[#9ca3af] px-2.5 py-0.5 rounded-md"
+                          className="text-[10px] font-semibold bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-md border border-gray-200"
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
 
-                    <h3 className="text-xl font-heading font-semibold text-[#f3f4f6] group-hover:text-[#d97706] transition-colors">
+                    <h3 className="text-xl font-heading font-semibold text-slate-900 group-hover:text-[#d97706] transition-colors">
                       {cat.title}
                     </h3>
 
-                    <p className="text-xs text-[#9ca3af] leading-relaxed line-clamp-3">
+                    <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">
                       {cat.description}
                     </p>
 
-                    <div className="text-xs text-[#6b7280] font-medium">
+                    <div className="text-xs text-slate-500 font-medium">
                       {cat.projects.length} Verified Case Stud{cat.projects.length > 1 ? 'ies' : 'y'}
                     </div>
                   </div>
@@ -97,7 +97,7 @@ export default function ProjectsHubPage() {
                 <div className="p-6 pt-0">
                   <Link
                     href={`/projects/${cat.slug}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-medium text-[#d97706] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#d97706] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
                   >
                     <span>View Category Projects</span>
                     <ArrowUpRight className="w-4 h-4" />

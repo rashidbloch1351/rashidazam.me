@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Mail, Phone, MessageSquare, MapPin, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Mail, Phone, MessageSquare, MapPin, Send, CheckCircle2, AlertCircle, Globe } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
@@ -29,19 +29,19 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="py-12 space-y-16">
+    <div className="py-12 space-y-16 bg-white">
       <Container>
         <Breadcrumbs items={[{ label: 'Contact' }]} />
 
         <div className="max-w-3xl space-y-4 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
             Get In Touch
           </span>
-          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-[#f3f4f6] tracking-tight">
+          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight">
             Let&apos;s Build & Rank Your Business
           </h1>
-          <p className="text-lg text-[#9ca3af] leading-relaxed">
-            Have a question about custom Next.js web development, technical SEO audits, or YouTube automation? Fill out the form or reach out directly via WhatsApp.
+          <p className="text-lg text-slate-600 leading-relaxed">
+            Have a question about custom Next.js web development, technical SEO audits, or YouTube automation? Fill out the form below or reach out directly via WhatsApp.
           </p>
         </div>
       </Container>
@@ -51,35 +51,35 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Contact Details & Direct CTAs */}
             <div className="lg:col-span-5 space-y-8">
-              <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-2xl space-y-6">
-                <h2 className="text-2xl font-heading font-bold text-[#f3f4f6]">
+              <div className="bg-white border border-gray-200 p-8 rounded-2xl space-y-6 shadow-xs">
+                <h2 className="text-2xl font-heading font-bold text-slate-900">
                   Direct Contact Information
                 </h2>
 
                 <div className="space-y-5 text-sm">
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-[#0f1012] border border-[#272a30] flex items-center justify-center text-[#d97706] shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-[#d97706] shrink-0">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
-                      <span className="text-xs text-[#6b7280] font-medium block">Email Me Directly</span>
-                      <a href="mailto:rashidbloch1351@gmail.com" className="text-[#f3f4f6] hover:text-[#d97706] font-medium transition-colors">
+                      <span className="text-xs text-slate-500 font-medium block">Email Me Directly</span>
+                      <a href="mailto:rashidbloch1351@gmail.com" className="text-slate-900 hover:text-[#d97706] font-semibold transition-colors">
                         rashidbloch1351@gmail.com
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-[#0f1012] border border-[#272a30] flex items-center justify-center text-[#25D366] shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-[#25D366] shrink-0">
                       <MessageSquare className="w-5 h-5" />
                     </div>
                     <div>
-                      <span className="text-xs text-[#6b7280] font-medium block">Instant WhatsApp Chat</span>
+                      <span className="text-xs text-slate-500 font-medium block">Instant WhatsApp Chat</span>
                       <a
                         href="https://wa.me/923476931351?text=Hi%20Rashid%2C%20I%20would%20like%20to%20discuss%20a%20project."
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#f3f4f6] hover:text-[#25D366] font-medium transition-colors"
+                        className="text-slate-900 hover:text-[#25D366] font-semibold transition-colors"
                       >
                         +92 347 6931351
                       </a>
@@ -87,13 +87,13 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-[#0f1012] border border-[#272a30] flex items-center justify-center text-[#d97706] shrink-0">
-                      <MapPin className="w-5 h-5" />
+                    <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-[#d97706] shrink-0">
+                      <Globe className="w-5 h-5" />
                     </div>
                     <div>
-                      <span className="text-xs text-[#6b7280] font-medium block">Core Markets</span>
-                      <span className="text-[#f3f4f6] font-medium">
-                        Pakistan (Lahore/Karachi/Islamabad) & UAE (Dubai/Abu Dhabi)
+                      <span className="text-xs text-slate-500 font-medium block">Global Reach</span>
+                      <span className="text-slate-900 font-semibold">
+                        Serving Clients, Startups & Agencies Worldwide
                       </span>
                     </div>
                   </div>
@@ -101,11 +101,11 @@ export default function ContactPage() {
               </div>
 
               {/* Direct Booking Callout */}
-              <div className="bg-[#17181c] border border-[#272a30] p-6 rounded-xl space-y-3">
-                <h3 className="font-heading font-semibold text-lg text-[#f3f4f6]">
+              <div className="bg-slate-50 border border-gray-200 p-6 rounded-2xl space-y-3">
+                <h3 className="font-heading font-semibold text-lg text-slate-900">
                   Response Guarantee
                 </h3>
-                <p className="text-xs text-[#9ca3af] leading-relaxed">
+                <p className="text-xs text-slate-600 leading-relaxed">
                   I review all project inquiries personally. Expect a detailed response within 24 hours during working days.
                 </p>
               </div>
@@ -113,8 +113,8 @@ export default function ContactPage() {
 
             {/* Lead Capture Form */}
             <div className="lg:col-span-7">
-              <div className="bg-[#17181c] border border-[#272a30] p-8 sm:p-10 rounded-2xl space-y-6">
-                <h2 className="text-2xl font-heading font-bold text-[#f3f4f6]">
+              <div className="bg-white border border-gray-200 p-8 sm:p-10 rounded-2xl space-y-6 shadow-xs">
+                <h2 className="text-2xl font-heading font-bold text-slate-900">
                   Send a Message
                 </h2>
 
@@ -122,8 +122,8 @@ export default function ContactPage() {
                   <div
                     className={`p-4 rounded-xl flex items-start gap-3 border ${
                       formState.success
-                        ? 'bg-[#10b981]/10 border-[#10b981]/30 text-[#10b981]'
-                        : 'bg-red-500/10 border-red-500/30 text-red-400'
+                        ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
+                        : 'bg-red-50 border-red-200 text-red-700'
                     }`}
                   >
                     {formState.success ? (
@@ -136,7 +136,7 @@ export default function ContactPage() {
                 )}
 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Honeypot field (hidden for real users) */}
+                  {/* Honeypot field */}
                   <div className="hidden">
                     <label htmlFor="website_hp">Do not fill this</label>
                     <input type="text" id="website_hp" name="website_hp" tabIndex={-1} autoComplete="off" />
@@ -144,7 +144,7 @@ export default function ContactPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label htmlFor="name" className="block text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">
+                      <label htmlFor="name" className="block text-xs font-semibold uppercase tracking-wider text-slate-600">
                         Your Full Name *
                       </label>
                       <input
@@ -153,15 +153,15 @@ export default function ContactPage() {
                         name="name"
                         required
                         placeholder="John Doe"
-                        className="w-full bg-[#0f1012] border border-[#272a30] focus:border-[#d97706] focus:outline-none text-[#f3f4f6] px-4 py-3 rounded-lg text-sm transition-colors"
+                        className="w-full bg-slate-50 border border-gray-200 focus:border-[#d97706] focus:bg-white focus:outline-none text-slate-900 px-4 py-3 rounded-xl text-base sm:text-sm transition-colors"
                       />
                       {formState.errors?.name && (
-                        <p className="text-xs text-red-400">{formState.errors.name}</p>
+                        <p className="text-xs text-red-500">{formState.errors.name}</p>
                       )}
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">
+                      <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-slate-600">
                         Email Address *
                       </label>
                       <input
@@ -170,17 +170,17 @@ export default function ContactPage() {
                         name="email"
                         required
                         placeholder="john@example.com"
-                        className="w-full bg-[#0f1012] border border-[#272a30] focus:border-[#d97706] focus:outline-none text-[#f3f4f6] px-4 py-3 rounded-lg text-sm transition-colors"
+                        className="w-full bg-slate-50 border border-gray-200 focus:border-[#d97706] focus:bg-white focus:outline-none text-slate-900 px-4 py-3 rounded-xl text-base sm:text-sm transition-colors"
                       />
                       {formState.errors?.email && (
-                        <p className="text-xs text-red-400">{formState.errors.email}</p>
+                        <p className="text-xs text-red-500">{formState.errors.email}</p>
                       )}
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label htmlFor="service" className="block text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">
+                      <label htmlFor="service" className="block text-xs font-semibold uppercase tracking-wider text-slate-600">
                         Primary Service Needed *
                       </label>
                       <select
@@ -188,7 +188,7 @@ export default function ContactPage() {
                         name="service"
                         required
                         defaultValue=""
-                        className="w-full bg-[#0f1012] border border-[#272a30] focus:border-[#d97706] focus:outline-none text-[#f3f4f6] px-4 py-3 rounded-lg text-sm transition-colors"
+                        className="w-full bg-slate-50 border border-gray-200 focus:border-[#d97706] focus:bg-white focus:outline-none text-slate-900 px-4 py-3 rounded-xl text-base sm:text-sm transition-colors"
                       >
                         <option value="" disabled>Select a service...</option>
                         <option value="Technical SEO Services">Technical & Local SEO Services</option>
@@ -199,19 +199,19 @@ export default function ContactPage() {
                         <option value="Content Writing">SEO Content Writing & Copywriting</option>
                       </select>
                       {formState.errors?.service && (
-                        <p className="text-xs text-red-400">{formState.errors.service}</p>
+                        <p className="text-xs text-red-500">{formState.errors.service}</p>
                       )}
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="budget" className="block text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">
+                      <label htmlFor="budget" className="block text-xs font-semibold uppercase tracking-wider text-slate-600">
                         Estimated Budget Range
                       </label>
                       <select
                         id="budget"
                         name="budget"
                         defaultValue=""
-                        className="w-full bg-[#0f1012] border border-[#272a30] focus:border-[#d97706] focus:outline-none text-[#f3f4f6] px-4 py-3 rounded-lg text-sm transition-colors"
+                        className="w-full bg-slate-50 border border-gray-200 focus:border-[#d97706] focus:bg-white focus:outline-none text-slate-900 px-4 py-3 rounded-xl text-base sm:text-sm transition-colors"
                       >
                         <option value="" disabled>Select budget range...</option>
                         <option value="Under $500">Under $500</option>
@@ -223,7 +223,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="message" className="block text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">
+                    <label htmlFor="message" className="block text-xs font-semibold uppercase tracking-wider text-slate-600">
                       Project Details & Goals *
                     </label>
                     <textarea
@@ -232,17 +232,17 @@ export default function ContactPage() {
                       required
                       rows={5}
                       placeholder="Tell me about your website URL, business goals, and timeline..."
-                      className="w-full bg-[#0f1012] border border-[#272a30] focus:border-[#d97706] focus:outline-none text-[#f3f4f6] px-4 py-3 rounded-lg text-sm transition-colors resize-none"
+                      className="w-full bg-slate-50 border border-gray-200 focus:border-[#d97706] focus:bg-white focus:outline-none text-slate-900 px-4 py-3 rounded-xl text-base sm:text-sm transition-colors resize-none"
                     />
                     {formState.errors?.message && (
-                      <p className="text-xs text-red-400">{formState.errors.message}</p>
+                      <p className="text-xs text-red-500">{formState.errors.message}</p>
                     )}
                   </div>
 
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full inline-flex items-center justify-center gap-2 bg-[#d97706] hover:bg-[#b45309] disabled:opacity-50 text-white font-medium px-6 py-3.5 rounded-lg transition-all shadow-md"
+                    className="w-full inline-flex items-center justify-center gap-2 bg-[#d97706] hover:bg-[#b45309] disabled:opacity-50 text-white font-semibold px-6 py-3.5 rounded-xl transition-all shadow-md min-h-[44px]"
                   >
                     {isSubmitting ? (
                       <span>Sending Message...</span>

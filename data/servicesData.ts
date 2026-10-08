@@ -31,13 +31,13 @@ export const pillarServices: PillarService[] = [
     slug: "seo-services",
     name: "SEO Services",
     navLabel: "SEO Services",
-    metaTitle: "SEO Services in Pakistan | Technical & Local SEO Expert | Rashid Azam",
+    metaTitle: "SEO Services Worldwide | Technical & Organic Search Specialist | Rashid Azam",
     metaDescription:
-      "SEO services in Pakistan by Rashid Azam — technical SEO, on-page optimisation, keyword research, local SEO and link building for businesses that need real organic growth.",
-    h1: "SEO Services in Pakistan",
+      "Global SEO services by Rashid Azam — technical SEO, on-page optimisation, keyword research, local SEO and authority link building for businesses worldwide.",
+    h1: "SEO Services & Search Engine Optimisation",
     tagline: "Technical foundations, on-page depth and search intent — not guesswork.",
     intro:
-      "I work with businesses and founders across Pakistan who want search traffic that converts, not vanity rankings. Every engagement starts with a crawl of your site, a look at how Google currently understands it, and a prioritised plan you can actually action.",
+      "I work with businesses, startups, and agency partners worldwide who want search traffic that converts, not vanity rankings. Every engagement starts with a crawl of your site, a look at how Google currently understands it, and a prioritised plan you can actually action.",
     capabilities: [
       {
         title: "Technical SEO",
@@ -135,10 +135,10 @@ export const pillarServices: PillarService[] = [
     slug: "digital-marketing",
     name: "Digital Marketing",
     navLabel: "Digital Marketing",
-    metaTitle: "Digital Marketing Services in Pakistan | Ads & Growth | Rashid Azam",
+    metaTitle: "Digital Marketing Services Worldwide | Ads & Growth | Rashid Azam",
     metaDescription:
-      "Digital marketing services in Pakistan — Google Ads, Meta Ads, social media marketing, content marketing and conversion tracking managed by Rashid Azam.",
-    h1: "Digital Marketing Services in Pakistan",
+      "Global digital marketing services — Google Ads, Meta Ads, social media marketing, content marketing and conversion tracking managed by Rashid Azam.",
+    h1: "Digital Marketing Services",
     tagline: "Campaigns measured in leads and revenue, not impressions.",
     intro:
       "Paid and social channels give you demand today while organic assets build in the background. I plan, run and report on campaigns with clear tracking so you always know what a lead actually costs.",
@@ -215,10 +215,10 @@ export const pillarServices: PillarService[] = [
     slug: "youtube-automation",
     name: "YouTube Automation",
     navLabel: "YouTube Automation",
-    metaTitle: "YouTube Automation Services in Pakistan | Faceless Channels | Rashid Azam",
+    metaTitle: "YouTube Automation Services Worldwide | Faceless Channels | Rashid Azam",
     metaDescription:
-      "YouTube automation services in Pakistan — faceless channel setup, YouTube SEO, scripting, editing, thumbnails and monetisation strategy by Rashid Azam.",
-    h1: "YouTube Automation Services in Pakistan",
+      "Global YouTube automation services — faceless channel setup, YouTube SEO, scripting, editing, thumbnails and monetisation strategy by Rashid Azam.",
+    h1: "YouTube Automation Services",
     tagline: "Faceless channels built on research, systems and consistency.",
     intro:
       "YouTube automation means running a channel as a production system: research, scripting, voice-over, editing, thumbnails and publishing, handled by a repeatable process instead of one person filming everything.",
@@ -289,10 +289,10 @@ export const pillarServices: PillarService[] = [
     slug: "web-development",
     name: "Web Development",
     navLabel: "Web Development",
-    metaTitle: "Web Development Services in Pakistan | WordPress & Shopify | Rashid Azam",
+    metaTitle: "Web Development Services Worldwide | WordPress, Shopify & Next.js | Rashid Azam",
     metaDescription:
-      "Web development services in Pakistan — business websites, WordPress, Shopify and WooCommerce stores, landing pages and speed optimisation built SEO-ready by Rashid Azam.",
-    h1: "Web Development Services in Pakistan",
+      "Global web development services — business websites, WordPress, Shopify and WooCommerce stores, Next.js apps, landing pages and speed optimisation built SEO-ready by Rashid Azam.",
+    h1: "Web Development Services",
     tagline: "Fast, responsive websites built to be found and to convert.",
     intro:
       "I build business websites and stores that load quickly, work on every screen size and are structured so search engines can index them properly from day one.",

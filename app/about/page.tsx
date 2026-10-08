@@ -11,8 +11,8 @@ import { CTABanner } from '@/components/CTABanner';
 import { ProofStrip } from '@/components/ProofStrip';
 
 export const metadata: Metadata = {
-  title: 'About Rashid Azam | Web Developer & SEO Consultant',
-  description: 'Learn about Rashid Azam — BS IT student, web developer, technical SEO consultant, founder of Arham Digital Agency, and creator of TechByRash.',
+  title: 'About Rashid Azam | Web Developer & SEO Consultant Worldwide',
+  description: 'Learn about Rashid Azam — BS IT background, full-stack web developer, technical SEO consultant, founder of Arham Digital Agency, and creator of TechByRash serving clients worldwide.',
   alternates: {
     canonical: 'https://rashidazam.me/about',
   },
@@ -22,7 +22,7 @@ export default function AboutPage() {
   const skillCategories = [
     {
       title: 'Languages & Core',
-      skills: ['TypeScript', 'JavaScript (ES6+)', 'Python', 'HTML5 & Semantic Markup', 'CSS3 & HSL Tokens', 'SQL'],
+      skills: ['TypeScript', 'JavaScript (ES6+)', 'Python', 'HTML5 & Semantic Markup', 'CSS3 & Custom Tokens', 'SQL'],
     },
     {
       title: 'Frameworks & Frontend',
@@ -47,13 +47,13 @@ export default function AboutPage() {
       year: '2023 - Present',
       title: 'Freelance Web Developer & SEO Specialist',
       organization: 'Fiverr & Freelancer.com',
-      description: 'Built 50+ client websites, executed technical SEO audits, and managed paid advertising campaigns for businesses in Pakistan and UAE.',
+      description: 'Built 50+ client websites, executed technical SEO audits, and managed growth campaigns for startups, businesses, and agencies worldwide.',
     },
     {
       year: '2023 - Present',
       title: 'Founder & Technical Director',
       organization: 'Arham Digital Agency',
-      description: 'Launched a digital agency brand offering complete web development, store setups, and search engine optimization services.',
+      description: 'Launched a digital agency brand offering complete web development, store setups, and search engine optimization services globally.',
     },
     {
       year: '2024 - Present',
@@ -70,21 +70,21 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="py-12 space-y-20">
+    <div className="py-12 space-y-20 bg-white">
       <Container>
         <Breadcrumbs items={[{ label: 'About Rashid Azam' }]} />
 
         {/* Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
-            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
               The Story Behind the Code
             </span>
-            <h1 className="text-4xl sm:text-5xl font-heading font-bold text-[#f3f4f6] tracking-tight leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight leading-tight">
               About Rashid Azam
             </h1>
-            <p className="text-lg text-[#9ca3af] leading-relaxed">
-              I&apos;m a Web Developer, Technical SEO Specialist, and Digital Marketer based in Pakistan. I combine computer science fundamentals with real-world client execution to build fast web applications and drive sustainable organic growth.
+            <p className="text-lg text-slate-600 leading-relaxed">
+              I&apos;m a Web Developer, Technical SEO Specialist, and Digital Marketer. I combine computer science fundamentals with real-world client execution to build fast web applications and drive sustainable organic search growth for clients worldwide.
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Button href="/contact" variant="primary" showArrow>
@@ -97,14 +97,14 @@ export default function AboutPage() {
           </div>
 
           <div className="lg:col-span-5">
-            <div className="relative rounded-2xl overflow-hidden border border-[#272a30] bg-[#17181c] p-3 shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden border border-gray-200 bg-slate-50 p-3 shadow-xl">
               <Image
                 src="/images/branding/rashid-azam-hero-portrait.webp"
                 alt="Rashid Azam - Web Developer and SEO Consultant"
                 width={500}
                 height={600}
                 priority
-                className="rounded-xl w-full h-auto object-cover"
+                className="rounded-2xl w-full h-auto object-cover"
               />
             </div>
           </div>
@@ -115,10 +115,10 @@ export default function AboutPage() {
       <ProofStrip />
 
       {/* First Person Narrative */}
-      <section className="bg-[#17181c] py-20 border-y border-[#272a30]">
+      <section className="bg-slate-50 py-20 border-y border-gray-200">
         <Container size="small">
-          <div className="space-y-8 text-[#9ca3af] text-base leading-relaxed">
-            <h2 className="text-3xl font-heading font-bold text-[#f3f4f6]">
+          <div className="space-y-8 text-slate-600 text-base leading-relaxed">
+            <h2 className="text-3xl font-heading font-bold text-slate-900">
               Building Web Apps and Search Authority
             </h2>
 
@@ -127,29 +127,29 @@ export default function AboutPage() {
             </p>
 
             <p>
-              To solve this, I started freelancing on platforms like Fiverr and Freelancer.com under the brand <strong className="text-[#f3f4f6]">Arham Digital Agency</strong>. Over the past 3+ years, I have worked directly with business owners across Pakistan (Lahore, Karachi, Islamabad) and the UAE (Dubai, Abu Dhabi) to build fast web applications, optimize Google search rankings, and automate business processes.
+              To solve this, I started freelancing on platforms like Fiverr and Freelancer.com under the brand <strong className="text-slate-900">Arham Digital Agency</strong>. Over the past 5+ years, I have worked directly with business owners, startups, and agency partners worldwide to build fast web applications, optimize Google search rankings, and automate business processes.
             </p>
 
             <p>
-              Alongside client work, I share technical knowledge through my YouTube brand <strong className="text-[#f3f4f6]">TechByRash</strong>, where I teach web development, AI automation tools, and practical freelancing workflows.
+              Alongside client work, I share technical knowledge through my YouTube brand <strong className="text-slate-900">TechByRash</strong>, where I teach web development, AI automation tools, and practical freelancing workflows.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-[#272a30]">
-              <div className="bg-[#0f1012] p-5 rounded-xl border border-[#272a30]">
-                <h3 className="font-heading font-semibold text-lg text-[#f3f4f6] mb-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-200">
+              <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs">
+                <h3 className="font-heading font-semibold text-lg text-slate-900 mb-2">
                   My Core Philosophy
                 </h3>
-                <p className="text-xs text-[#9ca3af]">
+                <p className="text-xs text-slate-600 leading-relaxed">
                   No corporate jargon, no fluff. I believe in empirical log data, clean code standards, explicit search intent mapping, and measurable conversion goals.
                 </p>
               </div>
 
-              <div className="bg-[#0f1012] p-5 rounded-xl border border-[#272a30]">
-                <h3 className="font-heading font-semibold text-lg text-[#f3f4f6] mb-2">
-                  Regional Focus
+              <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs">
+                <h3 className="font-heading font-semibold text-lg text-slate-900 mb-2">
+                  Global Reach & Context
                 </h3>
-                <p className="text-xs text-[#9ca3af]">
-                  Deep understanding of regional consumer behavior, localized SEO dynamics, and payment/currency setups across Pakistan and the UAE.
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Proven experience delivering projects across international markets, handling global SEO dynamics, multi-currency setups, and remote collaboration.
                 </p>
               </div>
             </div>
@@ -171,14 +171,14 @@ export default function AboutPage() {
             {skillCategories.map((category) => (
               <div
                 key={category.title}
-                className="bg-[#17181c] border border-[#272a30] p-6 rounded-xl space-y-4"
+                className="bg-white border border-gray-200 p-6 rounded-2xl space-y-4 shadow-xs"
               >
-                <h3 className="font-heading font-semibold text-lg text-[#f3f4f6] border-b border-[#272a30] pb-3">
+                <h3 className="font-heading font-semibold text-lg text-slate-900 border-b border-gray-100 pb-3">
                   {category.title}
                 </h3>
                 <ul className="space-y-2.5">
                   {category.skills.map((skill) => (
-                    <li key={skill} className="flex items-center gap-2 text-xs text-[#9ca3af]">
+                    <li key={skill} className="flex items-center gap-2 text-xs text-slate-600">
                       <CheckCircle2 className="w-4 h-4 text-[#d97706] shrink-0" />
                       <span>{skill}</span>
                     </li>
@@ -191,7 +191,7 @@ export default function AboutPage() {
       </section>
 
       {/* Career Milestones */}
-      <section className="bg-[#17181c] py-20 border-y border-[#272a30]">
+      <section className="bg-slate-50 py-20 border-y border-gray-200">
         <Container>
           <SectionHeading
             kicker="Experience & Growth"
@@ -202,15 +202,15 @@ export default function AboutPage() {
 
           <div className="space-y-8 max-w-3xl">
             {milestones.map((item, idx) => (
-              <div key={idx} className="relative pl-8 border-l-2 border-[#d97706]/40 space-y-2">
-                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#d97706] border-4 border-[#17181c]" />
+              <div key={idx} className="relative pl-8 border-l-2 border-amber-500/40 space-y-2">
+                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#d97706] border-4 border-slate-50" />
                 <span className="text-xs font-semibold text-[#d97706] uppercase tracking-wider block">
                   {item.year}
                 </span>
-                <h3 className="text-xl font-heading font-bold text-[#f3f4f6]">
-                  {item.title} <span className="text-[#9ca3af] font-normal text-sm">| {item.organization}</span>
+                <h3 className="text-xl font-heading font-bold text-slate-900">
+                  {item.title} <span className="text-slate-500 font-normal text-sm">| {item.organization}</span>
                 </h3>
-                <p className="text-sm text-[#9ca3af] leading-relaxed">
+                <p className="text-sm text-slate-600 leading-relaxed">
                   {item.description}
                 </p>
               </div>

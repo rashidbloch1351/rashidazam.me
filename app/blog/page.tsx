@@ -10,7 +10,7 @@ import { blogPosts } from '@/data/blogPosts';
 
 export const metadata: Metadata = {
   title: 'Web Development & SEO Insights Blog | Rashid Azam',
-  description: 'Practical guides and tutorials on technical SEO, Next.js web development, YouTube channel automation, and AI workflows by Rashid Azam.',
+  description: 'Practical guides and tutorials on technical SEO, Next.js web development, YouTube channel automation, and AI workflows by Rashid Azam for digital professionals worldwide.',
   alternates: {
     canonical: 'https://rashidazam.me/blog',
   },
@@ -20,30 +20,30 @@ export default function BlogHubPage() {
   const categories = Array.from(new Set(blogPosts.map((p) => p.category)));
 
   return (
-    <div className="py-12 space-y-16">
+    <div className="py-12 space-y-16 bg-white">
       <Container>
         <Breadcrumbs items={[{ label: 'Blog & Technical Insights' }]} />
 
         <div className="max-w-3xl space-y-4 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
             Technical Articles & Guides
           </span>
-          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-[#f3f4f6] tracking-tight">
+          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight">
             Web Development & SEO Insights
           </h1>
-          <p className="text-lg text-[#9ca3af] leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             Practical tutorials on technical SEO strategy, Next.js architecture, YouTube automation, and digital marketing execution.
           </p>
 
           {/* Category Filter Badges */}
           <div className="flex items-center gap-2 flex-wrap pt-4">
-            <span className="text-xs font-medium text-[#f3f4f6] bg-[#d97706] px-3 py-1 rounded-full">
+            <span className="text-xs font-semibold text-white bg-[#d97706] px-3.5 py-1.5 rounded-full shadow-xs">
               All Posts ({blogPosts.length})
             </span>
             {categories.map((cat) => (
               <span
                 key={cat}
-                className="text-xs font-medium text-[#9ca3af] bg-[#17181c] border border-[#272a30] px-3 py-1 rounded-full"
+                className="text-xs font-medium text-slate-700 bg-slate-100 border border-gray-200 px-3.5 py-1.5 rounded-full"
               >
                 {cat}
               </span>

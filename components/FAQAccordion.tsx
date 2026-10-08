@@ -40,11 +40,11 @@ export function FAQAccordion({ items }: { items: FAQItem[] }) {
           return (
             <div
               key={idx}
-              className="bg-[#17181c] border border-[#272a30] rounded-xl overflow-hidden transition-colors"
+              className="bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all shadow-xs"
             >
               <button
                 onClick={() => toggle(idx)}
-                className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-heading font-semibold text-base text-[#f3f4f6] hover:text-[#d97706] transition-colors focus:outline-none"
+                className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-heading font-semibold text-base text-slate-900 hover:text-[#d97706] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 aria-expanded={isOpen}
               >
                 <span>{item.question}</span>
@@ -55,7 +55,7 @@ export function FAQAccordion({ items }: { items: FAQItem[] }) {
                 />
               </button>
               {isOpen && (
-                <div className="px-6 pb-6 text-sm text-[#9ca3af] leading-relaxed border-t border-[#272a30]/50 pt-4">
+                <div className="px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-gray-100 pt-4">
                   {item.answer}
                 </div>
               )}

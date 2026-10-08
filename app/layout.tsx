@@ -20,13 +20,23 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://rashidazam.me'),
   title: {
-    default: 'Rashid Azam | Web Developer & Technical SEO Expert Pakistan',
+    default: 'Rashid Azam | Web Developer & Technical SEO Expert Worldwide',
     template: '%s | Rashid Azam',
   },
-  description: 'Full-stack web developer and technical SEO expert in Pakistan. Building high-performance Next.js apps, WordPress sites, YouTube automation pipelines, and AI workflows.',
+  description: 'Full-stack web developer and technical SEO specialist building high-performance Next.js apps, WordPress sites, YouTube automation pipelines, and AI workflows for clients worldwide.',
   authors: [{ name: 'Rashid Azam', url: 'https://rashidazam.me' }],
   creator: 'Rashid Azam',
   publisher: 'Rashid Azam',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    shortcut: '/favicon-32x32.png',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
   robots: {
     index: true,
     follow: true,
@@ -38,7 +48,7 @@ export const metadata: Metadata = {
     siteName: 'Rashid Azam Portfolio',
     images: [
       {
-        url: '/images/branding/rashid-azam-hero-portrait.webp',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Rashid Azam - Web Developer & Technical SEO Expert',
@@ -48,6 +58,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     creator: '@rashidazam1351',
+    images: ['/og-image.png'],
   },
 };
 
@@ -62,18 +73,18 @@ export default function RootLayout({
     name: 'Rashid Azam',
     alternateName: ['M Rashid Azam', 'Muhammad Rashid Azam'],
     url: 'https://rashidazam.me',
-    image: 'https://rashidazam.me/images/branding/rashid-azam-hero-portrait.webp',
+    image: 'https://rashidazam.me/logo.png',
     jobTitle: 'Web Developer & Technical SEO Expert',
     worksFor: {
       '@type': 'Organization',
       name: 'Arham Digital Agency',
     },
     sameAs: [
-      'https://www.fiverr.com/rashidazam1351',
-      'https://www.freelancer.com/u/rashidazam1351',
-      'https://github.com/rashidazam1351',
-      'https://www.linkedin.com/in/rashidazam1351',
-      'https://x.com/rashidazam1351',
+      'https://www.linkedin.com/in/mrashid1351/',
+      'https://github.com/rashidazam',
+      'https://facebook.com/rashidazam1351',
+      'https://instagram.com/rashidazam1351',
+      'https://fiverr.com/rashidazam1351',
       'https://youtube.com/@TechByRash',
     ],
   };
@@ -81,12 +92,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
       <head>
+        <meta name="theme-color" content="#ffffff" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-[#0f1012] text-[#f3f4f6]">
+      <body className="min-h-screen flex flex-col bg-white text-slate-800 selection:bg-amber-100 selection:text-amber-900">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-[100] bg-[#d97706] text-white px-4 py-2 rounded-md font-medium text-sm focus:outline-none"
