@@ -13,13 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Core Pages
   const coreRoutes = [
     '',
-    '/about',
     '/services',
     '/seo',
+    '/projects',
+    '/about',
+    '/blog',
     '/youtube',
     '/marketing',
-    '/projects',
-    '/blog',
     '/tools',
     '/contact',
     '/privacy-policy',

@@ -40,17 +40,18 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Knowledge Hubs */}
+          {/* Navigation Hubs */}
           <div>
             <h3 className="font-heading font-semibold text-[#f3f4f6] text-sm uppercase tracking-wider mb-4">
-              Topic Hubs
+              Navigation
             </h3>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/seo" className="hover:text-[#f3f4f6]">SEO Knowledge Hub</Link></li>
-              <li><Link href="/youtube" className="hover:text-[#f3f4f6]">YouTube Growth Hub</Link></li>
-              <li><Link href="/marketing" className="hover:text-[#f3f4f6]">Marketing Growth Hub</Link></li>
-              <li><Link href="/projects" className="hover:text-[#f3f4f6]">Case Studies</Link></li>
-              <li><Link href="/blog" className="hover:text-[#f3f4f6]">Technical Blog</Link></li>
+              <li><Link href="/" className="hover:text-[#f3f4f6]">Home</Link></li>
+              <li><Link href="/services" className="hover:text-[#f3f4f6]">Services</Link></li>
+              <li><Link href="/seo" className="hover:text-[#f3f4f6]">SEO Hub</Link></li>
+              <li><Link href="/projects" className="hover:text-[#f3f4f6]">Projects</Link></li>
+              <li><Link href="/about" className="hover:text-[#f3f4f6]">About</Link></li>
+              <li><Link href="/blog" className="hover:text-[#f3f4f6]">Blog</Link></li>
             </ul>
           </div>
 

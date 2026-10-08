@@ -23,10 +23,12 @@ export function Header() {
     { label: 'Content Writing', href: '/services/content-writing' },
   ];
 
-  const navLinks = [
-    { label: 'About', href: '/about' },
+  // Exact menu sequence: HOME > SERVICES > SEO HUB > PROJECTS > ABOUT > BLOG
+  const mainNavLinks = [
+    { label: 'Home', href: '/' },
     { label: 'SEO Hub', href: '/seo' },
     { label: 'Projects', href: '/projects' },
+    { label: 'About', href: '/about' },
     { label: 'Blog', href: '/blog' },
   ];
 
@@ -89,33 +91,53 @@ export function Header() {
           </div>
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation: HOME > SERVICES > SEO HUB > PROJECTS > ABOUT > BLOG */}
         <nav className="hidden md:flex items-center gap-7">
-          {/* Services Dropdown */}
+          {/* 1. Home */}
+          <Link
+            href="/"
+            className={`text-sm font-medium transition-colors ${
+              pathname === '/'
+                ? 'text-[#d97706] font-semibold'
+                : 'text-[#9ca3af] hover:text-[#f3f4f6]'
+            }`}
+          >
+            Home
+          </Link>
+
+          {/* 2. Services (dropdown) */}
           <div
             ref={dropdownRef}
             className="relative"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <button
-              type="button"
-              onClick={() => setServicesOpen(!servicesOpen)}
-              aria-expanded={servicesOpen}
-              aria-haspopup="true"
-              className={`inline-flex items-center gap-1.5 text-sm font-medium transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md ${
-                pathname.startsWith('/services')
-                  ? 'text-[#d97706] font-semibold'
-                  : 'text-[#9ca3af] hover:text-[#f3f4f6]'
-              }`}
-            >
-              <span>Our Services</span>
-              <ChevronDown
-                className={`w-4 h-4 transition-transform duration-200 ${
-                  servicesOpen ? 'rotate-180 text-[#d97706]' : ''
+            <div className="inline-flex items-center gap-1">
+              <Link
+                href="/services"
+                className={`text-sm font-medium transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md ${
+                  pathname.startsWith('/services')
+                    ? 'text-[#d97706] font-semibold'
+                    : 'text-[#9ca3af] hover:text-[#f3f4f6]'
                 }`}
-              />
-            </button>
+              >
+                Services
+              </Link>
+              <button
+                type="button"
+                onClick={() => setServicesOpen(!servicesOpen)}
+                aria-expanded={servicesOpen}
+                aria-haspopup="true"
+                aria-label="Toggle Services Menu"
+                className="p-1 text-[#9ca3af] hover:text-[#f3f4f6] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md"
+              >
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    servicesOpen ? 'rotate-180 text-[#d97706]' : ''
+                  }`}
+                />
+              </button>
+            </div>
 
             {/* Dropdown Card */}
             <div
@@ -163,8 +185,8 @@ export function Header() {
             </div>
           </div>
 
-          {/* Other Nav Links */}
-          {navLinks.map((link) => {
+          {/* 3. SEO Hub, 4. Projects, 5. About, 6. Blog */}
+          {mainNavLinks.slice(1).map((link) => {
             const isActive = pathname === link.href;
             return (
               <Link
@@ -207,21 +229,43 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-[#17181c] border-b border-[#272a30] px-4 pt-4 pb-6 space-y-3">
           <nav className="flex flex-col space-y-2">
-            {/* Our Services Accordion in Mobile Menu */}
+            {/* 1. Home */}
+            <Link
+              href="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`flex items-center min-h-[44px] text-base font-medium px-3 py-2 rounded-md hover:bg-[#202228] transition-colors ${
+                pathname === '/' ? 'text-[#d97706] font-semibold' : 'text-[#9ca3af] hover:text-[#f3f4f6]'
+              }`}
+            >
+              Home
+            </Link>
+
+            {/* 2. Services Accordion */}
             <div className="space-y-1">
-              <button
-                type="button"
-                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                aria-expanded={mobileServicesOpen}
-                className="w-full flex items-center justify-between min-h-[44px] px-3 py-2 text-base font-medium text-[#9ca3af] hover:text-[#f3f4f6] rounded-md hover:bg-[#202228] transition-colors"
-              >
-                <span>Our Services</span>
-                <ChevronDown
-                  className={`w-5 h-5 transition-transform duration-200 ${
-                    mobileServicesOpen ? 'rotate-180 text-[#d97706]' : ''
+              <div className="flex items-center justify-between min-h-[44px] px-3 py-2 rounded-md hover:bg-[#202228]">
+                <Link
+                  href="/services"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`text-base font-medium transition-colors ${
+                    pathname.startsWith('/services') ? 'text-[#d97706] font-semibold' : 'text-[#9ca3af] hover:text-[#f3f4f6]'
                   }`}
-                />
-              </button>
+                >
+                  Services
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  aria-expanded={mobileServicesOpen}
+                  aria-label="Expand Services Submenu"
+                  className="p-2 text-[#9ca3af] hover:text-[#f3f4f6]"
+                >
+                  <ChevronDown
+                    className={`w-5 h-5 transition-transform duration-200 ${
+                      mobileServicesOpen ? 'rotate-180 text-[#d97706]' : ''
+                    }`}
+                  />
+                </button>
+              </div>
 
               {mobileServicesOpen && (
                 <div className="pl-4 space-y-1 border-l-2 border-[#d97706]/40 my-1">
@@ -259,8 +303,8 @@ export function Header() {
               )}
             </div>
 
-            {/* Other Mobile Nav Links */}
-            {navLinks.map((link) => {
+            {/* 3. SEO Hub, 4. Projects, 5. About, 6. Blog */}
+            {mainNavLinks.slice(1).map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
@@ -292,4 +336,5 @@ export function Header() {
     </header>
   );
 }
+
 
