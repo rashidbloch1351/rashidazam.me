@@ -78,25 +78,15 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Brand / Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-9 h-9 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform">
-            <Image
-              src="/android-chrome-192x192.png"
-              alt="Rashid Azam logo"
-              width={36}
-              height={36}
-              className="object-cover w-full h-full"
-              priority
-            />
-          </div>
-          <div>
-            <span className="font-heading font-bold text-lg text-slate-900 tracking-tight block">
-              Rashid Azam
-            </span>
-            <span className="text-xs text-slate-500 block">
-              Web Developer & SEO Expert
-            </span>
-          </div>
+        <Link href="/" className="flex items-center group py-1">
+          <Image
+            src="/images/branding/logo.png"
+            alt="Rashid Azam logo"
+            width={200}
+            height={48}
+            priority
+            className="h-10 sm:h-11 w-auto object-contain group-hover:opacity-90 transition-opacity"
+          />
         </Link>
 
         {/* Desktop Navigation: HOME > SERVICES > SEO HUB > PROJECTS > ABOUT > BLOG */}

@@ -2,7 +2,7 @@ const sharp = require('sharp');
 const path = require('path');
 const fs = require('fs');
 
-const inputPath = 'C:\\Users\\RASHID AZAM\\.gemini\\antigravity-ide\\brain\\e4383fbb-567b-4734-bfe3-2e9fb7e18534\\.user_uploaded\\media_1791462435670.png';
+const inputPath = 'C:\\Users\\RASHID AZAM\\.gemini\\antigravity-ide\\brain\\e4383fbb-567b-4734-bfe3-2e9fb7e18534\\.user_uploaded\\media_1791484576565.png';
 const publicDir = path.join(__dirname, '..', 'public');
 const brandingDir = path.join(publicDir, 'images', 'branding');
 
@@ -11,36 +11,35 @@ if (!fs.existsSync(brandingDir)) {
 }
 
 async function processImages() {
-  console.log('Processing logo and favicons...');
+  console.log('Processing full logo and brand emblem favicons...');
 
-  // 1. Copy full brand logo to public/images/branding/logo.png
+  // 1. Copy full brand logo to public/images/branding/logo.png and public/logo.png
   await sharp(inputPath)
-    .resize({ width: 800 })
     .png()
     .toFile(path.join(brandingDir, 'logo.png'));
 
-  // Create clean logo with transparent or white background for light theme header
   await sharp(inputPath)
-    .resize({ width: 600 })
     .png()
     .toFile(path.join(publicDir, 'logo.png'));
 
-  // 2. Crop top icon part (monogram emblem) for favicons
-  // The input image is 512x512 approx; the icon occupies the top ~60%
+  // 2. Extract emblem icon (left side of logo) for favicons
   const metadata = await sharp(inputPath).metadata();
-  const iconHeight = Math.floor((metadata.height || 512) * 0.65);
-  const iconWidth = metadata.width || 512;
+  const width = metadata.width || 1024;
+  const height = metadata.height || 418;
+
+  // Emblem is the left ~42% of the full logo image width
+  const emblemWidth = Math.floor(width * 0.42);
 
   const croppedEmblem = sharp(inputPath).extract({
     left: 0,
     top: 0,
-    width: iconWidth,
-    height: iconHeight,
+    width: emblemWidth,
+    height: height,
   });
 
-  // Save 512x512 square icon with padding
+  // Create square 512x512 icon containing the emblem
   const squareIconBuffer = await croppedEmblem
-    .resize(512, 512, { fit: 'contain', background: { r: 15, g: 16, b: 18, alpha: 1 } })
+    .resize(512, 512, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
     .png()
     .toBuffer();
 
@@ -52,21 +51,25 @@ async function processImages() {
   await sharp(squareIconBuffer).resize(32, 32).png().toFile(path.join(publicDir, 'favicon.png'));
   await sharp(squareIconBuffer).resize(32, 32).toFile(path.join(publicDir, 'favicon.ico'));
 
-  // Generate 1200x630 Open Graph card image
-  const ogBackground = { r: 255, g: 255, b: 255, alpha: 1 };
-  await sharp(inputPath)
-    .resize(800, 400, { fit: 'contain', background: { r: 15, g: 16, b: 18, alpha: 1 } })
-    .extend({
-      top: 115,
-      bottom: 115,
-      left: 200,
-      right: 200,
-      background: ogBackground,
-    })
-    .resize(1200, 630)
+  // 3. Generate 1200x630 Open Graph card image with full logo centered on white background
+  await sharp({
+    create: {
+      width: 1200,
+      height: 630,
+      channels: 4,
+      background: { r: 255, g: 255, b: 255, alpha: 1 },
+    },
+  })
+    .composite([
+      {
+        input: await sharp(inputPath).resize(900, 360, { fit: 'contain' }).toBuffer(),
+        gravity: 'center',
+      },
+    ])
+    .png()
     .toFile(path.join(publicDir, 'og-image.png'));
 
-  // 3. Create site.webmanifest
+  // 4. Update site.webmanifest
   const webmanifest = {
     name: "Rashid Azam - Web Developer & Technical SEO Expert",
     short_name: "Rashid Azam",
@@ -89,7 +92,7 @@ async function processImages() {
 
   fs.writeFileSync(path.join(publicDir, 'site.webmanifest'), JSON.stringify(webmanifest, null, 2));
 
-  console.log('All logo, favicons, OG image, and site.webmanifest generated successfully!');
+  console.log('Full brand logo and brand emblem favicons generated successfully!');
 }
 
 processImages().catch((err) => {

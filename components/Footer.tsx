@@ -28,19 +28,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="inline-flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center overflow-hidden">
-                <Image
-                  src="/android-chrome-192x192.png"
-                  alt="Rashid Azam logo"
-                  width={36}
-                  height={36}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <span className="font-heading font-bold text-xl text-slate-900">
-                Rashid Azam
-              </span>
+            <Link href="/" className="inline-flex items-center group py-1">
+              <Image
+                src="/images/branding/logo.png"
+                alt="Rashid Azam logo"
+                width={200}
+                height={48}
+                className="h-10 w-auto object-contain group-hover:opacity-90 transition-opacity"
+              />
             </Link>
             <p className="text-sm text-slate-600 max-w-sm leading-relaxed">
               Full-Stack Web Developer, Technical SEO Specialist, and YouTube Automation Consultant serving clients, startups, and agencies worldwide.
