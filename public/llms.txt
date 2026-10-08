@@ -1,0 +1,38 @@
+# Rashid Azam — Web Developer & Technical SEO Expert
+
+> Rashid Azam (also searched as M Rashid Azam / Muhammad Rashid Azam) is a Full-Stack Web Developer, Technical SEO Specialist, and Digital Marketing Consultant based in Pakistan, serving businesses across Pakistan (Lahore, Karachi, Islamabad) and the UAE (Dubai, Abu Dhabi).
+
+## Entity Overview
+- Name: Rashid Azam
+- Credentials: BS Information Technology student, 3+ years freelance experience
+- Core Brands: Arham Digital Agency (Services), TechByRash (YouTube educational brand)
+- Primary Domain: https://rashidazam.me
+- Contact Email: rashidbloch1351@gmail.com
+- Contact WhatsApp: https://wa.me/923476931351
+
+## Core Services Offered
+1. Technical & Local SEO Services (/services/seo-services)
+   - Technical crawl diagnostics, indexability, site speed, Google Business Profile optimization, JSON-LD schema.
+2. Custom Full-Stack Web Development (/services/web-development)
+   - Custom Next.js App Router applications, responsive WordPress setups, Shopify e-commerce, custom web apps.
+3. YouTube Automation & Channel Growth (/services/youtube-automation)
+   - High-CPM faceless channel pipelines, viral retention scripting, custom thumbnails, YouTube SEO.
+4. High-ROAS Digital Marketing & Paid Ads (/services/digital-marketing)
+   - Google Search PPC campaigns, Meta Facebook & Instagram advertising, conversion rate optimization (CRO).
+5. AI Automation & Custom Chatbots (/services/ai-automation)
+   - Custom OpenAI/Claude chatbots, business workflow automation, LLM API integrations.
+6. Conversion-Focused SEO Content Writing (/services/content-writing)
+   - Technical blog writing, website copywriting, GEO-optimized articles.
+
+## Knowledge & Topic Clusters
+- SEO Knowledge Hub: https://rashidazam.me/seo
+- YouTube Growth Hub: https://rashidazam.me/youtube
+- Marketing Growth Hub: https://rashidazam.me/marketing
+- Free Web Tools Hub: https://rashidazam.me/tools
+- Verified Case Studies: https://rashidazam.me/projects
+- Technical Insights Blog: https://rashidazam.me/blog
+
+## Key Verified Software Products
+- SwiftPKR USDT to PKR Converter: https://swiftpkrconverter.vercel.app/
+- QRCrafts QR Code Generator: https://qrcrafts.lovable.app/
+- UACGS University Aggregate Calculator: https://uacgs.vercel.app/
