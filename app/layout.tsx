@@ -73,12 +73,8 @@ export default function RootLayout({
     name: 'Rashid Azam',
     alternateName: ['M Rashid Azam', 'Muhammad Rashid Azam'],
     url: 'https://rashidazam.me',
-    image: 'https://rashidazam.me/logo.png',
+    image: 'https://rashidazam.me/images/branding/profile.jpg',
     jobTitle: 'Web Developer & Technical SEO Expert',
-    worksFor: {
-      '@type': 'Organization',
-      name: 'Arham Digital Agency',
-    },
     sameAs: [
       'https://www.linkedin.com/in/mrashid1351/',
       'https://github.com/rashidazam',
@@ -93,6 +89,7 @@ export default function RootLayout({
     <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
       <head>
         <meta name="theme-color" content="#ffffff" />
+        <meta name="p:domain_verify" content="cf84da46506aedb7f284cd08393e1c13" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}

@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowUpRight, Search, FileText, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, Search } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
@@ -10,33 +10,39 @@ import { CTABanner } from '@/components/CTABanner';
 import { seoClusterTopics } from '@/data/clusters/seo';
 
 export const metadata: Metadata = {
-  title: 'SEO Knowledge Hub & Technical Guides | Rashid Azam',
-  description: 'In-depth SEO tutorials, technical audit guides, local search strategies for Pakistan & UAE, and schema markup implementation.',
+  title: 'SEO Knowledge Hub | Technical Guides & Local SEO Resources | Rashid Azam',
+  description: 'Free SEO guides covering technical SEO audits, local SEO for Pakistan, schema markup, keyword research, and WordPress optimization. Educational resource by Rashid Azam.',
   alternates: {
     canonical: 'https://rashidazam.me/seo',
+  },
+  openGraph: {
+    title: 'SEO Knowledge Hub | Rashid Azam',
+    description: 'Technical SEO guides, local SEO strategies for Pakistan, schema markup, and keyword research frameworks. Free educational content for business owners and SEO practitioners.',
+    url: 'https://rashidazam.me/seo',
+    type: 'website',
   },
 };
 
 export default function SeoClusterHubPage() {
   return (
-    <div className="py-12 space-y-16">
+    <div className="py-12 space-y-16 bg-white">
       <Container>
         <Breadcrumbs items={[{ label: 'SEO Knowledge Hub' }]} />
 
         <div className="max-w-3xl space-y-4 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
-            Topic Cluster Hub
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
+            Free Educational Resource
           </span>
-          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-[#f3f4f6] tracking-tight">
-            SEO Knowledge & Technical Strategy Hub
+          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight leading-tight">
+            SEO Knowledge Hub
           </h1>
-          <p className="text-lg text-[#9ca3af] leading-relaxed">
-            Practical guides and frameworks on technical SEO audits, local map pack rankings, structured JSON-LD schema, and keyword intent mapping.
+          <p className="text-lg text-slate-600 leading-relaxed font-normal">
+            Practical, technical guides on SEO — covering technical site audits, local SEO for Pakistan, schema markup, keyword research, and WordPress optimization. Written by Rashid Azam based on direct experience auditing and ranking websites for clients across Pakistan and internationally.
           </p>
 
           <div className="pt-2">
             <Button href="/services/seo-services" variant="primary" showArrow>
-              Explore Paid SEO Services
+              Explore SEO Services
             </Button>
           </div>
         </div>
@@ -46,9 +52,9 @@ export default function SeoClusterHubPage() {
       <section>
         <Container>
           <SectionHeading
-            kicker="Cluster Topics"
-            title="Technical SEO & Ranking Guides"
-            description="Explore step-by-step technical guides designed for search engines and real human visitors."
+            kicker="Topic Guides"
+            title="Technical SEO & Local Search Guides"
+            description="Step-by-step guides written to help business owners and SEO practitioners understand and implement search optimization correctly."
             className="mb-10"
           />
 
@@ -56,24 +62,24 @@ export default function SeoClusterHubPage() {
             {seoClusterTopics.map((topic) => (
               <div
                 key={topic.slug}
-                className="bg-[#17181c] border border-[#272a30] hover:border-[#d97706]/40 p-8 rounded-xl space-y-4 flex flex-col justify-between group transition-all"
+                className="bg-slate-50 border border-slate-200/90 hover:border-amber-400/60 p-8 rounded-2xl space-y-4 flex flex-col justify-between group transition-all shadow-2xs hover:shadow-xs"
               >
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-lg bg-[#0f1012] border border-[#272a30] flex items-center justify-center text-[#d97706]">
+                  <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-[#d97706]">
                     <Search className="w-5 h-5" />
                   </div>
-                  <h3 className="text-xl font-heading font-semibold text-[#f3f4f6] group-hover:text-[#d97706] transition-colors">
+                  <h3 className="text-xl font-heading font-semibold text-slate-900 group-hover:text-[#d97706] transition-colors">
                     {topic.title}
                   </h3>
-                  <p className="text-xs text-[#9ca3af] leading-relaxed line-clamp-3">
+                  <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">
                     {topic.metaDescription}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-[#272a30]/50">
+                <div className="pt-4 border-t border-slate-200/80">
                   <Link
                     href={`/seo/${topic.slug}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-medium text-[#d97706] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#d97706] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
                   >
                     <span>Read Topic Guide</span>
                     <ArrowUpRight className="w-4 h-4" />
@@ -88,10 +94,10 @@ export default function SeoClusterHubPage() {
       {/* Primary Pillar CTA */}
       <Container>
         <CTABanner
-          title="Need a Full Technical SEO Audit for Your Business?"
-          description="I perform deep-dive technical audits, keyword mapping, and local search strategies for businesses in Pakistan and UAE."
-          buttonText="View SEO Services"
-          href="/services/seo-services"
+          title="Need Professional SEO Services Rather Than a DIY Guide?"
+          description="Rashid Azam provides technical SEO audits, local SEO for Pakistan businesses, and WordPress optimization. Contact directly for a consultation."
+          buttonText="Discuss Your SEO Project"
+          href="/contact"
         />
       </Container>
     </div>

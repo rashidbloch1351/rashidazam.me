@@ -1,114 +1,81 @@
-# Master Content Plan & Blueprint — rashidazam.me
+# RASHID AZAM — CONTENT ARCHITECTURE & ON-PAGE PLAN (`/docs/content-plan.md`)
 
-**Date**: October 8, 2026  
-**Content Philosophy**: First-person, honest, highly specific, technical, and human-written. Zero corporate jargon, zero unverifiable claims, zero AI fluff.
-
----
-
-## 1. Global Copywriting Standards & Banned Tropes
-
-### 1.1 Strictly Banned Words & Phrases
-- "cutting-edge"
-- "seamless / seamlessly"
-- "leverage / leveraging"
-- "elevate your business"
-- "unlock your potential"
-- "game-changer"
-- "in today's fast-paced digital world"
-- "take your business to the next level"
-
-### 1.2 Tone & Voice Rules
-- **First Person ("I", "my", "we")**: Written as a real freelancer & agency founder talking directly to a business owner.
-- **Specifics over Vague Claims**: Instead of "boosted traffic by 200%", state "grew Esha Malik YouTube channel to 8.6K subscribers across 65+ uploaded videos with custom thumbnails and retention scripting."
-- **GEO (Generative Engine Optimization) Answer Format**: Every service and cluster topic page starts with a concise 40–60 word "Quick Answer" direct summary in the first section for AI search indexing.
+This document outlines the content architecture, heading hierarchy (H1, H2, H3), schema structured data specifications, internal linking rules, and conversion elements for the **Rashid Azam Personal Portfolio website (`https://rashidazam.me`)**.
 
 ---
 
-## 2. Core Pages Blueprint
+## 1. CONTENT ARCHITECTURE & DESIGN SYSTEM
+
+- **Design Tokens**:
+  - Background: Clean white (`#ffffff`) and soft slate background (`bg-slate-50`).
+  - Text: Dark readable slate (`#0f172a` headers, `#475569` body).
+  - Accent Color: Premium warm amber (`#d97706` / `text-[#d97706]`).
+- **Typography & Accessibility**:
+  - Semantic HTML5 heading hierarchy: Single `<h1>` per page.
+  - Interactive elements with `min-h-[44px]` touch targets.
+
+---
+
+## 2. STRUCTURAL PAGE PLANS
 
 ### 2.1 Homepage (`/`)
-- **Purpose**: Instantly position Rashid Azam as a premier Web Developer, SEO Expert, and Automation Consultant for PK & UAE businesses.
-- **Audience**: Small-to-medium business owners, agency owners, startup founders looking for real technical execution.
-- **Target Word Count**: ~1,000 words.
+- **H1 Header**: `Full-Stack Web Developer & Technical SEO Specialist in Pakistan`
+- **Target Keywords**: `seo expert in pakistan`, `technical seo expert pakistan`, `web developer pakistan`
 - **Key Sections**:
-  1. Hero: Confident H1 ("Web Developer & Technical SEO Expert"), 1-line value proposition, real portrait image, dual CTA ("View Selected Work" / "Schedule a Consultation").
-  2. Proof & Identity Strip: Verified platform badges (Fiverr, Freelancer), years of experience (3+ years), client locations (Pakistan & UAE).
-  3. Core 6 Services Grid: Short, distinct summaries linking directly to individual pillar pages.
-  4. Featured Case Studies Showcase: 3-4 verified live projects with real screenshots, tech stack badges, and live URLs.
-  5. My 4-Step Process: Discovery & Audit -> Strategy -> Development & Optimization -> Launch & Scale.
-  6. Featured Insights: 3 top technical blog articles.
-  7. Direct Contact / Consultation Section.
+  1. Hero section with genuine photo ([`public/images/branding/profile-hero.jpg`](file:///d:/portfolio/public/images/branding/profile-hero.jpg)), verified credential badges, call-to-action buttons.
+  2. Proof Strip (Verified skills, tech stack: Next.js, TypeScript, Tailwind, Node.js, Python, Schema.org).
+  3. Services Overview Grid (Technical SEO, Web Development, Local SEO, AI SEO, etc.).
+  4. Pakistan Cities & Markets Directory section.
+  5. FAQ Accordion section.
+  6. Author Box & CTA Banner.
+- **Schema Types**: `Person`, `WebSite`, `FAQPage`, `BreadcrumbList`.
 
 ### 2.2 About Page (`/about`)
-- **Purpose**: Tell the authentic story of Rashid Azam — BS IT student, freelancer, agency founder (Arham Digital Agency), and content creator (TechByRash).
-- **Audience**: Prospective clients evaluating author trustworthiness, background, and technical capability (E-E-A-T).
-- **Target Word Count**: ~800–1,000 words.
+- **H1 Header**: `About Rashid Azam — Technical SEO Engineer & Full-Stack Developer`
 - **Key Sections**:
-  1. Story: How I started in IT, combining academic computer science fundamentals with real-world client execution.
-  2. Timeline / Journey: Key milestones (Freelancing on Fiverr/Freelancer -> Launching Arham Digital Agency -> YouTube & TechByRash -> Full-stack AI applications).
-  3. Technical Stack & Tooling: Languages (TypeScript, Python, HTML/CSS), Frameworks (Next.js, React, Node), CMS (WordPress, Shopify), SEO & Analytics tools (Ahrefs, Search Console, GA4, Screaming Frog).
-  4. Work Ethic & Principles: No fluff, raw performance, transparent communication.
-  5. Direct CTA to `/contact`.
+  1. Founder Bio & Professional Background.
+  2. Core Engineering Principles & Technical Philosophy.
+  3. Proven Track Record & Verification.
+  4. Work History & Client Work Summary.
+  5. Direct Consultation Call to Action.
+- **Schema Types**: `Person`, `AboutPage`, `BreadcrumbList`.
+
+### 2.3 Locations Hubs (`/locations/[slug]`)
+- **H1 Header Pattern**: `{City/Market} SEO Services & Technical Web Development`
+- **Key Sections**:
+  1. Geo-specific Breadcrumbs (`Home > Locations > {City/Market}`).
+  2. Local Hero Section with geo-specific value propositions.
+  3. Local Search & Business Growth Capabilities (Local Pack, Technical Audits, Core Web Vitals).
+  4. Regional City & Market Context (e.g. Arfa Software Park in Lahore, Blue Area in Islamabad, Saddar/Clifton in Karachi, D-Ground in Faisalabad, Gulgasht in Multan).
+  5. FAQ Accordion for Local Clients.
+  6. Internal Link Engine to other local hubs and pillar services.
+- **Schema Types**: `LocalBusiness` / `ProfessionalService`, `FAQPage`, `BreadcrumbList`.
+
+### 2.4 Pillar Service Pages (`/services/[slug]`)
+- **H1 Header Pattern**: `{Service Name} Services`
+- **Key Sections**:
+  1. Pillar Service Badge & High-Intent H1 Title.
+  2. Executive Summary & Value Proposition.
+  3. Core Technical Capabilities Grid.
+  4. Comprehensive Service Methodology / Process.
+  5. Interlinked Case Studies & Proof Points.
+  6. Contextual Related Links Engine ([`components/RelatedLinks.tsx`](file:///d:/portfolio/components/RelatedLinks.tsx)).
+  7. Service FAQ Accordion & Author Bio.
+- **Schema Types**: `Service`, `FAQPage`, `BreadcrumbList`.
+
+### 2.5 SEO Knowledge Hub (`/seo`, `/seo/[topic]`)
+- **H1 Header Pattern**: `SEO Knowledge Hub — Technical SEO Guides & Local Ranking Playbooks`
+- **Key Sections**:
+  1. Technical Guide Categories (Technical Audits, Local Maps, Schema Markup, Keyword Intent).
+  2. Deep In-Depth Engineering Guides with Code Examples (JSON-LD snippets, robots.txt, Core Web Vitals).
+  3. Author Bio & Consultation CTA.
+- **Schema Types**: `CollectionPage` / `TechArticle`, `FAQPage`, `BreadcrumbList`.
 
 ---
 
-## 3. Service Pillar Pages (1,200+ Words Each)
+## 3. INTERNAL LINKING ENGINE RULES
 
-Each of the 6 pillar service pages will follow a comprehensive, structured template:
-
-1. **H1 & Hero Title**: Direct primary keyword title + 1-sentence value proposition.
-2. **Quick Answer Box (GEO / AI Snippet)**: 40-60 word definition and summary.
-3. **Target Audience ("Who This Is For")**: Specific business types, pain points solved.
-4. **Core Capabilities & Deliverables**: Detailed bulleted breakdown of what client receives.
-5. **My Step-by-Step Execution Process**: 4-5 stage breakdown of project delivery.
-6. **Honest Pricing & Engagement Models**: Clear pricing structures (project-based or monthly retainer starting ranges).
-7. **Tooling & Technology Stack**: Specific tools used to execute the work.
-8. **Related Verified Case Studies**: 2-3 live projects built using this service.
-9. **Topic Cluster & Related Reading**: Inbound links to relevant cluster sub-pages and blog posts.
-10. **Frequently Asked Questions**: 5+ real, structured questions with `FAQPage` JSON-LD schema.
-11. **Primary Action CTA**: Direct link to lead capture form.
-
-### The 6 Service Pages:
-- `/services/seo-services` (Technical SEO, On-Page, Local SEO, Link Building, Core Web Vitals)
-- `/services/digital-marketing` (Meta Ads, Google Search Ads, Conversion Rate Optimization, Lead Gen)
-- `/services/youtube-automation` (Faceless Channel Strategy, Video Scripting, Thumbnail & Title SEO, Monetization)
-- `/services/web-development` (Next.js App Router, WordPress Elementor/Custom, Shopify E-Commerce, Custom Web Apps)
-- `/services/ai-automation` (Custom AI Chatbots, Business Workflow Automation, LLM Integration, NextGenMind AI)
-- `/services/content-writing` (Conversion Copywriting, SEO Article Writing, Landing Page Copy, Technical Documentation)
-
----
-
-## 4. Topic Cluster Hubs & Sub-Pages
-
-### 4.1 Hub Pages (`/seo`, `/youtube`, `/marketing`)
-- Overview of the domain.
-- Grid of all topic sub-pages.
-- Primary CTA pointing to the corresponding pillar service.
-
-### 4.2 Topic Sub-Pages (`/seo/[topic]`, `/youtube/[topic]`, `/marketing/[topic]`)
-- Word count: 800-1,200 words each.
-- In-depth, practical guides with code snippets, checklist tables, and step-by-step instructions.
-- Contextual link to pillar service page in body content.
-
----
-
-## 5. Projects Hub & Case Studies
-
-- **Projects Hub (`/projects`)**: Filterable grid by category.
-- **9 Category Hubs**: E-Commerce, YouTube Automation, Corporate Sites, SEO Blogs, Personal Brands, Shopify Stores, Digital Marketing, NGO Websites, Vibe Coding AI Apps.
-- **Individual Case Study Template (`/projects/[category]/[project]`)**:
-  - Problem / Challenge
-  - Stack & Execution Strategy
-  - Verified Results & Proof (Screenshots)
-  - External Live Site Link (`rel="noopener"`)
-  - Related Service & Blog Links
-
----
-
-## 6. Blog & Content Strategy
-
-- **Blog Hub (`/blog`)**: Search and category filtering across 24 existing posts.
-- **Blog Article Page Template (`/blog/[slug]`)**:
-  - Title, Date, Updated Year (2026), Author Box (`/about`), Reading Time, Table of Contents.
-  - Formatted Markdown content with code blocks, alert boxes, and contextual internal links.
-  - Related Posts & Service CTA.
+1. **No Orphan Pages**: Every static page must receive at least 3 inbound internal contextual links from relevant parent, sibling, or cluster pages.
+2. **Contextual Anchor Text**: Anchor text must reflect actual keyword targets (e.g., `Technical SEO Audit Guide`, `Local SEO Services in Lahore`, `WordPress Development Services`).
+3. **Location Cross-Linking**: Every location page links to nearby city hubs (e.g., Lahore links to Islamabad and Karachi) as well as the main Services hub and contact form.
+4. **No Legacy Links**: Zero links to deleted `/blog` or `/projects` routes exist in the codebase.

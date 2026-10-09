@@ -33,8 +33,8 @@ export default function ThankYouPage() {
           <Button href="/" variant="primary" showArrow>
             Return to Homepage
           </Button>
-          <Button href="/projects" variant="secondary">
-            View Selected Work
+          <Button href="/services" variant="secondary">
+            Explore Services
           </Button>
         </div>
       </Container>

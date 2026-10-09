@@ -7,21 +7,24 @@ import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Button } from '@/components/ui/Button';
 import { ServiceCard } from '@/components/ServiceCard';
-import { ProjectCard } from '@/components/ProjectCard';
-import { BlogCard } from '@/components/BlogCard';
 import { FAQAccordion } from '@/components/FAQAccordion';
 import { ProofStrip } from '@/components/ProofStrip';
 import { CTABanner } from '@/components/CTABanner';
+import { Testimonials } from '@/components/Testimonials';
 import { pillarServices } from '@/data/servicesData';
-import { projectCategories } from '@/data/projectsData';
-import { blogPosts } from '@/data/blogPosts';
 import { socialLinks } from '@/data/socialLinks';
 
 export const metadata: Metadata = {
-  title: 'Rashid Azam | Web Developer & Technical SEO Expert Worldwide',
-  description: 'Full-stack web developer and technical SEO specialist serving clients, startups, and agencies worldwide. Custom Next.js apps, WordPress sites, YouTube automation, and AI workflows.',
+  title: 'Rashid Azam | SEO Expert in Pakistan & Web Developer',
+  description: 'Rashid Azam is a Technical SEO Expert and Full-Stack Web Developer based in Pakistan. Specializing in SEO services, WordPress SEO, local SEO, and web development for Pakistan businesses and international clients.',
   alternates: {
     canonical: 'https://rashidazam.me',
+  },
+  openGraph: {
+    title: 'Rashid Azam | SEO Expert in Pakistan & Web Developer',
+    description: 'Technical SEO specialist and full-stack web developer. SEO services for Lahore, Islamabad, Karachi, and international markets.',
+    url: 'https://rashidazam.me',
+    type: 'website',
   },
 };
 
@@ -55,278 +58,271 @@ export default function HomePage() {
   const processSteps = [
     {
       number: '01',
-      title: 'Discovery & Technical Audit',
-      description: 'I inspect your current website infrastructure, crawl errors, search performance, and conversion bottlenecks.',
+      title: 'Discovery & Site Audit',
+      description: 'I review your existing website, crawl logs, Google Search Console data, and keyword gaps to understand exactly where your organic growth is being blocked.',
     },
     {
       number: '02',
-      title: 'Custom Technical Strategy',
-      description: 'I map targeted intent-based keyword clusters, architectural fixes, and content pipelines tailored for your audience.',
+      title: 'Strategy & Roadmap',
+      description: 'I build a prioritized action plan covering technical fixes, keyword mapping, content structure, and internal link architecture — specific to your market and goals.',
     },
     {
       number: '03',
-      title: 'Execution & Engineering',
-      description: 'I build clean Next.js/WordPress templates, optimize on-page schema, craft SEO copy, or deploy custom AI workflows.',
+      title: 'Implementation & Engineering',
+      description: 'I execute directly: fixing crawl errors, implementing JSON-LD schema, building clean Next.js or WordPress pages, and optimizing for Core Web Vitals.',
     },
     {
       number: '04',
-      title: 'Launch & Performance Tracking',
-      description: 'We deploy static builds, verify search indexability in Google Search Console, track live conversions, and optimize.',
+      title: 'Monitoring & Iteration',
+      description: 'After deployment, I track keyword rankings, organic traffic trends, and indexation health in Search Console, refining the strategy based on real performance data.',
     },
   ];
 
   const homeFaqs = [
     {
-      question: 'What core services do you specialize in?',
-      answer: 'I specialize in full-stack web development (Next.js, React, WordPress, Shopify), technical SEO audits and on-page optimization, YouTube faceless channel growth pipelines, digital marketing (Google & Meta Ads), and custom AI chatbots.',
+      question: 'What SEO and web development services do you offer in Pakistan?',
+      answer: 'I offer technical SEO audits, local SEO and Google Maps optimization, WordPress SEO, on-page optimization, and full-stack web development across Pakistan — including Lahore, Islamabad, Karachi, Faisalabad, and Multan. I also serve international clients remotely.',
     },
     {
-      question: 'Do you work with international clients worldwide?',
-      answer: 'Yes, I work directly with business owners, founders, startups, and agency partners worldwide (USA, UK, UAE, Pakistan, Europe, Australia) as a contract developer and through Arham Digital Agency.',
+      question: 'Do you work with businesses outside Pakistan?',
+      answer: 'Yes. I work directly with businesses, startups, and digital agencies in the USA, UK, UAE, Germany, and worldwide as a remote technical SEO consultant and web developer.',
     },
     {
-      question: 'How do you price web development and SEO engagements?',
-      answer: 'Projects are quoted either as fixed-scope milestones for custom builds and audits or as transparent monthly retainers for ongoing technical SEO and growth campaigns.',
+      question: 'How is your SEO approach different from a standard agency?',
+      answer: 'Rather than delegating to account managers, I handle every project personally — from crawl analysis and schema implementation to content optimization and Core Web Vitals fixes. That means faster execution, direct communication, and accountable results.',
     },
     {
-      question: 'Why choose custom Next.js over standard website builders?',
-      answer: 'Next.js delivers static site generation (SSG) with instant page loads, 100% crawlable raw HTML for search engines, zero heavy plugin bloat, and maximum security.',
+      question: 'What does an SEO audit from you cover?',
+      answer: 'A full SEO audit covers technical site health (crawlability, indexation, speed, schema), on-page optimization (titles, headings, content structure, internal links), and an actionable priority roadmap. Audits typically take 3 to 7 business days depending on site size.',
+    },
+    {
+      question: 'How do you price your services?',
+      answer: 'Pricing depends on scope. One-time audits and project builds use fixed-cost milestones. Ongoing SEO and development retainers are available for clients needing continued execution. Contact me for a transparent quote based on your specific situation.',
     },
   ];
 
-  const featuredProjects = [
-    projectCategories[0].projects[0], // Bloom & Mist
-    projectCategories[2].projects[0], // UACGS
-    projectCategories[1].projects[0], // Esha Malik YT
-    projectCategories[3].projects[0], // WiseRank
-  ];
+  // Phase E Homepage JSON-LD Entity Graph
+  const homeEntitySchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Person',
+        '@id': 'https://rashidazam.me/#person',
+        name: 'Rashid Azam',
+        alternateName: ['Muhammad Rashid Azam', 'M Rashid Azam'],
+        url: 'https://rashidazam.me',
+        jobTitle: 'Technical SEO Expert & Web Developer',
+        description: 'Technical SEO expert and full-stack web developer based in Pakistan, serving businesses in Lahore, Islamabad, Karachi, and internationally.',
+        sameAs: socialLinks.map((s) => s.url),
+        knowsAbout: ['Technical SEO', 'Local SEO', 'WordPress SEO', 'SEO Audits', 'E-Commerce SEO', 'Web Development', 'Next.js', 'React', 'AI SEO', 'Answer Engine Optimization'],
+      },
+      {
+        '@type': 'WebSite',
+        '@id': 'https://rashidazam.me/#website',
+        name: 'Rashid Azam',
+        url: 'https://rashidazam.me',
+        publisher: { '@id': 'https://rashidazam.me/#person' },
+      },
+      {
+        '@type': 'ProfessionalService',
+        '@id': 'https://rashidazam.me/#service',
+        name: 'Rashid Azam - Web Developer & Technical SEO Specialist',
+        url: 'https://rashidazam.me',
+        provider: { '@id': 'https://rashidazam.me/#person' },
+        areaServed: ['Pakistan', 'United States', 'United Kingdom', 'Germany', 'United Arab Emirates', 'Worldwide'],
+        serviceType: ['Web Development', 'Technical SEO', 'Local SEO', 'WordPress SEO', 'AI SEO'],
+      },
+    ],
+  };
 
   return (
-    <div className="space-y-20 pb-16 bg-white">
-      {/* Hero Section */}
-      <section className="relative pt-12 lg:pt-20">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-[#d97706] text-xs font-semibold uppercase tracking-wider">
-                Available for Global Freelance & Contract Engagements
-              </div>
-              
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-slate-900 leading-[1.1] tracking-tight">
-                Web Developer & Technical SEO Expert
-              </h1>
-              
-              <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
-                Hi, I&apos;m Rashid Azam. I build high-performance web applications, execute data-backed technical SEO audits, scale YouTube automation channels, and build AI workflows for businesses, startups, and agencies worldwide.
-              </p>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeEntitySchema) }}
+      />
 
-              <div className="flex flex-wrap items-center gap-4 pt-4">
-                <Button href="/contact" variant="primary" size="lg" showArrow>
-                  Start Your Project
-                </Button>
-                <Button href="/projects" variant="secondary" size="lg">
-                  Explore Selected Work
-                </Button>
+      <div className="space-y-20 pb-16 bg-white">
+        {/* Hero Section */}
+        <section className="relative pt-12 lg:pt-20">
+          <Container>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div className="lg:col-span-7 space-y-6">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-[#d97706] text-xs font-semibold uppercase tracking-wider">
+                  Pakistan &amp; International SEO &amp; Web Development
+                </div>
+                
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-slate-900 leading-[1.1] tracking-tight">
+                  SEO Expert in Pakistan &amp; Full-Stack Web Developer
+                </h1>
+                
+                <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
+                  I&apos;m Rashid Azam — a Technical SEO specialist and web developer helping businesses in Lahore, Islamabad, Karachi, and internationally rank higher on Google, fix technical site issues, and build fast, conversion-focused websites.
+                </p>
+
+                <div className="flex flex-wrap items-center gap-4 pt-4">
+                  <Button href="/contact" variant="primary" size="lg" showArrow>
+                    Start Your Project
+                  </Button>
+                  <Button href="/services" variant="secondary" size="lg">
+                    Explore All Services
+                  </Button>
+                </div>
+
+                {/* 4-Stat Credentials Grid */}
+                <div className="pt-8 border-t border-gray-200 grid grid-cols-2 sm:grid-cols-4 gap-6 text-xs text-slate-500">
+                  <div className="space-y-1">
+                    <span className="font-heading font-bold text-2xl text-slate-900 block">5+ Years</span>
+                    <span className="font-medium text-slate-600">SEO & Web Experience</span>
+                  </div>
+                  <div className="space-y-1">
+                    <span className="font-heading font-bold text-2xl text-slate-900 block">50+ Projects</span>
+                    <span className="font-medium text-slate-600">Sites Built & Audited</span>
+                  </div>
+                  <div className="space-y-1">
+                    <span className="font-heading font-bold text-2xl text-slate-900 block">5 Cities</span>
+                    <span className="font-medium text-slate-600">Pakistan Coverage</span>
+                  </div>
+                  <div className="space-y-1">
+                    <span className="font-heading font-bold text-2xl text-slate-900 block">Global</span>
+                    <span className="font-medium text-slate-600">Remote Clients</span>
+                  </div>
+                </div>
               </div>
 
-              {/* 4-Stat Credentials Grid */}
-              <div className="pt-8 border-t border-gray-200 grid grid-cols-2 sm:grid-cols-4 gap-6 text-xs text-slate-500">
-                <div className="space-y-1">
-                  <span className="font-heading font-bold text-2xl text-slate-900 block">5+ Years</span>
-                  <span className="font-medium text-slate-600">Digital Experience</span>
-                </div>
-                <div className="space-y-1">
-                  <span className="font-heading font-bold text-2xl text-slate-900 block">50+ Projects</span>
-                  <span className="font-medium text-slate-600">Delivered</span>
-                </div>
-                <div className="space-y-1">
-                  <span className="font-heading font-bold text-2xl text-slate-900 block">BS IT</span>
-                  <span className="font-medium text-slate-600">Computer Science</span>
-                </div>
-                <div className="space-y-1">
-                  <span className="font-heading font-bold text-2xl text-[#d97706] block">Worldwide</span>
-                  <span className="font-medium text-slate-600">Client Reach</span>
+              {/* Visual Card / Profile Showcase */}
+              <div className="lg:col-span-5 relative">
+                <div className="bg-slate-50 border border-slate-200/90 rounded-3xl p-8 shadow-md relative space-y-6">
+                  <div className="flex items-center gap-4 pb-6 border-b border-slate-200">
+                    <div className="w-16 h-16 rounded-2xl bg-amber-50 border border-amber-200 shrink-0 overflow-hidden relative">
+                      <Image
+                        src="/images/branding/logo.png"
+                        alt="Rashid Azam"
+                        fill
+                        className="object-contain p-2"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-bold text-[#111827] text-lg">Rashid Azam</h3>
+                      <p className="text-xs text-[#d97706] font-medium">Web Developer & Technical SEO Expert</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Specializations:</div>
+                    <div className="flex flex-wrap gap-2">
+                      {['Technical SEO', 'Local SEO Pakistan', 'WordPress SEO', 'SEO Audits', 'E-Commerce SEO', 'Web Development'].map((item) => (
+                        <span key={item} className="text-xs font-medium bg-white text-slate-700 px-3 py-1 rounded-md border border-slate-200">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="pt-2 flex items-center justify-between">
+                    <span className="text-xs text-slate-500 font-medium">Connect with me:</span>
+                    <div className="flex items-center gap-2">
+                      {socialLinks.map((s) => (
+                        <a
+                          key={s.label}
+                          href={s.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={s.label}
+                          className="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center hover:border-amber-500 transition-colors"
+                        >
+                          {getSocialIcon(s.label)}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </Container>
+        </section>
 
-            <div className="lg:col-span-5 relative">
-              <div className="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden border border-gray-200 bg-slate-50 p-3 shadow-xl">
-                <Image
-                  src="/images/branding/profile-new.png"
-                  alt="Rashid Azam - Web Developer & Technical SEO Expert"
-                  width={500}
-                  height={600}
-                  priority
-                  className="rounded-2xl w-full h-auto object-cover"
+        {/* Proof Strip */}
+        <ProofStrip />
+
+        {/* Pillar Services Showcase */}
+        <section className="bg-slate-50 py-16 border-y border-gray-200">
+          <Container>
+            <SectionHeading
+              kicker="Core Expertise"
+              title="SEO & Web Development Services in Pakistan"
+              description="Technical SEO, local SEO, WordPress SEO, web development, and digital marketing services for Pakistan businesses and international clients."
+              className="mb-12"
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {pillarServices.map((service) => (
+                <ServiceCard
+                  key={service.slug}
+                  service={service}
+                  icon={serviceIcons[service.slug] || <Code className="w-6 h-6 text-[#d97706]" />}
                 />
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Proof Strip */}
-      <ProofStrip />
-
-      {/* Social Profiles Grid Section */}
-      <section className="py-8 border-b border-gray-100">
-        <Container>
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 bg-slate-50 border border-gray-200 p-6 rounded-2xl">
-            <div>
-              <h3 className="font-heading font-bold text-base text-slate-900">
-                Connect Across Official Profiles
-              </h3>
-              <p className="text-xs text-slate-500">
-                Direct portfolio channels, code repositories, and freelance platforms.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap items-center gap-3">
-              {socialLinks.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  title={`${s.label} (${s.handle})`}
-                  className="w-11 h-11 rounded-xl bg-white border border-gray-200 flex items-center justify-center shadow-xs hover:border-amber-500 hover:bg-amber-50 hover:scale-105 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
-                >
-                  {getSocialIcon(s.label)}
-                </a>
               ))}
             </div>
-          </div>
-        </Container>
-      </section>
+          </Container>
+        </section>
 
-      {/* Services Grid Section */}
-      <section>
-        <Container>
-          <SectionHeading
-            kicker="Core Competencies"
-            title="Technical Services & Solutions"
-            description="Built on clean code, search engine mechanics, video pipelines, and measurable conversion goals."
-            align="center"
-            className="mb-14"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pillarServices.map((service) => (
-              <ServiceCard
-                key={service.slug}
-                service={service}
-                icon={serviceIcons[service.slug]}
-              />
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* 4-Step Process Section */}
-      <section className="bg-slate-50 py-20 border-y border-gray-200">
-        <Container>
-          <SectionHeading
-            kicker="Execution Model"
-            title="How I Work With Clients"
-            description="A structured 4-step workflow that delivers predictable technical quality and organic search growth."
-            className="mb-14"
-          />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step) => (
-              <div
-                key={step.number}
-                className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 relative group hover:border-amber-400 shadow-xs transition-colors"
-              >
-                <span className="font-heading font-bold text-3xl text-amber-500/40 group-hover:text-[#d97706] transition-colors block">
-                  {step.number}
-                </span>
-                <h3 className="font-heading font-semibold text-lg text-slate-900">
-                  {step.title}
-                </h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* Featured Projects Showcase */}
-      <section>
-        <Container>
-          <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-12 gap-4">
+        {/* Process Section */}
+        <section>
+          <Container>
             <SectionHeading
-              kicker="Verified Output"
-              title="Selected Case Studies"
-              description="Real live web applications, YouTube channels, and technical search projects."
+              kicker="Execution Model"
+              title="How an SEO Engagement Works"
+              description="A clear, step-by-step process from initial site audit through technical implementation to ranking and reporting."
+              align="center"
+              className="mb-14"
             />
-            <Button href="/projects" variant="outline" size="sm" showArrow>
-              View All Projects
-            </Button>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {featuredProjects.map((project, idx) => (
-              <ProjectCard
-                key={idx}
-                project={project}
-                categorySlug={projectCategories[idx % projectCategories.length].slug}
-              />
-            ))}
-          </div>
-        </Container>
-      </section>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {processSteps.map((step) => (
+                <div key={step.number} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-2xs space-y-3 relative">
+                  <span className="text-3xl font-heading font-bold text-amber-500/30 block">
+                    {step.number}
+                  </span>
+                  <h3 className="font-heading font-bold text-slate-900 text-lg">
+                    {step.title}
+                  </h3>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Container>
+        </section>
 
-      {/* Featured Blog Posts Section */}
-      <section className="bg-slate-50 py-20 border-y border-gray-200">
-        <Container>
-          <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-12 gap-4">
+        {/* Testimonials */}
+        <Testimonials />
+
+        {/* Home FAQs */}
+        <section>
+          <Container size="small">
             <SectionHeading
-              kicker="Technical Insights"
-              title="Latest Articles & Guides"
-              description="Practical tutorials on SEO strategy, web development, and YouTube growth."
+              kicker="Common Questions"
+              title="Frequently Asked Questions"
+              description="Clear answers about SEO services, web development, pricing, and how remote collaboration works."
+              align="center"
+              className="mb-10"
             />
-            <Button href="/blog" variant="outline" size="sm" showArrow>
-              Explore All Articles
-            </Button>
-          </div>
+            <FAQAccordion items={homeFaqs} />
+          </Container>
+        </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {blogPosts.slice(0, 3).map((post) => (
-              <BlogCard key={post.id} post={post} />
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* FAQ Section */}
-      <section>
-        <Container size="small">
-          <SectionHeading
-            kicker="Transparent Answers"
-            title="Frequently Asked Questions"
-            description="Common questions about working with Rashid Azam on web development and SEO."
-            align="center"
-            className="mb-12"
+        {/* CTA Banner */}
+        <Container>
+          <CTABanner
+            title="Need an SEO Expert in Pakistan or a Custom Web Developer?"
+            description="Work directly with Rashid Azam on technical SEO, WordPress optimization, or a custom web application. Serving clients in Lahore, Islamabad, Karachi, and internationally."
+            buttonText="Get in Touch"
+            href="/contact"
           />
-
-          <FAQAccordion items={homeFaqs} />
         </Container>
-      </section>
-
-      {/* CTA Banner */}
-      <Container>
-        <CTABanner
-          title="Ready to Build or Rank Your Platform?"
-          description="Schedule a technical consultation to discuss custom Next.js web development, technical SEO audits, or digital marketing."
-          buttonText="Get in Touch"
-          href="/contact"
-        />
-      </Container>
-    </div>
+      </div>
+    </>
   );
 }

@@ -38,7 +38,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm text-slate-600 max-w-sm leading-relaxed">
-              Full-Stack Web Developer, Technical SEO Specialist, and YouTube Automation Consultant serving clients, startups, and agencies worldwide.
+              Full-Stack Web Developer, Technical SEO Specialist, and Digital Growth Consultant serving clients, startups, and agencies worldwide.
             </p>
             <div className="pt-1 text-xs text-slate-500">
               Email: <a href="mailto:rashidbloch1351@gmail.com" className="text-[#d97706] hover:underline font-medium">rashidbloch1351@gmail.com</a>
@@ -60,26 +60,36 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Navigation Hubs */}
+          {/* Locations */}
           <div>
             <h3 className="font-heading font-semibold text-slate-900 text-sm uppercase tracking-wider mb-4">
-              Navigation
+              Locations
             </h3>
-            <ul className="space-y-2.5 text-sm">
-              <li><Link href="/" className="hover:text-[#d97706] transition-colors">Home</Link></li>
-              <li><Link href="/services" className="hover:text-[#d97706] transition-colors">Services</Link></li>
-              <li><Link href="/seo" className="hover:text-[#d97706] transition-colors">SEO Hub</Link></li>
-              <li><Link href="/projects" className="hover:text-[#d97706] transition-colors">Projects</Link></li>
-              <li><Link href="/about" className="hover:text-[#d97706] transition-colors">About</Link></li>
-              <li><Link href="/blog" className="hover:text-[#d97706] transition-colors">Blog</Link></li>
+            <ul className="space-y-2 text-xs">
+              <li><Link href="/locations" className="font-bold text-[#d97706] hover:underline">All Locations Directory</Link></li>
+              <li><Link href="/locations/worldwide" className="hover:text-[#d97706] transition-colors">Worldwide Remote</Link></li>
+              <li><Link href="/locations/lahore" className="hover:text-[#d97706] transition-colors">Lahore, Pakistan</Link></li>
+              <li><Link href="/locations/islamabad" className="hover:text-[#d97706] transition-colors">Islamabad, Pakistan</Link></li>
+              <li><Link href="/locations/karachi" className="hover:text-[#d97706] transition-colors">Karachi, Pakistan</Link></li>
+              <li><Link href="/locations/faisalabad" className="hover:text-[#d97706] transition-colors">Faisalabad, Pakistan</Link></li>
+              <li><Link href="/locations/multan" className="hover:text-[#d97706] transition-colors">Multan, Pakistan</Link></li>
+              <li><Link href="/locations/usa" className="hover:text-[#d97706] transition-colors">USA Market</Link></li>
+              <li><Link href="/locations/uk" className="hover:text-[#d97706] transition-colors">UK Market</Link></li>
+              <li><Link href="/locations/germany" className="hover:text-[#d97706] transition-colors">Germany Market</Link></li>
+              <li><Link href="/locations/uae" className="hover:text-[#d97706] transition-colors">UAE & Dubai</Link></li>
             </ul>
           </div>
 
-          {/* Social Profiles */}
+          {/* Social Profiles & Hubs */}
           <div>
             <h3 className="font-heading font-semibold text-slate-900 text-sm uppercase tracking-wider mb-4">
-              Connect
+              Connect & Links
             </h3>
+            <ul className="space-y-2 text-xs mb-4">
+              <li><Link href="/about" className="hover:text-[#d97706] transition-colors">About Rashid Azam</Link></li>
+              <li><Link href="/seo" className="hover:text-[#d97706] transition-colors">SEO Knowledge Hub</Link></li>
+              <li><Link href="/contact" className="hover:text-[#d97706] transition-colors">Contact / Consultations</Link></li>
+            </ul>
             <div className="flex flex-wrap gap-2.5">
               {socialLinks.map((s) => (
                 <a
@@ -89,7 +99,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   aria-label={s.label}
                   title={`${s.label} (${s.handle})`}
-                  className="w-10 h-10 rounded-xl bg-white border border-gray-200 flex items-center justify-center shadow-xs hover:border-amber-500 hover:bg-amber-50/50 hover:scale-105 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                  className="w-9 h-9 rounded-xl bg-white border border-gray-200 flex items-center justify-center shadow-xs hover:border-amber-500 hover:bg-amber-50/50 hover:scale-105 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 >
                   {getSocialIcon(s.label)}
                 </a>

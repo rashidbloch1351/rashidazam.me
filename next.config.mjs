@@ -36,13 +36,33 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/projects',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/projects/:path*',
+        destination: '/services',
+        permanent: true,
+      },
+      {
         source: '/projects.html',
-        destination: '/projects',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/blog',
+        destination: '/seo',
+        permanent: true,
+      },
+      {
+        source: '/blog/:path*',
+        destination: '/seo',
         permanent: true,
       },
       {
         source: '/blog.html',
-        destination: '/blog',
+        destination: '/seo',
         permanent: true,
       },
       {

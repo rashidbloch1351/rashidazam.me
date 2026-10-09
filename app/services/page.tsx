@@ -8,13 +8,20 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { ServiceCard } from '@/components/ServiceCard';
 import { CTABanner } from '@/components/CTABanner';
 import { ProofStrip } from '@/components/ProofStrip';
+import { Testimonials } from '@/components/Testimonials';
 import { pillarServices } from '@/data/servicesData';
 
 export const metadata: Metadata = {
-  title: 'Digital Services & Growth Solutions Worldwide | Rashid Azam',
-  description: 'Explore full-stack web development, technical SEO, YouTube automation, digital marketing, AI automation, and SEO content writing by Rashid Azam for clients worldwide.',
+  title: 'SEO & Web Development Services in Pakistan | Rashid Azam',
+  description: 'Technical SEO, local SEO, WordPress SEO, web development, YouTube automation, and digital marketing services by Rashid Azam. Serving businesses in Pakistan and internationally.',
   alternates: {
     canonical: 'https://rashidazam.me/services',
+  },
+  openGraph: {
+    title: 'SEO & Web Development Services | Rashid Azam',
+    description: 'Full-service SEO and web development expert serving Pakistan businesses and international clients. Technical SEO, local SEO, WordPress optimization, and custom Next.js development.',
+    url: 'https://rashidazam.me/services',
+    type: 'website',
   },
 };
 
@@ -36,13 +43,13 @@ export default function ServicesPage() {
         {/* Hero Section */}
         <div className="max-w-3xl space-y-4">
           <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
-            Connected Growth System
+            Complete Digital Growth System
           </span>
           <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight">
-            Digital Services & Technical Execution
+            SEO &amp; Web Development Services
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed">
-            Six pillar capabilities designed to work as an integrated growth engine for clients worldwide. From code architecture and search authority to video production pipelines and performance advertising.
+            Comprehensive SEO services and web development for businesses in Pakistan and worldwide. From technical SEO audits and local SEO to custom web applications, YouTube automation, and AI workflows — every service is delivered personally and built to produce measurable results.
           </p>
         </div>
       </Container>
@@ -78,10 +85,10 @@ export default function ServicesPage() {
                 01
               </div>
               <h3 className="font-heading font-semibold text-lg text-slate-900">
-                Code & Technical Foundation
+                Technical Foundation First
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Custom Next.js web development or streamlined WordPress themes ensure lightning speed, mobile UX, and 100% crawlability for search engines.
+                Custom Next.js web development or streamlined WordPress optimization ensures your site loads in under 1.8 seconds, is fully crawlable, and converts mobile visitors efficiently.
               </p>
             </div>
 
@@ -90,10 +97,10 @@ export default function ServicesPage() {
                 02
               </div>
               <h3 className="font-heading font-semibold text-lg text-slate-900">
-                Search Authority & Intent Copy
+                Search Authority & Intent Targeting
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Technical SEO audits and conversion-focused content writing rank your pages for high-intent search terms that produce qualified business leads.
+                Technical SEO audits, on-page optimization, and structured data implementation rank your pages for high-intent keywords in Pakistan and internationally, converting search traffic into qualified enquiries.
               </p>
             </div>
 
@@ -102,10 +109,10 @@ export default function ServicesPage() {
                 03
               </div>
               <h3 className="font-heading font-semibold text-lg text-slate-900">
-                Multi-Channel Scaling
+                Automated & Paid Channel Scaling
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Paid Meta/Google Search campaigns drive immediate volume while YouTube automation pipelines and AI chatbots scale customer acquisition.
+                YouTube automation pipelines, Meta/Google Ads campaigns, and custom AI chatbot integrations compound and accelerate organic growth beyond search alone.
               </p>
             </div>
           </div>
@@ -115,12 +122,19 @@ export default function ServicesPage() {
       {/* Proof Strip */}
       <ProofStrip />
 
+      {/* Reusable Testimonials Component */}
+      <Testimonials
+        title="Client Reviews & Service Feedback"
+        kicker="Verified Google Reviews"
+        description="Client endorsements covering Web Development, Technical SEO, WordPress, Shopify, and AI Automation engagements."
+      />
+
       {/* CTA Banner */}
       <Container>
         <CTABanner
-          title="Not Sure Which Service You Need First?"
-          description="Let's analyze your site performance and business goals to prioritize the highest-ROI roadmap for your budget."
-          buttonText="Schedule a Consultation"
+          title="Need a Technical SEO Audit or Custom Web Development?"
+          description="Let Rashid Azam review your site, identify high-impact fixes, and build a clear roadmap for SEO growth or web development in Pakistan or internationally."
+          buttonText="Get in Touch"
           href="/contact"
         />
       </Container>

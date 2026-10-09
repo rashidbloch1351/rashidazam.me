@@ -34,22 +34,22 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaList) }}
       />
       <nav aria-label="Breadcrumb" className="mb-6">
-        <ol className="flex items-center space-x-2 text-xs text-[#9ca3af] flex-wrap">
+        <ol className="flex items-center space-x-2 text-xs text-slate-500 flex-wrap font-medium">
           <li>
-            <Link href="/" className="hover:text-[#f3f4f6] inline-flex items-center gap-1">
-              <Home className="w-3.5 h-3.5" />
+            <Link href="/" className="hover:text-slate-900 text-slate-600 inline-flex items-center gap-1 transition-colors">
+              <Home className="w-3.5 h-3.5 text-slate-500" />
               <span>Home</span>
             </Link>
           </li>
           {items.map((item, idx) => (
             <li key={idx} className="flex items-center space-x-2">
-              <ChevronRight className="w-3 h-3 text-[#6b7280]" />
+              <ChevronRight className="w-3 h-3 text-slate-400" />
               {item.href ? (
-                <Link href={item.href} className="hover:text-[#f3f4f6]">
+                <Link href={item.href} className="text-slate-600 hover:text-slate-900 transition-colors">
                   {item.label}
                 </Link>
               ) : (
-                <span className="text-[#f3f4f6] font-medium">{item.label}</span>
+                <span className="text-slate-900 font-semibold">{item.label}</span>
               )}
             </li>
           ))}

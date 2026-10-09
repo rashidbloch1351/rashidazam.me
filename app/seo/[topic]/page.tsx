@@ -2,14 +2,13 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowUpRight, CheckCircle2, Search } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { CTABanner } from '@/components/CTABanner';
-import { Button } from '@/components/ui/Button';
 import { seoClusterTopics } from '@/data/clusters/seo';
 
 export async function generateStaticParams() {
@@ -45,7 +44,7 @@ export default function SeoTopicPage({ params }: { params: { topic: string } }) 
   const siblingTopics = seoClusterTopics.filter((t) => t.slug !== topic.slug);
 
   return (
-    <div className="py-12 space-y-16">
+    <div className="py-12 space-y-16 bg-white">
       <Container>
         <Breadcrumbs
           items={[
@@ -55,13 +54,13 @@ export default function SeoTopicPage({ params }: { params: { topic: string } }) 
         />
 
         <div className="max-w-4xl space-y-6 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3 py-1 rounded-full border border-amber-200/60">
             SEO Cluster Guide
           </span>
-          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-[#f3f4f6] tracking-tight leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight leading-tight">
             {topic.h1}
           </h1>
-          <p className="text-base sm:text-lg text-[#9ca3af] leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
             {topic.intro}
           </p>
 
@@ -72,14 +71,14 @@ export default function SeoTopicPage({ params }: { params: { topic: string } }) 
 
       {/* Guide Body Content */}
       <Container size="small">
-        <div className="space-y-12 text-[#9ca3af] leading-relaxed">
+        <div className="space-y-12 text-slate-700 leading-relaxed">
           {topic.sections.map((sec, idx) => (
             <div key={idx} className="space-y-4">
-              <h2 className="text-2xl sm:text-3xl font-heading font-bold text-[#f3f4f6]">
+              <h2 className="text-2xl sm:text-3xl font-heading font-bold text-slate-900">
                 {sec.heading}
               </h2>
               {sec.body.map((p, pIdx) => (
-                <p key={pIdx} className="text-base text-[#9ca3af]">
+                <p key={pIdx} className="text-base text-slate-700 leading-relaxed font-normal">
                   {p}
                 </p>
               ))}
@@ -87,26 +86,26 @@ export default function SeoTopicPage({ params }: { params: { topic: string } }) 
           ))}
 
           {/* Mandatory Contextual Link to Primary Service */}
-          <div className="bg-[#17181c] border border-[#d97706]/30 p-6 rounded-xl space-y-3 my-8">
-            <h3 className="font-heading font-semibold text-lg text-[#f3f4f6]">
+          <div className="bg-amber-50/80 border border-amber-200 p-6 rounded-2xl space-y-3 my-8 shadow-2xs">
+            <h3 className="font-heading font-semibold text-lg text-slate-900">
               Looking for Done-For-You SEO Execution?
             </h3>
-            <p className="text-xs text-[#9ca3af]">
+            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
               I provide comprehensive{' '}
               <Link
                 href="/services/seo-services"
-                className="text-[#d97706] font-medium underline hover:text-[#b45309]"
+                className="text-[#d97706] font-semibold underline hover:text-[#b45309]"
               >
-                Technical SEO Services in Pakistan & UAE
+                Technical SEO Services
               </Link>{' '}
-              covering full site crawls, schema markup, and on-page optimization.
+              covering full site audits, schema markup, and on-page optimization for clients worldwide.
             </p>
           </div>
         </div>
       </Container>
 
       {/* Sibling Topics in Cluster */}
-      <section className="bg-[#17181c] py-16 border-y border-[#272a30]">
+      <section className="bg-slate-50 py-16 border-y border-gray-200">
         <Container>
           <SectionHeading
             kicker="Related Guides"
@@ -118,12 +117,12 @@ export default function SeoTopicPage({ params }: { params: { topic: string } }) 
               <Link
                 key={sib.slug}
                 href={`/seo/${sib.slug}`}
-                className="bg-[#0f1012] border border-[#272a30] hover:border-[#d97706]/40 p-6 rounded-xl space-y-2 group transition-all"
+                className="bg-white border border-gray-200 hover:border-amber-400 p-6 rounded-2xl space-y-2 group transition-all shadow-2xs hover:shadow-xs"
               >
-                <span className="text-xs text-[#d97706] font-medium uppercase tracking-wider block">
+                <span className="text-xs text-[#d97706] font-semibold uppercase tracking-wider block">
                   SEO Guide
                 </span>
-                <h3 className="font-heading font-semibold text-base text-[#f3f4f6] group-hover:text-[#d97706] transition-colors">
+                <h3 className="font-heading font-semibold text-base text-slate-900 group-hover:text-[#d97706] transition-colors">
                   {sib.title}
                 </h3>
               </Link>

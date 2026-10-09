@@ -1,7 +1,6 @@
 /**
  * Pillar service pages powering the site's topical clusters.
- * Body text supports inline internal links written as [anchor](/path).
- * Anchors are varied on purpose — no exact-match repetition.
+ * Fully aligned with Step 9 (Services Architecture) & Step 10 (SEO Keyword Integration).
  */
 
 export interface ServiceSection {
@@ -22,194 +21,539 @@ export interface PillarService {
   sections: ServiceSection[];
   faqs?: { question: string; answer: string }[];
   relatedServices: string[];
-  projectCategories: string[];
-  blogPosts: string[];
 }
 
 export const pillarServices: PillarService[] = [
   {
-    slug: "seo-services",
-    name: "SEO Services",
-    navLabel: "SEO Services",
-    metaTitle: "SEO Services Worldwide | Technical & Organic Search Specialist | Rashid Azam",
+    slug: "web-development",
+    name: "Web Development",
+    navLabel: "Web Development",
+    metaTitle: "Custom Web Development Services Worldwide | Next.js, WordPress & Shopify | Rashid Azam",
     metaDescription:
-      "Global SEO services by Rashid Azam — technical SEO, on-page optimisation, keyword research, local SEO and authority link building for businesses worldwide.",
-    h1: "SEO Services & Search Engine Optimisation",
-    tagline: "Technical foundations, on-page depth and search intent — not guesswork.",
+      "Global web development services by Rashid Azam. Fast Next.js applications, responsive WordPress themes, Shopify stores, and clean code built for SEO and high conversions.",
+    h1: "Custom Web Development Services",
+    tagline: "Fast, responsive web architecture built for organic reach and conversion.",
     intro:
-      "I work with businesses, startups, and agency partners worldwide who want search traffic that converts, not vanity rankings. Every engagement starts with a crawl of your site, a look at how Google currently understands it, and a prioritised plan you can actually action.",
+      "I build custom web applications and performance websites for clients, startups, and growth agencies worldwide. Every site is engineered from day one for sub-second loading speed, mobile usability, clean search engine crawlability, and seamless conversion design.",
     capabilities: [
       {
-        title: "Technical SEO",
-        description:
-          "Crawlability, indexation, site architecture, Core Web Vitals, canonical handling and structured data so search engines can read every page correctly.",
+        title: "Next.js & React Web Apps",
+        description: "Modern full-stack Web Application Development using server-side rendering, static generation, and TypeScript for maximum speed and security.",
       },
       {
-        title: "On-Page SEO",
-        description:
-          "Keyword mapping, title and meta optimisation, heading hierarchy, internal linking and content depth aligned to real search intent.",
+        title: "WordPress Development",
+        description: "Custom Gutenberg themes, headless WordPress builds, and speed-optimized WordPress site architectures without plugin bloat.",
       },
       {
-        title: "Keyword Research",
-        description:
-          "Intent-grouped keyword sets and topic clusters so each page has one clear job instead of competing with your own pages.",
+        title: "Shopify & E-Commerce",
+        description: "Custom Shopify store builds and WooCommerce setups optimized for rapid checkout, mobile UX, and high average order value.",
       },
       {
-        title: "Local SEO",
-        description:
-          "Google Business Profile optimisation, location landing pages, citations and review strategy for businesses serving specific cities.",
+        title: "Speed & Core Web Vitals",
+        description: "Eliminating render-blocking assets, lazy-loading media, and tuning performance to hit top Google Lighthouse scores.",
       },
       {
-        title: "Off-Page SEO & Link Building",
-        description:
-          "Digital PR, relevant outreach and clean link acquisition — quality and topical fit over volume.",
+        title: "Responsive Mobile UX",
+        description: "Mobile-first user interfaces tested across 320px to 4K resolutions with WCAG-friendly contrast and smooth tap interactions.",
       },
       {
-        title: "SEO Audits & Reporting",
-        description:
-          "Full technical and content audits with plain-English fixes, plus Search Console and Analytics reporting that tracks the metrics that matter.",
+        title: "Technical SEO Integration",
+        description: "Built-in dynamic sitemaps, canonical tags, JSON-LD structured data, and clean semantic HTML hierarchy.",
       },
     ],
     sections: [
       {
-        heading: "Technical SEO comes first",
+        heading: "Engineering Web Architecture That Ranks & Converts",
         body: [
-          "Technical SEO provides the foundation for a site's crawlability, indexing and performance. Before touching content, I check how pages render, how internal links pass authority, whether canonicals point where they should, and how quickly the site loads on mobile connections.",
-          "If the site is slow or fragile, the fix is often structural rather than cosmetic — which is where my [custom web development](/services/web-development) work overlaps with search. Rebuilding templates properly usually beats patching a bloated theme.",
+          "A beautiful website is useless if search engine bots cannot crawl it or if mobile users abandon it due to slow load times. My web development methodology combines modern frontend frameworks with technical SEO best practices right from the first line of code.",
+          "Whether building a custom Next.js web application or a bespoke WordPress theme, I ensure clean DOM hierarchy, fast asset delivery, and proper canonical structures that search engines love.",
         ],
       },
       {
-        heading: "On-page work and content that answers the query",
+        heading: "WordPress vs. Custom Modern Web Frameworks",
         body: [
-          "Rankings follow pages that answer a question better than the alternatives. I map each target query to a single page, tighten the heading hierarchy, and expand thin sections with information a real visitor needs.",
-          "High-quality [SEO content writing](/services/content-writing) is what turns keyword research into pages worth ranking, so the two workstreams normally run together.",
-        ],
-      },
-      {
-        heading: "Local visibility across Pakistan",
-        body: [
-          "For service businesses, most revenue comes from a handful of cities. Local optimisation focuses on your Google Business Profile, consistent business information, genuinely useful location pages, and review generation — not thin duplicate pages for every town.",
-        ],
-      },
-      {
-        heading: "Search inside a wider growth plan",
-        body: [
-          "Organic search compounds slowly, so it works best alongside paid and social channels. If you need coverage while rankings build, my [digital marketing services](/services/digital-marketing) cover Google Ads, Meta Ads and social campaigns.",
-          "Video is part of search too — [YouTube SEO and channel growth](/services/youtube-automation) can put you in front of buyers who never open a blue link.",
-        ],
-      },
-      {
-        heading: "Proof, not promises",
-        body: [
-          "You can review real [SEO project results](/projects/seo-blog-project) and the wider [portfolio of client work](/projects) before we speak. When you're ready, [tell me about your website](/contact) and I'll send back an honest read on what's holding it back.",
+          "Choosing between WordPress and custom frameworks like Next.js depends on your business goals. For content creators and marketing teams needing intuitive CMS access, WordPress SEO services and custom Gutenberg block development offer unmatched publishing flexibility.",
+          "For high-traffic SaaS apps, enterprise platforms, or web applications requiring custom API integrations, Next.js provides unmatched performance, zero server overload, and top-tier security.",
         ],
       },
     ],
     faqs: [
       {
-        question: "How long does SEO take to show results?",
-        answer:
-          "Technical fixes can show within weeks. Competitive commercial rankings usually take three to six months of consistent work, depending on the site's history and competition.",
+        question: "What web frameworks and CMS platforms do you specialize in?",
+        answer: "I specialize in Next.js, React, TypeScript, custom WordPress development, WooCommerce, and Shopify stores.",
       },
       {
-        question: "Do you work with businesses outside Pakistan?",
-        answer:
-          "Yes. I'm based in Pakistan and work remotely with clients internationally, mostly in English-language markets.",
+        question: "Are your website builds optimized for search engines?",
+        answer: "Yes, 100%. Every website includes semantic HTML5 structure, schema markup, Core Web Vitals optimization, and clean URL routing out of the box.",
       },
       {
-        question: "Do you provide an SEO audit before starting?",
-        answer:
-          "Yes. Every engagement begins with a technical and content audit so the priorities are clear before any implementation work starts.",
+        question: "Do you work with international clients remotely?",
+        answer: "Yes, I work with businesses, agencies, and founders worldwide across North America, Europe, UAE, and Asia.",
       },
     ],
-    relatedServices: ["content-writing", "web-development", "digital-marketing"],
-    projectCategories: ["seo-blog-project", "corporate-website", "personal-branding-portfolio"],
-    blogPosts: [
-      "seo-strategy-2026-rank-higher-google",
-      "on-page-seo-checklist-every-page",
-      "wordpress-seo-guide-speed-rankings",
-      "what-is-geo-generative-engine-optimization-2026",
+    relatedServices: ["technical-seo", "wordpress-seo", "ai-seo"],
+  },
+  {
+    slug: "wordpress-seo",
+    name: "WordPress SEO",
+    navLabel: "WordPress SEO",
+    metaTitle: "WordPress SEO Services Worldwide | Optimization Specialist | Rashid Azam",
+    metaDescription:
+      "Professional WordPress SEO services by Rashid Azam. Optimization for WordPress sites, plugin hygiene, speed tuning, local SEO WordPress, and content structure.",
+    h1: "WordPress SEO Services & Optimization",
+    tagline: "Unlocking organic traffic for WordPress sites through technical precision.",
+    intro:
+      "As a WordPress SEO specialist and technical SEO expert, I help business owners, e-commerce stores, and agencies turn slow, cluttered WordPress sites into search engine powerhouses. From speed tuning to on-page strategy, I deliver real rank improvements.",
+    capabilities: [
+      {
+        title: "WordPress Technical Audit",
+        description: "Uncovering theme bloat, database overhead, plugin conflicts, broken internal links, and indexation bottlenecks.",
+      },
+      {
+        title: "WordPress On-Page SEO",
+        description: "Optimizing titles, meta tags, H1-H6 heading structure, internal linking, and content depth for high-intent keywords.",
+      },
+      {
+        title: "WordPress Image SEO",
+        description: "Converting assets to WebP/AVIF, automated alt-tag structuring, and lazy-loading for instantaneous visual render.",
+      },
+      {
+        title: "Local SEO for WordPress",
+        description: "Building dedicated local service pages, schema markup, and Google Business Profile sync for local dominance.",
+      },
+      {
+        title: "WordPress SEO Plugins Setup",
+        description: "Expert configuration of Yoast SEO, Rank Math, or SEOPress without adding unnecessary bloat or speed penalties.",
+      },
+      {
+        title: "AI SEO for WordPress",
+        description: "Integrating AI-assisted content optimization, schema generators, and automated internal linking workflows.",
+      },
     ],
+    sections: [
+      {
+        heading: "Why Most WordPress Sites Fail at SEO",
+        body: [
+          "WordPress powers over 40% of the web, but out-of-the-box configurations often suffer from slow themes, excessive plugins, duplicate taxonomy archives, and weak internal link flow. Without expert tuning, search engine crawlers struggle to index key money pages.",
+          "My WordPress search engine optimization process cleans up index bloat, fixes canonical loops, optimizes images, and structures your site so every page targets a clear search intent.",
+        ],
+      },
+      {
+        heading: "Comprehensive On-Page & Image Optimization",
+        body: [
+          "Effective WordPress SEO goes far beyond green lights in an SEO plugin. I execute deep keyword research to target high-intent phrases like 'best seo for wordpress' and 'wordpress seo specialist', aligning your content with what your ideal buyers are searching for.",
+          "In addition, I implement proper WordPress image SEO, structured data markup, and clear breadcrumb paths to maximize your search visibility and click-through rate.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can you fix speed issues on existing WordPress websites?",
+        answer: "Yes. I optimize database queries, disable unnecessary scripts, configure caching servers, and compress media to achieve sub-second load times.",
+      },
+      {
+        question: "Which WordPress SEO plugin do you recommend?",
+        answer: "Rank Math and SEOPress are light, modern choices, but proper technical optimization matters far more than the specific plugin used.",
+      },
+    ],
+    relatedServices: ["web-development", "technical-seo", "seo-audit"],
+  },
+  {
+    slug: "local-seo",
+    name: "Local SEO",
+    navLabel: "Local SEO",
+    metaTitle: "Local SEO Services & Optimization Worldwide | Rashid Azam",
+    metaDescription:
+      "Drive local customer inquiries with local SEO services by Rashid Azam. Google Business Profile optimization, local pack rankings, hyper-local SEO, and city landing pages.",
+    h1: "Local SEO Services & Local Search Optimization",
+    tagline: "Dominating local map packs and high-intent city searches.",
+    intro:
+      "Local business SEO services designed to get your brand noticed in the Google 3-Pack and rank for city-specific commercial searches. Whether you operate locally in Lahore, Islamabad, UAE, or internationally, I build hyper-local search visibility.",
+    capabilities: [
+      {
+        title: "Google Business Profile Optimization",
+        description: "Complete GBP setup, category optimization, service listings, photo publishing, and review management strategy.",
+      },
+      {
+        title: "Local Pack SEO Services",
+        description: "Tactical signals to get your business into the top 3 Google Maps results for local searchers.",
+      },
+      {
+        title: "Hyper-Local Citation Building",
+        description: "Consistent NAP (Name, Address, Phone) distributions across authoritative local directories.",
+      },
+      {
+        title: "City & Service Landing Pages",
+        description: "Structuring conversion-oriented location pages with structured local business schema and relevant content.",
+      },
+      {
+        title: "Local Search Content Marketing",
+        description: "Writing blog content and local guides that capture geo-specific long-tail buyer queries.",
+      },
+      {
+        title: "Review & Reputation Strategy",
+        description: "Ethical strategies for gathering client reviews that improve search signals and trust.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Connecting Local Customers to Your Business",
+        body: [
+          "When users search for 'seo services near me' or specific regional terms like 'seo expert in lahore' or 'seo services in islamabad', Google prioritizes localized search signals. A strong local SEO marketing strategy ensures your company stands out above competitors.",
+          "I build comprehensive local listing SEO services, optimize geo-targeted keywords naturally, and build authentic local backlinks to ensure top local pack rankings.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How long does local SEO take to show map pack results?",
+        answer: "Initial local pack improvements often appear within 30 to 60 days following Google Business Profile optimization and citation fixes.",
+      },
+      {
+        question: "Do you build location pages for multi-city businesses?",
+        answer: "Yes, I create distinct, content-rich location pages that adhere to search guidelines without triggering duplicate content penalties.",
+      },
+    ],
+    relatedServices: ["wordpress-seo", "technical-seo", "seo-services"],
+  },
+  {
+    slug: "technical-seo",
+    name: "Technical SEO",
+    navLabel: "Technical SEO",
+    metaTitle: "Technical SEO Services & Code Architecture Worldwide | Rashid Azam",
+    metaDescription:
+      "Expert technical SEO services by Rashid Azam. Fix crawl errors, indexation issues, JavaScript SEO, canonical bugs, schema markup, and Core Web Vitals.",
+    h1: "Technical SEO Services & Architecture",
+    tagline: "Laying the flawless technical foundation search engines require.",
+    intro:
+      "Technical SEO is the backbone of organic growth. I audit, debug, and optimize complex site structures, JavaScript rendering, crawl budgets, and server headers to ensure Google indexes every valuable page on your site.",
+    capabilities: [
+      {
+        title: "Crawlability & Indexation Tuning",
+        description: "Fixing robots.txt, sitemaps, orphan pages, crawl bloat, and canonical tag misconfigurations.",
+      },
+      {
+        title: "JavaScript SEO Optimization",
+        description: "Ensuring single-page applications built with React, Next.js, or Vue render completely for Googlebot.",
+      },
+      {
+        title: "Core Web Vitals & Speed Tuning",
+        description: "Optimizing LCP, INP, and CLS scores for peak UX and search engine ranking priority.",
+      },
+      {
+        title: "Structured Data & JSON-LD Schema",
+        description: "Implementing Organization, Person, Service, Article, FAQPage, and BreadcrumbList schema.",
+      },
+      {
+        title: "Site Architecture & Internal Links",
+        description: "Designing semantic topic clusters and link hierarchies that distribute page authority effectively.",
+      },
+      {
+        title: "International SEO (Hreflang)",
+        description: "Setting up multi-regional and multi-lingual targeting tags for global markets.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Eliminating Technical Obstacles to Organic Ranking",
+        body: [
+          "Even the best content will fail if search engine spiders encounter 404 loops, unindexed JavaScript components, slow response times, or conflicting canonical headers. Technical SEO resolves these hidden roadblocks.",
+          "As a Technical SEO Expert, I perform deep log file analysis and code reviews to streamline crawl efficiency, improve indexing rates, and ensure your site outpaces competitors.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What tools do you use for technical SEO audits?",
+        answer: "I use Screaming Frog, Google Search Console, Lighthouse, Chrome DevTools, and custom server log scripts.",
+      },
+    ],
+    relatedServices: ["seo-audit", "web-development", "ai-seo"],
+  },
+  {
+    slug: "seo-audit",
+    name: "SEO Audit",
+    navLabel: "SEO Audit",
+    metaTitle: "Comprehensive Technical & Content SEO Audit | Rashid Azam",
+    metaDescription:
+      "In-depth SEO audit services by Rashid Azam. Uncover technical flaws, penalty causes, indexation bottlenecks, and prioritized growth roadmaps.",
+    h1: "Comprehensive SEO Audit & Strategy",
+    tagline: "Actionable, plain-English roadmap to diagnose and fix search issues.",
+    intro:
+      "A thorough SEO audit provides complete clarity on why your website is underperforming in search engines. I analyze technical health, on-page optimization, content gaps, backlink profiles, and competitor strategies.",
+    capabilities: [
+      {
+        title: "Technical Health Inspection",
+        description: "Crawl analysis, status codes, canonicals, redirect chains, mobile usability, and speed bottlenecks.",
+      },
+      {
+        title: "On-Page & Keyword Gap Analysis",
+        description: "Reviewing title tags, headings, search intent alignment, and missing keyword opportunities.",
+      },
+      {
+        title: "Indexation & Duplicate Content Check",
+        description: "Identifying thin content, parameter URLs, duplicate pages, and search index bloat.",
+      },
+      {
+        title: "Penalty & Recovery Diagnosis",
+        description: "Diagnosing sudden traffic drops caused by Google Core Updates or algorithmic adjustments.",
+      },
+      {
+        title: "Prioritized Action Plan",
+        description: "Delivering a clear, step-by-step technical task list categorized by ROI and urgency.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Real Insights Instead of Automated PDF Dumps",
+        body: [
+          "Generic automated audit tools spit out hundreds of trivial warnings without explaining what actually matters for your business. My manual SEO audit focuses on high-impact issues that directly affect traffic, leads, and revenue.",
+          "Whether you need a WordPress SEO audit, e-commerce review, or custom web app check, you receive a video walkthrough and an actionable remediation plan.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How long does a full website SEO audit take?",
+        answer: "A complete manual technical and content SEO audit takes between 3 to 7 business days depending on site size.",
+      },
+    ],
+    relatedServices: ["technical-seo", "wordpress-seo", "seo-services"],
+  },
+  {
+    slug: "ai-seo",
+    name: "AI SEO",
+    navLabel: "AI SEO",
+    metaTitle: "AI SEO Services & AI-Powered Optimization | Rashid Azam",
+    metaDescription:
+      "Next-generation AI SEO services by Rashid Azam. Leverage AI tools, AI-powered SEO audits, automated workflows, and Google AI Overview optimization.",
+    h1: "AI SEO Services & Search Optimization",
+    tagline: "Combining artificial intelligence with human technical expertise.",
+    intro:
+      "AI is revolutionizing search engine optimization. As an AI Automation Specialist and Technical SEO Expert, I help businesses utilize AI tools, AI-assisted keyword mapping, and intelligent search workflows to scale organic growth safely.",
+    capabilities: [
+      {
+        title: "AI-Powered SEO Audits",
+        description: "Using machine learning models to analyze top-ranking content signals and structural patterns.",
+      },
+      {
+        title: "AI Content Strategy & Workflows",
+        description: "Designing human-in-the-loop content generation and editing pipelines that pass E-E-A-T standards.",
+      },
+      {
+        title: "Google AI Overviews Optimization",
+        description: "Structuring content so your website gets cited in Google's AI-generated search summaries.",
+      },
+      {
+        title: "AI SEO for WordPress",
+        description: "Integrating AI plugins and custom API scripts directly into WordPress publishing workflows.",
+      },
+      {
+        title: "Entity & Semantic Keyword Mapping",
+        description: "Using natural language processing (NLP) to enrich content with related topical entities.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Smarter Organic Search with AI Technology",
+        body: [
+          "Modern search engines evaluate content based on entity relationships, semantic relevance, and user experience. Leveraging AI for SEO enables deeper competitive analysis and faster content iteration.",
+          "I help brands adopt AI SEO software, setup AI-assisted search workflows, and optimize for Google AI features while maintaining absolute quality and brand safety.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Will AI-generated content get penalized by Google?",
+        answer: "Google rewards helpful, high-quality content regardless of how it is produced. AI content with human expert editing and original insights ranks exceptionally well.",
+      },
+    ],
+    relatedServices: ["answer-engine-optimization", "technical-seo", "ai-automation"],
+  },
+  {
+    slug: "answer-engine-optimization",
+    name: "Answer Engine Optimization (AEO)",
+    navLabel: "AEO / GEO",
+    metaTitle: "Answer Engine Optimization (AEO) & GEO Services | Rashid Azam",
+    metaDescription:
+      "Optimize your brand for ChatGPT, Perplexity, and Google AI Overviews with Answer Engine Optimization (AEO) & Generative Engine Optimization (GEO) by Rashid Azam.",
+    h1: "Answer Engine Optimization (AEO) & GEO Services",
+    tagline: "Positioning your content as the primary answer for AI models.",
+    intro:
+      "Search is evolving beyond traditional blue links. Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) ensure your business is recommended when users query AI assistants like ChatGPT, Claude, Perplexity, and Google AI Overviews.",
+    capabilities: [
+      {
+        title: "Generative Engine Optimization (GEO)",
+        description: "Structuring brand assets and data sources to ensure generative AI models cite your business accurately.",
+      },
+      {
+        title: "Direct Answer Formatting",
+        description: "Designing concise, authoritative Quick Answer blocks, tables, and bulleted summaries for AI parsers.",
+      },
+      {
+        title: "Brand Entity Building",
+        description: "Strengthening Knowledge Graph presence, Wikidata connections, and authoritative press citations.",
+      },
+      {
+        title: "Voice Search Optimization",
+        description: "Optimizing conversational, long-tail queries for Siri, Google Assistant, and voice devices.",
+      },
+      {
+        title: "FAQ & Schema Engineering",
+        description: "Deploying valid FAQPage and Speakable schema to capture featured snippets and direct answers.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Preparing Your Business for the Future of Search",
+        body: [
+          "Millions of consumers now ask AI engines directly for recommendations instead of scrolling through search results. AEO focuses on entity authority, direct answers, and structured data so your business is featured as the definitive answer.",
+          "By implementing GEO strategies alongside traditional SEO, your brand maintains visibility across both legacy search engines and modern AI search platforms.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the difference between SEO and AEO?",
+        answer: "SEO targets search engine result page (SERP) rankings and click-throughs. AEO targets direct citations and answers inside AI chatbots and search overviews.",
+      },
+    ],
+    relatedServices: ["ai-seo", "technical-seo", "seo-services"],
+  },
+  {
+    slug: "ecommerce-seo",
+    name: "E-Commerce SEO",
+    navLabel: "E-Commerce SEO",
+    metaTitle: "E-Commerce SEO Services | Shopify & WooCommerce | Rashid Azam",
+    metaDescription:
+      "Drive organic sales with E-Commerce SEO services by Rashid Azam. Optimization for Shopify, WooCommerce, category pages, product schema, and faceted navigation.",
+    h1: "E-Commerce SEO Services & Store Optimization",
+    tagline: "Turn online product catalogs into high-converting search assets.",
+    intro:
+      "E-Commerce SEO requires specialized technical strategy. I help Shopify and WooCommerce store owners optimize product category pages, clean up faceted filter indexing, implement product schema, and drive high-intent shoppers to checkout.",
+    capabilities: [
+      {
+        title: "Category Page Optimization",
+        description: "Structuring high-level category and subcategory landing pages for high-volume commercial keywords.",
+      },
+      {
+        title: "Faceted Navigation Fixes",
+        description: "Managing canonicals and robots directives for product filter variations to eliminate duplicate content.",
+      },
+      {
+        title: "Product Schema & Rich Snippets",
+        description: "Adding structured Product, Offer, AggregateRating, and InStock markup for enhanced Google SERP badges.",
+      },
+      {
+        title: "Shopify & WooCommerce Tuning",
+        description: "Custom app/plugin optimization, theme code cleanup, and mobile checkout performance enhancement.",
+      },
+      {
+        title: "E-Commerce Content Strategy",
+        description: "Writing engaging buying guides and comparison posts that capture top-of-funnel shoppers.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Scaling Organic Revenue for Online Stores",
+        body: [
+          "E-Commerce websites frequently struggle with thousands of auto-generated filter URLs, thin product descriptions, and slow mobile loading speeds. My E-Commerce SEO strategy eliminates technical debt while building sustainable keyword rankings across your entire catalog.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you optimize both Shopify and WooCommerce stores?",
+        answer: "Yes, I specialize in technical SEO for Shopify, WooCommerce, Magento, and custom headless e-commerce builds.",
+      },
+    ],
+    relatedServices: ["web-development", "technical-seo", "seo-services"],
+  },
+  {
+    slug: "seo-services",
+    name: "SEO Services",
+    navLabel: "SEO Services",
+    metaTitle: "Full-Scale SEO Services Worldwide | Organic Search Specialist | Rashid Azam",
+    metaDescription:
+      "Global full-scale SEO services by Rashid Azam. Technical SEO, on-page optimization, content strategy, authority link building, and conversion tracking for businesses worldwide.",
+    h1: "Full-Scale SEO Services & Organic Growth",
+    tagline: "End-to-end organic search strategy engineered for business revenue.",
+    intro:
+      "I partner with businesses, startups, and agencies worldwide to build long-term search engine dominance. From technical foundations to intent-focused content and link authority, my SEO services deliver measurable ROI.",
+    capabilities: [
+      {
+        title: "Technical SEO Foundation",
+        description: "Comprehensive site health, crawl budget optimization, indexation fixes, and Core Web Vitals performance.",
+      },
+      {
+        title: "Search Intent Keyword Strategy",
+        description: "Mapping high-value buyer queries to specific landing pages and topic clusters.",
+      },
+      {
+        title: "On-Page & Content Optimization",
+        description: "Refining headers, meta copy, image SEO, and body content for topical authority.",
+      },
+      {
+        title: "Authority Link Acquisition",
+        description: "Ethical outreach and digital PR strategies to earn high-quality, topically relevant backlinks.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Data-Driven Organic Growth Strategy",
+        body: [
+          "Organic search is a compounding digital growth engine. By aligning technical site architecture with deep keyword intent and authoritative content, your website becomes an asset that generates qualified leads continuously.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How long until we see significant SEO traffic increases?",
+        answer: "Technical improvements yield quick indexation gains within weeks; competitive keyword rankings typically compound within 3 to 6 months.",
+      },
+    ],
+    relatedServices: ["technical-seo", "wordpress-seo", "local-seo"],
   },
   {
     slug: "digital-marketing",
     name: "Digital Marketing",
     navLabel: "Digital Marketing",
-    metaTitle: "Digital Marketing Services Worldwide | Ads & Growth | Rashid Azam",
+    metaTitle: "Digital Marketing & Performance Ads Services Worldwide | Rashid Azam",
     metaDescription:
-      "Global digital marketing services — Google Ads, Meta Ads, social media marketing, content marketing and conversion tracking managed by Rashid Azam.",
-    h1: "Digital Marketing Services",
-    tagline: "Campaigns measured in leads and revenue, not impressions.",
+      "Global digital marketing services by Rashid Azam — Google Ads, Meta Ads, social media strategy, conversion rate optimization, and multi-channel growth.",
+    h1: "Digital Marketing & Paid Ads Services",
+    tagline: "Multi-channel advertising campaigns measured in leads and revenue.",
     intro:
-      "Paid and social channels give you demand today while organic assets build in the background. I plan, run and report on campaigns with clear tracking so you always know what a lead actually costs.",
+      "Combine paid ad campaigns with organic search assets for immediate and sustainable revenue growth. I design, run, and scale Google Search Ads, Meta performance campaigns, and conversion funnels for international clients.",
     capabilities: [
       {
-        title: "Google Ads",
-        description:
-          "Search, Performance Max and remarketing campaigns structured around commercial intent and negative-keyword hygiene.",
+        title: "Google Search & Shopping Ads",
+        description: "Commercial intent campaigns built with negative keyword isolation and high quality scores.",
       },
       {
-        title: "Meta Ads",
-        description:
-          "Facebook and Instagram campaigns with creative testing, audience structure and pixel/conversion API tracking.",
+        title: "Meta Ads (Facebook & Instagram)",
+        description: "Audience targeting, creative testing, and Conversion API setup for maximum ROAS.",
       },
       {
-        title: "Social Media Marketing",
-        description:
-          "Content calendars, platform-native creative and community management that keeps a brand visible between campaigns.",
-      },
-      {
-        title: "Lead Generation",
-        description:
-          "Offer design, landing pages and follow-up flows built so paid traffic turns into booked conversations.",
-      },
-      {
-        title: "Conversion Optimisation",
-        description:
-          "Landing page testing, funnel analysis and friction removal to lift the value of the traffic you already pay for.",
-      },
-      {
-        title: "Analytics & Reporting",
-        description:
-          "GA4, Search Console and ads reporting joined up into one view of channel performance.",
+        title: "Conversion Rate Optimization (CRO)",
+        description: "Landing page design, copy tweaks, and UX friction removal to maximize lead conversion.",
       },
     ],
     sections: [
       {
-        heading: "Paid and organic pull in the same direction",
+        heading: "Maximizing ROI Across Paid & Organic Channels",
         body: [
-          "Organic search visibility is the cheapest long-term acquisition channel a business can own, so paid campaigns should complement it rather than replace it. Ads reveal which messages convert; those winners then shape the pages built through my [search engine optimisation work](/services/seo-services).",
-        ],
-      },
-      {
-        heading: "Where campaigns actually break",
-        body: [
-          "Most underperforming accounts are not an ads problem — they're a destination problem. Slow pages, unclear offers and broken forms waste spend before targeting ever matters, which is why [landing page and website development](/services/web-development) is often the first fix.",
-          "Messaging matters just as much, and strong [copywriting and content](/services/content-writing) usually moves cost-per-lead further than another round of audience tests.",
-        ],
-      },
-      {
-        heading: "Video as a performance channel",
-        body: [
-          "Short and long-form video keeps getting cheaper per view than static placements. If video is a fit for your market, [YouTube channel management](/services/youtube-automation) gives you an owned audience instead of rented attention.",
-          "Repetitive reporting, lead routing and follow-up can be handled by [workflow automation](/services/ai-automation) so your team spends time on conversations, not spreadsheets.",
-        ],
-      },
-      {
-        heading: "Real campaign results",
-        body: [
-          "You can see anonymised ad account dashboards and outcomes in my [digital marketing campaign case studies](/projects/digital-marketing-campaign). If you'd like a look at your own account, [get in touch](/contact).",
+          "Digital marketing yields peak return when paid campaigns feed insights directly into your organic SEO and web development strategy. I track every click to ensure profitable customer acquisition.",
         ],
       },
     ],
-    relatedServices: ["seo-services", "youtube-automation", "web-development"],
-    projectCategories: ["digital-marketing-campaign", "e-commerce-store", "shopify-store"],
-    blogPosts: [
-      "digital-marketing-strategies-2025",
-      "google-ads-ppc-campaign-guide",
-      "social-media-marketing-strategy-2025",
-      "small-business-digital-marketing-guide",
+    faqs: [
+      {
+        question: "Do you manage advertising budgets for international campaigns?",
+        answer: "Yes, I manage campaigns targeting audiences across US, UK, UAE, Pakistan, and worldwide markets.",
+      },
     ],
+    relatedServices: ["web-development", "seo-services", "content-writing"],
   },
   {
     slug: "youtube-automation",
@@ -217,152 +561,40 @@ export const pillarServices: PillarService[] = [
     navLabel: "YouTube Automation",
     metaTitle: "YouTube Automation Services Worldwide | Faceless Channels | Rashid Azam",
     metaDescription:
-      "Global YouTube automation services — faceless channel setup, YouTube SEO, scripting, editing, thumbnails and monetisation strategy by Rashid Azam.",
-    h1: "YouTube Automation Services",
-    tagline: "Faceless channels built on research, systems and consistency.",
+      "Global YouTube automation services — faceless channel setup, YouTube SEO, scripting, video editing, thumbnails, and monetization strategy by Rashid Azam.",
+    h1: "YouTube Automation & Channel Growth Services",
+    tagline: "Faceless channels engineered as scalable video production pipelines.",
     intro:
-      "YouTube automation means running a channel as a production system: research, scripting, voice-over, editing, thumbnails and publishing, handled by a repeatable process instead of one person filming everything.",
+      "Turn video content into a predictable traffic and revenue generator. I manage YouTube channel setup, niche validation, retention scripting, thumbnail creation, and YouTube SEO for client channels worldwide.",
     capabilities: [
       {
-        title: "Channel Setup & Management",
-        description:
-          "Niche selection, branding, playlists, upload cadence and the operational routine that keeps a channel publishing.",
+        title: "YouTube SEO & Optimization",
+        description: "Keyword-rich titles, metadata, tags, and chapter markers to rank in YouTube and Google Search.",
       },
       {
-        title: "YouTube SEO",
-        description:
-          "Titles, descriptions, tags, chapters and metadata built from actual search and suggested-video demand.",
+        title: "Script Writing & Storyboarding",
+        description: "Retention-engineered scripts with high-hook intro sequences built for watch time.",
       },
       {
-        title: "Keyword & Topic Research",
-        description:
-          "Demand validation before a script is written, so production effort goes into topics with an audience.",
-      },
-      {
-        title: "Script Writing",
-        description:
-          "Retention-focused scripts with strong hooks, clear structure and pacing built for watch time.",
-      },
-      {
-        title: "Editing & Thumbnails",
-        description:
-          "Clean edits, motion, subtitles and click-worthy thumbnail design tested against real click-through data.",
-      },
-      {
-        title: "Monetisation & Analytics",
-        description:
-          "Route to monetisation, sponsorship readiness and analytics reviews that decide what to make next.",
+        title: "Thumbnail & Click-Through Design",
+        description: "High-contrast visual design designed to maximize CTR in suggested video feeds.",
       },
     ],
     sections: [
       {
-        heading: "Production is only half the job",
+        heading: "Systemized Channel Management",
         body: [
-          "Successful faceless channels need more than video production; disciplined [keyword research and search optimisation](/services/seo-services) is what gets a finished upload in front of the right viewer. Discovery on YouTube behaves like a search engine, and the same intent thinking applies.",
-        ],
-      },
-      {
-        heading: "Scripts carry the channel",
-        body: [
-          "Retention starts in the first fifteen seconds. My [script and content writing](/services/content-writing) process focuses on a hook that states the payoff, a structure viewers can follow, and no filler between the useful parts.",
-        ],
-      },
-      {
-        heading: "Scale with automation",
-        body: [
-          "Research, transcript drafting, asset organisation and publishing checklists can all be systemised with [AI and workflow automation](/services/ai-automation), which is how a small team keeps a weekly upload schedule without burning out.",
-          "Once a channel has an audience, it becomes a distribution asset for the rest of your [online marketing](/services/digital-marketing) — launches, offers and remarketing all get cheaper.",
-        ],
-      },
-      {
-        heading: "Channels I've worked on",
-        body: [
-          "See the [YouTube automation channel case studies](/projects/youtube-automation) for examples of niches, formats and growth. To discuss a channel of your own, [start a conversation](/contact).",
+          "YouTube automation treats video publishing as a structured system. By pairing keyword research with production workflows, your channel gains consistent views and subscriber growth.",
         ],
       },
     ],
-    relatedServices: ["content-writing", "seo-services", "ai-automation"],
-    projectCategories: ["youtube-automation", "digital-marketing-campaign"],
-    blogPosts: ["faceless-youtube-channel-2025", "content-creation-strategy-businesses"],
-  },
-  {
-    slug: "web-development",
-    name: "Web Development",
-    navLabel: "Web Development",
-    metaTitle: "Web Development Services Worldwide | WordPress, Shopify & Next.js | Rashid Azam",
-    metaDescription:
-      "Global web development services — business websites, WordPress, Shopify and WooCommerce stores, Next.js apps, landing pages and speed optimisation built SEO-ready by Rashid Azam.",
-    h1: "Web Development Services",
-    tagline: "Fast, responsive websites built to be found and to convert.",
-    intro:
-      "I build business websites and stores that load quickly, work on every screen size and are structured so search engines can index them properly from day one.",
-    capabilities: [
+    faqs: [
       {
-        title: "Business Websites",
-        description:
-          "Corporate and service sites with clear structure, strong messaging and a maintainable content model.",
-      },
-      {
-        title: "WordPress Development",
-        description:
-          "Custom themes, block editing, plugin hygiene and clean permalinks — easy for your team to run.",
-      },
-      {
-        title: "Shopify & WooCommerce",
-        description:
-          "Product architecture, checkout flow and store performance for e-commerce that has to sell every day.",
-      },
-      {
-        title: "Landing Pages",
-        description:
-          "Single-purpose pages built for ad traffic, with fast loads and measurable conversion tracking.",
-      },
-      {
-        title: "Speed Optimisation",
-        description:
-          "Image handling, script trimming, caching and Core Web Vitals work on existing sites.",
-      },
-      {
-        title: "Responsive Design",
-        description:
-          "Mobile-first layouts and accessible components tested across real device widths.",
+        question: "What is a faceless YouTube automation channel?",
+        answer: "A channel operated using professional voiceovers, stock media, animations, and scripts without needing the owner on camera.",
       },
     ],
-    sections: [
-      {
-        heading: "SEO-friendly by construction",
-        body: [
-          "A site that can't be crawled can't rank. Semantic markup, one clear H1 per page, sensible URLs, structured data and fast rendering are part of the build, not a later retrofit — the same standards I apply in my [technical SEO work](/services/seo-services).",
-        ],
-      },
-      {
-        heading: "Built for the traffic you'll send it",
-        body: [
-          "If a site is going to receive paid traffic, the page has to earn the click. I build templates alongside the [performance marketing plan](/services/digital-marketing) so campaigns land somewhere that converts.",
-          "Launch content — service pages, product descriptions and blog foundations — is covered by my [website copywriting](/services/content-writing).",
-        ],
-      },
-      {
-        heading: "Automate the boring parts",
-        body: [
-          "Enquiry routing, CRM handoff, invoicing triggers and internal notifications can be wired up with [business automation](/services/ai-automation) so the website does administrative work for you.",
-        ],
-      },
-      {
-        heading: "Recent builds",
-        body: [
-          "Browse [corporate website projects](/projects/corporate-website), [e-commerce builds](/projects/e-commerce-store) and [Shopify stores](/projects/shopify-store), or [request a quote](/contact) for your own project.",
-        ],
-      },
-    ],
-    relatedServices: ["seo-services", "digital-marketing", "ai-automation"],
-    projectCategories: ["corporate-website", "e-commerce-store", "shopify-store", "ngo-website"],
-    blogPosts: [
-      "high-converting-business-website",
-      "wordpress-vs-custom-website-development",
-      "ecommerce-website-development-tips",
-      "ui-ux-design-principles-conversions",
-    ],
+    relatedServices: ["content-writing", "ai-automation", "digital-marketing"],
   },
   {
     slug: "ai-automation",
@@ -370,176 +602,83 @@ export const pillarServices: PillarService[] = [
     navLabel: "AI Automation",
     metaTitle: "AI Automation Services | Chatbots, Agents & Workflows | Rashid Azam",
     metaDescription:
-      "AI automation services — chatbots, AI agents, n8n workflow automation and content automation that remove repetitive work from small teams. Built by Rashid Azam.",
-    h1: "AI Automation Services",
-    tagline: "Remove the repetitive work before you hire for it.",
+      "AI automation services — custom AI chatbots, n8n automated workflows, CRM integrations, and automated lead routing by Rashid Azam.",
+    h1: "AI Automation & Workflow Engineering",
+    tagline: "Eliminate repetitive tasks and streamline operations with custom AI workflows.",
     intro:
-      "Most small teams lose hours every week to copy-paste work: moving data between tools, answering the same enquiries, formatting reports. Automation handles those tasks reliably and gives you the time back.",
+      "As an AI Automation Specialist, I build custom AI chatbots, automated lead processing pipelines, n8n integrations, and AI agent workflows that save time and reduce operating costs for modern businesses.",
     capabilities: [
       {
-        title: "AI Chatbots",
-        description:
-          "Assistants trained on your own content to answer customer questions and qualify enquiries around the clock.",
+        title: "Custom AI Chatbots",
+        description: "Trained on your business documentation to answer client inquiries 24/7 and capture leads.",
       },
       {
-        title: "AI Agents",
-        description:
-          "Task-focused agents that research, summarise and draft inside a defined, reviewable scope.",
+        title: "Workflow Automation (n8n / Make)",
+        description: "Connecting website forms, CRMs, email tools, and databases into seamless automated flows.",
       },
       {
-        title: "Workflow Automation",
-        description:
-          "n8n and API-based pipelines connecting forms, CRMs, spreadsheets, email and messaging tools.",
-      },
-      {
-        title: "Business Process Automation",
-        description:
-          "Onboarding, reporting and follow-up sequences mapped and rebuilt so nothing depends on someone remembering.",
-      },
-      {
-        title: "Content Automation",
-        description:
-          "Assisted drafting, repurposing and publishing pipelines with a human review step that stays mandatory.",
-      },
-      {
-        title: "AI Product Builds",
-        description:
-          "Lightweight SaaS tools and internal apps that put a usable interface over an automated process.",
+        title: "AI Business Operations",
+        description: "Automating reporting, invoice generation, lead qualification, and customer onboarding.",
       },
     ],
     sections: [
       {
-        heading: "Start with the process, not the tool",
+        heading: "Streamlining Business Processes with AI",
         body: [
-          "Automation fails when it's bolted onto a broken process. I map what actually happens today, remove the steps nobody needs, and only then automate what's left.",
-        ],
-      },
-      {
-        heading: "Where automation earns its keep",
-        body: [
-          "Marketing teams get the fastest payback: campaign reporting, lead routing and follow-up across [paid and social channels](/services/digital-marketing) are highly repeatable.",
-          "Media production is another strong fit — research, transcripts and publishing checklists behind [faceless YouTube channels](/services/youtube-automation) run far more smoothly on rails.",
-        ],
-      },
-      {
-        heading: "Automation needs somewhere to live",
-        body: [
-          "Chatbots, dashboards and internal tools usually need an interface, which is handled through my [custom development work](/services/web-development). Content pipelines still need an editorial standard, and that comes from [content strategy](/services/content-writing) — AI drafts, humans approve.",
-        ],
-      },
-      {
-        heading: "Applications I've built",
-        body: [
-          "See working tools in the [AI and vibe coding projects](/projects/vibecoding-projects) collection, or [describe your workflow](/contact) and I'll tell you what's worth automating first.",
+          "AI automation replaces manual copy-pasting and repetitive administrative tasks with automated workflows. This allows your team to focus on high-value strategy while automated systems handle routine execution.",
         ],
       },
     ],
-    relatedServices: ["web-development", "youtube-automation", "digital-marketing"],
-    projectCategories: ["vibecoding-projects", "corporate-website"],
-    blogPosts: ["ai-automation-for-small-business", "ai-web-development-2025"],
+    faqs: [
+      {
+        question: "Can AI chatbots integrate directly into existing websites?",
+        answer: "Yes, I integrate custom AI bots seamlessly into Next.js apps, WordPress sites, and Shopify stores.",
+      },
+    ],
+    relatedServices: ["web-development", "ai-seo", "youtube-automation"],
   },
   {
     slug: "content-writing",
     name: "Content Writing",
     navLabel: "Content Writing",
-    metaTitle: "Content Writing Services | SEO Blogs & Web Copy | Rashid Azam",
+    metaTitle: "SEO Content Writing & Copywriting Services | Rashid Azam",
     metaDescription:
-      "SEO content writing services — blog articles, website copy, product descriptions and YouTube scripts written around search intent and conversion by Rashid Azam.",
-    h1: "Content Writing Services",
-    tagline: "Writing built around search intent and the next action.",
+      "Professional SEO content writing services by Rashid Azam. Intent-focused blog articles, website copy, product descriptions, and conversion landing page copy.",
+    h1: "SEO Content Writing & Strategic Copywriting",
+    tagline: "Content written for search engines and engineered for human conversion.",
     intro:
-      "Good content answers a specific question for a specific person and makes the next step obvious. I write for search engines and readers at the same time — no filler, no padding to hit a word count.",
+      "High-ranking content requires a balance between keyword placement and engaging copywriting. I craft blog posts, service page copy, product descriptions, and landing page content that rank high and drive action.",
     capabilities: [
       {
-        title: "SEO Blog Writing",
-        description:
-          "Research-backed articles mapped to keyword clusters, with clean structure and internal links that guide readers deeper.",
+        title: "SEO Blog Article Writing",
+        description: "In-depth, research-backed posts optimized for intent keywords and topical authority.",
       },
       {
         title: "Website Copywriting",
-        description:
-          "Home, service and about pages that explain what you do, who it's for and why it's credible.",
+        description: "Clear, persuasive homepage, about, and service page copy that communicates your value proposition.",
       },
       {
-        title: "Product Descriptions",
-        description:
-          "Store copy that covers specifications, benefits and objections while staying scannable.",
-      },
-      {
-        title: "YouTube Scripts",
-        description:
-          "Hook-led scripts written for retention and a natural call to action.",
-      },
-      {
-        title: "Content Strategy",
-        description:
-          "Topic clusters, publishing calendars and internal linking plans that build authority over time.",
-      },
-      {
-        title: "Editing & Refresh",
-        description:
-          "Rewriting and consolidating older posts that have decayed or now compete with each other.",
+        title: "Content Strategy & Clustering",
+        description: "Planning comprehensive topic clusters to build domain authority across your target niche.",
       },
     ],
     sections: [
       {
-        heading: "Content and search are one workstream",
+        heading: "Content That Converts Searchers into Clients",
         body: [
-          "Keyword research decides what to write; content decides whether it ranks. Articles here are planned alongside my [SEO strategy work](/services/seo-services), so every piece supports a commercial page instead of floating on its own.",
-        ],
-      },
-      {
-        heading: "Copy that respects the funnel",
-        body: [
-          "A blog reader and an ad click need different things. Landing copy for [paid campaigns](/services/digital-marketing) is written for a single decision, while educational articles are written to build trust first.",
-          "For video, [channel scripting](/services/youtube-automation) follows the same rule — earn the next thirty seconds before asking for anything.",
-        ],
-      },
-      {
-        heading: "Published properly",
-        body: [
-          "Content only performs if it's presented well: readable typography, fast images and clean templates, which is part of every [website build](/services/web-development) I deliver.",
-        ],
-      },
-      {
-        heading: "Read the work",
-        body: [
-          "My own [articles and guides](/blog) are the clearest sample of how I write, and the [SEO blog project](/projects/seo-blog-project) shows content built for a client site. [Send me a brief](/contact) when you're ready.",
+          "Quality content is the fuel of organic search. By structuring articles with scannable subheadings, semantic entities, and clear calls to action, your content drives measurable business outcomes.",
         ],
       },
     ],
-    relatedServices: ["seo-services", "youtube-automation", "digital-marketing"],
-    projectCategories: ["seo-blog-project", "personal-branding-portfolio"],
-    blogPosts: ["content-creation-strategy-businesses", "on-page-seo-checklist-every-page"],
+    faqs: [
+      {
+        question: "Do you include keyword research with content writing services?",
+        answer: "Yes, every writing engagement includes search intent research, entity mapping, and competitive analysis.",
+      },
+    ],
+    relatedServices: ["seo-services", "wordpress-seo", "digital-marketing"],
   },
 ];
 
 export const getService = (slug?: string) =>
   pillarServices.find((s) => s.slug === slug);
-
-/** Map a portfolio category slug to the services used to deliver it. */
-export const projectCategoryServices: Record<string, string[]> = {
-  "e-commerce-store": ["web-development", "seo-services", "digital-marketing"],
-  "shopify-store": ["web-development", "digital-marketing", "content-writing"],
-  "corporate-website": ["web-development", "seo-services", "content-writing"],
-  "ngo-website": ["web-development", "content-writing"],
-  "seo-blog-project": ["seo-services", "content-writing"],
-  "youtube-automation": ["youtube-automation", "content-writing", "seo-services"],
-  "digital-marketing-campaign": ["digital-marketing", "seo-services"],
-  "personal-branding-portfolio": ["web-development", "seo-services"],
-  "vibecoding-projects": ["ai-automation", "web-development"],
-};
-
-/** Map a blog category to the commercial pillar it supports. */
-export const blogCategoryServices: Record<string, string[]> = {
-  SEO: ["seo-services", "content-writing"],
-  "Web Development": ["web-development", "seo-services"],
-  "Web Design": ["web-development", "seo-services"],
-  "AI & Automation": ["ai-automation", "web-development"],
-  Technology: ["ai-automation", "seo-services"],
-  Marketing: ["digital-marketing", "seo-services"],
-  "YouTube Automation": ["youtube-automation", "content-writing"],
-  Freelancing: ["web-development", "digital-marketing"],
-  "Freelancing & Business": ["web-development", "seo-services"],
-  Career: ["content-writing"],
-};

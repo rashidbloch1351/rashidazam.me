@@ -9,8 +9,8 @@ export function RelatedLinks({ pageId }: { pageId: string }) {
   if (links.length === 0) return null;
 
   return (
-    <section className="my-12 bg-[#17181c] border border-[#272a30] p-6 sm:p-8 rounded-xl space-y-6">
-      <h3 className="text-xl font-heading font-bold text-[#f3f4f6]">
+    <section className="my-12 bg-slate-50 border border-slate-200/90 p-6 sm:p-8 rounded-2xl space-y-6 shadow-2xs">
+      <h3 className="text-xl font-heading font-bold text-slate-900">
         Related Resources & Case Studies
       </h3>
 
@@ -19,16 +19,16 @@ export function RelatedLinks({ pageId }: { pageId: string }) {
           <Link
             key={item.id}
             href={item.url}
-            className="bg-[#0f1012] border border-[#272a30] hover:border-[#d97706]/40 p-5 rounded-lg space-y-2 group transition-all"
+            className="bg-white border border-slate-200 hover:border-amber-400 p-5 rounded-xl space-y-2 group transition-all shadow-2xs hover:shadow-xs"
           >
-            <div className="flex items-center justify-between text-xs text-[#d97706] font-medium uppercase tracking-wider">
+            <div className="flex items-center justify-between text-xs text-[#d97706] font-semibold uppercase tracking-wider">
               <span>{item.category}</span>
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </div>
-            <h4 className="font-heading font-semibold text-base text-[#f3f4f6] group-hover:text-[#d97706] transition-colors">
+            <h4 className="font-heading font-semibold text-base text-slate-900 group-hover:text-[#d97706] transition-colors">
               {item.anchorText}
             </h4>
-            <p className="text-xs text-[#9ca3af] leading-relaxed line-clamp-2">
+            <p className="text-xs text-slate-600 leading-relaxed line-clamp-2">
               {item.description}
             </p>
           </Link>

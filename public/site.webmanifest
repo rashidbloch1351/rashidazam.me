@@ -1,5 +1,5 @@
 {
-  "name": "Rashid Azam - Web Developer & Technical SEO Expert",
+  "name": "Rashid Azam | Web Developer & Technical SEO Specialist",
   "short_name": "Rashid Azam",
   "icons": [
     {
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#d97706",
   "background_color": "#ffffff",
   "display": "standalone"
 }

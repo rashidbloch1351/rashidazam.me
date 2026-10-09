@@ -4,16 +4,32 @@ import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ArrowUpRight, ChevronDown, ArrowRight } from 'lucide-react';
+import { 
+  Menu, X, ArrowUpRight, ChevronDown, ArrowRight, Search, MapPin, 
+  Code, ShoppingCart, Globe, Zap, FileSearch, ShieldAlert, Cpu, 
+  Smartphone, Building2 
+} from 'lucide-react';
 
 export function Header() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [seoHubOpen, setSeoHubOpen] = useState(false);
+  const [locationsOpen, setLocationsOpen] = useState(false);
+  
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileSeoOpen, setMobileSeoOpen] = useState(false);
+  const [mobileLocationsOpen, setMobileLocationsOpen] = useState(false);
+  const [mobilePakistanOpen, setMobilePakistanOpen] = useState(true);
+  const [mobileInternationalOpen, setMobileInternationalOpen] = useState(true);
 
-  const dropdownRef = useRef<HTMLDivElement | null>(null);
-  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const servicesRef = useRef<HTMLDivElement | null>(null);
+  const seoHubRef = useRef<HTMLDivElement | null>(null);
+  const locationsRef = useRef<HTMLDivElement | null>(null);
+
+  const servicesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const seoTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const locationsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const serviceLinks = [
     { label: 'SEO Services', href: '/services/seo-services' },
@@ -24,27 +40,118 @@ export function Header() {
     { label: 'Content Writing', href: '/services/content-writing' },
   ];
 
-  // Exact menu sequence: HOME > SERVICES > SEO HUB > PROJECTS > ABOUT > BLOG
-  const mainNavLinks = [
-    { label: 'Home', href: '/' },
-    { label: 'SEO Hub', href: '/seo' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'About', href: '/about' },
-    { label: 'Blog', href: '/blog' },
+  const seoHubItems = [
+    {
+      name: 'Local SEO',
+      description: 'Map Pack & Google Business Profile',
+      href: '/seo/local-seo-pakistan-uae',
+      icon: <MapPin className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'Technical SEO',
+      description: 'Crawling, indexing, speed',
+      href: '/seo/technical-seo-audit-guide',
+      icon: <Code className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'On-Page SEO',
+      description: 'Intent, structure, internal links',
+      href: '/seo/on-page-seo-schema-markup',
+      icon: <Search className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'E-Commerce SEO',
+      description: 'Category & product pages',
+      href: '/seo/keyword-research-intent',
+      icon: <ShoppingCart className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'WordPress SEO',
+      description: 'Speed, plugins, architecture',
+      href: '/seo/technical-seo-audit-guide',
+      icon: <Zap className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'Content Optimization',
+      description: "Pages that don't rank or convert",
+      href: '/seo/on-page-seo-schema-markup',
+      icon: <Globe className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'Off-Page SEO',
+      description: 'Authority & relevant links',
+      href: '/seo/keyword-research-intent',
+      icon: <ArrowUpRight className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'AI & Voice SEO',
+      description: 'AI Overviews & voice search',
+      href: '/seo',
+      icon: <Cpu className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'Mobile SEO',
+      description: 'Performance on phones',
+      href: '/seo/technical-seo-audit-guide',
+      icon: <Smartphone className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'Audit & Analysis',
+      description: 'A full site diagnosis',
+      href: '/seo/technical-seo-audit-guide',
+      icon: <FileSearch className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'Penalty Recovery',
+      description: 'Traffic & ranking drops',
+      href: '/seo',
+      icon: <ShieldAlert className="w-4 h-4 text-[#d97706]" />,
+    },
+  ];
+
+  // Locations Grouped Structure for Dropdown
+  const globalLocations = [
+    { name: 'Worldwide', href: '/locations/worldwide', description: 'Global remote engagements' },
+  ];
+
+  const pakistanLocations = [
+    { name: 'Pakistan (All)', href: '/locations', description: 'National search & web builds' },
+    { name: 'Lahore', href: '/locations/lahore', description: 'Commercial core & local SEO' },
+    { name: 'Islamabad', href: '/locations/islamabad', description: 'Capital territory & technical SEO' },
+    { name: 'Karachi', href: '/locations/karachi', description: 'Financial capital & e-commerce' },
+    { name: 'Faisalabad', href: '/locations/faisalabad', description: 'Industrial hub & B2B growth' },
+    { name: 'Multan', href: '/locations/multan', description: 'Regional center & local search' },
+  ];
+
+  const internationalLocations = [
+    { name: 'USA', href: '/locations/usa', description: 'North America remote SEO & builds' },
+    { name: 'UK', href: '/locations/uk', description: 'United Kingdom technical SEO' },
+    { name: 'Germany', href: '/locations/germany', description: 'European Union international SEO' },
+    { name: 'UAE', href: '/locations/uae', description: 'Dubai & GCC market optimization' },
   ];
 
   // Close dropdowns on route change
   useEffect(() => {
     setServicesOpen(false);
+    setSeoHubOpen(false);
+    setLocationsOpen(false);
     setMobileMenuOpen(false);
     setMobileServicesOpen(false);
+    setMobileSeoOpen(false);
+    setMobileLocationsOpen(false);
   }, [pathname]);
 
   // Outside click listener
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
         setServicesOpen(false);
+      }
+      if (seoHubRef.current && !seoHubRef.current.contains(event.target as Node)) {
+        setSeoHubOpen(false);
+      }
+      if (locationsRef.current && !locationsRef.current.contains(event.target as Node)) {
+        setLocationsOpen(false);
       }
     }
     document.addEventListener('mousedown', handleClickOutside);
@@ -56,6 +163,8 @@ export function Header() {
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === 'Escape') {
         setServicesOpen(false);
+        setSeoHubOpen(false);
+        setLocationsOpen(false);
         setMobileMenuOpen(false);
       }
     }
@@ -63,14 +172,40 @@ export function Header() {
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  const handleMouseEnter = () => {
-    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+  // Hover Handlers
+  const handleServicesEnter = () => {
+    if (servicesTimeoutRef.current) clearTimeout(servicesTimeoutRef.current);
     setServicesOpen(true);
+    setSeoHubOpen(false);
+    setLocationsOpen(false);
+  };
+  const handleServicesLeave = () => {
+    servicesTimeoutRef.current = setTimeout(() => {
+      setServicesOpen(false);
+    }, 200);
   };
 
-  const handleMouseLeave = () => {
-    hoverTimeoutRef.current = setTimeout(() => {
-      setServicesOpen(false);
+  const handleSeoEnter = () => {
+    if (seoTimeoutRef.current) clearTimeout(seoTimeoutRef.current);
+    setSeoHubOpen(true);
+    setServicesOpen(false);
+    setLocationsOpen(false);
+  };
+  const handleSeoLeave = () => {
+    seoTimeoutRef.current = setTimeout(() => {
+      setSeoHubOpen(false);
+    }, 200);
+  };
+
+  const handleLocationsEnter = () => {
+    if (locationsTimeoutRef.current) clearTimeout(locationsTimeoutRef.current);
+    setLocationsOpen(true);
+    setServicesOpen(false);
+    setSeoHubOpen(false);
+  };
+  const handleLocationsLeave = () => {
+    locationsTimeoutRef.current = setTimeout(() => {
+      setLocationsOpen(false);
     }, 200);
   };
 
@@ -89,7 +224,7 @@ export function Header() {
           />
         </Link>
 
-        {/* Desktop Navigation: HOME > SERVICES > SEO HUB > PROJECTS > ABOUT > BLOG */}
+        {/* Desktop Navigation: Home > About > Services ▼ > SEO Hub ▼ > Locations ▼ > Contact */}
         <nav className="hidden md:flex items-center gap-7">
           {/* 1. Home */}
           <Link
@@ -103,12 +238,24 @@ export function Header() {
             Home
           </Link>
 
-          {/* 2. Services (dropdown) */}
+          {/* 2. About */}
+          <Link
+            href="/about"
+            className={`text-sm font-medium transition-colors ${
+              pathname === '/about'
+                ? 'text-[#d97706] font-semibold'
+                : 'text-slate-600 hover:text-slate-900'
+            }`}
+          >
+            About
+          </Link>
+
+          {/* 3. Services (dropdown) */}
           <div
-            ref={dropdownRef}
+            ref={servicesRef}
             className="relative"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleServicesEnter}
+            onMouseLeave={handleServicesLeave}
           >
             <div className="inline-flex items-center gap-1">
               <Link
@@ -137,7 +284,7 @@ export function Header() {
               </button>
             </div>
 
-            {/* Dropdown Card */}
+            {/* Services Dropdown Card */}
             <div
               className={`absolute left-0 top-full pt-2 w-72 transition-all duration-200 z-50 ${
                 servicesOpen
@@ -183,23 +330,260 @@ export function Header() {
             </div>
           </div>
 
-          {/* 3. SEO Hub, 4. Projects, 5. About, 6. Blog */}
-          {mainNavLinks.slice(1).map((link) => {
-            const isActive = pathname === link.href;
-            return (
+          {/* 4. SEO Hub (Mega Dropdown) */}
+          <div
+            ref={seoHubRef}
+            className="relative"
+            onMouseEnter={handleSeoEnter}
+            onMouseLeave={handleSeoLeave}
+          >
+            <div className="inline-flex items-center gap-1">
               <Link
-                key={link.href}
-                href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  isActive
+                href="/seo"
+                className={`text-sm font-medium transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md ${
+                  pathname.startsWith('/seo')
                     ? 'text-[#d97706] font-semibold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
-                {link.label}
+                SEO Hub
               </Link>
-            );
-          })}
+              <button
+                type="button"
+                onClick={() => setSeoHubOpen(!seoHubOpen)}
+                aria-expanded={seoHubOpen}
+                aria-haspopup="true"
+                aria-label="Toggle SEO Hub Menu"
+                className="p-1 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md"
+              >
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    seoHubOpen ? 'rotate-180 text-[#d97706]' : ''
+                  }`}
+                />
+              </button>
+            </div>
+
+            {/* SEO Hub Mega Dropdown Card */}
+            <div
+              className={`absolute -left-12 top-full pt-2 w-[620px] transition-all duration-200 z-50 ${
+                seoHubOpen
+                  ? 'opacity-100 translate-y-0 pointer-events-auto'
+                  : 'opacity-0 -translate-y-1 pointer-events-none'
+              }`}
+            >
+              <div className="bg-white rounded-2xl shadow-2xl border border-gray-200/80 p-5">
+                <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100">
+                  <div>
+                    <h3 className="font-heading font-semibold text-sm text-slate-900">
+                      SEO Knowledge Hub & Solutions
+                    </h3>
+                    <p className="text-xs text-slate-500">
+                      Technical SEO frameworks, audits, and organic ranking capabilities.
+                    </p>
+                  </div>
+                  <Link
+                    href="/seo"
+                    onClick={() => setSeoHubOpen(false)}
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-[#d97706] hover:underline"
+                  >
+                    <span>Overview</span>
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
+                </div>
+
+                <div className="grid grid-cols-2 gap-2">
+                  {seoHubItems.map((item) => {
+                    const isActive = pathname === item.href;
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        onClick={() => setSeoHubOpen(false)}
+                        className={`flex items-start gap-3 p-2.5 rounded-xl transition-all ${
+                          isActive
+                            ? 'bg-amber-50/80 border border-amber-200/60'
+                            : 'hover:bg-slate-50 border border-transparent'
+                        }`}
+                      >
+                        <div className="p-2 rounded-lg bg-amber-50 border border-amber-200/60 shrink-0 mt-0.5">
+                          {item.icon}
+                        </div>
+                        <div className="min-w-0">
+                          <h4 className="font-heading font-semibold text-slate-900 text-xs truncate">
+                            {item.name}
+                          </h4>
+                          <p className="text-[11px] text-slate-500 truncate mt-0.5">
+                            {item.description}
+                          </p>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 5. Locations (Categorized Mega Dropdown) */}
+          <div
+            ref={locationsRef}
+            className="relative"
+            onMouseEnter={handleLocationsEnter}
+            onMouseLeave={handleLocationsLeave}
+          >
+            <div className="inline-flex items-center gap-1">
+              <Link
+                href="/locations"
+                className={`text-sm font-medium transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md ${
+                  pathname.startsWith('/locations')
+                    ? 'text-[#d97706] font-semibold'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                Locations
+              </Link>
+              <button
+                type="button"
+                onClick={() => setLocationsOpen(!locationsOpen)}
+                aria-expanded={locationsOpen}
+                aria-haspopup="true"
+                aria-label="Toggle Locations Menu"
+                className="p-1 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md"
+              >
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    locationsOpen ? 'rotate-180 text-[#d97706]' : ''
+                  }`}
+                />
+              </button>
+            </div>
+
+            {/* Structured Locations Dropdown Card (Matching Phase 7 visual direction) */}
+            <div
+              className={`absolute -left-20 top-full pt-2 w-[560px] transition-all duration-200 z-50 ${
+                locationsOpen
+                  ? 'opacity-100 translate-y-0 pointer-events-auto'
+                  : 'opacity-0 -translate-y-1 pointer-events-none'
+              }`}
+            >
+              <div className="bg-white rounded-2xl shadow-2xl border border-gray-200/90 p-5 space-y-4">
+                {/* Header title */}
+                <div className="flex items-center justify-between pb-2 border-b border-gray-100">
+                  <span className="font-heading font-semibold text-xs text-slate-900 uppercase tracking-wider">
+                    Location Directory & Markets
+                  </span>
+                  <span className="text-[11px] text-[#d97706] font-medium">11 Active Locations</span>
+                </div>
+
+                <div className="grid grid-cols-12 gap-5">
+                  {/* Left Column: GLOBAL & INTERNATIONAL */}
+                  <div className="col-span-5 space-y-4">
+                    {/* Group: GLOBAL */}
+                    <div className="space-y-1.5">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2">
+                        Global
+                      </span>
+                      {globalLocations.map((loc) => {
+                        const isActive = pathname === loc.href;
+                        return (
+                          <Link
+                            key={loc.name}
+                            href={loc.href}
+                            onClick={() => setLocationsOpen(false)}
+                            className={`flex flex-col px-3 py-2 rounded-lg transition-colors group ${
+                              isActive ? 'bg-amber-50 text-[#d97706]' : 'hover:bg-slate-50'
+                            }`}
+                          >
+                            <span className="font-heading font-bold text-xs text-slate-900 group-hover:text-[#d97706] transition-colors flex items-center justify-between">
+                              <span>{loc.name}</span>
+                              <Globe className="w-3.5 h-3.5 text-[#d97706]" />
+                            </span>
+                            <span className="text-[10px] text-slate-500 mt-0.5">
+                              {loc.description}
+                            </span>
+                          </Link>
+                        );
+                      })}
+                    </div>
+
+                    {/* Group: INTERNATIONAL */}
+                    <div className="space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2">
+                        International
+                      </span>
+                      {internationalLocations.map((loc) => {
+                        const isActive = pathname === loc.href;
+                        return (
+                          <Link
+                            key={loc.name}
+                            href={loc.href}
+                            onClick={() => setLocationsOpen(false)}
+                            className={`flex flex-col px-3 py-1.5 rounded-lg transition-colors group ${
+                              isActive ? 'bg-amber-50 text-[#d97706]' : 'hover:bg-slate-50'
+                            }`}
+                          >
+                            <span className="font-heading font-semibold text-xs text-slate-900 group-hover:text-[#d97706] transition-colors">
+                              {loc.name}
+                            </span>
+                            <span className="text-[10px] text-slate-500">
+                              {loc.description}
+                            </span>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Right Column: PAKISTAN & CITIES */}
+                  <div className="col-span-7 space-y-1 border-l border-gray-100 pl-4">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2">
+                      Pakistan Cities & Market
+                    </span>
+                    <div className="grid grid-cols-1 gap-0.5">
+                      {pakistanLocations.map((loc) => {
+                        const isActive = pathname === loc.href;
+                        return (
+                          <Link
+                            key={loc.name}
+                            href={loc.href}
+                            onClick={() => setLocationsOpen(false)}
+                            className={`flex flex-col px-3 py-1.5 rounded-lg transition-colors group ${
+                              isActive ? 'bg-amber-50 text-[#d97706]' : 'hover:bg-slate-50'
+                            }`}
+                          >
+                            <span className="font-heading font-semibold text-xs text-slate-900 group-hover:text-[#d97706] transition-colors flex items-center justify-between">
+                              <span>{loc.name}</span>
+                              {loc.name.includes('All') && (
+                                <span className="text-[9px] bg-amber-100 text-[#d97706] font-bold px-1.5 py-0.5 rounded">
+                                  Main Hub
+                                </span>
+                              )}
+                            </span>
+                            <span className="text-[10px] text-slate-500">
+                              {loc.description}
+                            </span>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Footer Action */}
+                <div className="border-t border-gray-100 pt-2">
+                  <Link
+                    href="/locations"
+                    onClick={() => setLocationsOpen(false)}
+                    className="flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-[#d97706] hover:bg-amber-50 transition-colors"
+                  >
+                    <span>All Locations Directory</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
 
         {/* Primary CTA */}
@@ -225,7 +609,7 @@ export function Header() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-gray-200 px-4 pt-4 pb-6 space-y-3 shadow-lg">
+        <div className="md:hidden bg-white border-b border-gray-200 px-4 pt-4 pb-6 space-y-3 shadow-lg max-h-[85vh] overflow-y-auto">
           <nav className="flex flex-col space-y-2">
             {/* 1. Home */}
             <Link
@@ -238,7 +622,18 @@ export function Header() {
               Home
             </Link>
 
-            {/* 2. Services Accordion */}
+            {/* 2. About */}
+            <Link
+              href="/about"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`flex items-center min-h-[44px] text-base font-medium px-3 py-2 rounded-md hover:bg-slate-50 transition-colors ${
+                pathname === '/about' ? 'text-[#d97706] font-semibold bg-amber-50/60' : 'text-slate-700 hover:text-slate-900'
+              }`}
+            >
+              About
+            </Link>
+
+            {/* 3. Services Accordion */}
             <div className="space-y-1">
               <div className="flex items-center justify-between min-h-[44px] px-3 py-2 rounded-md hover:bg-slate-50">
                 <Link
@@ -287,36 +682,169 @@ export function Header() {
                       </Link>
                     );
                   })}
-                  <Link
-                    href="/services"
-                    onClick={() => {
-                      setMobileMenuOpen(false);
-                      setMobileServicesOpen(false);
-                    }}
-                    className="flex items-center min-h-[44px] px-3 py-2 text-xs font-semibold uppercase tracking-wider text-[#d97706] hover:bg-slate-50 rounded-md"
-                  >
-                    All Services →
-                  </Link>
                 </div>
               )}
             </div>
 
-            {/* 3. SEO Hub, 4. Projects, 5. About, 6. Blog */}
-            {mainNavLinks.slice(1).map((link) => {
-              const isActive = pathname === link.href;
-              return (
+            {/* 4. SEO Hub Accordion */}
+            <div className="space-y-1">
+              <div className="flex items-center justify-between min-h-[44px] px-3 py-2 rounded-md hover:bg-slate-50">
                 <Link
-                  key={link.href}
-                  href={link.href}
+                  href="/seo"
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center min-h-[44px] text-base font-medium px-3 py-2 rounded-md hover:bg-slate-50 transition-colors ${
-                    isActive ? 'text-[#d97706] font-semibold bg-amber-50/60' : 'text-slate-700 hover:text-slate-900'
+                  className={`text-base font-medium transition-colors ${
+                    pathname.startsWith('/seo') ? 'text-[#d97706] font-semibold' : 'text-slate-700 hover:text-slate-900'
                   }`}
                 >
-                  {link.label}
+                  SEO Hub
                 </Link>
-              );
-            })}
+                <button
+                  type="button"
+                  onClick={() => setMobileSeoOpen(!mobileSeoOpen)}
+                  aria-expanded={mobileSeoOpen}
+                  aria-label="Expand SEO Hub Submenu"
+                  className="p-2 text-slate-500 hover:text-slate-900"
+                >
+                  <ChevronDown
+                    className={`w-5 h-5 transition-transform duration-200 ${
+                      mobileSeoOpen ? 'rotate-180 text-[#d97706]' : ''
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {mobileSeoOpen && (
+                <div className="pl-4 space-y-1 border-l-2 border-amber-500/40 my-1">
+                  {seoHubItems.map((item) => {
+                    const isActive = pathname === item.href;
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        onClick={() => {
+                          setMobileMenuOpen(false);
+                          setMobileSeoOpen(false);
+                        }}
+                        className={`flex flex-col min-h-[44px] px-3 py-2 text-sm rounded-md transition-colors ${
+                          isActive
+                            ? 'text-[#d97706] font-semibold bg-amber-50'
+                            : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
+                        }`}
+                      >
+                        <span className="font-medium text-xs text-slate-900">{item.name}</span>
+                        <span className="text-[10px] text-slate-500">{item.description}</span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+
+            {/* 5. Locations Mobile Accordion (Structured as requested in Phase 8) */}
+            <div className="space-y-1">
+              <div className="flex items-center justify-between min-h-[44px] px-3 py-2 rounded-md hover:bg-slate-50">
+                <Link
+                  href="/locations"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`text-base font-medium transition-colors ${
+                    pathname.startsWith('/locations') ? 'text-[#d97706] font-semibold' : 'text-slate-700 hover:text-slate-900'
+                  }`}
+                >
+                  Locations
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => setMobileLocationsOpen(!mobileLocationsOpen)}
+                  aria-expanded={mobileLocationsOpen}
+                  aria-label="Expand Locations Submenu"
+                  className="p-2 text-slate-500 hover:text-slate-900"
+                >
+                  <ChevronDown
+                    className={`w-5 h-5 transition-transform duration-200 ${
+                      mobileLocationsOpen ? 'rotate-180 text-[#d97706]' : ''
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {mobileLocationsOpen && (
+                <div className="pl-3 space-y-3 border-l-2 border-amber-500/40 my-2">
+                  {/* Worldwide */}
+                  <Link
+                    href="/locations/worldwide"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex flex-col min-h-[44px] px-3 py-2 text-sm rounded-md bg-amber-50/50 text-[#d97706]"
+                  >
+                    <span className="font-bold text-xs">Worldwide Remote</span>
+                    <span className="text-[10px] text-slate-500">Global remote engagements</span>
+                  </Link>
+
+                  {/* Pakistan Group */}
+                  <div className="space-y-1">
+                    <button
+                      type="button"
+                      onClick={() => setMobilePakistanOpen(!mobilePakistanOpen)}
+                      className="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-500 px-3 py-1"
+                    >
+                      <span>Pakistan Cities</span>
+                      <ChevronDown className={`w-3.5 h-3.5 transition-transform ${mobilePakistanOpen ? 'rotate-180' : ''}`} />
+                    </button>
+                    {mobilePakistanOpen && (
+                      <div className="pl-2 space-y-0.5">
+                        {pakistanLocations.map((loc) => (
+                          <Link
+                            key={loc.name}
+                            href={loc.href}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex flex-col min-h-[40px] px-3 py-1.5 text-xs rounded-md text-slate-700 hover:text-[#d97706] hover:bg-slate-50"
+                          >
+                            <span className="font-semibold">{loc.name}</span>
+                            <span className="text-[10px] text-slate-500">{loc.description}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* International Group */}
+                  <div className="space-y-1">
+                    <button
+                      type="button"
+                      onClick={() => setMobileInternationalOpen(!mobileInternationalOpen)}
+                      className="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-500 px-3 py-1"
+                    >
+                      <span>International Markets</span>
+                      <ChevronDown className={`w-3.5 h-3.5 transition-transform ${mobileInternationalOpen ? 'rotate-180' : ''}`} />
+                    </button>
+                    {mobileInternationalOpen && (
+                      <div className="pl-2 space-y-0.5">
+                        {internationalLocations.map((loc) => (
+                          <Link
+                            key={loc.name}
+                            href={loc.href}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex flex-col min-h-[40px] px-3 py-1.5 text-xs rounded-md text-slate-700 hover:text-[#d97706] hover:bg-slate-50"
+                          >
+                            <span className="font-semibold">{loc.name}</span>
+                            <span className="text-[10px] text-slate-500">{loc.description}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* All Locations Footer */}
+                  <Link
+                    href="/locations"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center justify-between min-h-[44px] px-3 py-2 text-xs font-bold uppercase tracking-wider text-[#d97706] bg-amber-50 rounded-md"
+                  >
+                    <span>All Locations Directory</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              )}
+            </div>
           </nav>
 
           <div className="pt-2">

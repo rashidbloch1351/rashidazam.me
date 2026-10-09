@@ -1,93 +1,69 @@
-# URL Redirects & Sitemap Audit Map — rashidazam.me
+# 301 REDIRECT MAPPING INVENTORY — RASHID AZAM PORTFOLIO
 
-**Date**: October 8, 2026  
-**Total URLs Audited in Old Sitemap**: 41 URLs  
-**Target Next.js Config**: `next.config.mjs` (or `next.config.ts`) `redirects()` configuration.
+This document logs all 301 permanent redirects configured in `next.config.mjs` to ensure 100% preservation of search equity and seamless user experience following the permanent removal of the legacy Blog and Projects sections.
 
 ---
 
-## 1. Primary Core Pages (Preserve 1:1 Slugs)
+## 1. Redirect Configuration Overview
 
-| Old URL in Sitemap | Target Next.js URL | HTTP Status | Action |
+All legacy URLs are configured with `permanent: true` (HTTP status 301) directly inside `next.config.mjs`.
+
+```javascript
+// Excerpt from next.config.mjs
+async redirects() {
+  return [
+    { source: '/index.html', destination: '/', permanent: true },
+    { source: '/about.html', destination: '/about', permanent: true },
+    { source: '/services.html', destination: '/services', permanent: true },
+    { source: '/projects', destination: '/services', permanent: true },
+    { source: '/projects/:path*', destination: '/services', permanent: true },
+    { source: '/projects.html', destination: '/services', permanent: true },
+    { source: '/blog', destination: '/seo', permanent: true },
+    { source: '/blog/:path*', destination: '/seo', permanent: true },
+    { source: '/blog.html', destination: '/seo', permanent: true },
+    { source: '/contact.html', destination: '/contact', permanent: true },
+    { source: '/privacy-policy.html', destination: '/privacy-policy', permanent: true },
+    { source: '/terms-of-service.html', destination: '/terms-of-service', permanent: true },
+  ];
+}
+```
+
+---
+
+## 2. Legacy Blog Mappings
+
+| Legacy Source URL | Destination Route | Target Page Name | Status |
 | :--- | :--- | :--- | :--- |
-| `https://rashidazam.me/` | `/` | 200 OK | Preserve 1:1 |
-| `https://rashidazam.me/about` | `/about` | 200 OK | Preserve 1:1 |
-| `https://rashidazam.me/services` | `/services` | 200 OK | Preserve 1:1 |
-| `https://rashidazam.me/projects` | `/projects` | 200 OK | Preserve 1:1 |
-| `https://rashidazam.me/blog` | `/blog` | 200 OK | Preserve 1:1 |
-| `https://rashidazam.me/contact` | `/contact` | 200 OK | Preserve 1:1 |
-| `https://rashidazam.me/privacy-policy` | `/privacy-policy` | 200 OK | Preserve 1:1 |
-| `https://rashidazam.me/terms-of-service` | `/terms-of-service` | 200 OK | Preserve 1:1 |
+| `/blog` | `/seo` | SEO Knowledge Hub | 301 Permanent |
+| `/blog.html` | `/seo` | SEO Knowledge Hub | 301 Permanent |
+| `/blog/*` (wildcard) | `/seo` | SEO Knowledge Hub | 301 Permanent |
 
 ---
 
-## 2. Pillar Service Pages (Expand & Preserve 1:1 Slugs)
+## 3. Legacy Projects Mappings
 
-| Old URL in Sitemap | Target Next.js URL | Action |
-| :--- | :--- | :--- |
-| `https://rashidazam.me/services/seo-services` | `/services/seo-services` | Preserve 1:1 |
-| `https://rashidazam.me/services/digital-marketing` | `/services/digital-marketing` | Preserve 1:1 |
-| `https://rashidazam.me/services/youtube-automation` | `/services/youtube-automation` | Preserve 1:1 |
-| `https://rashidazam.me/services/web-development` | `/services/web-development` | Preserve 1:1 |
-| `https://rashidazam.me/services/ai-automation` | `/services/ai-automation` | Preserve 1:1 |
-| `https://rashidazam.me/services/content-writing` | `/services/content-writing` | Preserve 1:1 |
+| Legacy Source URL | Destination Route | Target Page Name | Status |
+| :--- | :--- | :--- | :--- |
+| `/projects` | `/services` | Services Hub | 301 Permanent |
+| `/projects.html` | `/services` | Services Hub | 301 Permanent |
+| `/projects/*` (wildcard) | `/services` | Services Hub | 301 Permanent |
 
 ---
 
-## 3. Project Categories & Case Studies
+## 4. HTML Fallback Mappings (Old Site Compatibility)
 
-| Old URL in Sitemap | Target Next.js URL | Action |
-| :--- | :--- | :--- |
-| `https://rashidazam.me/projects/e-commerce-store` | `/projects/e-commerce-store` | Preserve Category Hub |
-| `https://rashidazam.me/projects/youtube-automation` | `/projects/youtube-automation` | Preserve Category Hub |
-| `https://rashidazam.me/projects/corporate-website` | `/projects/corporate-website` | Preserve Category Hub |
-| `https://rashidazam.me/projects/seo-blog-project` | `/projects/seo-blog-project` | Preserve Category Hub |
-| `https://rashidazam.me/projects/personal-branding-portfolio` | `/projects/personal-branding-portfolio` | Preserve Category Hub |
-| `https://rashidazam.me/projects/shopify-store` | `/projects/shopify-store` | Preserve Category Hub |
-| `https://rashidazam.me/projects/digital-marketing-campaign` | `/projects/digital-marketing-campaign` | Preserve Category Hub |
-| `https://rashidazam.me/projects/ngo-website` | `/projects/ngo-website` | Preserve Category Hub |
-| `https://rashidazam.me/projects/vibecoding-projects` | `/projects/vibecoding-projects` | Preserve Category Hub |
-
-*Note: New individual case study pages will be introduced under `/projects/[category]/[project-slug]`.*
+| Legacy Source URL | Destination Route | Target Page Name | Status |
+| :--- | :--- | :--- | :--- |
+| `/index.html` | `/` | Home | 301 Permanent |
+| `/about.html` | `/about` | About | 301 Permanent |
+| `/services.html` | `/services` | Services | 301 Permanent |
+| `/contact.html` | `/contact` | Contact | 301 Permanent |
+| `/privacy-policy.html` | `/privacy-policy` | Privacy Policy | 301 Permanent |
+| `/terms-of-service.html` | `/terms-of-service` | Terms of Service | 301 Permanent |
 
 ---
 
-## 4. Blog Posts (24 Existing Slugs - 1:1 Preservation)
+## 5. Summary & Verification
 
-| Old URL Slug in Sitemap | Target Next.js Path | Action |
-| :--- | :--- | :--- |
-| `/blog/seo-strategy-2026-rank-higher-google` | `/blog/seo-strategy-2026-rank-higher-google` | Preserve 1:1 |
-| `/blog/on-page-seo-checklist-every-page` | `/blog/on-page-seo-checklist-every-page` | Preserve 1:1 |
-| `/blog/high-converting-business-website` | `/blog/high-converting-business-website` | Preserve 1:1 |
-| `/blog/wordpress-seo-guide-speed-rankings` | `/blog/wordpress-seo-guide-speed-rankings` | Preserve 1:1 |
-| `/blog/ai-automation-for-small-business` | `/blog/ai-automation-for-small-business` | Preserve 1:1 |
-| `/blog/freelancer-pricing-guide-web-developer-seo-consultant` | `/blog/freelancer-pricing-guide-web-developer-seo-consultant` | Preserve 1:1 |
-| `/blog/what-is-geo-generative-engine-optimization-2026` | `/blog/what-is-geo-generative-engine-optimization-2026` | Preserve 1:1 |
-| `/blog/faceless-youtube-channel-2025` | `/blog/faceless-youtube-channel-2025` | Preserve 1:1 (Refresh title to 2026 in body) |
-| `/blog/website-design-trends-2025` | `/blog/website-design-trends-2025` | Preserve 1:1 (Refresh content for 2026) |
-| `/blog/digital-marketing-strategies-2025` | `/blog/digital-marketing-strategies-2025` | Preserve 1:1 (Refresh content for 2026) |
-| `/blog/cgpa-vs-skills-2025` | `/blog/cgpa-vs-skills-2025` | Preserve 1:1 |
-| `/blog/ai-web-development-2025` | `/blog/ai-web-development-2025` | Preserve 1:1 |
-| `/blog/future-of-freelancing-2025` | `/blog/future-of-freelancing-2025` | Preserve 1:1 |
-| `/blog/small-business-digital-marketing-guide` | `/blog/small-business-digital-marketing-guide` | Preserve 1:1 |
-| `/blog/ecommerce-website-development-tips` | `/blog/ecommerce-website-development-tips` | Preserve 1:1 |
-| `/blog/social-media-marketing-strategy-2025` | `/blog/social-media-marketing-strategy-2025` | Preserve 1:1 |
-| `/blog/seo-ranking-factors-2025` | `/blog/seo-ranking-factors-2025` | Preserve 1:1 |
-| `/blog/brand-identity-design-business-growth` | `/blog/brand-identity-design-business-growth` | Preserve 1:1 |
-| `/blog/wordpress-vs-custom-website-development` | `/blog/wordpress-vs-custom-website-development` | Preserve 1:1 |
-| `/blog/email-marketing-strategies-high-roi` | `/blog/email-marketing-strategies-high-roi` | Preserve 1:1 |
-| `/blog/google-ads-ppc-campaign-guide` | `/blog/google-ads-ppc-campaign-guide` | Preserve 1:1 |
-| `/blog/content-creation-strategy-businesses` | `/blog/content-creation-strategy-businesses` | Preserve 1:1 |
-| `/blog/ui-ux-design-principles-conversions` | `/blog/ui-ux-design-principles-conversions` | Preserve 1:1 |
-
----
-
-## 5. NEW Cluster & Topic URLs To Be Created
-
-- `/seo` (SEO Cluster Hub)
-- `/seo/[topic]` (SEO Topic pages)
-- `/youtube` (YouTube Cluster Hub)
-- `/youtube/[topic]` (YouTube Topic pages)
-- `/marketing` (Digital Marketing Cluster Hub)
-- `/marketing/[topic]` (Marketing Topic pages)
-- `/tools` (Free Tools Hub)
+- **Total 301 Rules**: 12 explicitly active rules.
+- **Link Audits**: No internal links remain pointing to `/blog/*` or `/projects/*`. All internal navigation links now route directly to pre-rendered Next.js pillar services (`/services/*`) or SEO Knowledge Hub resources (`/seo/*`).

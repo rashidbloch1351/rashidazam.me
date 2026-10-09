@@ -44,10 +44,10 @@ export function ProjectCard({ project, categorySlug }: { project: ProjectItem; c
 
       <div className="p-6 pt-0 flex items-center justify-between gap-4 border-t border-gray-100 mt-4">
         <Link
-          href={`/projects/${categorySlug}`}
+          href="/services"
           className="text-xs font-semibold text-slate-600 hover:text-slate-900 inline-flex items-center gap-1"
         >
-          <span>Category Details</span>
+          <span>Related Services</span>
           <ArrowUpRight className="w-3.5 h-3.5" />
         </Link>
 

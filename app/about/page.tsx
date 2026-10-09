@@ -9,12 +9,19 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Button } from '@/components/ui/Button';
 import { CTABanner } from '@/components/CTABanner';
 import { ProofStrip } from '@/components/ProofStrip';
+import { Testimonials } from '@/components/Testimonials';
 
 export const metadata: Metadata = {
-  title: 'About Rashid Azam | Web Developer & SEO Consultant Worldwide',
-  description: 'Learn about Rashid Azam — BS IT background, full-stack web developer, technical SEO consultant, founder of Arham Digital Agency, and creator of TechByRash serving clients worldwide.',
+  title: 'About Rashid Azam | Technical SEO Consultant & Web Developer in Pakistan',
+  description: 'Rashid Azam is a Technical SEO specialist and full-stack web developer based in Pakistan. Learn about his expertise in SEO services, WordPress optimization, and web development for Pakistani and international businesses.',
   alternates: {
     canonical: 'https://rashidazam.me/about',
+  },
+  openGraph: {
+    title: 'About Rashid Azam | Technical SEO Consultant & Web Developer',
+    description: 'SEO consultant and web developer serving businesses across Pakistan and internationally. Expert in technical SEO, local SEO, and WordPress optimization.',
+    url: 'https://rashidazam.me/about',
+    type: 'profile',
   },
 };
 
@@ -84,28 +91,30 @@ export default function AboutPage() {
               About Rashid Azam
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed">
-              I&apos;m a Web Developer, Technical SEO Specialist, and Digital Marketer. I combine computer science fundamentals with real-world client execution to build fast web applications and drive sustainable organic search growth for clients worldwide.
+              I&apos;m a Technical SEO Consultant and Web Developer based in Pakistan. I help businesses rank higher on Google, fix technical website problems, and build fast, professionally designed websites for Pakistani and international clients.
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Button href="/contact" variant="primary" showArrow>
                 Work With Me
               </Button>
-              <Button href="/projects" variant="secondary">
-                View Case Studies
+              <Button href="/services" variant="secondary">
+                Explore Services
               </Button>
             </div>
           </div>
 
           <div className="lg:col-span-5">
-            <div className="relative rounded-3xl overflow-hidden border border-gray-200 bg-slate-50 p-3 shadow-xl">
-              <Image
-                src="/images/branding/rashid-azam-hero-portrait.webp"
-                alt="Rashid Azam - Web Developer and SEO Consultant"
-                width={500}
-                height={600}
-                priority
-                className="rounded-2xl w-full h-auto object-cover"
-              />
+            <div className="relative rounded-3xl overflow-hidden border border-amber-500/20 bg-gradient-to-b from-amber-50/40 to-slate-50 p-3.5 shadow-xl shadow-slate-200/60">
+              <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden bg-slate-100">
+                <Image
+                  src="/images/branding/rashid-azam-portrait.jpg"
+                  alt="Rashid Azam, web developer and technical SEO specialist"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 450px"
+                  className="object-cover object-center transform hover:scale-[1.02] transition-transform duration-500 ease-out"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -119,37 +128,41 @@ export default function AboutPage() {
         <Container size="small">
           <div className="space-y-8 text-slate-600 text-base leading-relaxed">
             <h2 className="text-3xl font-heading font-bold text-slate-900">
-              Building Web Apps and Search Authority
+              Technical SEO Expertise & Web Development Background
             </h2>
 
             <p>
-              My journey started with a deep interest in computer systems and web architecture. While studying for my BS in Information Technology, I realized that many business websites look visually decent on the surface but are fundamentally broken underneath — slow loading speeds, poor mobile rendering, broken crawlability, and zero clear strategy for converting visitors into clients.
+              My work started with a straightforward observation: most business websites look presentable on the surface but fail at a technical level. Slow page speeds, poor mobile rendering, crawlability issues, and no clear search strategy mean that many sites simply do not appear when customers search for exactly what the business offers.
             </p>
 
             <p>
-              To solve this, I started freelancing on platforms like Fiverr and Freelancer.com under the brand <strong className="text-slate-900">Arham Digital Agency</strong>. Over the past 5+ years, I have worked directly with business owners, startups, and agency partners worldwide to build fast web applications, optimize Google search rankings, and automate business processes.
+              To address this, I built my practice around technical precision. Studying for my BS in Information Technology while freelancing on platforms like Fiverr and Freelancer.com under the brand <strong className="text-slate-900">Arham Digital Agency</strong>, I focused on the areas that produce measurable search improvements: crawl architecture, structured data, Core Web Vitals, on-page content structure, and local search signals.
             </p>
 
             <p>
-              Alongside client work, I share technical knowledge through my YouTube brand <strong className="text-slate-900">TechByRash</strong>, where I teach web development, AI automation tools, and practical freelancing workflows.
+              Over five years of client work across Pakistan — Lahore, Islamabad, Karachi, Faisalabad, and Multan — and internationally in the USA, UK, and UAE, I have built and audited websites across sectors including e-commerce, professional services, healthcare, technology, and education.
+            </p>
+
+            <p>
+              Alongside client work, I share practical knowledge through my YouTube channel <strong className="text-slate-900">TechByRash</strong>, covering web development tutorials, technical SEO concepts, and practical digital growth strategies.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-200">
               <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs">
                 <h3 className="font-heading font-semibold text-lg text-slate-900 mb-2">
-                  My Core Philosophy
+                  Approach to SEO
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  No corporate jargon, no fluff. I believe in empirical log data, clean code standards, explicit search intent mapping, and measurable conversion goals.
+                  No speculative tactics. Every recommendation is grounded in crawl data, Search Console analysis, keyword intent research, and measurable technical implementation.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs">
                 <h3 className="font-heading font-semibold text-lg text-slate-900 mb-2">
-                  Global Reach & Context
+                  How Remote Engagements Work
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Proven experience delivering projects across international markets, handling global SEO dynamics, multi-currency setups, and remote collaboration.
+                  All projects are managed remotely via email, Google Meet, WhatsApp, or Slack. Pakistani clients and international clients in the USA, UK, UAE, and Germany are served with the same directness and technical rigor.
                 </p>
               </div>
             </div>
@@ -219,11 +232,18 @@ export default function AboutPage() {
         </Container>
       </section>
 
+      {/* Client Endorsements & Testimonials */}
+      <Testimonials
+        title="Client Endorsements & Track Record"
+        kicker="Global Collaborations"
+        description="Feedback from international clients and business owners who have partnered with Rashid Azam on software builds and organic growth."
+      />
+
       {/* CTA Banner */}
       <Container>
         <CTABanner
-          title="Let's Discuss Your Web Development or SEO Goals"
-          description="Whether you need a custom Next.js web application, a technical SEO audit, or a complete digital growth plan, I'm ready to help."
+          title="Looking for an SEO Consultant or Web Developer in Pakistan?"
+          description="Whether you need a technical SEO audit, WordPress optimization, local SEO for Lahore or Islamabad, or a custom Next.js web application, I\'m ready to help directly."
           buttonText="Contact Rashid Azam"
           href="/contact"
         />
