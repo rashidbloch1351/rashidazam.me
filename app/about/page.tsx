@@ -58,9 +58,9 @@ export default function AboutPage() {
     },
     {
       year: '2023 - Present',
-      title: 'Founder & Technical Director',
-      organization: 'Arham Digital Agency',
-      description: 'Launched a digital agency brand offering complete web development, store setups, and search engine optimization services globally.',
+      title: 'Lead Consultant & Full-Stack Developer',
+      organization: 'Rashid Azam Practice',
+      description: 'Delivering end-to-end web development, store setups, technical audits, and organic search engine optimization for clients globally.',
     },
     {
       year: '2024 - Present',
@@ -136,7 +136,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              To address this, I built my practice around technical precision. Studying for my BS in Information Technology while freelancing on platforms like Fiverr and Freelancer.com under the brand <strong className="text-slate-900">Arham Digital Agency</strong>, I focused on the areas that produce measurable search improvements: crawl architecture, structured data, Core Web Vitals, on-page content structure, and local search signals.
+              To address this, I built my practice around technical precision. Studying for my BS in Information Technology while freelancing on platforms like Fiverr and Freelancer.com as a dedicated <strong className="text-slate-900">Web Developer & Technical SEO Specialist</strong>, I focused on the areas that produce measurable search improvements: crawl architecture, structured data, Core Web Vitals, on-page content structure, and local search signals.
             </p>
 
             <p>

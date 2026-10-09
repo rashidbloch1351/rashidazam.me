@@ -7,8 +7,9 @@ import { usePathname } from 'next/navigation';
 import { 
   Menu, X, ArrowUpRight, ChevronDown, ArrowRight, Search, MapPin, 
   Code, ShoppingCart, Globe, Zap, FileSearch, ShieldAlert, Cpu, 
-  Smartphone, Building2 
+  Smartphone, Building2, Phone, Mail, Linkedin, Github, Youtube, Instagram, Facebook 
 } from 'lucide-react';
+import { socialLinks } from '@/data/socialLinks';
 
 export function Header() {
   const pathname = usePathname();
@@ -211,6 +212,80 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-xs">
+      {/* Top Contact & Social Bar */}
+      <div className="bg-slate-900 text-slate-300 text-xs border-b border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-y-2">
+          {/* Left Side: Contact Information */}
+          <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
+            <a
+              href="tel:+923476931351"
+              className="inline-flex items-center gap-1.5 hover:text-[#d97706] transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] rounded px-1 py-0.5"
+              aria-label="Call or WhatsApp Rashid Azam at +92 347 6931351"
+            >
+              <Phone className="w-3.5 h-3.5 text-[#d97706]" />
+              <span className="font-medium">+92 347 6931351</span>
+            </a>
+
+            <a
+              href="mailto:rashidbloch1351@gmail.com"
+              className="inline-flex items-center gap-1.5 hover:text-[#d97706] transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] rounded px-1 py-0.5"
+              aria-label="Email Rashid Azam at rashidbloch1351@gmail.com"
+            >
+              <Mail className="w-3.5 h-3.5 text-[#d97706]" />
+              <span className="font-medium truncate max-w-[200px] sm:max-w-none">rashidbloch1351@gmail.com</span>
+            </a>
+          </div>
+
+          {/* Right Side: Social Profile Icons (Exactly Fiverr, Instagram, Facebook) */}
+          <div className="flex items-center gap-3">
+            <span className="text-[11px] text-slate-400 font-medium">Follow:</span>
+
+            {/* 1. Fiverr */}
+            <a
+              href="https://fiverr.com/rashidazam1351"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1 text-slate-300 hover:text-[#d97706] hover:bg-slate-800 rounded transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] inline-flex items-center justify-center group"
+              aria-label="Visit Rashid Azam on Fiverr (@rashidazam1351)"
+              title="Fiverr: @rashidazam1351"
+            >
+              <Image
+                src="/images/icons/fiverr.png"
+                alt="Fiverr"
+                width={16}
+                height={16}
+                className="w-4 h-4 object-contain brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all"
+              />
+            </a>
+
+            {/* 2. Instagram */}
+            <a
+              href="https://instagram.com/rashidazam1351"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1 text-slate-300 hover:text-[#d97706] hover:bg-slate-800 rounded transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] inline-flex items-center justify-center"
+              aria-label="Visit Rashid Azam on Instagram (@rashidazam1351)"
+              title="Instagram: @rashidazam1351"
+            >
+              <Instagram className="w-4 h-4 text-slate-300 hover:text-[#d97706] transition-colors" />
+            </a>
+
+            {/* 3. Facebook */}
+            <a
+              href="https://facebook.com/rashidazam1351"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1 text-slate-300 hover:text-[#d97706] hover:bg-slate-800 rounded transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] inline-flex items-center justify-center"
+              aria-label="Visit Rashid Azam on Facebook (@rashidazam1351)"
+              title="Facebook: @rashidazam1351"
+            >
+              <Facebook className="w-4 h-4 text-slate-300 hover:text-[#d97706] transition-colors" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Brand / Logo */}
         <Link href="/" className="flex items-center group py-1">

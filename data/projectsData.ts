@@ -39,12 +39,12 @@ export const projectCategories: ProjectCategory[] = [
         results: ["Mobile page load under 1.8s", "Increased product page engagement", "Seamless multi-currency checkout"]
       },
       {
-        projectSlug: "arham-digital-agency-store",
-        title: "Arham Digital Agency Store",
+        projectSlug: "digital-services-store",
+        title: "Digital Tools & Services Marketplace",
         description: "A premium digital tools and services marketplace. Complete e-commerce setup with product catalog and payment gateway.",
         image: "/images/projects/arham-digital.jpg",
         url: "https://arhamdigitalagency.vercel.app/",
-        tags: ["E-Commerce", "Digital Products", "Agency"],
+        tags: ["E-Commerce", "Digital Products", "Marketplace"],
         challenge: "Building a scalable digital product marketplace with instant download fulfillment.",
         solution: "Integrated automated checkout with instant digital delivery and automated invoice generation.",
         results: ["100% automated order fulfillment", "Zero cart abandonment technical errors"]
@@ -161,15 +161,15 @@ export const projectCategories: ProjectCategory[] = [
     tags: ["Portfolio", "Animation", "Design"],
     projects: [
       {
-        projectSlug: "the-arham-digital",
-        title: "The Arham Digital Agency Portfolio",
-        description: "A modern digital agency portfolio featuring animated stats, service showcases, and project galleries.",
+        projectSlug: "digital-marketing-portfolio",
+        title: "Digital Marketing & Development Showcase",
+        description: "A modern portfolio showcase featuring animated stats, service showcases, and project galleries.",
         image: "/images/projects/thearham-digital.jpg",
         url: "https://thearhamdigital.vercel.app/",
-        tags: ["Agency Portfolio", "Modern Design", "Animated"],
-        challenge: "Establishing brand authority for an emerging digital agency.",
+        tags: ["Portfolio Showcase", "Modern Design", "Animated"],
+        challenge: "Establishing brand authority for an independent technical consultant.",
         solution: "Designed an editorial layout showcasing verified project case studies, client reviews, and direct booking links.",
-        results: ["Enhanced agency credibility", "Direct lead capture"]
+        results: ["Enhanced professional credibility", "Direct lead capture"]
       },
       {
         projectSlug: "imran-khadim",

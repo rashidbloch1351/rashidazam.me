@@ -190,51 +190,18 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Visual Card / Profile Showcase */}
+              {/* Personal Photograph Showcase */}
               <div className="lg:col-span-5 relative">
-                <div className="bg-slate-50 border border-slate-200/90 rounded-3xl p-8 shadow-md relative space-y-6">
-                  <div className="flex items-center gap-4 pb-6 border-b border-slate-200">
-                    <div className="w-16 h-16 rounded-2xl bg-amber-50 border border-amber-200 shrink-0 overflow-hidden relative">
-                      <Image
-                        src="/images/branding/logo.png"
-                        alt="Rashid Azam"
-                        fill
-                        className="object-contain p-2"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-bold text-[#111827] text-lg">Rashid Azam</h3>
-                      <p className="text-xs text-[#d97706] font-medium">Web Developer & Technical SEO Expert</p>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Specializations:</div>
-                    <div className="flex flex-wrap gap-2">
-                      {['Technical SEO', 'Local SEO Pakistan', 'WordPress SEO', 'SEO Audits', 'E-Commerce SEO', 'Web Development'].map((item) => (
-                        <span key={item} className="text-xs font-medium bg-white text-slate-700 px-3 py-1 rounded-md border border-slate-200">
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="pt-2 flex items-center justify-between">
-                    <span className="text-xs text-slate-500 font-medium">Connect with me:</span>
-                    <div className="flex items-center gap-2">
-                      {socialLinks.map((s) => (
-                        <a
-                          key={s.label}
-                          href={s.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={s.label}
-                          className="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center hover:border-amber-500 transition-colors"
-                        >
-                          {getSocialIcon(s.label)}
-                        </a>
-                      ))}
-                    </div>
+                <div className="relative rounded-3xl overflow-hidden border border-amber-500/20 bg-gradient-to-b from-amber-50/40 to-slate-50 p-3.5 shadow-xl shadow-slate-200/60">
+                  <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden bg-slate-100">
+                    <Image
+                      src="/images/branding/rashid-azam-portrait.jpg"
+                      alt="Rashid Azam - Technical SEO Consultant and Full-Stack Web Developer"
+                      fill
+                      priority
+                      sizes="(max-width: 1024px) 100vw, 500px"
+                      className="object-cover object-center transform hover:scale-[1.02] transition-transform duration-500 ease-out"
+                    />
                   </div>
                 </div>
               </div>

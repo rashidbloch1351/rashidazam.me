@@ -6,7 +6,7 @@
 [![Deployment](https://img.shields.io/badge/Vercel-Deployed-000000?logo=vercel)](https://vercel.com/)
 [![Lighthouse](https://img.shields.io/badge/Lighthouse-98%2F100-brightgreen)](https://developers.google.com/web/tools/lighthouse)
 
-The official personal portfolio and digital authority platform for **M. Rashid Azam** — Digital Marketer, SEO Specialist, YouTube Automation Expert, and Web Developer (CEO of Arham Digital Agency).
+The official personal portfolio and digital authority platform for **M. Rashid Azam** — Technical SEO Consultant, Full-Stack Web Developer, and YouTube Educator.
 
 Rebuilt from a legacy Vite client-side single-page application into a high-performance, **88-page static site generation (SSG)** Next.js 14 App Router architecture deployed on Vercel.
 

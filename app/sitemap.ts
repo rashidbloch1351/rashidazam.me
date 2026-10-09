@@ -6,10 +6,10 @@ import { marketingClusterTopics } from '@/data/clusters/marketing';
 import { locationsData } from '@/data/locationsData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://rashidazam.me';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://rashidazam.me';
   const currentDate = new Date().toISOString().split('T')[0];
 
-  // 1. Core Top-Level Routes
+  // 1. Core Indexable Top-Level Routes from actual website architecture
   const coreRoutes = [
     { route: '', priority: 1.0, changeFrequency: 'weekly' as const },
     { route: '/services', priority: 0.9, changeFrequency: 'weekly' as const },
@@ -34,10 +34,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/locations/${slug}`,
     lastModified: currentDate,
     changeFrequency: 'monthly' as const,
-    priority: (slug === 'lahore' || slug === 'islamabad') ? 0.9 : 0.8,
+    priority: slug === 'lahore' || slug === 'islamabad' ? 0.9 : 0.8,
   }));
 
-  // 3. All Pillar Service Pages
+  // 3. All 13 Pillar Service Pages (dynamically derived from servicesData)
   const serviceRoutes = pillarServices.map((s) => ({
     url: `${baseUrl}/services/${s.slug}`,
     lastModified: currentDate,
@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  // 4. SEO Cluster Guides & Topics
+  // 4. SEO Cluster Guides & Topics (dynamically derived from seo cluster data)
   const seoClusterRoutes = seoClusterTopics.map((t) => ({
     url: `${baseUrl}/seo/${t.slug}`,
     lastModified: currentDate,
@@ -53,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // 5. YouTube Cluster Guides & Topics
+  // 5. YouTube Cluster Guides & Topics (dynamically derived from youtube cluster data)
   const youtubeClusterRoutes = youtubeClusterTopics.map((t) => ({
     url: `${baseUrl}/youtube/${t.slug}`,
     lastModified: currentDate,
@@ -61,7 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // 6. Digital Marketing Cluster Guides & Topics
+  // 6. Digital Marketing Cluster Guides & Topics (dynamically derived from marketing cluster data)
   const marketingClusterRoutes = marketingClusterTopics.map((t) => ({
     url: `${baseUrl}/marketing/${t.slug}`,
     lastModified: currentDate,
