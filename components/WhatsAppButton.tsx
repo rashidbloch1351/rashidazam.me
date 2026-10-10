@@ -2,9 +2,10 @@
 
 import React from 'react';
 import { MessageSquare } from 'lucide-react';
+import { contactInfo } from '@/data/contactInfo';
 
 export function WhatsAppButton({ prefilledText = "Hi Rashid, I visited your website and would like to discuss a project." }: { prefilledText?: string }) {
-  const whatsappUrl = `https://wa.me/923476931351?text=${encodeURIComponent(prefilledText)}`;
+  const whatsappUrl = contactInfo.whatsapp.getLink(prefilledText);
 
   return (
     <a

@@ -7,6 +7,7 @@ import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { submitContactForm, ContactFormState } from '@/app/actions/contact';
+import { contactInfo } from '@/data/contactInfo';
 
 export default function ContactPage() {
   const [formState, setFormState] = useState<ContactFormState>({
@@ -76,12 +77,12 @@ export default function ContactPage() {
                     <div>
                       <span className="text-xs text-slate-500 font-medium block">Instant WhatsApp Chat</span>
                       <a
-                        href="https://wa.me/923476931351?text=Hi%20Rashid%2C%20I%20would%20like%20to%20discuss%20a%20project."
+                        href={contactInfo.whatsapp.getLink("Hi Rashid, I would like to discuss a project.")}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-slate-900 hover:text-[#25D366] font-semibold transition-colors"
                       >
-                        +92 347 6931351
+                        {contactInfo.phone.display}
                       </a>
                     </div>
                   </div>

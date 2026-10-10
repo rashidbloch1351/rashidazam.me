@@ -75,6 +75,7 @@ export default function RootLayout({
     url: 'https://rashidazam.me',
     image: 'https://rashidazam.me/images/branding/profile.jpg',
     jobTitle: 'Web Developer & Technical SEO Expert',
+    telephone: '+923276434422',
     sameAs: [
       'https://www.linkedin.com/in/mrashid1351/',
       'https://github.com/rashidazam',

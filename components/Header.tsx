@@ -10,6 +10,7 @@ import {
   Smartphone, Building2, Phone, Mail, Linkedin, Github, Youtube, Instagram, Facebook 
 } from 'lucide-react';
 import { socialLinks } from '@/data/socialLinks';
+import { contactInfo } from '@/data/contactInfo';
 
 export function Header() {
   const pathname = usePathname();
@@ -212,12 +213,12 @@ export function Header() {
           {/* Left Side: Contact Information */}
           <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
             <a
-              href="tel:+923476931351"
+              href={contactInfo.phone.telLink}
               className="inline-flex items-center gap-1.5 hover:text-[#d97706] transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] rounded px-1 py-0.5"
-              aria-label="Call or WhatsApp Rashid Azam at +92 347 6931351"
+              aria-label={`Call or WhatsApp Rashid Azam at ${contactInfo.phone.display}`}
             >
               <Phone className="w-3.5 h-3.5 text-[#d97706]" />
-              <span className="font-medium">+92 347 6931351</span>
+              <span className="font-medium">{contactInfo.phone.display}</span>
             </a>
 
             <a
