@@ -10,6 +10,7 @@ export const socialLinks: SocialLink[] = [
   { label: "YouTube", url: "https://youtube.com/@TechByRash", handle: "@TechByRash" },
   { label: "Instagram", url: "https://instagram.com/rashidazam1351", handle: "@rashidazam1351" },
   { label: "Facebook", url: "https://facebook.com/rashidazam1351", handle: "@rashidazam1351" },
+  { label: "Twitter", url: "https://x.com/rashidazam1351", handle: "@rashidazam1351" },
   { label: "Fiverr", url: "https://fiverr.com/rashidazam1351", handle: "@rashidazam1351" },
 ];
 

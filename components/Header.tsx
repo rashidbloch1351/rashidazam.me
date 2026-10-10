@@ -236,41 +236,11 @@ export function Header() {
             </a>
           </div>
 
-          {/* Right Side: Social Profile Icons (Exactly Fiverr, Instagram, Facebook) */}
+          {/* Right Side: Social Profile Icons (Exactly Facebook, Twitter/X, YouTube, Instagram) */}
           <div className="flex items-center gap-3">
             <span className="text-[11px] text-slate-400 font-medium">Follow:</span>
 
-            {/* 1. Fiverr */}
-            <a
-              href="https://fiverr.com/rashidazam1351"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1 text-slate-300 hover:text-[#d97706] hover:bg-slate-800 rounded transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] inline-flex items-center justify-center group"
-              aria-label="Visit Rashid Azam on Fiverr (@rashidazam1351)"
-              title="Fiverr: @rashidazam1351"
-            >
-              <Image
-                src="/images/icons/fiverr.png"
-                alt="Fiverr"
-                width={16}
-                height={16}
-                className="w-4 h-4 object-contain brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all"
-              />
-            </a>
-
-            {/* 2. Instagram */}
-            <a
-              href="https://instagram.com/rashidazam1351"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1 text-slate-300 hover:text-[#d97706] hover:bg-slate-800 rounded transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] inline-flex items-center justify-center"
-              aria-label="Visit Rashid Azam on Instagram (@rashidazam1351)"
-              title="Instagram: @rashidazam1351"
-            >
-              <Instagram className="w-4 h-4 text-slate-300 hover:text-[#d97706] transition-colors" />
-            </a>
-
-            {/* 3. Facebook */}
+            {/* 1. Facebook */}
             <a
               href="https://facebook.com/rashidazam1351"
               target="_blank"
@@ -280,6 +250,44 @@ export function Header() {
               title="Facebook: @rashidazam1351"
             >
               <Facebook className="w-4 h-4 text-slate-300 hover:text-[#d97706] transition-colors" />
+            </a>
+
+            {/* 2. Twitter / X */}
+            <a
+              href="https://x.com/rashidazam1351"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1 text-slate-300 hover:text-[#d97706] hover:bg-slate-800 rounded transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] inline-flex items-center justify-center"
+              aria-label="Visit Rashid Azam on Twitter / X (@rashidazam1351)"
+              title="Twitter / X: @rashidazam1351"
+            >
+              <svg className="w-3.5 h-3.5 fill-current text-slate-300 hover:text-[#d97706] transition-colors" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+
+            {/* 3. YouTube */}
+            <a
+              href="https://youtube.com/@TechByRash"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1 text-slate-300 hover:text-[#d97706] hover:bg-slate-800 rounded transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] inline-flex items-center justify-center"
+              aria-label="Visit Rashid Azam on YouTube (@TechByRash)"
+              title="YouTube: @TechByRash"
+            >
+              <Youtube className="w-4 h-4 text-slate-300 hover:text-[#d97706] transition-colors" />
+            </a>
+
+            {/* 4. Instagram */}
+            <a
+              href="https://instagram.com/rashidazam1351"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1 text-slate-300 hover:text-[#d97706] hover:bg-slate-800 rounded transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] inline-flex items-center justify-center"
+              aria-label="Visit Rashid Azam on Instagram (@rashidazam1351)"
+              title="Instagram: @rashidazam1351"
+            >
+              <Instagram className="w-4 h-4 text-slate-300 hover:text-[#d97706] transition-colors" />
             </a>
           </div>
         </div>

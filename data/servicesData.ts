@@ -678,6 +678,170 @@ export const pillarServices: PillarService[] = [
     ],
     relatedServices: ["seo-services", "wordpress-seo", "digital-marketing"],
   },
+  {
+    slug: "technical-seo",
+    name: "Technical SEO Services",
+    navLabel: "Technical SEO",
+    metaTitle: "Technical SEO Services & Crawl Optimization | Rashid Azam",
+    metaDescription:
+      "Expert technical SEO services by Rashid Azam. Fix crawlability, indexing, Core Web Vitals, canonical tags, and structured JSON-LD schema markup.",
+    h1: "Technical SEO Services & Crawl Infrastructure Optimization",
+    tagline: "Fix technical site errors, improve indexability, and maximize organic search performance.",
+    intro:
+      "Technical SEO is the foundation of organic ranking. I conduct deep technical crawl audits, optimize robots.txt and sitemap architecture, eliminate indexing errors, and tune Core Web Vitals to ensure search engines crawl and index your site efficiently.",
+    capabilities: [
+      {
+        title: "Crawlability & Indexing Diagnostics",
+        description: "Diagnosing crawl budget waste, fixing 404 errors, handling redirect chains, and resolving noindex misconfigurations.",
+      },
+      {
+        title: "Core Web Vitals Speed Optimization",
+        description: "Optimizing LCP, INP, and CLS scores by stripping render-blocking assets and lazy-loading media.",
+      },
+      {
+        title: "JSON-LD Schema Markup Implementation",
+        description: "Deploying structured schema markup for Person, LocalBusiness, Service, Product, and Article entity recognition.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Eliminate Technical Obstacles Blocking Google Rankings",
+        body: [
+          "Without a sound technical foundation, high-quality content cannot reach its full ranking potential. My technical SEO services fix underlying infrastructure errors so search engines reward your website.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How long does a technical SEO audit and implementation take?",
+        answer: "A comprehensive technical SEO audit takes 3 to 5 business days, followed by structured implementation and Search Console re-indexing validation.",
+      },
+    ],
+    relatedServices: ["seo-audit", "speed-optimization", "wordpress-seo"],
+  },
+  {
+    slug: "seo-audit",
+    name: "SEO Audit Services",
+    navLabel: "SEO Audit",
+    metaTitle: "Comprehensive Technical SEO Audit Services | Rashid Azam",
+    metaDescription:
+      "Professional SEO audit services by Rashid Azam. In-depth technical, on-page, local, and competitive website health checks with actionable priority roadmaps.",
+    h1: "Comprehensive SEO Audit & Health Check Services",
+    tagline: "Identify hidden search issues, audit technical site health, and uncover keyword growth opportunities.",
+    intro:
+      "An SEO audit reveals why your website is losing traffic or failing to rank. I personally inspect your website using Screaming Frog, Search Console, Ahrefs, and manual code reviews to deliver a clear, prioritized execution roadmap.",
+    capabilities: [
+      {
+        title: "Full Technical Health Check",
+        description: "Auditing site speed, mobile responsiveness, XML sitemaps, canonical tags, and server response codes.",
+      },
+      {
+        title: "On-Page & Keyword Intent Audit",
+        description: "Evaluating heading structures, meta titles, thin content risks, keyword cannibalization, and internal link depth.",
+      },
+      {
+        title: "Competitor & Gap Analysis",
+        description: "Comparing your site against top SERP competitors to uncover missing keyword clusters and backlink opportunities.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Actionable Insights Without Generic Automated PDF Bloat",
+        body: [
+          "Unlike automated audit tools, my manual SEO audits provide clear, prioritized technical directives tailored directly to your CMS and developer workflow.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What deliverables are included with an SEO audit?",
+        answer: "You receive an executive summary, a technical issue log prioritized by business impact, and a step-by-step implementation guide.",
+      },
+    ],
+    relatedServices: ["technical-seo", "speed-optimization", "seo-services"],
+  },
+  {
+    slug: "answer-engine-optimization",
+    name: "Answer Engine Optimization (AEO)",
+    navLabel: "Answer Engine Optimization",
+    metaTitle: "Answer Engine Optimization (AEO) & AI Search Services | Rashid Azam",
+    metaDescription:
+      "Prepare your brand for ChatGPT, Claude, Perplexity, and Google AI Overviews with Answer Engine Optimization (AEO) services by Rashid Azam.",
+    h1: "Answer Engine Optimization (AEO) & AI Search Visibility",
+    tagline: "Position your brand as the cited answer across AI search engines and conversational LLMs.",
+    intro:
+      "Search is evolving beyond traditional blue links. Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) structure your brand content, entity markup, and factual data so AI systems like ChatGPT, Perplexity, and Google AI Overviews cite you directly.",
+    capabilities: [
+      {
+        title: "Direct Answer Content Structuring",
+        description: "Structuring text with scannable H2/H3 headers, concise answer paragraphs, and factual data tables optimized for LLM extraction.",
+      },
+      {
+        title: "Entity & Schema Knowledge Graph",
+        description: "Building clear JSON-LD schema networks linking your brand entity to verified industry topics and author credentials.",
+      },
+      {
+        title: "AI Search Visibility Auditing",
+        description: "Tracking brand citations across Perplexity, ChatGPT, Claude, and Google Gemini search results.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Secure Brand Authority in the Age of Generative AI Search",
+        body: [
+          "As users ask conversational queries, answer engine optimization ensures your business is cited as the primary authority answer.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How does AEO differ from traditional SEO?",
+        answer: "Traditional SEO focuses on SERP click-throughs, while AEO optimizes content for direct extraction and citation by conversational AI engines.",
+      },
+    ],
+    relatedServices: ["ai-seo", "content-writing", "technical-seo"],
+  },
+  {
+    slug: "wordpress-development",
+    name: "WordPress Development",
+    navLabel: "WordPress Development",
+    metaTitle: "Custom WordPress Development Services | Rashid Azam",
+    metaDescription:
+      "Custom WordPress development services by Rashid Azam. Fast Gutenberg themes, Elementor customization, WooCommerce setups, and clean code built for SEO.",
+    h1: "Custom WordPress Development & Theme Customization",
+    tagline: "Fast, custom WordPress websites engineered for organic reach and mobile conversion.",
+    intro:
+      "I build custom WordPress websites, tailored Gutenberg block layouts, and WooCommerce e-commerce stores. Every site is optimized for sub-second page load speeds, clean mobile rendering, and effortless search engine indexing.",
+    capabilities: [
+      {
+        title: "Custom Gutenberg & Theme Building",
+        description: "Building lightweight custom themes and blocks without heavy page builder bloat or slow code.",
+      },
+      {
+        title: "WooCommerce E-Commerce Setups",
+        description: "Setting up secure, mobile-friendly WooCommerce stores with instant product filtering and custom payment gateways.",
+      },
+      {
+        title: "WordPress Maintenance & Security",
+        description: "Updating core plugins, securing database backups, fixing PHP errors, and hardening WordPress security.",
+      },
+    ],
+    sections: [
+      {
+        heading: "High-Performance WordPress Without Plugin Bloat",
+        body: [
+          "My WordPress builds eliminate unnecessary plugins, resulting in rapid page load times and superior Google Lighthouse performance.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you build custom WordPress sites or use templates?",
+        answer: "I specialize in lightweight custom Gutenberg builds as well as tailored Elementor setups based on project requirements.",
+      },
+    ],
+    relatedServices: ["web-development", "wordpress-seo", "speed-optimization"],
+  },
 ];
 
 export const getService = (slug?: string) =>
