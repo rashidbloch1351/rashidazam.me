@@ -91,7 +91,7 @@ export default function AboutPage() {
               About Rashid Azam
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed">
-              I&apos;m a Technical SEO Consultant and Web Developer based in Pakistan. I help businesses rank higher on Google, fix technical website problems, and build fast, professionally designed websites for Pakistani and international clients.
+              I&apos;m a Technical SEO Consultant and Web Developer based in Pakistan. I help businesses rank higher on Google through dedicated <Link href="/services/technical-seo" className="text-[#d97706] font-medium hover:underline">technical SEO services</Link>, fix complex crawling issues, and build fast, modern web applications with custom <Link href="/services/web-development" className="text-[#d97706] font-medium hover:underline">web development</Link> for clients in Pakistan and worldwide.
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Button href="/contact" variant="primary" showArrow>
@@ -136,7 +136,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              To address this, I built my practice around technical precision. Studying for my BS in Information Technology while freelancing on platforms like Fiverr and Freelancer.com as a dedicated <strong className="text-slate-900">Web Developer & Technical SEO Specialist</strong>, I focused on the areas that produce measurable search improvements: crawl architecture, structured data, Core Web Vitals, on-page content structure, and local search signals.
+              To address this, I built my practice around technical precision. Studying for my BS in Information Technology while freelancing on platforms like Fiverr and Freelancer.com as a dedicated <strong className="text-slate-900">Web Developer &amp; Technical SEO Specialist</strong>, I focused on the areas that produce measurable search improvements: crawl architecture, structured data, Core Web Vitals, on-page content structure, and full-scale <Link href="/services/seo-services" className="text-[#d97706] font-medium hover:underline">SEO services</Link>.
             </p>
 
             <p>

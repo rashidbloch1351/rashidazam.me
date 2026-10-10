@@ -51,7 +51,7 @@
 
 ### SEO Knowledge Cluster Resource Pages (`/seo/[topic]`)
 1. `/seo/technical-seo-audit-guide` — `technical SEO checklist`
-2. `/seo/local-seo-pakistan-guide` — `local SEO optimization guide`
+2. `/seo/local-seo-pakistan-uae` — `local SEO optimization guide`
 3. `/seo/on-page-seo-schema-markup` — `schema markup implementation`
 4. `/seo/ecommerce-seo-shopify-woocommerce` — `e-commerce SEO best practices`
 5. `/seo/programmatic-seo-scaling-guide` — `programmatic SEO scaling`

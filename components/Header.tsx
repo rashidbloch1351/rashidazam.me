@@ -43,19 +43,19 @@ export function Header() {
 
   const seoHubItems = [
     {
-      name: 'Local SEO',
+      name: 'Local SEO Guide',
       description: 'Map Pack & Google Business Profile',
       href: '/seo/local-seo-pakistan-uae',
       icon: <MapPin className="w-4 h-4 text-[#d97706]" />,
     },
     {
-      name: 'Technical SEO',
+      name: 'Technical SEO Services',
       description: 'Crawling, indexing, speed',
-      href: '/seo/technical-seo-audit-guide',
+      href: '/services/technical-seo',
       icon: <Code className="w-4 h-4 text-[#d97706]" />,
     },
     {
-      name: 'On-Page SEO',
+      name: 'On-Page SEO & Schema',
       description: 'Intent, structure, internal links',
       href: '/seo/on-page-seo-schema-markup',
       icon: <Search className="w-4 h-4 text-[#d97706]" />,
@@ -63,49 +63,43 @@ export function Header() {
     {
       name: 'E-Commerce SEO',
       description: 'Category & product pages',
-      href: '/seo/keyword-research-intent',
+      href: '/services/ecommerce-seo',
       icon: <ShoppingCart className="w-4 h-4 text-[#d97706]" />,
     },
     {
       name: 'WordPress SEO',
       description: 'Speed, plugins, architecture',
-      href: '/seo/technical-seo-audit-guide',
+      href: '/services/wordpress-seo',
       icon: <Zap className="w-4 h-4 text-[#d97706]" />,
     },
     {
-      name: 'Content Optimization',
-      description: "Pages that don't rank or convert",
-      href: '/seo/on-page-seo-schema-markup',
+      name: 'Keyword & Intent Guide',
+      description: 'Search intent & keyword research',
+      href: '/seo/keyword-research-intent',
       icon: <Globe className="w-4 h-4 text-[#d97706]" />,
     },
     {
-      name: 'Off-Page SEO',
-      description: 'Authority & relevant links',
-      href: '/seo/keyword-research-intent',
-      icon: <ArrowUpRight className="w-4 h-4 text-[#d97706]" />,
-    },
-    {
-      name: 'AI & Voice SEO',
-      description: 'AI Overviews & voice search',
-      href: '/seo',
-      icon: <Cpu className="w-4 h-4 text-[#d97706]" />,
-    },
-    {
-      name: 'Mobile SEO',
-      description: 'Performance on phones',
-      href: '/seo/technical-seo-audit-guide',
-      icon: <Smartphone className="w-4 h-4 text-[#d97706]" />,
-    },
-    {
-      name: 'Audit & Analysis',
-      description: 'A full site diagnosis',
-      href: '/seo/technical-seo-audit-guide',
+      name: 'SEO Audit Services',
+      description: 'Manual site diagnostics & health',
+      href: '/services/seo-audit',
       icon: <FileSearch className="w-4 h-4 text-[#d97706]" />,
     },
     {
-      name: 'Penalty Recovery',
-      description: 'Traffic & ranking drops',
-      href: '/seo',
+      name: 'AI SEO Services',
+      description: 'AI-assisted SEO & workflows',
+      href: '/services/ai-seo',
+      icon: <Cpu className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'Answer Engine (AEO)',
+      description: 'ChatGPT & Perplexity visibility',
+      href: '/services/answer-engine-optimization',
+      icon: <Smartphone className="w-4 h-4 text-[#d97706]" />,
+    },
+    {
+      name: 'Technical Audit Guide',
+      description: 'Step-by-step diagnostic guide',
+      href: '/seo/technical-seo-audit-guide',
       icon: <ShieldAlert className="w-4 h-4 text-[#d97706]" />,
     },
   ];
@@ -357,7 +351,7 @@ export function Header() {
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
                 aria-label="Toggle Services Menu"
-                className="p-1 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md"
+                className="min-w-[44px] min-h-[44px] inline-flex items-center justify-center p-2 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md transition-colors"
               >
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-200 ${
@@ -437,7 +431,7 @@ export function Header() {
                 aria-expanded={seoHubOpen}
                 aria-haspopup="true"
                 aria-label="Toggle SEO Hub Menu"
-                className="p-1 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md"
+                className="min-w-[44px] min-h-[44px] inline-flex items-center justify-center p-2 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md transition-colors"
               >
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-200 ${
@@ -532,7 +526,7 @@ export function Header() {
                 aria-expanded={locationsOpen}
                 aria-haspopup="true"
                 aria-label="Toggle Locations Menu"
-                className="p-1 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md"
+                className="min-w-[44px] min-h-[44px] inline-flex items-center justify-center p-2 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md transition-colors"
               >
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-200 ${
@@ -733,7 +727,7 @@ export function Header() {
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                   aria-expanded={mobileServicesOpen}
                   aria-label="Expand Services Submenu"
-                  className="p-2 text-slate-500 hover:text-slate-900"
+                  className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md transition-colors"
                 >
                   <ChevronDown
                     className={`w-5 h-5 transition-transform duration-200 ${
@@ -786,7 +780,7 @@ export function Header() {
                   onClick={() => setMobileSeoOpen(!mobileSeoOpen)}
                   aria-expanded={mobileSeoOpen}
                   aria-label="Expand SEO Hub Submenu"
-                  className="p-2 text-slate-500 hover:text-slate-900"
+                  className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md transition-colors"
                 >
                   <ChevronDown
                     className={`w-5 h-5 transition-transform duration-200 ${
@@ -840,7 +834,7 @@ export function Header() {
                   onClick={() => setMobileLocationsOpen(!mobileLocationsOpen)}
                   aria-expanded={mobileLocationsOpen}
                   aria-label="Expand Locations Submenu"
-                  className="p-2 text-slate-500 hover:text-slate-900"
+                  className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md transition-colors"
                 >
                   <ChevronDown
                     className={`w-5 h-5 transition-transform duration-200 ${

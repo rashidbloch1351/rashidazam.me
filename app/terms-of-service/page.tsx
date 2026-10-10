@@ -4,7 +4,7 @@ import { Container } from '@/components/ui/Container';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Rashid Azam Portfolio',
+  title: 'Terms of Service | Rashid Azam',
   description: 'Terms of Service for rashidazam.me — governing service agreements and website usage.',
   alternates: {
     canonical: 'https://rashidazam.me/terms-of-service',
@@ -13,22 +13,22 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
   return (
-    <div className="py-12 space-y-12">
+    <div className="py-12 space-y-12 bg-white">
       <Container size="small">
         <Breadcrumbs items={[{ label: 'Terms of Service' }]} />
 
-        <div className="space-y-4 pt-4 border-b border-[#272a30] pb-8">
-          <h1 className="text-4xl font-heading font-bold text-[#f3f4f6]">
+        <div className="space-y-4 pt-4 border-b border-gray-200 pb-8">
+          <h1 className="text-4xl font-heading font-bold text-slate-900">
             Terms of Service
           </h1>
-          <p className="text-xs text-[#6b7280]">
+          <p className="text-xs text-slate-500">
             Last updated: October 8, 2026
           </p>
         </div>
 
-        <div className="space-y-8 text-[#9ca3af] text-sm leading-relaxed pt-4">
+        <div className="space-y-8 text-slate-600 text-sm leading-relaxed pt-4">
           <section className="space-y-3">
-            <h2 className="text-xl font-heading font-semibold text-[#f3f4f6]">
+            <h2 className="text-xl font-heading font-semibold text-slate-900">
               1. Acceptance of Terms
             </h2>
             <p>
@@ -37,8 +37,8 @@ export default function TermsOfServicePage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-heading font-semibold text-[#f3f4f6]">
-              2. Scope of Services & Deliverables
+            <h2 className="text-xl font-heading font-semibold text-slate-900">
+              2. Scope of Services &amp; Deliverables
             </h2>
             <p>
               All client engagements are defined via written project proposals or milestone agreements specifying project scope, deliverables, timelines, and payment schedules.
@@ -46,7 +46,7 @@ export default function TermsOfServicePage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-heading font-semibold text-[#f3f4f6]">
+            <h2 className="text-xl font-heading font-semibold text-slate-900">
               3. Intellectual Property Rights
             </h2>
             <p>
@@ -55,7 +55,7 @@ export default function TermsOfServicePage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-heading font-semibold text-[#f3f4f6]">
+            <h2 className="text-xl font-heading font-semibold text-slate-900">
               4. Limitation of Liability
             </h2>
             <p>

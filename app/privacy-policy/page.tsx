@@ -4,7 +4,7 @@ import { Container } from '@/components/ui/Container';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Rashid Azam Portfolio',
+  title: 'Privacy Policy | Rashid Azam',
   description: 'Privacy Policy for rashidazam.me — detailing data collection, usage, and protection policies.',
   alternates: {
     canonical: 'https://rashidazam.me/privacy-policy',
@@ -13,22 +13,22 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="py-12 space-y-12">
+    <div className="py-12 space-y-12 bg-white">
       <Container size="small">
         <Breadcrumbs items={[{ label: 'Privacy Policy' }]} />
 
-        <div className="space-y-4 pt-4 border-b border-[#272a30] pb-8">
-          <h1 className="text-4xl font-heading font-bold text-[#f3f4f6]">
+        <div className="space-y-4 pt-4 border-b border-gray-200 pb-8">
+          <h1 className="text-4xl font-heading font-bold text-slate-900">
             Privacy Policy
           </h1>
-          <p className="text-xs text-[#6b7280]">
+          <p className="text-xs text-slate-500">
             Last updated: October 8, 2026
           </p>
         </div>
 
-        <div className="space-y-8 text-[#9ca3af] text-sm leading-relaxed pt-4">
+        <div className="space-y-8 text-slate-600 text-sm leading-relaxed pt-4">
           <section className="space-y-3">
-            <h2 className="text-xl font-heading font-semibold text-[#f3f4f6]">
+            <h2 className="text-xl font-heading font-semibold text-slate-900">
               1. Information We Collect
             </h2>
             <p>
@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-heading font-semibold text-[#f3f4f6]">
+            <h2 className="text-xl font-heading font-semibold text-slate-900">
               2. How We Use Your Information
             </h2>
             <p>
@@ -46,8 +46,8 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-heading font-semibold text-[#f3f4f6]">
-              3. Analytics & Cookies
+            <h2 className="text-xl font-heading font-semibold text-slate-900">
+              3. Analytics &amp; Cookies
             </h2>
             <p>
               We may utilize standard website analytics tools (such as Google Analytics 4 or Vercel Web Analytics) to analyze anonymous website traffic patterns, page views, and user engagement metrics to improve website performance.
@@ -55,8 +55,8 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-heading font-semibold text-[#f3f4f6]">
-              4. Data Protection & Security
+            <h2 className="text-xl font-heading font-semibold text-slate-900">
+              4. Data Protection &amp; Security
             </h2>
             <p>
               We implement industry-standard security measures to protect your submitted contact information against unauthorized access, alteration, or disclosure.
@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-heading font-semibold text-[#f3f4f6]">
+            <h2 className="text-xl font-heading font-semibold text-slate-900">
               5. Contact Information
             </h2>
             <p>

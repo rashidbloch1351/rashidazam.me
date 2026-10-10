@@ -51,7 +51,7 @@ export const locationsData: Record<string, LocationInfo> = {
     metaDescription: 'Data-driven SEO services in Lahore by expert consultant Rashid Azam. Specialized in local SEO, Google Maps rankings, technical audits, WordPress SEO, and web development.',
     canonical: 'https://rashidazam.me/locations/lahore',
     h1: 'SEO Services in Lahore',
-    tagline: 'Commercial Hub & Local SEO Excellence (3.6K Search Opportunity)',
+    tagline: 'Commercial Hub & Local SEO Excellence',
     primaryKeywordData: {
       keyword: 'seo services in lahore',
       volume: '3,600/mo',
@@ -179,7 +179,7 @@ export const locationsData: Record<string, LocationInfo> = {
     metaDescription: 'Professional SEO services in Islamabad by consultant Rashid Azam. Technical SEO audits, local search strategy, WordPress optimization, and web app development for Islamabad tech firms.',
     canonical: 'https://rashidazam.me/locations/islamabad',
     h1: 'SEO Services in Islamabad',
-    tagline: 'Capital Territory & Tech Sector Growth (1.3K Search Opportunity)',
+    tagline: 'Capital Territory & Tech Sector Growth',
     primaryKeywordData: {
       keyword: 'seo services in islamabad',
       volume: '1,300/mo',

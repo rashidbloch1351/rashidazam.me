@@ -1,7 +1,10 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowUpRight, Search, Code, Video, Bot, PenTool, TrendingUp, Layers, CheckCircle2 } from 'lucide-react';
+import { 
+  ArrowUpRight, Search, Code, Video, Bot, PenTool, TrendingUp, Layers, CheckCircle2,
+  Globe, MapPin, FileSearch, Cpu, ShoppingCart, Zap, MessageSquare
+} from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
@@ -27,12 +30,20 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   const serviceIcons: Record<string, React.ReactNode> = {
+    'web-development': <Code className="w-6 h-6 text-[#d97706]" />,
+    'wordpress-seo': <Zap className="w-6 h-6 text-[#d97706]" />,
+    'local-seo': <MapPin className="w-6 h-6 text-[#d97706]" />,
+    'technical-seo': <Code className="w-6 h-6 text-[#d97706]" />,
+    'seo-audit': <FileSearch className="w-6 h-6 text-[#d97706]" />,
+    'ai-seo': <Cpu className="w-6 h-6 text-[#d97706]" />,
+    'answer-engine-optimization': <MessageSquare className="w-6 h-6 text-[#d97706]" />,
+    'ecommerce-seo': <ShoppingCart className="w-6 h-6 text-[#d97706]" />,
     'seo-services': <Search className="w-6 h-6 text-[#d97706]" />,
     'digital-marketing': <TrendingUp className="w-6 h-6 text-[#d97706]" />,
     'youtube-automation': <Video className="w-6 h-6 text-[#d97706]" />,
-    'web-development': <Code className="w-6 h-6 text-[#d97706]" />,
     'ai-automation': <Bot className="w-6 h-6 text-[#d97706]" />,
     'content-writing': <PenTool className="w-6 h-6 text-[#d97706]" />,
+    'wordpress-development': <Globe className="w-6 h-6 text-[#d97706]" />,
   };
 
   return (

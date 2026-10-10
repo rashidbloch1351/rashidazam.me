@@ -44,18 +44,7 @@ export function LocationPageTemplate({ location }: LocationPageTemplateProps) {
     ],
   };
 
-  const faqSchema = location.faqs.length > 0 ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: location.faqs.map((faq) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
-  } : null;
+
 
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -80,12 +69,7 @@ export function LocationPageTemplate({ location }: LocationPageTemplateProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
@@ -107,13 +91,6 @@ export function LocationPageTemplate({ location }: LocationPageTemplateProps) {
                 <MapPin className="w-3.5 h-3.5" />
                 <span>{location.tagline}</span>
               </span>
-
-              {location.primaryKeywordData && (
-                <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
-                  <TrendingUp className="w-3.5 h-3.5" />
-                  <span>Primary Keyword: {location.primaryKeywordData.keyword} ({location.primaryKeywordData.volume} Vol | KD {location.primaryKeywordData.kd})</span>
-                </span>
-              )}
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-slate-900 tracking-tight leading-tight">
@@ -124,23 +101,6 @@ export function LocationPageTemplate({ location }: LocationPageTemplateProps) {
               {location.introParagraphs.map((para, idx) => (
                 <p key={idx}>{para}</p>
               ))}
-            </div>
-
-            {/* Keyword Tags */}
-            <div className="pt-2 space-y-2">
-              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block">
-                Target Expertise & Keyword Coverage:
-              </span>
-              <div className="flex flex-wrap gap-2">
-                {location.targetKeywords.map((kw) => (
-                  <span
-                    key={kw}
-                    className="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-md border border-slate-200/80"
-                  >
-                    {kw}
-                  </span>
-                ))}
-              </div>
             </div>
 
             {/* CTAs */}

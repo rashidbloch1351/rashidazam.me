@@ -51,7 +51,7 @@ export function Footer() {
               Services
             </h3>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/services/seo-services" className="hover:text-[#d97706] transition-colors">Technical SEO</Link></li>
+              <li><Link href="/services/technical-seo" className="hover:text-[#d97706] transition-colors">Technical SEO</Link></li>
               <li><Link href="/services/digital-marketing" className="hover:text-[#d97706] transition-colors">Digital Marketing</Link></li>
               <li><Link href="/services/youtube-automation" className="hover:text-[#d97706] transition-colors">YouTube Automation</Link></li>
               <li><Link href="/services/web-development" className="hover:text-[#d97706] transition-colors">Web Development</Link></li>

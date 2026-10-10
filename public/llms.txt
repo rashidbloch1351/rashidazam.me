@@ -1,10 +1,10 @@
 # Rashid Azam — Web Developer & Technical SEO Expert
 
-> Rashid Azam (also searched as M Rashid Azam / Muhammad Rashid Azam) is a Full-Stack Web Developer, Technical SEO Specialist, and Digital Marketing Consultant based in Pakistan, serving businesses across Pakistan (Lahore, Karachi, Islamabad) and the UAE (Dubai, Abu Dhabi).
+> Rashid Azam (also searched as M Rashid Azam / Muhammad Rashid Azam) is a Full-Stack Web Developer, Technical SEO Specialist, and Digital Marketing Consultant based in Pakistan, serving businesses across Pakistan (Lahore, Karachi, Islamabad, Faisalabad, Multan) and internationally (USA, UK, Germany, UAE).
 
 ## Entity Overview
 - Name: Rashid Azam
-- Credentials: BS Information Technology student, 3+ years freelance experience
+- Credentials: BS Information Technology student, 5+ years freelance experience
 - Core Brands: Rashid Azam Practice (Web Development & Technical SEO Services), TechByRash (YouTube educational brand)
 - Primary Domain: https://rashidazam.me
 - Contact Email: rashidbloch1351@gmail.com
@@ -29,8 +29,10 @@
 - YouTube Growth Hub: https://rashidazam.me/youtube
 - Marketing Growth Hub: https://rashidazam.me/marketing
 - Free Web Tools Hub: https://rashidazam.me/tools
-- Verified Case Studies: https://rashidazam.me/projects
-- Technical Insights Blog: https://rashidazam.me/blog
+
+## Location Coverage
+- Pakistan: Lahore, Islamabad, Karachi, Faisalabad, Multan
+- International: USA, UK, Germany, UAE, Worldwide Remote
 
 ## Key Verified Software Products
 - SwiftPKR USDT to PKR Converter: https://swiftpkrconverter.vercel.app/
