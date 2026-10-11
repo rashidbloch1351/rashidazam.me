@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Free Web & Developer Tools Hub',
   description: 'Explore live web tools, cryptocurrency currency converters, QR code generators, and aggregate calculators built by Rashid Azam.',
   alternates: {
-    canonical: 'https://rashidazam.me/tools',
+    canonical: 'https://www.rashidazam.me/tools',
   },
 };
 

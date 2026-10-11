@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: 'YouTube Automation & Channel Growth Hub',
   description: 'Strategies for building faceless YouTube channels, optimizing CTR and retention, and multi-stream monetization.',
   alternates: {
-    canonical: 'https://rashidazam.me/youtube',
+    canonical: 'https://www.rashidazam.me/youtube',
   },
 };
 

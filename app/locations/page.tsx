@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   title: 'SEO & Web Development Services Worldwide | Locations Directory',
   description: 'Full-stack web development, technical SEO audits, and digital growth services worldwide. Dedicated location hubs across Pakistan (Lahore, Islamabad, Karachi, Faisalabad, Multan), USA, UK, Germany, UAE, and global remote.',
   alternates: {
-    canonical: 'https://rashidazam.me/locations',
+    canonical: 'https://www.rashidazam.me/locations',
   },
   openGraph: {
     title: 'SEO & Web Development Services Worldwide | Locations Directory',
     description: 'Explore dedicated location hubs for SEO services, WordPress optimization, and web development across Pakistan and international markets.',
-    url: 'https://rashidazam.me/locations',
+    url: 'https://www.rashidazam.me/locations',
     type: 'website',
   },
 };
@@ -156,8 +156,8 @@ export default function LocationsPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rashidazam.me' },
-      { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://rashidazam.me/locations' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.rashidazam.me' },
+      { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://www.rashidazam.me/locations' },
     ],
   };
 

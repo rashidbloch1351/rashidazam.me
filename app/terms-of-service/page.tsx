@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Terms of Service | Rashid Azam',
   description: 'Terms of Service for rashidazam.me — governing service agreements and website usage.',
   alternates: {
-    canonical: 'https://rashidazam.me/terms-of-service',
+    canonical: 'https://www.rashidazam.me/terms-of-service',
   },
 };
 

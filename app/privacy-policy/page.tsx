@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | Rashid Azam',
   description: 'Privacy Policy for rashidazam.me — detailing data collection, usage, and protection policies.',
   alternates: {
-    canonical: 'https://rashidazam.me/privacy-policy',
+    canonical: 'https://www.rashidazam.me/privacy-policy',
   },
 };
 

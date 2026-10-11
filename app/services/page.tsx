@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   title: 'SEO & Web Development Services in Pakistan',
   description: 'Technical SEO, local SEO, WordPress SEO, web development, YouTube automation, and digital marketing services by Rashid Azam. Serving businesses in Pakistan and internationally.',
   alternates: {
-    canonical: 'https://rashidazam.me/services',
+    canonical: 'https://www.rashidazam.me/services',
   },
   openGraph: {
     title: 'SEO & Web Development Services | Rashid Azam',
     description: 'Full-service SEO and web development expert serving Pakistan businesses and international clients. Technical SEO, local SEO, WordPress optimization, and custom Next.js development.',
-    url: 'https://rashidazam.me/services',
+    url: 'https://www.rashidazam.me/services',
     type: 'website',
   },
 };

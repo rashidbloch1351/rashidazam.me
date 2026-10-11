@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   title: 'SEO Knowledge Hub | Technical Guides & Local SEO Resources',
   description: 'Free SEO guides covering technical SEO audits, local SEO for Pakistan, schema markup, keyword research, and WordPress optimization. Educational resource by Rashid Azam.',
   alternates: {
-    canonical: 'https://rashidazam.me/seo',
+    canonical: 'https://www.rashidazam.me/seo',
   },
   openGraph: {
     title: 'SEO Knowledge Hub | Rashid Azam',
     description: 'Technical SEO guides, local SEO strategies for Pakistan, schema markup, and keyword research frameworks. Free educational content for business owners and SEO practitioners.',
-    url: 'https://rashidazam.me/seo',
+    url: 'https://www.rashidazam.me/seo',
     type: 'website',
   },
 };

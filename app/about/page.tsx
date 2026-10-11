@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   title: 'About Rashid Azam | Technical SEO Consultant & Web Developer in Pakistan',
   description: 'Rashid Azam is a Technical SEO specialist and full-stack web developer based in Pakistan. Learn about his expertise in SEO services, WordPress optimization, and web development for Pakistani and international businesses.',
   alternates: {
-    canonical: 'https://rashidazam.me/about',
+    canonical: 'https://www.rashidazam.me/about',
   },
   openGraph: {
     title: 'About Rashid Azam | Technical SEO Consultant & Web Developer',
     description: 'SEO consultant and web developer serving businesses across Pakistan and internationally. Expert in technical SEO, local SEO, and WordPress optimization.',
-    url: 'https://rashidazam.me/about',
+    url: 'https://www.rashidazam.me/about',
     type: 'profile',
   },
 };
