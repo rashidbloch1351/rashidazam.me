@@ -32,7 +32,7 @@ export async function generateMetadata({
     title: service.metaTitle,
     description: service.metaDescription,
     alternates: {
-      canonical: `https://rashidazam.me/services/${service.slug}`,
+      canonical: `https://www.rashidazam.me/services/${service.slug}`,
     },
   };
 }
@@ -55,7 +55,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
     provider: {
       '@type': 'Person',
       name: 'Rashid Azam',
-      url: 'https://rashidazam.me',
+      url: 'https://www.rashidazam.me',
     },
     description: service.metaDescription,
     areaServed: ['Pakistan', 'United Arab Emirates', 'Worldwide'],

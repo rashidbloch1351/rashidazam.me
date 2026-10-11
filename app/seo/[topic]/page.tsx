@@ -29,7 +29,7 @@ export async function generateMetadata({
     title: item.metaTitle,
     description: item.metaDescription,
     alternates: {
-      canonical: `https://rashidazam.me/seo/${item.slug}`,
+      canonical: `https://www.rashidazam.me/seo/${item.slug}`,
     },
   };
 }

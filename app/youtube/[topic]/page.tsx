@@ -28,7 +28,7 @@ export async function generateMetadata({
     title: item.metaTitle,
     description: item.metaDescription,
     alternates: {
-      canonical: `https://rashidazam.me/youtube/${item.slug}`,
+      canonical: `https://www.rashidazam.me/youtube/${item.slug}`,
     },
   };
 }
