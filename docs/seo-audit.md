@@ -13,7 +13,7 @@
 - **Title Tag Lengths**: All meta titles strictly kept under 60 characters.
 - **Meta Description Lengths**: All meta descriptions strictly kept between 120 and 155 characters.
 - **Heading Hierarchy**: 100% single `<h1>` tag per page followed by clean `<h2>` and `<h3>` document structures.
-- **Canonical Consistency**: Self-referential `<link rel="canonical" href="https://rashidazam.me/[route]" />` generated on every indexable page.
+- **Canonical Consistency**: Self-referential `<link rel="canonical" href="https://www.rashidazam.me/[route]" />` generated on every indexable page.
 - **JSON-LD Schema Integration**: Validated `Person`, `WebSite`, `ProfessionalService`, `Service`, `BreadcrumbList`, `FAQPage`, `BlogPosting`, and `CreativeWork` schemas across all routes.
 - **Image Optimization**: All images converted to WebP/AVIF format with descriptive alt text attributes.
 

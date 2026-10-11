@@ -1,6 +1,6 @@
 # COMPLETE WEBSITE AUDIT REPORT — RASHID AZAM PERSONAL WEBSITE
 
-**Target Domain:** `https://rashidazam.me`  
+**Target Domain:** `https://www.rashidazam.me`  
 **Audit Type:** Codebase, Technical SEO, UX/UI, Performance, Accessibility & Content Audit  
 **Mode:** AUDIT AND REPORT ONLY (Strict Read-Only Verification — 0 Changes Made)  
 **Date:** October 10, 2026  
@@ -10,7 +10,7 @@
 
 ## A. EXECUTIVE SUMMARY
 
-An extensive audit of the **Rashid Azam personal portfolio codebase (`https://rashidazam.me`)** was conducted across all 57 static and dynamic pages, component libraries, data schemas, routing matrices, metadata configs, and keyword maps.
+An extensive audit of the **Rashid Azam personal portfolio codebase (`https://www.rashidazam.me`)** was conducted across all 57 static and dynamic pages, component libraries, data schemas, routing matrices, metadata configs, and keyword maps.
 
 ### Overall Website Health: **88/100 (Strong Foundation with Specific Technical & Navigation Gaps)**
 
@@ -71,7 +71,7 @@ An extensive audit of the **Rashid Azam personal portfolio codebase (`https://ra
    - Confirmed static files `public/sitemap.xml` and `public/robots.txt` were safely removed so Next.js dynamic handlers serve canonical XML.
 2. **Robots Directives (`app/robots.ts`)**:
    - Allows all search bots (`userAgent: '*'`, `allow: '/'`).
-   - Declares canonical sitemap location `https://rashidazam.me/sitemap.xml`.
+   - Declares canonical sitemap location `https://www.rashidazam.me/sitemap.xml`.
 3. **Structured Data (JSON-LD)**:
    - `Person` and `WebSite` schemas present in `app/layout.tsx`.
    - `Service` and `BreadcrumbList` schemas present in `LocationPageTemplate.tsx` and `Services` pages.
@@ -129,7 +129,7 @@ An extensive audit of the **Rashid Azam personal portfolio codebase (`https://ra
 1. **Local SEO Pages (Pakistan Cities)**:
    - Lahore, Islamabad, Karachi, Faisalabad, and Multan pages incorporate localized search metrics (volume & KD) and custom FAQ answers.
 2. **International Location Pages**:
-   - USA, UK, Germany, UAE, and Worldwide pages use distinct canonicals (`https://rashidazam.me/locations/[slug]`). Hreflang tags are not required at this stage as all pages are in English, but self-referencing canonicals are properly set.
+   - USA, UK, Germany, UAE, and Worldwide pages use distinct canonicals (`https://www.rashidazam.me/locations/[slug]`). Hreflang tags are not required at this stage as all pages are in English, but self-referencing canonicals are properly set.
 
 ---
 

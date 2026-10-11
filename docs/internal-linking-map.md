@@ -1,6 +1,6 @@
 # Verified Page Inventory & Internal Linking Map — Rashid Azam Portfolio
 
-**Domain**: `https://rashidazam.me`  
+**Domain**: `https://www.rashidazam.me`  
 **Architecture**: Next.js 14 App Router (56 Verified Static Routes)
 
 ---

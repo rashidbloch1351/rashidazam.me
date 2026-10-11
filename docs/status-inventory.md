@@ -1,5 +1,5 @@
 # STATUS INVENTORY & PHASE 0 AUDIT REPORT
-**Website:** Rashid Azam Personal Portfolio (https://rashidazam.me)  
+**Website:** Rashid Azam Personal Portfolio (https://www.rashidazam.me)  
 **Date:** October 9, 2026  
 **Auditor:** Senior Full-Stack Engineer & Technical SEO Lead
 
@@ -52,7 +52,7 @@
 
 ## 3. LIVE SITE vs LOCAL BUILD COMPARISON
 
-- **Live Site (`https://rashidazam.me`)**:
+- **Live Site (`https://www.rashidazam.me`)**:
   - Currently running an older Vite Single Page Application (SPA) bundle (`index-DEvlnc2O.js`) rendering into `<div id="root"></div>`.
   - Lacks full pre-rendered static HTML pages for individual location and service URLs.
   - Retains Pinterest domain verification tag (`p:domain_verify: cf84da46506aedb7f284cd08393e1c13`).

@@ -1,6 +1,6 @@
 # RASHID AZAM — COMPREHENSIVE SEO KEYWORD MAP (`/docs/keyword-map.md`)
 
-This document maps all 53 static pages across the **Rashid Azam Personal Portfolio website (`https://rashidazam.me`)** to target primary keywords, search volume metrics, Keyword Difficulty (KD), search intent, and secondary supporting terms.
+This document maps all 53 static pages across the **Rashid Azam Personal Portfolio website (`https://www.rashidazam.me`)** to target primary keywords, search volume metrics, Keyword Difficulty (KD), search intent, and secondary supporting terms.
 
 ---
 

@@ -1,6 +1,6 @@
 # RASHID AZAM — CONTENT ARCHITECTURE & ON-PAGE PLAN (`/docs/content-plan.md`)
 
-This document outlines the content architecture, heading hierarchy (H1, H2, H3), schema structured data specifications, internal linking rules, and conversion elements for the **Rashid Azam Personal Portfolio website (`https://rashidazam.me`)**.
+This document outlines the content architecture, heading hierarchy (H1, H2, H3), schema structured data specifications, internal linking rules, and conversion elements for the **Rashid Azam Personal Portfolio website (`https://www.rashidazam.me`)**.
 
 ---
 

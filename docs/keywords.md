@@ -1,6 +1,6 @@
 # RASHID AZAM — KEYWORD RESEARCH MATRIX & MAPPING (`/docs/keywords.md`)
 
-This document records the master keyword research matrix, search intents, page assignments, and verified keyword metrics for **Rashid Azam Personal Portfolio (`https://rashidazam.me`)**.
+This document records the master keyword research matrix, search intents, page assignments, and verified keyword metrics for **Rashid Azam Personal Portfolio (`https://www.rashidazam.me`)**.
 
 ---
 

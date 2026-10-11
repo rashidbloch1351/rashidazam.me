@@ -163,7 +163,7 @@ portfolio/
    ```env
    RESEND_API_KEY=re_your_actual_resend_api_key
    CONTACT_RECIPIENT_EMAIL=rashidbloch1351@gmail.com
-   NEXT_PUBLIC_SITE_URL=https://rashidazam.me
+   NEXT_PUBLIC_SITE_URL=https://www.rashidazam.me
    ```
 
 4. **Run Development Server**:
@@ -231,7 +231,7 @@ Deploying `rashidazam.me` on Vercel requires zero complex server setups:
 Under **Environment Variables**, add:
 - `RESEND_API_KEY`: *(Your secret Resend API key starting with `re_`)*
 - `CONTACT_RECIPIENT_EMAIL`: `rashidbloch1351@gmail.com`
-- `NEXT_PUBLIC_SITE_URL`: `https://rashidazam.me`
+- `NEXT_PUBLIC_SITE_URL`: `https://www.rashidazam.me`
 
 ### 4. Deploy & Connect Domain
 1. Click **Deploy**. Vercel will run `npm run build` and generate all 88 static pages automatically.

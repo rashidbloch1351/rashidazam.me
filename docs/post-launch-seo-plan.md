@@ -1,6 +1,6 @@
 # 30-Day Post-Launch SEO & Organic Growth Roadmap — rashidazam.me
 
-**Target Site**: `https://rashidazam.me`  
+**Target Site**: `https://www.rashidazam.me`  
 **Author**: M. Rashid Azam (CEO, Arham Digital Agency)  
 **Date**: October 8, 2026  
 **Architecture**: Next.js 14 App Router (88 Static SSG URLs)  
@@ -29,27 +29,27 @@ This 30-day post-launch plan establishes a high-impact roadmap to ensure rapid i
 ### Day 1: Search Console & Webmaster Setup
 - [ ] **Google Search Console (GSC)**:
   - Add domain property `rashidazam.me` via DNS TXT record.
-  - Submit sitemap URL: `https://rashidazam.me/sitemap.xml`.
+  - Submit sitemap URL: `https://www.rashidazam.me/sitemap.xml`.
   - Verify that all 88 URLs are discovered in sitemap processing.
 - [ ] **Bing Webmaster Tools**:
   - Import GSC settings directly into Bing Webmaster Tools.
-  - Submit `https://rashidazam.me/sitemap.xml` and `https://rashidazam.me/llms.txt`.
+  - Submit `https://www.rashidazam.me/sitemap.xml` and `https://www.rashidazam.me/llms.txt`.
 - [ ] **Google Analytics 4 (GA4)**:
   - Create GA4 property and install measurement code (or Tag Manager container).
   - Define custom lead conversion events: `form_submit_success` (on `/thank-you` page view) and `whatsapp_click`.
 
 ### Days 2–3: Direct URL Indexing Requests
 - [ ] Use GSC URL Inspection tool to request priority indexing for top 10 revenue-generating pages:
-  1. `https://rashidazam.me/` (Homepage)
-  2. `https://rashidazam.me/services` (Services Hub)
-  3. `https://rashidazam.me/services/seo-services`
-  4. `https://rashidazam.me/services/digital-marketing`
-  5. `https://rashidazam.me/services/youtube-automation`
-  6. `https://rashidazam.me/seo` (SEO Cluster)
-  7. `https://rashidazam.me/youtube` (YouTube Cluster)
-  8. `https://rashidazam.me/marketing` (Marketing Cluster)
-  9. `https://rashidazam.me/projects` (Projects Hub)
-  10. `https://rashidazam.me/contact`
+  1. `https://www.rashidazam.me/` (Homepage)
+  2. `https://www.rashidazam.me/services` (Services Hub)
+  3. `https://www.rashidazam.me/services/seo-services`
+  4. `https://www.rashidazam.me/services/digital-marketing`
+  5. `https://www.rashidazam.me/services/youtube-automation`
+  6. `https://www.rashidazam.me/seo` (SEO Cluster)
+  7. `https://www.rashidazam.me/youtube` (YouTube Cluster)
+  8. `https://www.rashidazam.me/marketing` (Marketing Cluster)
+  9. `https://www.rashidazam.me/projects` (Projects Hub)
+  10. `https://www.rashidazam.me/contact`
 
 ### Days 4–7: Technical Monitoring & Crawl Health
 - [ ] **404 & Redirect Check**: Run GSC Coverage Report to ensure zero 404 errors or soft-404 flags on legacy URLs.
@@ -82,7 +82,7 @@ Publish the first 3 strategic articles from `docs/content-calendar.md`:
 ## Week 3: Entity Building & Off-Page Outreach (Days 15–21)
 
 ### Days 15–17: Digital Entity & Social Alignment
-- [ ] Audit and align social media profiles with identical bio text, official website link (`https://rashidazam.me`), and founder titles:
+- [ ] Audit and align social media profiles with identical bio text, official website link (`https://www.rashidazam.me`), and founder titles:
   - **LinkedIn**: M. Rashid Azam (CEO at Arham Digital Agency)
   - **Twitter / X**: `@rashidazam1351`
   - **Facebook**: `facebook.com/rashidazam1351`
