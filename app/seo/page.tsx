@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     description: 'Technical SEO guides, local SEO strategies for Pakistan, schema markup, and keyword research frameworks. Free educational content for business owners and SEO practitioners.',
     url: 'https://www.rashidazam.me/seo',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Rashid Azam - Web Developer & Technical SEO Expert',
+      },
+    ],
   },
 };
 

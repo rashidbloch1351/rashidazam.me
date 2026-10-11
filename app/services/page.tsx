@@ -25,6 +25,14 @@ export const metadata: Metadata = {
     description: 'Full-service SEO and web development expert serving Pakistan businesses and international clients. Technical SEO, local SEO, WordPress optimization, and custom Next.js development.',
     url: 'https://www.rashidazam.me/services',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Rashid Azam - Web Developer & Technical SEO Expert',
+      },
+    ],
   },
 };
 

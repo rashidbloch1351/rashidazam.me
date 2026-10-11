@@ -14,6 +14,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.rashidazam.me/tools',
   },
+  openGraph: {
+    url: 'https://www.rashidazam.me/tools',
+    type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Rashid Azam - Web Developer & Technical SEO Expert',
+      },
+    ],
+  },
 };
 
 export default function ToolsHubPage() {

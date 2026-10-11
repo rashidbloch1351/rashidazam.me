@@ -44,7 +44,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.rashidazam.me',
     siteName: 'Rashid Azam Portfolio',
     images: [
       {
@@ -78,7 +77,7 @@ export default function RootLayout({
     telephone: '+923276434422',
     sameAs: [
       'https://www.linkedin.com/in/mrashid1351/',
-      'https://github.com/rashidazam',
+      'https://github.com/rashidazam1351',
       'https://facebook.com/rashidazam1351',
       'https://instagram.com/rashidazam1351',
       'https://fiverr.com/rashidazam1351',

@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     description: 'Direct project inquiries for web application development, technical SEO audits, and AI workflows.',
     url: 'https://www.rashidazam.me/contact',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Rashid Azam - Web Developer & Technical SEO Expert',
+      },
+    ],
   },
 };
 

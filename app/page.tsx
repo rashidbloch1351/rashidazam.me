@@ -25,6 +25,14 @@ export const metadata: Metadata = {
     description: 'Technical SEO specialist and full-stack web developer. SEO services for Lahore, Islamabad, Karachi, and international markets.',
     url: 'https://www.rashidazam.me',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Rashid Azam - Web Developer & Technical SEO Expert',
+      },
+    ],
   },
 };
 
