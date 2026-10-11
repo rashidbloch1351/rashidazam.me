@@ -8,7 +8,7 @@
 
 The official personal portfolio and digital authority platform for **M. Rashid Azam** — Technical SEO Consultant, Full-Stack Web Developer, and YouTube Educator.
 
-Rebuilt from a legacy Vite client-side single-page application into a high-performance, **88-page static site generation (SSG)** Next.js 14 App Router architecture deployed on Vercel.
+Rebuilt from a legacy Vite client-side single-page application into a high-performance, **48-page static site generation (SSG)** Next.js 14 App Router architecture deployed on Vercel.
 
 ---
 
@@ -28,13 +28,13 @@ Rebuilt from a legacy Vite client-side single-page application into a high-perfo
 
 ## Features & Highlights
 
-- **88 SSG URLs**: Fully static prerendering for instant global CDN delivery.
+- **48 SSG URLs**: Fully static prerendering for instant global CDN delivery (public, canonical, indexable pages — redirects and non-indexable routes excluded).
 - **Topic Cluster Hubs**: Dedicated silo architecture for `/seo`, `/youtube`, `/marketing`, and `/tools`.
 - **Verified Proof Matrix**: 21 deep case studies with verified deliverables, live project links, tech tags, and schema.
 - **Server Action Lead Capture**: Form submission with Resend email delivery and honeypot anti-spam verification.
 - **Comprehensive Schema**: Embedded JSON-LD (`Person`, `Organization`, `Service`, `CreativeWork`, `BlogPosting`, `FAQPage`, `BreadcrumbList`).
 - **Core Web Vitals Optimized**: Lighthouse 98/100 Performance, 100/100 Accessibility, 100/100 Best Practices, 100/100 SEO.
-- **Technical SEO Native**: Dynamic `sitemap.ts` (88 URLs), `robots.ts`, and AI crawler friendly `public/llms.txt`.
+- **Technical SEO Native**: Dynamic `sitemap.ts` (48 URLs), `robots.ts`, and AI crawler friendly `public/llms.txt`.
 - **WCAG 2.1 AA Accessible**: Keyboard navigation, screen-reader focus skip links, and compliant color contrast ratios.
 
 ---
@@ -76,7 +76,7 @@ portfolio/
 │   ├── not-found.tsx           # Custom 404 error page
 │   ├── page.tsx                # Homepage
 │   ├── robots.ts               # Dynamic robots.txt handler
-│   └── sitemap.ts              # Dynamic sitemap.xml generator (88 static URLs)
+│   └── sitemap.ts              # Dynamic sitemap.xml generator (48 static URLs)
 ├── components/                 # Shared UI Components
 │   ├── AuthorBox.tsx           # Article author box component
 │   ├── BlogCard.tsx            # Blog post snippet card
@@ -109,7 +109,7 @@ portfolio/
 │   ├── content-plan.md         # Content architecture & GEO strategy
 │   ├── design-system.md        # Warm Editorial design system tokens
 │   ├── internal-linking-plan.md# Topical cluster linking matrix
-│   ├── keyword-map.md          # 88-page primary/secondary keyword map
+│   ├── keyword-map.md          # 48-page primary/secondary keyword map
 │   ├── link-audit.md           # 0 orphan URL verification report
 │   ├── performance-qa-report.md# Core Web Vitals & accessibility audit
 │   ├── project-verification.md # 21 case study proof matrix
@@ -144,7 +144,7 @@ portfolio/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/rashidazam/portfolio.git
+   git clone https://github.com/rashidazam1351/portfolio.git
    cd portfolio
    ```
 
@@ -179,10 +179,10 @@ portfolio/
 | Script | Command | Description |
 | :--- | :--- | :--- |
 | **Development** | `npm run dev` | Starts local development server on port 3000 |
-| **Production Build** | `npm run build` | Compiles production bundle & generates 88 static pages |
+| **Production Build** | `npm run build` | Compiles production bundle & generates static pages (48 indexable URLs in sitemap) |
 | **Start Production** | `npm run start` | Launches built production server locally |
 | **Linting** | `npm run lint` | Runs ESLint and checks TypeScript code validity |
-| **Link Audit** | `node scripts/run-link-audit.js` | Audits internal links across all 88 URLs for zero orphans |
+| **Link Audit** | `node scripts/run-link-audit.js` | Audits internal links across all 48 sitemap URLs for zero orphans |
 
 ---
 
@@ -234,7 +234,7 @@ Under **Environment Variables**, add:
 - `NEXT_PUBLIC_SITE_URL`: `https://www.rashidazam.me`
 
 ### 4. Deploy & Connect Domain
-1. Click **Deploy**. Vercel will run `npm run build` and generate all 88 static pages automatically.
+1. Click **Deploy**. Vercel will run `npm run build` and generate all 48 static pages automatically.
 2. Under **Project Settings** > **Domains**, add `rashidazam.me` and `www.rashidazam.me`.
 3. Update your domain DNS records:
    - `A` Record: `@` -> `76.76.21.21`
@@ -262,7 +262,7 @@ All 41 original sitemap URLs from the legacy site have been preserved 1:1. Addit
 For detailed architectural specifications, review the docs in [`docs/`](file:///d:/portfolio/docs/):
 
 - [`docs/audit.md`](file:///d:/portfolio/docs/audit.md) — Initial asset, image, and route discovery audit.
-- [`docs/keyword-map.md`](file:///d:/portfolio/docs/keyword-map.md) — 88-page target keyword & meta title mapping.
+- [`docs/keyword-map.md`](file:///d:/portfolio/docs/keyword-map.md) — 48-page target keyword & meta title mapping.
 - [`docs/internal-linking-plan.md`](file:///d:/portfolio/docs/internal-linking-plan.md) — Topic cluster internal linking architecture.
 - [`docs/content-plan.md`](file:///d:/portfolio/docs/content-plan.md) — GEO answer box & content pillar plan.
 - [`docs/design-system.md`](file:///d:/portfolio/docs/design-system.md) — Color palette, typography & component tokens.

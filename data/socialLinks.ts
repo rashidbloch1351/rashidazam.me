@@ -6,7 +6,7 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
   { label: "LinkedIn", url: "https://www.linkedin.com/in/mrashid1351/", handle: "M. Rashid Azam" },
-  { label: "GitHub", url: "https://github.com/rashidazam", handle: "@rashidazam" },
+  { label: "GitHub", url: "https://github.com/rashidazam1351", handle: "@rashidazam1351" },
   { label: "YouTube", url: "https://youtube.com/@TechByRash", handle: "@TechByRash" },
   { label: "Instagram", url: "https://instagram.com/rashidazam1351", handle: "@rashidazam1351" },
   { label: "Facebook", url: "https://facebook.com/rashidazam1351", handle: "@rashidazam1351" },
