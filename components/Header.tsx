@@ -453,9 +453,9 @@ export function Header() {
               <div className="bg-white rounded-2xl shadow-2xl border border-gray-200/80 p-5">
                 <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100">
                   <div>
-                    <h3 className="font-heading font-semibold text-sm text-slate-900">
+                    <span className="font-heading font-semibold text-sm text-slate-900">
                       SEO Knowledge Hub & Solutions
-                    </h3>
+                    </span>
                     <p className="text-xs text-slate-500">
                       Technical SEO frameworks, audits, and organic ranking capabilities.
                     </p>
@@ -488,9 +488,9 @@ export function Header() {
                           {item.icon}
                         </div>
                         <div className="min-w-0">
-                          <h4 className="font-heading font-semibold text-slate-900 text-xs truncate">
+                          <span className="font-heading font-semibold text-slate-900 text-xs truncate">
                             {item.name}
-                          </h4>
+                          </span>
                           <p className="text-[11px] text-slate-500 truncate mt-0.5">
                             {item.description}
                           </p>
