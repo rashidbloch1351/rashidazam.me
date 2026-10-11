@@ -16,13 +16,13 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://rashidazam.me',
+        item: 'https://www.rashidazam.me',
       },
       ...items.map((item, idx) => ({
         '@type': 'ListItem',
         position: idx + 2,
         name: item.label,
-        ...(item.href ? { item: `https://rashidazam.me${item.href}` } : {}),
+        ...(item.href ? { item: `https://www.rashidazam.me${item.href}` } : {}),
       })),
     ],
   };

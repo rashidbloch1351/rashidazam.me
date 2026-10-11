@@ -6,7 +6,7 @@
 - Name: Rashid Azam
 - Credentials: BS Information Technology student, 5+ years freelance experience
 - Core Brands: Rashid Azam Practice (Web Development & Technical SEO Services), TechByRash (YouTube educational brand)
-- Primary Domain: https://rashidazam.me
+- Primary Domain: https://www.rashidazam.me
 - Contact Email: rashidbloch1351@gmail.com
 - Contact WhatsApp: https://wa.me/923276434422
 
@@ -25,10 +25,10 @@
    - Technical blog writing, website copywriting, GEO-optimized articles.
 
 ## Knowledge & Topic Clusters
-- SEO Knowledge Hub: https://rashidazam.me/seo
-- YouTube Growth Hub: https://rashidazam.me/youtube
-- Marketing Growth Hub: https://rashidazam.me/marketing
-- Free Web Tools Hub: https://rashidazam.me/tools
+- SEO Knowledge Hub: https://www.rashidazam.me/seo
+- YouTube Growth Hub: https://www.rashidazam.me/youtube
+- Marketing Growth Hub: https://www.rashidazam.me/marketing
+- Free Web Tools Hub: https://www.rashidazam.me/tools
 
 ## Location Coverage
 - Pakistan: Lahore, Islamabad, Karachi, Faisalabad, Multan

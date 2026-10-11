@@ -49,7 +49,7 @@ export const locationsData: Record<string, LocationInfo> = {
     region: 'pakistan',
     title: 'SEO Services in Lahore | SEO Expert & Consultant Rashid Azam',
     metaDescription: 'Data-driven SEO services in Lahore by expert consultant Rashid Azam. Specialized in local SEO, Google Maps rankings, technical audits, WordPress SEO, and web development.',
-    canonical: 'https://rashidazam.me/locations/lahore',
+    canonical: 'https://www.rashidazam.me/locations/lahore',
     h1: 'SEO Services in Lahore',
     tagline: 'Commercial Hub & Local SEO Excellence',
     primaryKeywordData: {
@@ -177,7 +177,7 @@ export const locationsData: Record<string, LocationInfo> = {
     region: 'pakistan',
     title: 'SEO Services in Islamabad | SEO Expert & Technical Consultant',
     metaDescription: 'Professional SEO services in Islamabad by consultant Rashid Azam. Technical SEO audits, local search strategy, WordPress optimization, and web app development for Islamabad tech firms.',
-    canonical: 'https://rashidazam.me/locations/islamabad',
+    canonical: 'https://www.rashidazam.me/locations/islamabad',
     h1: 'SEO Services in Islamabad',
     tagline: 'Capital Territory & Tech Sector Growth',
     primaryKeywordData: {
@@ -304,7 +304,7 @@ export const locationsData: Record<string, LocationInfo> = {
     region: 'pakistan',
     title: 'SEO Services in Karachi | E-Commerce & Local Technical SEO Expert',
     metaDescription: 'Top-tier SEO services in Karachi by technical consultant Rashid Azam. E-commerce SEO, local map pack rankings, WordPress optimization, and web development for Karachi businesses.',
-    canonical: 'https://rashidazam.me/locations/karachi',
+    canonical: 'https://www.rashidazam.me/locations/karachi',
     h1: 'SEO Services in Karachi',
     tagline: 'Financial Capital & E-Commerce Dominance',
     targetKeywords: [
@@ -424,7 +424,7 @@ export const locationsData: Record<string, LocationInfo> = {
     region: 'pakistan',
     title: 'SEO Services in Faisalabad | Technical SEO & Web Development Expert',
     metaDescription: 'Dedicated SEO services in Faisalabad by consultant Rashid Azam. Helping manufacturers, textile exporters, local businesses, and e-commerce brands expand online reach with technical SEO & fast web development.',
-    canonical: 'https://rashidazam.me/locations/faisalabad',
+    canonical: 'https://www.rashidazam.me/locations/faisalabad',
     h1: 'SEO Services in Faisalabad',
     tagline: 'Industrial Powerhouse & B2B/E-Commerce Growth',
     targetKeywords: [
@@ -544,7 +544,7 @@ export const locationsData: Record<string, LocationInfo> = {
     region: 'pakistan',
     title: 'SEO Services in Multan | Local SEO Expert & Web Specialist',
     metaDescription: 'Expert SEO services in Multan by consultant Rashid Azam. Specializing in local map pack rankings, WordPress SEO, technical website performance, and custom web development for Multan businesses.',
-    canonical: 'https://rashidazam.me/locations/multan',
+    canonical: 'https://www.rashidazam.me/locations/multan',
     h1: 'SEO Services in Multan',
     tagline: 'Regional Commercial Center & Local Search Visibility',
     targetKeywords: [
@@ -664,7 +664,7 @@ export const locationsData: Record<string, LocationInfo> = {
     region: 'international',
     title: 'SEO Services in USA | Technical SEO & Next.js Web Development',
     metaDescription: 'Expert technical SEO services and custom web development for US-based startups, SaaS companies, and agencies. Remote collaboration with consultant Rashid Azam.',
-    canonical: 'https://rashidazam.me/locations/usa',
+    canonical: 'https://www.rashidazam.me/locations/usa',
     h1: 'SEO Services & Web Development in the USA',
     tagline: 'Remote Technical SEO & Web Engineering for US Businesses',
     targetKeywords: [
@@ -763,7 +763,7 @@ export const locationsData: Record<string, LocationInfo> = {
     region: 'international',
     title: 'SEO Services in UK | Technical SEO & Web Engineering Specialist',
     metaDescription: 'Data-driven technical SEO services and web development for UK businesses, SMEs, and agencies. Remote collaboration with consultant Rashid Azam.',
-    canonical: 'https://rashidazam.me/locations/uk',
+    canonical: 'https://www.rashidazam.me/locations/uk',
     h1: 'SEO Services & Web Development in the UK',
     tagline: 'Technical Search Precision & Custom Web Builds for UK Brands',
     targetKeywords: [
@@ -862,7 +862,7 @@ export const locationsData: Record<string, LocationInfo> = {
     region: 'international',
     title: 'SEO Services in Germany | Technical SEO & Web Engineering',
     metaDescription: 'Technical SEO services and custom web development for German businesses, international exporters, and tech startups. Remote consultant Rashid Azam.',
-    canonical: 'https://rashidazam.me/locations/germany',
+    canonical: 'https://www.rashidazam.me/locations/germany',
     h1: 'SEO Services & Web Development for Businesses in Germany',
     tagline: 'Technical Precision & International Web Standards for German Markets',
     targetKeywords: [
@@ -961,7 +961,7 @@ export const locationsData: Record<string, LocationInfo> = {
     region: 'international',
     title: 'SEO Services in UAE & Dubai | Local & E-Commerce SEO Specialist',
     metaDescription: 'High-impact SEO services in the UAE and Dubai by consultant Rashid Azam. Specializing in Google Maps rankings, technical SEO, e-commerce optimization, and custom web development.',
-    canonical: 'https://rashidazam.me/locations/uae',
+    canonical: 'https://www.rashidazam.me/locations/uae',
     h1: 'SEO Services in UAE & Dubai',
     tagline: 'Dubai & GCC Market Dominance & Local Map Pack Rankings',
     targetKeywords: [
@@ -1062,7 +1062,7 @@ export const locationsData: Record<string, LocationInfo> = {
     region: 'global',
     title: 'Worldwide SEO & Web Development Services | Remote Digital Solutions',
     metaDescription: 'Global SEO services, technical search audits, and Next.js web development for international clients, startups, and agencies worldwide by consultant Rashid Azam.',
-    canonical: 'https://rashidazam.me/locations/worldwide',
+    canonical: 'https://www.rashidazam.me/locations/worldwide',
     h1: 'SEO & Web Development Services for Businesses Worldwide',
     tagline: 'Global Remote Delivery, Technical Excellence & Scalable Web Solutions',
     targetKeywords: [
