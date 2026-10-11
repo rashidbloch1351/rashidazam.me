@@ -11,7 +11,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { youtubeClusterTopics } from '@/data/clusters/youtube';
 
 export const metadata: Metadata = {
-  title: 'YouTube Automation & Channel Growth Hub | Rashid Azam',
+  title: 'YouTube Automation & Channel Growth Hub',
   description: 'Strategies for building faceless YouTube channels, optimizing CTR and retention, and multi-stream monetization.',
   alternates: {
     canonical: 'https://rashidazam.me/youtube',

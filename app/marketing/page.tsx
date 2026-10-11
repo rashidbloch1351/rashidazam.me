@@ -10,7 +10,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { marketingClusterTopics } from '@/data/clusters/marketing';
 
 export const metadata: Metadata = {
-  title: 'Digital Marketing & PPC Growth Hub | Rashid Azam',
+  title: 'Digital Marketing & PPC Growth Hub',
   description: 'Guides on high-intent Google Search Ads, scaling Meta Facebook/Instagram campaigns, and conversion rate optimization (CRO).',
   alternates: {
     canonical: 'https://rashidazam.me/marketing',

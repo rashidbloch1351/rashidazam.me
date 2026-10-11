@@ -15,7 +15,7 @@ import { Testimonials } from '@/components/Testimonials';
 import { pillarServices } from '@/data/servicesData';
 
 export const metadata: Metadata = {
-  title: 'SEO & Web Development Services in Pakistan | Rashid Azam',
+  title: 'SEO & Web Development Services in Pakistan',
   description: 'Technical SEO, local SEO, WordPress SEO, web development, YouTube automation, and digital marketing services by Rashid Azam. Serving businesses in Pakistan and internationally.',
   alternates: {
     canonical: 'https://rashidazam.me/services',

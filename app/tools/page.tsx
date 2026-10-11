@@ -9,7 +9,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { toolsData } from '@/data/toolsData';
 
 export const metadata: Metadata = {
-  title: 'Free Web & Developer Tools Hub | Rashid Azam',
+  title: 'Free Web & Developer Tools Hub',
   description: 'Explore live web tools, cryptocurrency currency converters, QR code generators, and aggregate calculators built by Rashid Azam.',
   alternates: {
     canonical: 'https://rashidazam.me/tools',

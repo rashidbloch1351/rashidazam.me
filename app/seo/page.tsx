@@ -10,7 +10,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { seoClusterTopics } from '@/data/clusters/seo';
 
 export const metadata: Metadata = {
-  title: 'SEO Knowledge Hub | Technical Guides & Local SEO Resources | Rashid Azam',
+  title: 'SEO Knowledge Hub | Technical Guides & Local SEO Resources',
   description: 'Free SEO guides covering technical SEO audits, local SEO for Pakistan, schema markup, keyword research, and WordPress optimization. Educational resource by Rashid Azam.',
   alternates: {
     canonical: 'https://rashidazam.me/seo',
