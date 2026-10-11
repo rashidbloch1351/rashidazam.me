@@ -6,7 +6,7 @@ import { marketingClusterTopics } from '@/data/clusters/marketing';
 import { locationsData } from '@/data/locationsData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://rashidazam.me';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.rashidazam.me';
   const currentDate = new Date().toISOString().split('T')[0];
 
   // 1. Core Indexable Top-Level Routes from actual website architecture

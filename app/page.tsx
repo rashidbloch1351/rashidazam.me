@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   title: 'Rashid Azam | SEO Expert in Pakistan & Web Developer',
   description: 'Rashid Azam is a Technical SEO Expert and Full-Stack Web Developer based in Pakistan. Specializing in SEO services, WordPress SEO, local SEO, and web development for Pakistan businesses and international clients.',
   alternates: {
-    canonical: 'https://rashidazam.me',
+    canonical: 'https://www.rashidazam.me',
   },
   openGraph: {
     title: 'Rashid Azam | SEO Expert in Pakistan & Web Developer',
     description: 'Technical SEO specialist and full-stack web developer. SEO services for Lahore, Islamabad, Karachi, and international markets.',
-    url: 'https://rashidazam.me',
+    url: 'https://www.rashidazam.me',
     type: 'website',
   },
 };
@@ -107,10 +107,10 @@ export default function HomePage() {
     '@graph': [
       {
         '@type': 'Person',
-        '@id': 'https://rashidazam.me/#person',
+        '@id': 'https://www.rashidazam.me/#person',
         name: 'Rashid Azam',
         alternateName: ['Muhammad Rashid Azam', 'M Rashid Azam'],
-        url: 'https://rashidazam.me',
+        url: 'https://www.rashidazam.me',
         jobTitle: 'Technical SEO Expert & Web Developer',
         description: 'Technical SEO expert and full-stack web developer based in Pakistan, serving businesses in Lahore, Islamabad, Karachi, and internationally.',
         sameAs: socialLinks.map((s) => s.url),
@@ -118,17 +118,17 @@ export default function HomePage() {
       },
       {
         '@type': 'WebSite',
-        '@id': 'https://rashidazam.me/#website',
+        '@id': 'https://www.rashidazam.me/#website',
         name: 'Rashid Azam',
-        url: 'https://rashidazam.me',
-        publisher: { '@id': 'https://rashidazam.me/#person' },
+        url: 'https://www.rashidazam.me',
+        publisher: { '@id': 'https://www.rashidazam.me/#person' },
       },
       {
         '@type': 'ProfessionalService',
-        '@id': 'https://rashidazam.me/#service',
+        '@id': 'https://www.rashidazam.me/#service',
         name: 'Rashid Azam - Web Developer & Technical SEO Specialist',
-        url: 'https://rashidazam.me',
-        provider: { '@id': 'https://rashidazam.me/#person' },
+        url: 'https://www.rashidazam.me',
+        provider: { '@id': 'https://www.rashidazam.me/#person' },
         areaServed: ['Pakistan', 'United States', 'United Kingdom', 'Germany', 'United Arab Emirates', 'Worldwide'],
         serviceType: ['Web Development', 'Technical SEO', 'Local SEO', 'WordPress SEO', 'AI SEO'],
       },

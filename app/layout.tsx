@@ -18,13 +18,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rashidazam.me'),
+  metadataBase: new URL('https://www.rashidazam.me'),
   title: {
     default: 'Rashid Azam | Web Developer & Technical SEO Expert Worldwide',
     template: '%s | Rashid Azam',
   },
   description: 'Full-stack web developer and technical SEO specialist building high-performance Next.js apps, WordPress sites, YouTube automation pipelines, and AI workflows for clients worldwide.',
-  authors: [{ name: 'Rashid Azam', url: 'https://rashidazam.me' }],
+  authors: [{ name: 'Rashid Azam', url: 'https://www.rashidazam.me' }],
   creator: 'Rashid Azam',
   publisher: 'Rashid Azam',
   icons: {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://rashidazam.me',
+    url: 'https://www.rashidazam.me',
     siteName: 'Rashid Azam Portfolio',
     images: [
       {
@@ -72,8 +72,8 @@ export default function RootLayout({
     '@type': 'Person',
     name: 'Rashid Azam',
     alternateName: ['M Rashid Azam', 'Muhammad Rashid Azam'],
-    url: 'https://rashidazam.me',
-    image: 'https://rashidazam.me/images/branding/profile.jpg',
+    url: 'https://www.rashidazam.me',
+    image: 'https://www.rashidazam.me/images/branding/profile.jpg',
     jobTitle: 'Web Developer & Technical SEO Expert',
     telephone: '+923276434422',
     sameAs: [
