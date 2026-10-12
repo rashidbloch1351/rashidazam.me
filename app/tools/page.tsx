@@ -7,6 +7,7 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { CTABanner } from '@/components/CTABanner';
 import { toolsData } from '@/data/toolsData';
+import { FAQAccordion } from '@/components/FAQAccordion';
 
 export const metadata: Metadata = {
   title: 'Free Web & Developer Tools Hub',
@@ -46,6 +47,39 @@ export default function ToolsHubPage() {
           </p>
         </div>
       </Container>
+
+
+      {/* About the Tools */}
+      <section>
+        <Container>
+          <SectionHeading
+            kicker="Why These Exist"
+            title="Practical Utilities, Built to Be Used"
+            description="Each tool below solves a real, recurring problem — currency conversion for freelancers paid in crypto, QR codes for print and packaging, merit calculations for university admissions in Pakistan."
+            className="mb-10"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl">
+            <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
+              <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Finance & Crypto</h3>
+              <p className="text-sm text-[#9ca3af] leading-relaxed">
+                The USDT to PKR converter pulls live market rates so freelancers and traders can check real conversion values instantly — no manual math, no stale rates from yesterday&apos;s screenshot.
+              </p>
+            </div>
+            <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
+              <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Developer Utilities</h3>
+              <p className="text-sm text-[#9ca3af] leading-relaxed">
+                The QR code generator creates high-resolution codes for URLs, contact cards, and Wi-Fi networks with custom styling — useful for menus, packaging, business cards, and event signage.
+              </p>
+            </div>
+            <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
+              <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Education</h3>
+              <p className="text-sm text-[#9ca3af] leading-relaxed">
+                The university aggregate calculator applies Pakistan&apos;s merit formulas to matric, FSc, and entry test scores — built for students navigating admission season who need quick, accurate merit estimates.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
 
       {/* Tools Grid */}
       <section>
@@ -89,6 +123,40 @@ export default function ToolsHubPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+
+      {/* Tools FAQs */}
+      <section>
+        <Container>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <SectionHeading
+              kicker="Common Questions"
+              title="About These Tools"
+              className="mb-8"
+            />
+            <FAQAccordion
+              items={[
+                {
+                  question: "Are these tools really free?",
+                  answer: "Yes — every tool on this page is free to use with no registration required. They open as standalone web apps; just use them.",
+                },
+                {
+                  question: "Do the tools work on mobile?",
+                  answer: "Yes. All tools are built as responsive web apps and work in any modern mobile or desktop browser — no downloads or installs needed.",
+                },
+                {
+                  question: "Is my data safe when using the currency converter?",
+                  answer: "The converter only fetches public exchange rate data to perform calculations. You don't enter personal information, account details, or wallet addresses — it's a calculator, not a trading platform.",
+                },
+                {
+                  question: "Can you build a custom tool for my business?",
+                  answer: "Yes — custom calculators, configurators, booking widgets, and internal dashboards are a core part of the web development service. If a tool would save your team hours weekly, it's usually worth building. Reach out through the contact page with what you're trying to automate.",
+                },
+              ]}
+            />
           </div>
         </Container>
       </section>
