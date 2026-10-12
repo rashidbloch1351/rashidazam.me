@@ -47,7 +47,7 @@ export const locationsData: Record<string, LocationInfo> = {
     slug: 'lahore',
     name: 'Lahore',
     region: 'pakistan',
-    title: 'SEO Services in Lahore | SEO Expert & Consultant Rashid Azam',
+    title: 'SEO Services in Lahore | SEO Expert & Consultant',
     metaDescription: 'Data-driven SEO services in Lahore: local SEO, Google Maps rankings, technical SEO audits, WordPress SEO and web development for Lahore businesses.',
     canonical: 'https://www.rashidazam.me/locations/lahore',
     h1: 'SEO Services in Lahore',
