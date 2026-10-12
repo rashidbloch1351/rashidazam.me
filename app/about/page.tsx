@@ -14,7 +14,7 @@ import { Testimonials } from '@/components/Testimonials';
 
 export const metadata: Metadata = {
   title: 'About Rashid Azam | Technical SEO Consultant & Web Developer in Pakistan',
-  description: 'Rashid Azam is a Technical SEO specialist and full-stack web developer based in Pakistan. Learn about his expertise in SEO services, WordPress optimization, and web development for Pakistani and international businesses.',
+  description: 'About Rashid Azam: technical SEO specialist & web developer in Pakistan. SEO, WordPress optimization and web development for local & global clients.',
   alternates: {
     canonical: 'https://www.rashidazam.me/about',
   },
