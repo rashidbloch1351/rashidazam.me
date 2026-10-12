@@ -8,6 +8,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Button } from '@/components/ui/Button';
 import { CTABanner } from '@/components/CTABanner';
 import { marketingClusterTopics } from '@/data/clusters/marketing';
+import { FAQAccordion } from '@/components/FAQAccordion';
 
 export const metadata: Metadata = {
   title: 'Digital Marketing & PPC Growth Hub',
@@ -54,6 +55,54 @@ export default function MarketingClusterHubPage() {
         </div>
       </Container>
 
+
+      {/* Paid Growth System */}
+      <section>
+        <Container>
+          <SectionHeading
+            kicker="Start Here"
+            title="The Paid Growth System: Three Pillars"
+            description="Profitable paid advertising rests on three pillars working together. Weakness in any one pillar taxes the other two — diagnose before you spend."
+            className="mb-10"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Pillar 1</span>
+              <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Capture Intent</h3>
+              <p className="text-sm text-[#9ca3af] leading-relaxed">
+                Google Search Ads buy customers at the moment of decision — but only if your account structure separates intent tiers, your match types stay tight, and negative keywords filter the waste. The{' '}
+                <Link href="/marketing/google-ads-search-campaign-setup" className="text-[#d97706] hover:underline font-medium">
+                  Google Search Ads setup guide
+                </Link>{' '}
+                covers the full framework from account structure to conversion tracking.
+              </p>
+            </div>
+            <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Pillar 2</span>
+              <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Scale Creative</h3>
+              <p className="text-sm text-[#9ca3af] leading-relaxed">
+                On Meta, creative is the targeting. Winning hooks, systematic creative testing pipelines, and broad-audience scaling mechanics decide ROAS more than any audience trick. The{' '}
+                <Link href="/marketing/meta-ads-scaling-framework" className="text-[#d97706] hover:underline font-medium">
+                  Meta Ads scaling framework
+                </Link>{' '}
+                details the testing pipeline, horizontal vs vertical scaling, and honest measurement.
+              </p>
+            </div>
+            <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Pillar 3</span>
+              <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Convert Traffic</h3>
+              <p className="text-sm text-[#9ca3af] leading-relaxed">
+                Doubling conversion rate halves customer acquisition cost across every channel at once. Dedicated landing pages, friction removal, and trust signals near the decision point multiply ad spend efficiency. The{' '}
+                <Link href="/marketing/conversion-rate-optimization-playbook" className="text-[#d97706] hover:underline font-medium">
+                  CRO playbook
+                </Link>{' '}
+                gives you the research process, testing discipline, and common mistakes to avoid.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* Topics Grid */}
       <section>
         <Container>
@@ -93,6 +142,44 @@ export default function MarketingClusterHubPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+
+      {/* Hub FAQs */}
+      <section>
+        <Container>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <SectionHeading
+              kicker="Common Questions"
+              title="Digital Marketing FAQs"
+              className="mb-8"
+            />
+            <FAQAccordion
+              items={[
+                {
+                  question: "Should I start with Google Ads or Meta Ads?",
+                  answer: "It depends on demand type. If customers actively search for what you sell, Google Search Ads capture that existing intent fastest. If you need to create demand — new products, visual categories, impulse purchases — Meta's discovery feed works better. Many businesses eventually run both: Google harvests intent, Meta creates it.",
+                },
+                {
+                  question: "How much should I budget for paid ads as a beginner?",
+                  answer: "Budget what you can sustain for 60-90 days of learning without panic, because the first weeks buy data, not profit. You need enough daily spend to generate meaningful test data — a handful of clicks a day teaches nothing. Start with one platform and one clear offer rather than spreading thin across three.",
+                },
+                {
+                  question: "Do you manage ad campaigns for clients?",
+                  answer: "Yes — Google Ads and Meta Ads management including account setup, creative direction, landing page CRO, and conversion tracking, for businesses targeting customers in Pakistan, the UAE, and international markets. The engagement starts with auditing what's already running before spending more.",
+                },
+                {
+                  question: "Why do my ads get clicks but no sales?",
+                  answer: "The usual suspects in order: landing page mismatch (the page doesn't deliver what the ad promised), weak offer or unclear next step, slow mobile experience, or unqualified traffic (wrong keywords or audiences). Diagnose with the funnel: check bounce rate by source, then fix the biggest leak first — it's usually the landing page, not the ad.",
+                },
+                {
+                  question: "Is SEO or paid ads better for my business?",
+                  answer: "They solve different problems. Paid ads buy immediate, controllable traffic — ideal for testing offers and generating quick wins. SEO builds compounding, lower-marginal-cost traffic over months. Businesses that can afford both use ads for speed and SEO for durability; businesses that must choose should match the channel to their timeline and cash flow.",
+                },
+              ]}
+            />
           </div>
         </Container>
       </section>
