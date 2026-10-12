@@ -16,7 +16,7 @@ import { socialLinks } from '@/data/socialLinks';
 
 export const metadata: Metadata = {
   title: 'Rashid Azam | SEO Expert in Pakistan & Web Developer',
-  description: 'Rashid Azam is a Technical SEO Expert and Full-Stack Web Developer based in Pakistan. Specializing in SEO services, WordPress SEO, local SEO, and web development for Pakistan businesses and international clients.',
+  description: 'Technical SEO expert & full-stack developer in Pakistan. SEO services, WordPress SEO, local SEO & web development for Pakistani and global businesses.',
   alternates: {
     canonical: 'https://www.rashidazam.me',
   },
