@@ -14,7 +14,7 @@ export const relatedLinksMap: Record<string, LinkItem[]> = {
   ],
   'technical-seo': [
     { id: 'seo-audit-link', url: '/services/seo-audit', anchorText: 'SEO Audit Services', description: 'Full technical health checks and priority issue diagnostic logs.', category: 'service' },
-    { id: 'speed-link', url: '/services/speed-optimization', anchorText: 'Speed Optimization', description: 'Eliminating render-blocking scripts and optimizing Core Web Vitals.', category: 'service' },
+    { id: 'speed-link', url: '/services/web-development', anchorText: 'Web Performance & Speed Optimization', description: 'Eliminating render-blocking scripts and optimizing Core Web Vitals.', category: 'service' },
     { id: 'tech-guide', url: '/seo/technical-seo-audit-guide', anchorText: 'Technical SEO Guide', description: 'Step-by-step crawlability and indexation framework.', category: 'cluster' },
   ],
   'wordpress-seo': [
