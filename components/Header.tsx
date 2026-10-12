@@ -47,61 +47,61 @@ export function Header() {
       name: 'Local SEO Guide',
       description: 'Map Pack & Google Business Profile',
       href: '/seo/local-seo-pakistan-uae',
-      icon: <MapPin className="w-4 h-4 text-[#d97706]" />,
+      icon: <MapPin className="w-4 h-4 text-[#b45309]" />,
     },
     {
       name: 'Technical SEO Services',
       description: 'Crawling, indexing, speed',
       href: '/services/technical-seo',
-      icon: <Code className="w-4 h-4 text-[#d97706]" />,
+      icon: <Code className="w-4 h-4 text-[#b45309]" />,
     },
     {
       name: 'On-Page SEO & Schema',
       description: 'Intent, structure, internal links',
       href: '/seo/on-page-seo-schema-markup',
-      icon: <Search className="w-4 h-4 text-[#d97706]" />,
+      icon: <Search className="w-4 h-4 text-[#b45309]" />,
     },
     {
       name: 'E-Commerce SEO',
       description: 'Category & product pages',
       href: '/services/ecommerce-seo',
-      icon: <ShoppingCart className="w-4 h-4 text-[#d97706]" />,
+      icon: <ShoppingCart className="w-4 h-4 text-[#b45309]" />,
     },
     {
       name: 'WordPress SEO',
       description: 'Speed, plugins, architecture',
       href: '/services/wordpress-seo',
-      icon: <Zap className="w-4 h-4 text-[#d97706]" />,
+      icon: <Zap className="w-4 h-4 text-[#b45309]" />,
     },
     {
       name: 'Keyword & Intent Guide',
       description: 'Search intent & keyword research',
       href: '/seo/keyword-research-intent',
-      icon: <Globe className="w-4 h-4 text-[#d97706]" />,
+      icon: <Globe className="w-4 h-4 text-[#b45309]" />,
     },
     {
       name: 'SEO Audit Services',
       description: 'Manual site diagnostics & health',
       href: '/services/seo-audit',
-      icon: <FileSearch className="w-4 h-4 text-[#d97706]" />,
+      icon: <FileSearch className="w-4 h-4 text-[#b45309]" />,
     },
     {
       name: 'AI SEO Services',
       description: 'AI-assisted SEO & workflows',
       href: '/services/ai-seo',
-      icon: <Cpu className="w-4 h-4 text-[#d97706]" />,
+      icon: <Cpu className="w-4 h-4 text-[#b45309]" />,
     },
     {
       name: 'Answer Engine (AEO)',
       description: 'ChatGPT & Perplexity visibility',
       href: '/services/answer-engine-optimization',
-      icon: <Smartphone className="w-4 h-4 text-[#d97706]" />,
+      icon: <Smartphone className="w-4 h-4 text-[#b45309]" />,
     },
     {
       name: 'Technical Audit Guide',
       description: 'Step-by-step diagnostic guide',
       href: '/seo/technical-seo-audit-guide',
-      icon: <ShieldAlert className="w-4 h-4 text-[#d97706]" />,
+      icon: <ShieldAlert className="w-4 h-4 text-[#b45309]" />,
     },
   ];
 
@@ -309,7 +309,7 @@ export function Header() {
             href="/"
             className={`text-sm font-medium transition-colors ${
               pathname === '/'
-                ? 'text-[#d97706] font-semibold'
+                ? 'text-[#b45309] font-semibold'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -321,7 +321,7 @@ export function Header() {
             href="/about"
             className={`text-sm font-medium transition-colors ${
               pathname === '/about'
-                ? 'text-[#d97706] font-semibold'
+                ? 'text-[#b45309] font-semibold'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -340,7 +340,7 @@ export function Header() {
                 href="/services"
                 className={`text-sm font-medium transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md ${
                   pathname.startsWith('/services')
-                    ? 'text-[#d97706] font-semibold'
+                    ? 'text-[#b45309] font-semibold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -356,7 +356,7 @@ export function Header() {
               >
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-200 ${
-                    servicesOpen ? 'rotate-180 text-[#d97706]' : ''
+                    servicesOpen ? 'rotate-180 text-[#b45309]' : ''
                   }`}
                 />
               </button>
@@ -380,8 +380,8 @@ export function Header() {
                       onClick={() => setServicesOpen(false)}
                       className={`flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                         isActive
-                          ? 'bg-amber-50 text-[#d97706] font-semibold'
-                          : 'text-slate-700 hover:bg-slate-50 hover:text-[#d97706]'
+                          ? 'bg-amber-50 text-[#b45309] font-semibold'
+                          : 'text-slate-700 hover:bg-slate-50 hover:text-[#b45309]'
                       }`}
                     >
                       <span>{service.label}</span>
@@ -396,8 +396,8 @@ export function Header() {
                     onClick={() => setServicesOpen(false)}
                     className={`flex items-center justify-between px-4 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-colors ${
                       pathname === '/services'
-                        ? 'bg-amber-50 text-[#d97706]'
-                        : 'text-slate-600 hover:bg-slate-50 hover:text-[#d97706]'
+                        ? 'bg-amber-50 text-[#b45309]'
+                        : 'text-slate-600 hover:bg-slate-50 hover:text-[#b45309]'
                     }`}
                   >
                     <span>All Services</span>
@@ -420,7 +420,7 @@ export function Header() {
                 href="/seo"
                 className={`text-sm font-medium transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md ${
                   pathname.startsWith('/seo')
-                    ? 'text-[#d97706] font-semibold'
+                    ? 'text-[#b45309] font-semibold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -436,7 +436,7 @@ export function Header() {
               >
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-200 ${
-                    seoHubOpen ? 'rotate-180 text-[#d97706]' : ''
+                    seoHubOpen ? 'rotate-180 text-[#b45309]' : ''
                   }`}
                 />
               </button>
@@ -463,7 +463,7 @@ export function Header() {
                   <Link
                     href="/seo"
                     onClick={() => setSeoHubOpen(false)}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-[#d97706] hover:underline"
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-[#b45309] hover:underline"
                   >
                     <span>Overview</span>
                     <ArrowRight className="w-3 h-3" />
@@ -515,7 +515,7 @@ export function Header() {
                 href="/locations"
                 className={`text-sm font-medium transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md ${
                   pathname.startsWith('/locations')
-                    ? 'text-[#d97706] font-semibold'
+                    ? 'text-[#b45309] font-semibold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -531,7 +531,7 @@ export function Header() {
               >
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-200 ${
-                    locationsOpen ? 'rotate-180 text-[#d97706]' : ''
+                    locationsOpen ? 'rotate-180 text-[#b45309]' : ''
                   }`}
                 />
               </button>
@@ -551,7 +551,7 @@ export function Header() {
                   <span className="font-heading font-semibold text-xs text-slate-900 uppercase tracking-wider">
                     Location Directory & Markets
                   </span>
-                  <span className="text-[11px] text-[#d97706] font-medium">11 Active Locations</span>
+                  <span className="text-[11px] text-[#b45309] font-medium">11 Active Locations</span>
                 </div>
 
                 <div className="grid grid-cols-12 gap-5">
@@ -570,12 +570,12 @@ export function Header() {
                             href={loc.href}
                             onClick={() => setLocationsOpen(false)}
                             className={`flex flex-col px-3 py-2 rounded-lg transition-colors group ${
-                              isActive ? 'bg-amber-50 text-[#d97706]' : 'hover:bg-slate-50'
+                              isActive ? 'bg-amber-50 text-[#b45309]' : 'hover:bg-slate-50'
                             }`}
                           >
-                            <span className="font-heading font-bold text-xs text-slate-900 group-hover:text-[#d97706] transition-colors flex items-center justify-between">
+                            <span className="font-heading font-bold text-xs text-slate-900 group-hover:text-[#b45309] transition-colors flex items-center justify-between">
                               <span>{loc.name}</span>
-                              <Globe className="w-3.5 h-3.5 text-[#d97706]" />
+                              <Globe className="w-3.5 h-3.5 text-[#b45309]" />
                             </span>
                             <span className="text-[10px] text-slate-500 mt-0.5">
                               {loc.description}
@@ -598,10 +598,10 @@ export function Header() {
                             href={loc.href}
                             onClick={() => setLocationsOpen(false)}
                             className={`flex flex-col px-3 py-1.5 rounded-lg transition-colors group ${
-                              isActive ? 'bg-amber-50 text-[#d97706]' : 'hover:bg-slate-50'
+                              isActive ? 'bg-amber-50 text-[#b45309]' : 'hover:bg-slate-50'
                             }`}
                           >
-                            <span className="font-heading font-semibold text-xs text-slate-900 group-hover:text-[#d97706] transition-colors">
+                            <span className="font-heading font-semibold text-xs text-slate-900 group-hover:text-[#b45309] transition-colors">
                               {loc.name}
                             </span>
                             <span className="text-[10px] text-slate-500">
@@ -627,13 +627,13 @@ export function Header() {
                             href={loc.href}
                             onClick={() => setLocationsOpen(false)}
                             className={`flex flex-col px-3 py-1.5 rounded-lg transition-colors group ${
-                              isActive ? 'bg-amber-50 text-[#d97706]' : 'hover:bg-slate-50'
+                              isActive ? 'bg-amber-50 text-[#b45309]' : 'hover:bg-slate-50'
                             }`}
                           >
-                            <span className="font-heading font-semibold text-xs text-slate-900 group-hover:text-[#d97706] transition-colors flex items-center justify-between">
+                            <span className="font-heading font-semibold text-xs text-slate-900 group-hover:text-[#b45309] transition-colors flex items-center justify-between">
                               <span>{loc.name}</span>
                               {loc.name.includes('All') && (
-                                <span className="text-[9px] bg-amber-100 text-[#d97706] font-bold px-1.5 py-0.5 rounded">
+                                <span className="text-[9px] bg-amber-100 text-[#b45309] font-bold px-1.5 py-0.5 rounded">
                                   Main Hub
                                 </span>
                               )}
@@ -653,7 +653,7 @@ export function Header() {
                   <Link
                     href="/locations"
                     onClick={() => setLocationsOpen(false)}
-                    className="flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-[#d97706] hover:bg-amber-50 transition-colors"
+                    className="flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-[#b45309] hover:bg-amber-50 transition-colors"
                   >
                     <span>All Locations Directory</span>
                     <ArrowRight className="w-4 h-4" />
@@ -668,7 +668,7 @@ export function Header() {
         <div className="hidden md:flex items-center gap-4">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[#d97706] hover:bg-[#b45309] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors shadow-xs"
+            className="inline-flex items-center gap-2 bg-[#b45309] hover:bg-[#92400e] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors shadow-xs"
           >
             <span>Let&apos;s Talk</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -695,7 +695,7 @@ export function Header() {
               href="/"
               onClick={() => setMobileMenuOpen(false)}
               className={`flex items-center min-h-[44px] text-base font-medium px-3 py-2 rounded-md hover:bg-slate-50 transition-colors ${
-                pathname === '/' ? 'text-[#d97706] font-semibold bg-amber-50/60' : 'text-slate-700 hover:text-slate-900'
+                pathname === '/' ? 'text-[#b45309] font-semibold bg-amber-50/60' : 'text-slate-700 hover:text-slate-900'
               }`}
             >
               Home
@@ -706,7 +706,7 @@ export function Header() {
               href="/about"
               onClick={() => setMobileMenuOpen(false)}
               className={`flex items-center min-h-[44px] text-base font-medium px-3 py-2 rounded-md hover:bg-slate-50 transition-colors ${
-                pathname === '/about' ? 'text-[#d97706] font-semibold bg-amber-50/60' : 'text-slate-700 hover:text-slate-900'
+                pathname === '/about' ? 'text-[#b45309] font-semibold bg-amber-50/60' : 'text-slate-700 hover:text-slate-900'
               }`}
             >
               About
@@ -719,7 +719,7 @@ export function Header() {
                   href="/services"
                   onClick={() => setMobileMenuOpen(false)}
                   className={`text-base font-medium transition-colors ${
-                    pathname.startsWith('/services') ? 'text-[#d97706] font-semibold' : 'text-slate-700 hover:text-slate-900'
+                    pathname.startsWith('/services') ? 'text-[#b45309] font-semibold' : 'text-slate-700 hover:text-slate-900'
                   }`}
                 >
                   Services
@@ -733,7 +733,7 @@ export function Header() {
                 >
                   <ChevronDown
                     className={`w-5 h-5 transition-transform duration-200 ${
-                      mobileServicesOpen ? 'rotate-180 text-[#d97706]' : ''
+                      mobileServicesOpen ? 'rotate-180 text-[#b45309]' : ''
                     }`}
                   />
                 </button>
@@ -753,7 +753,7 @@ export function Header() {
                         }}
                         className={`flex items-center min-h-[44px] px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                           isActive
-                            ? 'text-[#d97706] font-semibold bg-amber-50'
+                            ? 'text-[#b45309] font-semibold bg-amber-50'
                             : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
                         }`}
                       >
@@ -772,7 +772,7 @@ export function Header() {
                   href="/seo"
                   onClick={() => setMobileMenuOpen(false)}
                   className={`text-base font-medium transition-colors ${
-                    pathname.startsWith('/seo') ? 'text-[#d97706] font-semibold' : 'text-slate-700 hover:text-slate-900'
+                    pathname.startsWith('/seo') ? 'text-[#b45309] font-semibold' : 'text-slate-700 hover:text-slate-900'
                   }`}
                 >
                   SEO Hub
@@ -786,7 +786,7 @@ export function Header() {
                 >
                   <ChevronDown
                     className={`w-5 h-5 transition-transform duration-200 ${
-                      mobileSeoOpen ? 'rotate-180 text-[#d97706]' : ''
+                      mobileSeoOpen ? 'rotate-180 text-[#b45309]' : ''
                     }`}
                   />
                 </button>
@@ -806,7 +806,7 @@ export function Header() {
                         }}
                         className={`flex flex-col min-h-[44px] px-3 py-2 text-sm rounded-md transition-colors ${
                           isActive
-                            ? 'text-[#d97706] font-semibold bg-amber-50'
+                            ? 'text-[#b45309] font-semibold bg-amber-50'
                             : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
                         }`}
                       >
@@ -826,7 +826,7 @@ export function Header() {
                   href="/locations"
                   onClick={() => setMobileMenuOpen(false)}
                   className={`text-base font-medium transition-colors ${
-                    pathname.startsWith('/locations') ? 'text-[#d97706] font-semibold' : 'text-slate-700 hover:text-slate-900'
+                    pathname.startsWith('/locations') ? 'text-[#b45309] font-semibold' : 'text-slate-700 hover:text-slate-900'
                   }`}
                 >
                   Locations
@@ -840,7 +840,7 @@ export function Header() {
                 >
                   <ChevronDown
                     className={`w-5 h-5 transition-transform duration-200 ${
-                      mobileLocationsOpen ? 'rotate-180 text-[#d97706]' : ''
+                      mobileLocationsOpen ? 'rotate-180 text-[#b45309]' : ''
                     }`}
                   />
                 </button>
@@ -852,7 +852,7 @@ export function Header() {
                   <Link
                     href="/locations/worldwide"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex flex-col min-h-[44px] px-3 py-2 text-sm rounded-md bg-amber-50/50 text-[#d97706]"
+                    className="flex flex-col min-h-[44px] px-3 py-2 text-sm rounded-md bg-amber-50/50 text-[#b45309]"
                   >
                     <span className="font-bold text-xs">Worldwide Remote</span>
                     <span className="text-[10px] text-slate-500">Global remote engagements</span>
@@ -875,7 +875,7 @@ export function Header() {
                             key={loc.name}
                             href={loc.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="flex flex-col min-h-[40px] px-3 py-1.5 text-xs rounded-md text-slate-700 hover:text-[#d97706] hover:bg-slate-50"
+                            className="flex flex-col min-h-[40px] px-3 py-1.5 text-xs rounded-md text-slate-700 hover:text-[#b45309] hover:bg-slate-50"
                           >
                             <span className="font-semibold">{loc.name}</span>
                             <span className="text-[10px] text-slate-500">{loc.description}</span>
@@ -902,7 +902,7 @@ export function Header() {
                             key={loc.name}
                             href={loc.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="flex flex-col min-h-[40px] px-3 py-1.5 text-xs rounded-md text-slate-700 hover:text-[#d97706] hover:bg-slate-50"
+                            className="flex flex-col min-h-[40px] px-3 py-1.5 text-xs rounded-md text-slate-700 hover:text-[#b45309] hover:bg-slate-50"
                           >
                             <span className="font-semibold">{loc.name}</span>
                             <span className="text-[10px] text-slate-500">{loc.description}</span>
@@ -916,7 +916,7 @@ export function Header() {
                   <Link
                     href="/locations"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-between min-h-[44px] px-3 py-2 text-xs font-bold uppercase tracking-wider text-[#d97706] bg-amber-50 rounded-md"
+                    className="flex items-center justify-between min-h-[44px] px-3 py-2 text-xs font-bold uppercase tracking-wider text-[#b45309] bg-amber-50 rounded-md"
                   >
                     <span>All Locations Directory</span>
                     <ArrowRight className="w-4 h-4" />
@@ -930,7 +930,7 @@ export function Header() {
             <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full inline-flex justify-center items-center gap-2 bg-[#d97706] text-white text-sm font-medium px-5 py-3 rounded-lg min-h-[44px]"
+              className="w-full inline-flex justify-center items-center gap-2 bg-[#b45309] text-white text-sm font-medium px-5 py-3 rounded-lg min-h-[44px]"
             >
               <span>Let&apos;s Talk</span>
               <ArrowUpRight className="w-4 h-4" />

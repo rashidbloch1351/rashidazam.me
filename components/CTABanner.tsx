@@ -27,7 +27,7 @@ export function CTABanner({
       <div className="relative z-10 pt-2">
         <Link
           href={href}
-          className="inline-flex items-center gap-2 bg-[#d97706] hover:bg-[#b45309] text-white font-medium px-8 py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105"
+          className="inline-flex items-center gap-2 bg-[#b45309] hover:bg-[#92400e] text-white font-medium px-8 py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105"
         >
           <span>{buttonText}</span>
           <ArrowUpRight className="w-5 h-5" />

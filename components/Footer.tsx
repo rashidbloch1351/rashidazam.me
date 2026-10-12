@@ -41,7 +41,7 @@ export function Footer() {
               Full-Stack Web Developer, Technical SEO Specialist, and Digital Growth Consultant serving clients, startups, and agencies worldwide.
             </p>
             <div className="pt-1 text-xs text-slate-500">
-              Email: <a href="mailto:rashidbloch1351@gmail.com" className="text-[#d97706] hover:underline font-medium">rashidbloch1351@gmail.com</a>
+              Email: <a href="mailto:rashidbloch1351@gmail.com" className="text-[#b45309] hover:underline font-medium">rashidbloch1351@gmail.com</a>
             </div>
           </div>
 
@@ -51,12 +51,12 @@ export function Footer() {
               Services
             </h3>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/services/technical-seo" className="hover:text-[#d97706] transition-colors">Technical SEO</Link></li>
-              <li><Link href="/services/digital-marketing" className="hover:text-[#d97706] transition-colors">Digital Marketing</Link></li>
-              <li><Link href="/services/youtube-automation" className="hover:text-[#d97706] transition-colors">YouTube Automation</Link></li>
-              <li><Link href="/services/web-development" className="hover:text-[#d97706] transition-colors">Web Development</Link></li>
-              <li><Link href="/services/ai-automation" className="hover:text-[#d97706] transition-colors">AI Automation</Link></li>
-              <li><Link href="/services/content-writing" className="hover:text-[#d97706] transition-colors">Content Writing</Link></li>
+              <li><Link href="/services/technical-seo" className="hover:text-[#b45309] transition-colors">Technical SEO</Link></li>
+              <li><Link href="/services/digital-marketing" className="hover:text-[#b45309] transition-colors">Digital Marketing</Link></li>
+              <li><Link href="/services/youtube-automation" className="hover:text-[#b45309] transition-colors">YouTube Automation</Link></li>
+              <li><Link href="/services/web-development" className="hover:text-[#b45309] transition-colors">Web Development</Link></li>
+              <li><Link href="/services/ai-automation" className="hover:text-[#b45309] transition-colors">AI Automation</Link></li>
+              <li><Link href="/services/content-writing" className="hover:text-[#b45309] transition-colors">Content Writing</Link></li>
             </ul>
           </div>
 
@@ -66,17 +66,17 @@ export function Footer() {
               Locations
             </h3>
             <ul className="space-y-2 text-xs">
-              <li><Link href="/locations" className="font-bold text-[#d97706] hover:underline">All Locations Directory</Link></li>
-              <li><Link href="/locations/worldwide" className="hover:text-[#d97706] transition-colors">Worldwide Remote</Link></li>
-              <li><Link href="/locations/lahore" className="hover:text-[#d97706] transition-colors">Lahore, Pakistan</Link></li>
-              <li><Link href="/locations/islamabad" className="hover:text-[#d97706] transition-colors">Islamabad, Pakistan</Link></li>
-              <li><Link href="/locations/karachi" className="hover:text-[#d97706] transition-colors">Karachi, Pakistan</Link></li>
-              <li><Link href="/locations/faisalabad" className="hover:text-[#d97706] transition-colors">Faisalabad, Pakistan</Link></li>
-              <li><Link href="/locations/multan" className="hover:text-[#d97706] transition-colors">Multan, Pakistan</Link></li>
-              <li><Link href="/locations/usa" className="hover:text-[#d97706] transition-colors">USA Market</Link></li>
-              <li><Link href="/locations/uk" className="hover:text-[#d97706] transition-colors">UK Market</Link></li>
-              <li><Link href="/locations/germany" className="hover:text-[#d97706] transition-colors">Germany Market</Link></li>
-              <li><Link href="/locations/uae" className="hover:text-[#d97706] transition-colors">UAE & Dubai</Link></li>
+              <li><Link href="/locations" className="font-bold text-[#b45309] hover:underline">All Locations Directory</Link></li>
+              <li><Link href="/locations/worldwide" className="hover:text-[#b45309] transition-colors">Worldwide Remote</Link></li>
+              <li><Link href="/locations/lahore" className="hover:text-[#b45309] transition-colors">Lahore, Pakistan</Link></li>
+              <li><Link href="/locations/islamabad" className="hover:text-[#b45309] transition-colors">Islamabad, Pakistan</Link></li>
+              <li><Link href="/locations/karachi" className="hover:text-[#b45309] transition-colors">Karachi, Pakistan</Link></li>
+              <li><Link href="/locations/faisalabad" className="hover:text-[#b45309] transition-colors">Faisalabad, Pakistan</Link></li>
+              <li><Link href="/locations/multan" className="hover:text-[#b45309] transition-colors">Multan, Pakistan</Link></li>
+              <li><Link href="/locations/usa" className="hover:text-[#b45309] transition-colors">USA Market</Link></li>
+              <li><Link href="/locations/uk" className="hover:text-[#b45309] transition-colors">UK Market</Link></li>
+              <li><Link href="/locations/germany" className="hover:text-[#b45309] transition-colors">Germany Market</Link></li>
+              <li><Link href="/locations/uae" className="hover:text-[#b45309] transition-colors">UAE & Dubai</Link></li>
             </ul>
           </div>
 
@@ -86,13 +86,13 @@ export function Footer() {
               Guides
             </h3>
             <ul className="space-y-2 text-xs">
-              <li><Link href="/youtube" className="hover:text-[#d97706] transition-colors">YouTube Growth Hub</Link></li>
-              <li><Link href="/youtube/faceless-channel-niche-selection" className="hover:text-[#d97706] transition-colors">Faceless Niche Selection</Link></li>
-              <li><Link href="/marketing" className="hover:text-[#d97706] transition-colors">Marketing Growth Hub</Link></li>
-              <li><Link href="/marketing/google-ads-search-campaign-setup" className="hover:text-[#d97706] transition-colors">Google Ads Setup Guide</Link></li>
-              <li><Link href="/seo/technical-seo-audit-guide" className="hover:text-[#d97706] transition-colors">Technical SEO Audit Guide</Link></li>
-              <li><Link href="/seo/keyword-research-intent" className="hover:text-[#d97706] transition-colors">Keyword Research Guide</Link></li>
-              <li><Link href="/tools" className="hover:text-[#d97706] transition-colors">Free Web Tools</Link></li>
+              <li><Link href="/youtube" className="hover:text-[#b45309] transition-colors">YouTube Growth Hub</Link></li>
+              <li><Link href="/youtube/faceless-channel-niche-selection" className="hover:text-[#b45309] transition-colors">Faceless Niche Selection</Link></li>
+              <li><Link href="/marketing" className="hover:text-[#b45309] transition-colors">Marketing Growth Hub</Link></li>
+              <li><Link href="/marketing/google-ads-search-campaign-setup" className="hover:text-[#b45309] transition-colors">Google Ads Setup Guide</Link></li>
+              <li><Link href="/seo/technical-seo-audit-guide" className="hover:text-[#b45309] transition-colors">Technical SEO Audit Guide</Link></li>
+              <li><Link href="/seo/keyword-research-intent" className="hover:text-[#b45309] transition-colors">Keyword Research Guide</Link></li>
+              <li><Link href="/tools" className="hover:text-[#b45309] transition-colors">Free Web Tools</Link></li>
             </ul>
           </div>
 
@@ -102,9 +102,9 @@ export function Footer() {
               Connect & Links
             </h3>
             <ul className="space-y-2 text-xs mb-4">
-              <li><Link href="/about" className="hover:text-[#d97706] transition-colors">About Rashid Azam</Link></li>
-              <li><Link href="/seo" className="hover:text-[#d97706] transition-colors">SEO Knowledge Hub</Link></li>
-              <li><Link href="/contact" className="hover:text-[#d97706] transition-colors">Contact / Consultations</Link></li>
+              <li><Link href="/about" className="hover:text-[#b45309] transition-colors">About Rashid Azam</Link></li>
+              <li><Link href="/seo" className="hover:text-[#b45309] transition-colors">SEO Knowledge Hub</Link></li>
+              <li><Link href="/contact" className="hover:text-[#b45309] transition-colors">Contact / Consultations</Link></li>
             </ul>
             <div className="flex flex-wrap gap-2.5">
               {socialLinks.map((s) => (

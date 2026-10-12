@@ -44,12 +44,12 @@ export function FAQAccordion({ items }: { items: FAQItem[] }) {
             >
               <button
                 onClick={() => toggle(idx)}
-                className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-heading font-semibold text-base text-slate-900 hover:text-[#d97706] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-heading font-semibold text-base text-slate-900 hover:text-[#b45309] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 aria-expanded={isOpen}
               >
                 <span>{item.question}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-[#d97706] transition-transform duration-200 shrink-0 ${
+                  className={`w-5 h-5 text-[#b45309] transition-transform duration-200 shrink-0 ${
                     isOpen ? 'rotate-180' : ''
                   }`}
                 />

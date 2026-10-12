@@ -32,7 +32,7 @@ export function ProjectCard({ project, categorySlug }: { project: ProjectItem; c
             ))}
           </div>
 
-          <h3 className="text-lg font-heading font-semibold text-slate-900 group-hover:text-[#d97706] transition-colors">
+          <h3 className="text-lg font-heading font-semibold text-slate-900 group-hover:text-[#b45309] transition-colors">
             {project.title}
           </h3>
 
@@ -56,7 +56,7 @@ export function ProjectCard({ project, categorySlug }: { project: ProjectItem; c
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-semibold text-[#d97706] hover:text-[#b45309] inline-flex items-center gap-1"
+            className="text-xs font-semibold text-[#b45309] hover:text-[#b45309] inline-flex items-center gap-1"
           >
             <span>Visit Live Site</span>
             <ExternalLink className="w-3.5 h-3.5" />
