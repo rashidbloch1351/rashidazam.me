@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import { ogImages } from '@/lib/seo';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, GraduationCap, Briefcase, Youtube, Award, Code, Globe, CheckCircle2 } from 'lucide-react';
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     description: 'SEO consultant and web developer serving businesses across Pakistan and internationally. Expert in technical SEO, local SEO, and WordPress optimization.',
     url: 'https://www.rashidazam.me/about',
     type: 'profile',
+    images: ogImages,
   },
 };
 
