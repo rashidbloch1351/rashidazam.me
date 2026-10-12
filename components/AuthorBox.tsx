@@ -18,9 +18,9 @@ export function AuthorBox() {
       <div className="space-y-2 flex-grow">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div>
-            <h4 className="font-heading font-bold text-lg text-slate-900">
+            <p className="font-heading font-bold text-lg text-slate-900">
               Written by Rashid Azam
-            </h4>
+            </p>
             <p className="text-xs text-[#d97706] font-semibold">
               Web Developer & Technical SEO Specialist (BS IT)
             </p>
