@@ -9,6 +9,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Button } from '@/components/ui/Button';
 import { CTABanner } from '@/components/CTABanner';
 import { youtubeClusterTopics } from '@/data/clusters/youtube';
+import { FAQAccordion } from '@/components/FAQAccordion';
 
 export const metadata: Metadata = {
   title: 'YouTube Automation & Channel Growth Hub',
@@ -55,6 +56,61 @@ export default function YoutubeClusterHubPage() {
         </div>
       </Container>
 
+
+      {/* Channel Growth Framework */}
+      <section>
+        <Container>
+          <SectionHeading
+            kicker="Start Here"
+            title="The Faceless Channel Growth Framework"
+            description="Every sustainable YouTube business runs the same four-stage system. Work through the stages in order — skipping ahead is why most channels stall."
+            className="mb-10"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl">
+            <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Stage 1</span>
+              <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Validate the Niche</h3>
+              <p className="text-sm text-[#9ca3af] leading-relaxed">
+                Channels fail at niche selection more than at production. Run every idea through advertiser demand, content supply gaps, production feasibility, and evergreen demand before recording anything. The{' '}
+                <Link href="/youtube/faceless-channel-niche-selection" className="text-[#d97706] hover:underline font-medium">
+                  faceless niche selection guide
+                </Link>{' '}
+                walks through the full 4-filter validation framework plus a 90-day testing checklist.
+              </p>
+            </div>
+            <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Stage 2</span>
+              <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Package for the Click</h3>
+              <p className="text-sm text-[#9ca3af] leading-relaxed">
+                The algorithm cannot recommend a video nobody clicks. Thumbnail and title work as a single unit: the thumbnail creates emotion and curiosity, the title adds context and keywords. The{' '}
+                <Link href="/youtube/youtube-seo-ranking-algorithm" className="text-[#d97706] hover:underline font-medium">
+                  YouTube SEO and algorithm guide
+                </Link>{' '}
+                covers thumbnail-title synergy, testing methods, and the metadata that still matters.
+              </p>
+            </div>
+            <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Stage 3</span>
+              <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Engineer Retention</h3>
+              <p className="text-sm text-[#9ca3af] leading-relaxed">
+                Clicks start the job; watch time finishes it. Open with the payoff in the first 30 seconds, use open loops to carry viewers through the middle, and read your retention graphs as diagnostics. Retention scripting is the highest-leverage skill in the entire pipeline.
+              </p>
+            </div>
+            <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Stage 4</span>
+              <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Stack Revenue Streams</h3>
+              <p className="text-sm text-[#9ca3af] leading-relaxed">
+                AdSense alone leaves you exposed to CPM swings. Layer affiliate links, digital products, and sponsorships so every video can earn twice. The{' '}
+                <Link href="/youtube/youtube-monetization-strategies" className="text-[#d97706] hover:underline font-medium">
+                  monetization strategies guide
+                </Link>{' '}
+                maps which streams fit each channel size, from first video to scale.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* Topics Grid */}
       <section>
         <Container>
@@ -94,6 +150,44 @@ export default function YoutubeClusterHubPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+
+      {/* Hub FAQs */}
+      <section>
+        <Container>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <SectionHeading
+              kicker="Common Questions"
+              title="YouTube Automation FAQs"
+              className="mb-8"
+            />
+            <FAQAccordion
+              items={[
+                {
+                  question: "What is YouTube automation, exactly?",
+                  answer: "YouTube automation means running a channel as a system rather than a personal creative outlet: niche research, scriptwriting, voiceover, editing, thumbnails, and publishing handled through repeatable workflows, often with a small team or contractors. Faceless channels are the most common automation model since they don't depend on the owner's time on camera.",
+                },
+                {
+                  question: "How much does it cost to run an automated YouTube channel?",
+                  answer: "It scales with outsourcing. Doing everything yourself costs mainly software subscriptions (editing, voiceover, thumbnails). Fully outsourcing production to freelancers costs more per video but frees your time for strategy. Most operators start lean and outsource the bottlenecks first — usually editing, then voiceover.",
+                },
+                {
+                  question: "How long before an automated channel earns money?",
+                  answer: "There is no fixed timeline. Channels with validated niches, strong packaging, and consistent publishing typically take several months to reach monetization thresholds, and longer to meaningful revenue. Treat the first 50 videos as system-building, not as a revenue schedule.",
+                },
+                {
+                  question: "Do you build YouTube channels for clients?",
+                  answer: "Yes — niche validation, scriptwriting, voiceover direction, editing oversight, thumbnail design, and YouTube SEO are all part of the YouTube automation service. The goal is a channel that runs as a documented pipeline, not a dependency on any single person.",
+                },
+                {
+                  question: "Can I automate a channel in any niche?",
+                  answer: "No. Niches requiring on-camera presence, physical product handling, or travel don't fit the faceless automation model. The niche selection guide covers the four feasibility filters — advertiser demand, supply gaps, production feasibility, and evergreen demand — that determine whether a niche can work.",
+                },
+              ]}
+            />
           </div>
         </Container>
       </section>
