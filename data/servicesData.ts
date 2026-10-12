@@ -460,11 +460,33 @@ export const pillarServices: PillarService[] = [
           "E-Commerce websites frequently struggle with thousands of auto-generated filter URLs, thin product descriptions, and slow mobile loading speeds. My E-Commerce SEO strategy eliminates technical debt while building sustainable keyword rankings across your entire catalog.",
         ],
       },
+      {
+        heading: "The Problems That Hold Most Stores Back",
+        body: [
+          "Most e-commerce sites I audit share the same issues: product pages using manufacturer descriptions identical to dozens of competitors, category pages with no unique content, faceted navigation generating thousands of near-duplicate URLs that waste crawl budget, and thin pages competing against each other for the same keywords.",
+          "These are fixable systematically. Duplicate product copy gets rewritten around real differentiators: use cases, materials, compatibility. Faceted filters get crawl controls so search engines see the valuable pages, not every combination. Category pages get genuine introductory content that targets the broader buying intent behind them.",
+        ],
+      },
+      {
+        heading: "From Audit to Implementation",
+        body: [
+          "Work starts with a crawl and indexation audit: what Google actually sees, what is indexed that should not be, and where crawl budget is being wasted. Fixes are prioritized by impact. Robots rules, canonical tags, and internal linking structure come before cosmetic tweaks.",
+          "Then category and product optimization: metadata rewritten for click-through, internal links connecting related products and categories, and product schema markup for rich results. You receive a prioritized audit report, the implemented fixes, and documentation of what changed and why, plus Search Console guidance for tracking results yourself.",
+        ],
+      },
     ],
     faqs: [
       {
         question: "Do you optimize both Shopify and WooCommerce stores?",
         answer: "Yes, I specialize in technical SEO for Shopify, WooCommerce, Magento, and custom headless e-commerce builds.",
+      },
+      {
+        question: "Should every product page be indexed by Google?",
+        answer: "No, and indexing everything is a common mistake. Thin variants, discontinued items, and near-duplicate options are usually better consolidated, canonicalized, or noindexed so your crawl budget goes to pages that can actually rank and convert.",
+      },
+      {
+        question: "How should out-of-stock products be handled?",
+        answer: "It depends on whether the product will return. Temporarily out-of-stock items should stay live with clear availability messaging and alternative suggestions. Permanently discontinued products should redirect to the closest relevant category or successor product, never left as dead ends.",
       },
     ],
     relatedServices: ["web-development", "technical-seo", "seo-services"],
@@ -587,11 +609,33 @@ export const pillarServices: PillarService[] = [
           "YouTube automation treats video publishing as a structured system. By pairing keyword research with production workflows, your channel gains consistent views and subscriber growth.",
         ],
       },
+      {
+        heading: "How a Channel Pipeline Actually Works",
+        body: [
+          "A sustainable channel runs like a production system: niche research validates demand and competition before anything is produced, content pillars define what the channel covers, and each video follows a repeatable pipeline of scripting built around retention, voiceover and editing, thumbnail and title design, metadata optimization, and a consistent publishing schedule.",
+          "Then comes the part most automation sellers skip: performance review. Analytics reveal which topics and formats retain viewers, and that feedback reshapes the next batch of content. Automation handles the repeatable production work; strategy stays human, because the algorithm rewards channels that adapt.",
+        ],
+      },
+      {
+        heading: "Originality, Copyright, and Monetization Policy",
+        body: [
+          "Every video must add original value: commentary, analysis, or transformation that makes the content yours. Reuploading others' footage, using unlicensed music, or mass-producing low-effort compilations risks copyright strikes and, critically, YouTube's reused-content policy, which blocks monetization for channels without original contribution.",
+          "All assets used are properly licensed, and every video passes human quality control before publishing. I am direct about the limits: nobody can promise YouTube Partner Program approval, specific view counts, or revenue. Monetization depends on meeting YouTube's thresholds, passing their review, and consistently publishing content viewers actually watch.",
+        ],
+      },
     ],
     faqs: [
       {
         question: "What is a faceless YouTube automation channel?",
         answer: "A channel operated using professional voiceovers, stock media, animations, and scripts without needing the owner on camera.",
+      },
+      {
+        question: "Is the content really original, or just repackaged?",
+        answer: "Original. Scripts are written fresh for each video around the channel's niche, with human review before anything publishes. Repackaging existing videos without transformation is exactly what triggers reused-content rejections, so it is not part of the process.",
+      },
+      {
+        question: "How long until a channel can earn money?",
+        answer: "That depends on niche competition, publishing consistency, and YouTube's own review, so there is no honest fixed timeline. What I can promise is a properly built foundation: compliant content, clean channel setup, and SEO-optimized publishing that gives the channel its best chance.",
       },
     ],
     relatedServices: ["content-writing", "ai-automation", "digital-marketing"],
@@ -628,11 +672,33 @@ export const pillarServices: PillarService[] = [
           "AI automation replaces manual copy-pasting and repetitive administrative tasks with automated workflows. This allows your team to focus on high-value strategy while automated systems handle routine execution.",
         ],
       },
+      {
+        heading: "Where AI Automation Fits, and Where It Does Not",
+        body: [
+          "Automation pays off fastest on high-volume, rule-based work: routing new leads to the right salesperson instantly, following up on inquiries, moving data between your CRM, spreadsheets, and email tools, sending notifications when something needs attention, and drafting first-pass content for human review. These are the workflows I build most often.",
+          "It is a poor fit where judgment, empathy, or accountability matter: final hiring decisions, sensitive customer complaints, anything where a mistake is expensive. Every automation I ship includes human review checkpoints for customer-facing output, because AI is confident even when it is wrong. I will tell you directly if a process should not be automated.",
+        ],
+      },
+      {
+        heading: "From Discovery to Maintained Workflow",
+        body: [
+          "We start with a discovery session to map the workflow as it runs today: triggers, steps, tools involved, and where time is actually lost. Then I design the automation, typically in n8n or Make, or custom code where those do not fit, and build it against your real tools, not demos.",
+          "Before handover, the workflow is tested with real data, including failure cases: what happens when an API is down, when data is malformed, or when a step times out. You get error notifications, fallback paths, and logs, plus documentation. Automations need maintenance as tools change their APIs, so ongoing support is available rather than assumed.",
+        ],
+      },
     ],
     faqs: [
       {
         question: "Can AI chatbots integrate directly into existing websites?",
         answer: "Yes, I integrate custom AI bots seamlessly into Next.js apps, WordPress sites, and Shopify stores.",
+      },
+      {
+        question: "Do you integrate with tools beyond n8n and Make?",
+        answer: "My core offering is n8n and Make workflows plus custom integrations where those platforms fall short. If your stack uses something unusual, I will assess feasibility honestly during discovery rather than promising compatibility I cannot deliver.",
+      },
+      {
+        question: "What happens when an automation fails?",
+        answer: "Every workflow ships with error handling: failed runs trigger notifications to you, critical steps have fallback paths, and execution logs show exactly what went wrong. The goal is that failures are visible and recoverable, never silent.",
       },
     ],
     relatedServices: ["web-development", "ai-seo", "youtube-automation"],
@@ -669,11 +735,33 @@ export const pillarServices: PillarService[] = [
           "Quality content is the fuel of organic search. By structuring articles with scannable subheadings, semantic entities, and clear calls to action, your content drives measurable business outcomes.",
         ],
       },
+      {
+        heading: "How Content Actually Supports SEO",
+        body: [
+          "Content earns search visibility by doing three things: matching what searchers want, covering the topic thoroughly enough to be the best answer, and earning the links and engagement that signal quality. Well-structured articles and service pages give Google clear reasons to rank you for queries your audience genuinely searches.",
+          "What content cannot do is guarantee rankings. Search results also depend on technical site health, competition, and your site's overall authority. Honest content strategy means targeting topics you can realistically win, writing the definitive page for each, and measuring what moves, then iterating.",
+        ],
+      },
+      {
+        heading: "From Research to Published Draft",
+        body: [
+          "Every piece starts with research: analyzing what already ranks for the target topic, mapping the questions readers actually ask, and outlining a structure with clear headings before a single paragraph is drafted. This prevents the rambling, unfocused articles that neither readers nor search engines reward.",
+          "Drafts go through editing for clarity, factual consistency, and natural keyword placement: keywords appear where a human would expect them, never stuffed. You receive formatted copy with heading structure and meta title and description suggestions, plus one revision round to fine-tune tone.",
+        ],
+      },
     ],
     faqs: [
       {
         question: "Do you include keyword research with content writing services?",
         answer: "Yes, every writing engagement includes search intent research, entity mapping, and competitive analysis.",
+      },
+      {
+        question: "How long should a blog post or service page be?",
+        answer: "As long as it needs to fully answer the searcher's question, no longer. Some topics need 800 words, others need 2,000. I write to cover the intent completely rather than hitting an arbitrary word count, because thin filler hurts more than brevity helps.",
+      },
+      {
+        question: "Can you match our brand's tone of voice?",
+        answer: "Yes. Before writing, I review your existing materials and ask about your audience. A law firm and a streetwear brand should not sound the same, and the revision round exists specifically to dial the voice in until it feels like you.",
       },
     ],
     relatedServices: ["seo-services", "wordpress-seo", "digital-marketing"],
@@ -710,11 +798,34 @@ export const pillarServices: PillarService[] = [
           "My WordPress builds eliminate unnecessary plugins, resulting in rapid page load times and superior Google Lighthouse performance.",
         ],
       },
+      {
+        heading: "Development Process: From Requirements to Launch",
+        body: [
+          "Every project starts with a discovery call to map your requirements: page structure, content types, integrations like payment gateways or booking systems, and any existing site to migrate. Your hosting setup is reviewed at this stage too, because server configuration affects everything from speed to security.",
+          "The build happens on a staging environment you can preview. I develop a custom Gutenberg theme with responsive layouts that adapt cleanly from mobile to desktop, integrate only the plugins your site genuinely needs, and connect forms, analytics, and third-party tools. Nothing goes live until it has been tested across devices and browsers.",
+          "Launch includes careful migration with proper redirects so you keep your existing search rankings, final checks on forms and checkout flows, and a handover walkthrough so you know how to manage content. Ongoing maintenance plans are available if you want updates, backups, and security monitoring handled for you.",
+        ],
+      },
+      {
+        heading: "What You Receive, and What I Need From You",
+        body: [
+          "Every build ships with a custom lightweight theme, configured plugins limited to what the site actually uses, security hardening, automated backup setup, and straightforward documentation on managing your content. The codebase stays clean and commented so any competent developer can maintain it later.",
+          "From you, I need your page content or a rough draft of it, your logo and brand assets, access to your domain and hosting, and clarity on what the site must do: sell, generate leads, or take bookings. The clearer the requirements up front, the smoother the build.",
+        ],
+      },
     ],
     faqs: [
       {
         question: "Do you build custom WordPress sites or use templates?",
         answer: "I specialize in lightweight custom Gutenberg builds as well as tailored Elementor setups based on project requirements.",
+      },
+      {
+        question: "How long does a custom WordPress build take?",
+        answer: "It depends on scope: page count, custom functionality, and whether your content is ready. A focused business site moves faster than a WooCommerce store with custom checkout logic. After the discovery call you get a realistic timeline before any work starts.",
+      },
+      {
+        question: "Will I be able to update the site myself after launch?",
+        answer: "Yes. The Gutenberg block layouts are designed for non-technical editing: updating text, images, and pages does not require touching code. The handover walkthrough covers everything you need, and the documentation stays with the site.",
       },
     ],
     relatedServices: ["web-development", "wordpress-seo", "technical-seo"],
