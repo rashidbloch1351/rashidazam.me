@@ -4,7 +4,7 @@ import { Container } from '@/components/ui/Container';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Rashid Azam',
+  title: 'Privacy Policy',
   description: 'Privacy Policy for rashidazam.me — detailing data collection, usage, and protection policies.',
   alternates: {
     canonical: 'https://www.rashidazam.me/privacy-policy',
