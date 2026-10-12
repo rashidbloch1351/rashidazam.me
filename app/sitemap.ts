@@ -7,8 +7,6 @@ import { locationsData } from '@/data/locationsData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.rashidazam.me';
-  const currentDate = new Date().toISOString().split('T')[0];
-
   // 1. Core Indexable Top-Level Routes from actual website architecture
   const coreRoutes = [
     { route: '', priority: 1.0, changeFrequency: 'weekly' as const },
@@ -24,7 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/terms-of-service', priority: 0.3, changeFrequency: 'yearly' as const },
   ].map((item) => ({
     url: `${baseUrl}${item.route}`,
-    lastModified: currentDate,
     changeFrequency: item.changeFrequency,
     priority: item.priority,
   }));
@@ -32,7 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 2. All Location Hubs (Lahore, Islamabad, Karachi, Faisalabad, Multan, USA, UK, Germany, UAE, Worldwide)
   const locationRoutes = Object.keys(locationsData).map((slug) => ({
     url: `${baseUrl}/locations/${slug}`,
-    lastModified: currentDate,
     changeFrequency: 'monthly' as const,
     priority: slug === 'lahore' || slug === 'islamabad' ? 0.9 : 0.8,
   }));
@@ -40,7 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 3. All 13 Pillar Service Pages (dynamically derived from servicesData)
   const serviceRoutes = pillarServices.map((s) => ({
     url: `${baseUrl}/services/${s.slug}`,
-    lastModified: currentDate,
     changeFrequency: 'monthly' as const,
     priority: 0.9,
   }));
@@ -48,7 +43,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 4. SEO Cluster Guides & Topics (dynamically derived from seo cluster data)
   const seoClusterRoutes = seoClusterTopics.map((t) => ({
     url: `${baseUrl}/seo/${t.slug}`,
-    lastModified: currentDate,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
@@ -56,7 +50,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 5. YouTube Cluster Guides & Topics (dynamically derived from youtube cluster data)
   const youtubeClusterRoutes = youtubeClusterTopics.map((t) => ({
     url: `${baseUrl}/youtube/${t.slug}`,
-    lastModified: currentDate,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
@@ -64,7 +57,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 6. Digital Marketing Cluster Guides & Topics (dynamically derived from marketing cluster data)
   const marketingClusterRoutes = marketingClusterTopics.map((t) => ({
     url: `${baseUrl}/marketing/${t.slug}`,
-    lastModified: currentDate,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
