@@ -63,7 +63,7 @@ export const seoClusterTopics: ClusterTopic[] = [
     title: "Local SEO Framework for Pakistan & UAE",
     h1: "Local SEO Guide for Pakistan & UAE: Rank in Google Map Packs (2026)",
     metaTitle: "Local SEO Guide for Pakistan & UAE | Rank in Google Map Packs 2026",
-    metaDescription: "Comprehensive local SEO guide for businesses operating in Pakistan (Lahore, Islamabad, Karachi) and UAE (Dubai, Abu Dhabi). Google Business Profile optimization, citations, and local landing pages.",
+    metaDescription: "Local SEO guide for Pakistan (Lahore, Islamabad, Karachi) & UAE (Dubai, Abu Dhabi) businesses. Google Business Profile, citations, local landing pages.",
     quickAnswer: "Local SEO in Pakistan and UAE involves optimizing your Google Business Profile, maintaining strict NAP consistency across directories, building city-specific landing pages, capturing authentic local reviews, and deploying LocalBusiness JSON-LD schema to dominate the Google Map Pack.",
     intro: "For businesses operating across Pakistan (Lahore, Islamabad, Karachi, Faisalabad, Multan) and the UAE (Dubai, Abu Dhabi, Sharjah), local search optimization is the highest-ROI channel for capturing immediate buyer demand. When customers search for localized services, Google prioritizes the top 3 Map Pack spots. This guide outlines the exact framework to secure those rankings.",
     sections: [
