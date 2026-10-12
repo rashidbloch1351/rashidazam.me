@@ -29,10 +29,15 @@ export const relatedLinksMap: Record<string, LinkItem[]> = {
   ],
   'digital-marketing': [
     { id: 'marketing-cluster', url: '/marketing', anchorText: 'Digital Marketing Growth Hub', description: 'Guides on Google Search Ads, Meta scaling, and CRO playbooks.', category: 'cluster' },
+    { id: 'gads-guide', url: '/marketing/google-ads-search-campaign-setup', anchorText: 'Google Search Ads Setup Guide', description: 'High-intent campaign structure, match types, and Quality Score.', category: 'cluster' },
+    { id: 'meta-guide', url: '/marketing/meta-ads-scaling-framework', anchorText: 'Meta Ads Scaling Guide', description: 'Creative testing pipelines and ROAS scaling mechanics.', category: 'cluster' },
     { id: 'cro-guide', url: '/marketing/conversion-rate-optimization-playbook', anchorText: 'CRO Playbook', description: 'High-ROI landing page optimization engineered for conversion.', category: 'cluster' },
   ],
   'youtube-automation': [
     { id: 'youtube-cluster', url: '/youtube', anchorText: 'YouTube Growth & Automation Hub', description: 'Strategies for high-CPM niches, retention, and monetization.', category: 'cluster' },
+    { id: 'yt-guide-niche', url: '/youtube/faceless-channel-niche-selection', anchorText: 'Faceless Niche Selection Guide', description: 'High-CPM niche validation framework and 90-day testing checklist.', category: 'cluster' },
+    { id: 'yt-guide-seo', url: '/youtube/youtube-seo-ranking-algorithm', anchorText: 'YouTube SEO & Algorithm Guide', description: 'CTR, thumbnail psychology, and retention scripting framework.', category: 'cluster' },
+    { id: 'yt-guide-monetization', url: '/youtube/youtube-monetization-strategies', anchorText: 'YouTube Monetization Guide', description: 'Multi-stream revenue: AdSense, affiliates, products, sponsorships.', category: 'cluster' },
     { id: 'ai-auto-link', url: '/services/ai-automation', anchorText: 'AI Automation Workflows', description: 'Automated video scripting, generation, and channel architecture.', category: 'service' },
   ],
   'web-development': [
