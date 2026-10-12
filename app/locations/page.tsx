@@ -13,7 +13,7 @@ import { ProofStrip } from '@/components/ProofStrip';
 
 export const metadata: Metadata = {
   title: 'SEO & Web Development Services Worldwide | Locations Directory',
-  description: 'Full-stack web development, technical SEO audits, and digital growth services worldwide. Dedicated location hubs across Pakistan (Lahore, Islamabad, Karachi, Faisalabad, Multan), USA, UK, Germany, UAE, and global remote.',
+  description: 'SEO and web development location hubs across Pakistan (Lahore, Islamabad, Karachi, Faisalabad, Multan), USA, UK, Germany, UAE and worldwide remote.',
   alternates: {
     canonical: 'https://www.rashidazam.me/locations',
   },
@@ -273,7 +273,7 @@ export default function LocationsPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {pakistaniServices.map((s, idx) => (
                   <div key={idx} className="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs">
-                    <h4 className="font-heading font-bold text-slate-900 text-sm mb-1">{s.title}</h4>
+                    <h3 className="font-heading font-bold text-slate-900 text-sm mb-1">{s.title}</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">{s.desc}</p>
                   </div>
                 ))}
