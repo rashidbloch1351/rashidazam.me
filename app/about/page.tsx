@@ -86,14 +86,14 @@ export default function AboutPage() {
         {/* Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
-            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
               The Story Behind the Code
             </span>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight leading-tight">
               About Rashid Azam
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed">
-              I&apos;m a Technical SEO Consultant and Web Developer based in Pakistan. I help businesses rank higher on Google through dedicated <Link href="/services/technical-seo" className="text-[#d97706] font-medium hover:underline">technical SEO services</Link>, fix complex crawling issues, and build fast, modern web applications with custom <Link href="/services/web-development" className="text-[#d97706] font-medium hover:underline">web development</Link> for clients in Pakistan and worldwide.
+              I&apos;m a Technical SEO Consultant and Web Developer based in Pakistan. I help businesses rank higher on Google through dedicated <Link href="/services/technical-seo" className="text-[#b45309] font-medium hover:underline">technical SEO services</Link>, fix complex crawling issues, and build fast, modern web applications with custom <Link href="/services/web-development" className="text-[#b45309] font-medium hover:underline">web development</Link> for clients in Pakistan and worldwide.
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Button href="/contact" variant="primary" showArrow>
@@ -138,7 +138,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              To address this, I built my practice around technical precision. Studying for my BS in Information Technology while freelancing on platforms like Fiverr and Freelancer.com as a dedicated <strong className="text-slate-900">Web Developer &amp; Technical SEO Specialist</strong>, I focused on the areas that produce measurable search improvements: crawl architecture, structured data, Core Web Vitals, on-page content structure, and full-scale <Link href="/services/seo-services" className="text-[#d97706] font-medium hover:underline">SEO services</Link>.
+              To address this, I built my practice around technical precision. Studying for my BS in Information Technology while freelancing on platforms like Fiverr and Freelancer.com as a dedicated <strong className="text-slate-900">Web Developer &amp; Technical SEO Specialist</strong>, I focused on the areas that produce measurable search improvements: crawl architecture, structured data, Core Web Vitals, on-page content structure, and full-scale <Link href="/services/seo-services" className="text-[#b45309] font-medium hover:underline">SEO services</Link>.
             </p>
 
             <p>
@@ -194,7 +194,7 @@ export default function AboutPage() {
                 <ul className="space-y-2.5">
                   {category.skills.map((skill) => (
                     <li key={skill} className="flex items-center gap-2 text-xs text-slate-600">
-                      <CheckCircle2 className="w-4 h-4 text-[#d97706] shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-[#b45309] shrink-0" />
                       <span>{skill}</span>
                     </li>
                   ))}
@@ -219,7 +219,7 @@ export default function AboutPage() {
             {milestones.map((item, idx) => (
               <div key={idx} className="relative pl-8 border-l-2 border-amber-500/40 space-y-2">
                 <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#d97706] border-4 border-slate-50" />
-                <span className="text-xs font-semibold text-[#d97706] uppercase tracking-wider block">
+                <span className="text-xs font-semibold text-[#b45309] uppercase tracking-wider block">
                   {item.year}
                 </span>
                 <h3 className="text-xl font-heading font-bold text-slate-900">

@@ -34,7 +34,7 @@ export default function LocationsPage() {
       href: '/locations/worldwide',
       description: 'Delivering Next.js web applications, technical SEO audits, and AI growth workflows for founders, startups, and agencies across international time zones.',
       badge: 'Global Remote',
-      icon: <Globe className="w-5 h-5 text-[#d97706]" />,
+      icon: <Globe className="w-5 h-5 text-[#b45309]" />,
     },
     {
       name: 'Pakistan Market',
@@ -42,7 +42,7 @@ export default function LocationsPage() {
       href: '/locations',
       description: 'Helping Pakistani enterprises, software houses, retail brands, and e-commerce stores build high-performance web platforms and capture national search market share.',
       badge: 'National Hub',
-      icon: <Building2 className="w-5 h-5 text-[#d97706]" />,
+      icon: <Building2 className="w-5 h-5 text-[#b45309]" />,
     },
     {
       name: 'Lahore',
@@ -50,7 +50,7 @@ export default function LocationsPage() {
       href: '/locations/lahore',
       description: 'Targeted local map pack rankings, WordPress speed optimization, and technical search strategy for businesses in Gulberg, Johar Town, DHA, and Arfa Software Park.',
       badge: 'Pakistan City',
-      icon: <MapPin className="w-5 h-5 text-[#d97706]" />,
+      icon: <MapPin className="w-5 h-5 text-[#b45309]" />,
     },
     {
       name: 'Islamabad',
@@ -58,7 +58,7 @@ export default function LocationsPage() {
       href: '/locations/islamabad',
       description: 'Data-backed technical SEO audits, corporate Next.js site development, and search engine optimization for tech firms and consultancies in Blue Area and NIC.',
       badge: 'Pakistan City',
-      icon: <Search className="w-5 h-5 text-[#d97706]" />,
+      icon: <Search className="w-5 h-5 text-[#b45309]" />,
     },
     {
       name: 'Karachi',
@@ -66,7 +66,7 @@ export default function LocationsPage() {
       href: '/locations/karachi',
       description: 'High-velocity technical SEO, e-commerce catalog optimization, and local map pack rankings across Clifton, DHA, PECHS, Saddar, and II Chundrigar Road.',
       badge: 'Pakistan City',
-      icon: <Building2 className="w-5 h-5 text-[#d97706]" />,
+      icon: <Building2 className="w-5 h-5 text-[#b45309]" />,
     },
     {
       name: 'Faisalabad',
@@ -74,7 +74,7 @@ export default function LocationsPage() {
       href: '/locations/faisalabad',
       description: 'B2B export search optimization, website development, and local SEO for industrial manufacturers, textile exporters, and retailers in D Ground & Clock Tower.',
       badge: 'Pakistan City',
-      icon: <Zap className="w-5 h-5 text-[#d97706]" />,
+      icon: <Zap className="w-5 h-5 text-[#b45309]" />,
     },
     {
       name: 'Multan',
@@ -82,7 +82,7 @@ export default function LocationsPage() {
       href: '/locations/multan',
       description: 'Local Google Maps ranking, WordPress SEO, and modern web application builds for regional service providers, clinics, and businesses across Gulgasht & Bosan Road.',
       badge: 'Pakistan City',
-      icon: <MapPin className="w-5 h-5 text-[#d97706]" />,
+      icon: <MapPin className="w-5 h-5 text-[#b45309]" />,
     },
     {
       name: 'USA',
@@ -90,7 +90,7 @@ export default function LocationsPage() {
       href: '/locations/usa',
       description: 'Technical SEO audits, Core Web Vitals optimization, Next.js frontend engineering, and AI SEO workflows for US-based startups, SaaS brands, and digital agencies.',
       badge: 'International',
-      icon: <Globe className="w-5 h-5 text-[#d97706]" />,
+      icon: <Globe className="w-5 h-5 text-[#b45309]" />,
     },
     {
       name: 'UK',
@@ -98,7 +98,7 @@ export default function LocationsPage() {
       href: '/locations/uk',
       description: 'Technical SEO diagnostics, local search positioning, WordPress speed tuning, and web engineering for UK SMEs and agencies in London, Manchester, and Birmingham.',
       badge: 'International',
-      icon: <Globe className="w-5 h-5 text-[#d97706]" />,
+      icon: <Globe className="w-5 h-5 text-[#b45309]" />,
     },
     {
       name: 'Germany',
@@ -106,7 +106,7 @@ export default function LocationsPage() {
       href: '/locations/germany',
       description: 'International SEO, technical architecture audits, multi-region hreflang setups, and Next.js web application development for German tech firms and exporters.',
       badge: 'International',
-      icon: <Globe className="w-5 h-5 text-[#d97706]" />,
+      icon: <Globe className="w-5 h-5 text-[#b45309]" />,
     },
     {
       name: 'UAE & Gulf',
@@ -114,7 +114,7 @@ export default function LocationsPage() {
       href: '/locations/uae',
       description: 'Google Business Maps rankings, bilingual local search architecture, e-commerce SEO, and high-converting web apps for Dubai, Abu Dhabi, and GCC brands.',
       badge: 'International',
-      icon: <Zap className="w-5 h-5 text-[#d97706]" />,
+      icon: <Zap className="w-5 h-5 text-[#b45309]" />,
     },
   ];
 
@@ -176,7 +176,7 @@ export default function LocationsPage() {
           <Breadcrumbs items={[{ label: 'Locations Directory' }]} />
 
           <div className="max-w-4xl space-y-6 pt-4">
-            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
               Global & National Locations Directory
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-slate-900 tracking-tight leading-tight">
@@ -221,14 +221,14 @@ export default function LocationsPage() {
                       <div className="p-2.5 rounded-xl bg-amber-50 border border-amber-200/60 shrink-0">
                         {card.icon}
                       </div>
-                      <span className="text-[11px] font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200/60">
+                      <span className="text-[11px] font-semibold uppercase tracking-wider text-[#b45309] bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200/60">
                         {card.badge}
                       </span>
                     </div>
 
                     <div>
                       <span className="text-xs font-medium text-slate-500 block">{card.tagline}</span>
-                      <h3 className="text-xl font-heading font-bold text-slate-900 group-hover:text-[#d97706] transition-colors">
+                      <h3 className="text-xl font-heading font-bold text-slate-900 group-hover:text-[#b45309] transition-colors">
                         {card.name}
                       </h3>
                     </div>
@@ -241,7 +241,7 @@ export default function LocationsPage() {
                   <div className="pt-3 border-t border-slate-100">
                     <Link
                       href={card.href}
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#d97706] group-hover:underline"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#b45309] group-hover:underline"
                     >
                       <span>Explore {card.name} Hub</span>
                       <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -258,7 +258,7 @@ export default function LocationsPage() {
           <Container>
             <div className="bg-gradient-to-br from-amber-50/60 via-white to-slate-50 border border-amber-200/80 rounded-3xl p-8 sm:p-12 space-y-8">
               <div className="max-w-3xl space-y-4">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-100/80 px-3.5 py-1.5 rounded-full border border-amber-200">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-amber-100/80 px-3.5 py-1.5 rounded-full border border-amber-200">
                   Pakistan Services
                 </span>
                 <h2 className="text-3xl sm:text-4xl font-heading font-bold text-slate-900">
@@ -293,16 +293,16 @@ export default function LocationsPage() {
                     >
                       <div>
                         <div className="flex items-center justify-between mb-1">
-                          <span className="font-heading font-bold text-slate-900 text-sm group-hover:text-[#d97706] transition-colors">
+                          <span className="font-heading font-bold text-slate-900 text-sm group-hover:text-[#b45309] transition-colors">
                             {city.name}
                           </span>
-                          <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-[#d97706] transition-colors" />
+                          <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-[#b45309] transition-colors" />
                         </div>
                         <p className="text-[11px] text-slate-500 leading-normal">
                           {city.focus}
                         </p>
                       </div>
-                      <span className="text-[11px] font-semibold text-[#d97706] mt-3 block">
+                      <span className="text-[11px] font-semibold text-[#b45309] mt-3 block">
                         View {city.name} SEO →
                       </span>
                     </Link>

@@ -36,7 +36,7 @@ export default function ContactPage() {
         <Breadcrumbs items={[{ label: 'Contact' }]} />
 
         <div className="max-w-3xl space-y-4 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
             Get In Touch
           </span>
           <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight">
@@ -60,12 +60,12 @@ export default function ContactPage() {
 
                 <div className="space-y-5 text-sm">
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-[#d97706] shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-[#b45309] shrink-0">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
                       <span className="text-xs text-slate-500 font-medium block">Email Me Directly</span>
-                      <a href="mailto:rashidbloch1351@gmail.com" className="text-slate-900 hover:text-[#d97706] font-semibold transition-colors">
+                      <a href="mailto:rashidbloch1351@gmail.com" className="text-slate-900 hover:text-[#b45309] font-semibold transition-colors">
                         rashidbloch1351@gmail.com
                       </a>
                     </div>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-[#d97706] shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-[#b45309] shrink-0">
                       <Globe className="w-5 h-5" />
                     </div>
                     <div>
@@ -244,7 +244,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full inline-flex items-center justify-center gap-2 bg-[#d97706] hover:bg-[#b45309] disabled:opacity-50 text-white font-semibold px-6 py-3.5 rounded-xl transition-all shadow-md min-h-[44px]"
+                    className="w-full inline-flex items-center justify-center gap-2 bg-[#b45309] hover:bg-[#92400e] disabled:opacity-50 text-white font-semibold px-6 py-3.5 rounded-xl transition-all shadow-md min-h-[44px]"
                   >
                     {isSubmitting ? (
                       <span>Sending Message...</span>
@@ -273,21 +273,21 @@ export default function ContactPage() {
             />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-slate-50 border border-gray-200 p-6 rounded-2xl space-y-3">
-                <span className="inline-flex w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 items-center justify-center text-[#d97706] font-heading font-bold">1</span>
+                <span className="inline-flex w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 items-center justify-center text-[#b45309] font-heading font-bold">1</span>
                 <h3 className="font-heading font-semibold text-lg text-slate-900">You Reach Out</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
                   Fill out the form with your website URL, goals, and timeline — or message directly on WhatsApp. The more context you share, the more useful my reply.
                 </p>
               </div>
               <div className="bg-slate-50 border border-gray-200 p-6 rounded-2xl space-y-3">
-                <span className="inline-flex w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 items-center justify-center text-[#d97706] font-heading font-bold">2</span>
+                <span className="inline-flex w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 items-center justify-center text-[#b45309] font-heading font-bold">2</span>
                 <h3 className="font-heading font-semibold text-lg text-slate-900">Discovery & Proposal</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
                   Within 24 hours on working days you&apos;ll get a personal response. If we&apos;re a fit, I&apos;ll send a clear proposal with scope, timeline, and fixed pricing — no vague estimates.
                 </p>
               </div>
               <div className="bg-slate-50 border border-gray-200 p-6 rounded-2xl space-y-3">
-                <span className="inline-flex w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 items-center justify-center text-[#d97706] font-heading font-bold">3</span>
+                <span className="inline-flex w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 items-center justify-center text-[#b45309] font-heading font-bold">3</span>
                 <h3 className="font-heading font-semibold text-lg text-slate-900">Kickoff</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
                   Once agreed, work starts with a short kickoff call to align on goals and access. You&apos;ll get regular updates and can reach me directly throughout the project.

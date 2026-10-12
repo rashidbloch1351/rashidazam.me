@@ -37,7 +37,7 @@ export default function MarketingClusterHubPage() {
         <Breadcrumbs items={[{ label: 'Marketing Growth Hub' }]} />
 
         <div className="max-w-3xl space-y-4 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
             Topic Cluster Hub
           </span>
           <h1 className="text-4xl sm:text-5xl font-heading font-bold text-[#f3f4f6] tracking-tight">
@@ -67,33 +67,33 @@ export default function MarketingClusterHubPage() {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
-              <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Pillar 1</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#b45309]">Pillar 1</span>
               <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Capture Intent</h3>
               <p className="text-sm text-[#9ca3af] leading-relaxed">
                 Google Search Ads buy customers at the moment of decision — but only if your account structure separates intent tiers, your match types stay tight, and negative keywords filter the waste. The{' '}
-                <Link href="/marketing/google-ads-search-campaign-setup" className="text-[#d97706] hover:underline font-medium">
+                <Link href="/marketing/google-ads-search-campaign-setup" className="text-[#b45309] hover:underline font-medium">
                   Google Search Ads setup guide
                 </Link>{' '}
                 covers the full framework from account structure to conversion tracking.
               </p>
             </div>
             <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
-              <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Pillar 2</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#b45309]">Pillar 2</span>
               <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Scale Creative</h3>
               <p className="text-sm text-[#9ca3af] leading-relaxed">
                 On Meta, creative is the targeting. Winning hooks, systematic creative testing pipelines, and broad-audience scaling mechanics decide ROAS more than any audience trick. The{' '}
-                <Link href="/marketing/meta-ads-scaling-framework" className="text-[#d97706] hover:underline font-medium">
+                <Link href="/marketing/meta-ads-scaling-framework" className="text-[#b45309] hover:underline font-medium">
                   Meta Ads scaling framework
                 </Link>{' '}
                 details the testing pipeline, horizontal vs vertical scaling, and honest measurement.
               </p>
             </div>
             <div className="bg-[#17181c] border border-[#272a30] p-8 rounded-xl space-y-3">
-              <span className="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Pillar 3</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#b45309]">Pillar 3</span>
               <h3 className="text-xl font-heading font-semibold text-[#f3f4f6]">Convert Traffic</h3>
               <p className="text-sm text-[#9ca3af] leading-relaxed">
                 Doubling conversion rate halves customer acquisition cost across every channel at once. Dedicated landing pages, friction removal, and trust signals near the decision point multiply ad spend efficiency. The{' '}
-                <Link href="/marketing/conversion-rate-optimization-playbook" className="text-[#d97706] hover:underline font-medium">
+                <Link href="/marketing/conversion-rate-optimization-playbook" className="text-[#b45309] hover:underline font-medium">
                   CRO playbook
                 </Link>{' '}
                 gives you the research process, testing discipline, and common mistakes to avoid.
@@ -120,10 +120,10 @@ export default function MarketingClusterHubPage() {
                 className="bg-[#17181c] border border-[#272a30] hover:border-[#d97706]/40 p-8 rounded-xl space-y-4 flex flex-col justify-between group transition-all"
               >
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-lg bg-[#0f1012] border border-[#272a30] flex items-center justify-center text-[#d97706]">
+                  <div className="w-10 h-10 rounded-lg bg-[#0f1012] border border-[#272a30] flex items-center justify-center text-[#b45309]">
                     <TrendingUp className="w-5 h-5" />
                   </div>
-                  <h3 className="text-xl font-heading font-semibold text-[#f3f4f6] group-hover:text-[#d97706] transition-colors">
+                  <h3 className="text-xl font-heading font-semibold text-[#f3f4f6] group-hover:text-[#b45309] transition-colors">
                     {topic.title}
                   </h3>
                   <p className="text-xs text-[#9ca3af] leading-relaxed line-clamp-3">
@@ -134,7 +134,7 @@ export default function MarketingClusterHubPage() {
                 <div className="pt-4 border-t border-[#272a30]/50">
                   <Link
                     href={`/marketing/${topic.slug}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-medium text-[#d97706] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
+                    className="inline-flex items-center gap-1.5 text-xs font-medium text-[#b45309] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
                   >
                     <span>Read Marketing Guide</span>
                     <ArrowUpRight className="w-4 h-4" />

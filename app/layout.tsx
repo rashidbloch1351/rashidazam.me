@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -98,7 +99,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-white text-slate-800 selection:bg-amber-100 selection:text-amber-900">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-[100] bg-[#d97706] text-white px-4 py-2 rounded-md font-medium text-sm focus:outline-none"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-[100] bg-[#b45309] text-white px-4 py-2 rounded-md font-medium text-sm focus:outline-none"
         >
           Skip to main content
         </a>
@@ -106,6 +107,7 @@ export default function RootLayout({
         <main id="main-content" className="flex-grow">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <SpeedInsights />
       </body>
     </html>
   );
