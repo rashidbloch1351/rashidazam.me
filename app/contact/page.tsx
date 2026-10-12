@@ -6,6 +6,7 @@ import { Mail, Phone, MessageSquare, MapPin, Send, CheckCircle2, AlertCircle, Gl
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { FAQAccordion } from '@/components/FAQAccordion';
 import { submitContactForm, ContactFormState } from '@/app/actions/contact';
 import { contactInfo } from '@/data/contactInfo';
 
@@ -260,6 +261,83 @@ export default function ContactPage() {
           </div>
         </Container>
       </section>
+
+      {/* How It Works */}
+      <section>
+        <Container>
+          <div className="max-w-4xl mx-auto space-y-8">
+            <SectionHeading
+              kicker="What Happens Next"
+              title="How Working Together Works"
+              description="A simple, transparent process — you'll always know what's happening and what comes next."
+            />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-slate-50 border border-gray-200 p-6 rounded-2xl space-y-3">
+                <span className="inline-flex w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 items-center justify-center text-[#d97706] font-heading font-bold">1</span>
+                <h3 className="font-heading font-semibold text-lg text-slate-900">You Reach Out</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Fill out the form with your website URL, goals, and timeline — or message directly on WhatsApp. The more context you share, the more useful my reply.
+                </p>
+              </div>
+              <div className="bg-slate-50 border border-gray-200 p-6 rounded-2xl space-y-3">
+                <span className="inline-flex w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 items-center justify-center text-[#d97706] font-heading font-bold">2</span>
+                <h3 className="font-heading font-semibold text-lg text-slate-900">Discovery & Proposal</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Within 24 hours on working days you&apos;ll get a personal response. If we&apos;re a fit, I&apos;ll send a clear proposal with scope, timeline, and fixed pricing — no vague estimates.
+                </p>
+              </div>
+              <div className="bg-slate-50 border border-gray-200 p-6 rounded-2xl space-y-3">
+                <span className="inline-flex w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 items-center justify-center text-[#d97706] font-heading font-bold">3</span>
+                <h3 className="font-heading font-semibold text-lg text-slate-900">Kickoff</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Once agreed, work starts with a short kickoff call to align on goals and access. You&apos;ll get regular updates and can reach me directly throughout the project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Contact FAQs */}
+      <section>
+        <Container>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <SectionHeading
+              kicker="Before You Ask"
+              title="Contact FAQs"
+            />
+            <FAQAccordion
+              items={[
+                {
+                  question: "How quickly will I get a response?",
+                  answer: "I review every inquiry personally and respond within 24 hours on working days (Monday–Friday). WhatsApp messages are usually answered faster than form submissions during working hours.",
+                },
+                {
+                  question: "What should I include in my project inquiry?",
+                  answer: "Your website URL (if you have one), what you're trying to achieve, your timeline, and a rough budget range. These four details let me give you a useful, specific reply instead of generic back-and-forth.",
+                },
+                {
+                  question: "Do you work with clients outside Pakistan?",
+                  answer: "Yes — clients are served worldwide across the US, UK, UAE, and beyond. All communication happens over email, WhatsApp, and video calls, and async updates keep projects moving across time zones.",
+                },
+                {
+                  question: "How does pricing work?",
+                  answer: "After understanding your requirements, you'll receive a fixed-price proposal with clear scope — no hourly billing surprises. Smaller engagements like audits have standard packages; larger builds are scoped individually.",
+                },
+                {
+                  question: "Will you sign an NDA?",
+                  answer: "Yes, happy to. Client confidentiality is standard practice — your business details, data, and project specifics are never shared or used as portfolio material without your explicit permission.",
+                },
+                {
+                  question: "Do you offer ongoing support after project completion?",
+                  answer: "Yes. Every project includes a handover period, and ongoing maintenance, monitoring, and optimization retainers are available for clients who want continuous support rather than one-off delivery.",
+                },
+              ]}
+            />
+          </div>
+        </Container>
+      </section>
+
     </div>
   );
 }
