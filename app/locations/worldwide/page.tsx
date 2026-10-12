@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import { ogImages } from '@/lib/seo';
 import { locationsData } from '@/data/locationsData';
 import { LocationPageTemplate } from '@/components/LocationPageTemplate';
 
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     description: location.metaDescription,
     url: location.canonical,
     type: 'website',
+    images: ogImages,
   },
 };
 
