@@ -28,7 +28,7 @@ export const pillarServices: PillarService[] = [
     slug: "web-development",
     name: "Web Development",
     navLabel: "Web Development",
-    metaTitle: "Custom Web Development Services Worldwide | Next.js, WordPress & Shopify | Rashid Azam",
+    metaTitle: "Custom Web Development Services Worldwide | Next.js, WordPress & Shopify",
     metaDescription:
       "Global web development services by Rashid Azam. Fast Next.js applications, responsive WordPress themes, Shopify stores, and clean code built for SEO and high conversions.",
     h1: "Custom Web Development Services",
@@ -97,7 +97,7 @@ export const pillarServices: PillarService[] = [
     slug: "wordpress-seo",
     name: "WordPress SEO",
     navLabel: "WordPress SEO",
-    metaTitle: "WordPress SEO Services Worldwide | Optimization Specialist | Rashid Azam",
+    metaTitle: "WordPress SEO Services Worldwide | Optimization Specialist",
     metaDescription:
       "Professional WordPress SEO services by Rashid Azam. Optimization for WordPress sites, plugin hygiene, speed tuning, local SEO WordPress, and content structure.",
     h1: "WordPress SEO Services & Optimization",
@@ -162,7 +162,7 @@ export const pillarServices: PillarService[] = [
     slug: "local-seo",
     name: "Local SEO",
     navLabel: "Local SEO",
-    metaTitle: "Local SEO Services & Optimization Worldwide | Rashid Azam",
+    metaTitle: "Local SEO Services & Optimization Worldwide",
     metaDescription:
       "Drive local customer inquiries with local SEO services by Rashid Azam. Google Business Profile optimization, local pack rankings, hyper-local SEO, and city landing pages.",
     h1: "Local SEO Services & Local Search Optimization",
@@ -220,7 +220,7 @@ export const pillarServices: PillarService[] = [
     slug: "technical-seo",
     name: "Technical SEO",
     navLabel: "Technical SEO",
-    metaTitle: "Technical SEO Services & Code Architecture Worldwide | Rashid Azam",
+    metaTitle: "Technical SEO Services & Code Architecture Worldwide",
     metaDescription:
       "Expert technical SEO services by Rashid Azam. Fix crawl errors, indexation issues, JavaScript SEO, canonical bugs, schema markup, and Core Web Vitals.",
     h1: "Technical SEO Services & Architecture",
@@ -274,7 +274,7 @@ export const pillarServices: PillarService[] = [
     slug: "seo-audit",
     name: "SEO Audit",
     navLabel: "SEO Audit",
-    metaTitle: "Comprehensive Technical & Content SEO Audit | Rashid Azam",
+    metaTitle: "Comprehensive Technical & Content SEO Audit",
     metaDescription:
       "In-depth SEO audit services by Rashid Azam. Uncover technical flaws, penalty causes, indexation bottlenecks, and prioritized growth roadmaps.",
     h1: "Comprehensive SEO Audit & Strategy",
@@ -324,7 +324,7 @@ export const pillarServices: PillarService[] = [
     slug: "ai-seo",
     name: "AI SEO",
     navLabel: "AI SEO",
-    metaTitle: "AI SEO Services & AI-Powered Optimization | Rashid Azam",
+    metaTitle: "AI SEO Services & AI-Powered Optimization",
     metaDescription:
       "Next-generation AI SEO services by Rashid Azam. Leverage AI tools, AI-powered SEO audits, automated workflows, and Google AI Overview optimization.",
     h1: "AI SEO Services & Search Optimization",
@@ -374,7 +374,7 @@ export const pillarServices: PillarService[] = [
     slug: "answer-engine-optimization",
     name: "Answer Engine Optimization (AEO)",
     navLabel: "AEO / GEO",
-    metaTitle: "Answer Engine Optimization (AEO) & GEO Services | Rashid Azam",
+    metaTitle: "Answer Engine Optimization (AEO) & GEO Services",
     metaDescription:
       "Optimize your brand for ChatGPT, Perplexity, and Google AI Overviews with Answer Engine Optimization (AEO) & Generative Engine Optimization (GEO) by Rashid Azam.",
     h1: "Answer Engine Optimization (AEO) & GEO Services",
@@ -424,7 +424,7 @@ export const pillarServices: PillarService[] = [
     slug: "ecommerce-seo",
     name: "E-Commerce SEO",
     navLabel: "E-Commerce SEO",
-    metaTitle: "E-Commerce SEO Services | Shopify & WooCommerce | Rashid Azam",
+    metaTitle: "E-Commerce SEO Services | Shopify & WooCommerce",
     metaDescription:
       "Drive organic sales with E-Commerce SEO services by Rashid Azam. Optimization for Shopify, WooCommerce, category pages, product schema, and faceted navigation.",
     h1: "E-Commerce SEO Services & Store Optimization",
@@ -473,7 +473,7 @@ export const pillarServices: PillarService[] = [
     slug: "seo-services",
     name: "SEO Services",
     navLabel: "SEO Services",
-    metaTitle: "Full-Scale SEO Services Worldwide | Organic Search Specialist | Rashid Azam",
+    metaTitle: "Full-Scale SEO Services Worldwide | Organic Search Specialist",
     metaDescription:
       "Global full-scale SEO services by Rashid Azam. Technical SEO, on-page optimization, content strategy, authority link building, and conversion tracking for businesses worldwide.",
     h1: "Full-Scale SEO Services & Organic Growth",
@@ -518,7 +518,7 @@ export const pillarServices: PillarService[] = [
     slug: "digital-marketing",
     name: "Digital Marketing",
     navLabel: "Digital Marketing",
-    metaTitle: "Digital Marketing & Performance Ads Services Worldwide | Rashid Azam",
+    metaTitle: "Digital Marketing & Performance Ads Services Worldwide",
     metaDescription:
       "Global digital marketing services by Rashid Azam — Google Ads, Meta Ads, social media strategy, conversion rate optimization, and multi-channel growth.",
     h1: "Digital Marketing & Paid Ads Services",
@@ -559,7 +559,7 @@ export const pillarServices: PillarService[] = [
     slug: "youtube-automation",
     name: "YouTube Automation",
     navLabel: "YouTube Automation",
-    metaTitle: "YouTube Automation Services Worldwide | Faceless Channels | Rashid Azam",
+    metaTitle: "YouTube Automation Services Worldwide | Faceless Channels",
     metaDescription:
       "Global YouTube automation services — faceless channel setup, YouTube SEO, scripting, video editing, thumbnails, and monetization strategy by Rashid Azam.",
     h1: "YouTube Automation & Channel Growth Services",
@@ -600,7 +600,7 @@ export const pillarServices: PillarService[] = [
     slug: "ai-automation",
     name: "AI Automation",
     navLabel: "AI Automation",
-    metaTitle: "AI Automation Services | Chatbots, Agents & Workflows | Rashid Azam",
+    metaTitle: "AI Automation Services | Chatbots, Agents & Workflows",
     metaDescription:
       "AI automation services — custom AI chatbots, n8n automated workflows, CRM integrations, and automated lead routing by Rashid Azam.",
     h1: "AI Automation & Workflow Engineering",
@@ -641,7 +641,7 @@ export const pillarServices: PillarService[] = [
     slug: "content-writing",
     name: "Content Writing",
     navLabel: "Content Writing",
-    metaTitle: "SEO Content Writing & Copywriting Services | Rashid Azam",
+    metaTitle: "SEO Content Writing & Copywriting Services",
     metaDescription:
       "Professional SEO content writing services by Rashid Azam. Intent-focused blog articles, website copy, product descriptions, and conversion landing page copy.",
     h1: "SEO Content Writing & Strategic Copywriting",
@@ -682,7 +682,7 @@ export const pillarServices: PillarService[] = [
     slug: "wordpress-development",
     name: "WordPress Development",
     navLabel: "WordPress Development",
-    metaTitle: "Custom WordPress Development Services | Rashid Azam",
+    metaTitle: "Custom WordPress Development Services",
     metaDescription:
       "Custom WordPress development services by Rashid Azam. Fast Gutenberg themes, Elementor customization, WooCommerce setups, and clean code built for SEO.",
     h1: "Custom WordPress Development & Theme Customization",
