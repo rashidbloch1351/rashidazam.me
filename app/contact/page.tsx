@@ -158,7 +158,7 @@ export default function ContactPage() {
                         className="w-full bg-slate-50 border border-gray-200 focus:border-[#d97706] focus:bg-white focus:outline-none text-slate-900 px-4 py-3 rounded-xl text-base sm:text-sm transition-colors"
                       />
                       {formState.errors?.name && (
-                        <p className="text-xs text-red-500">{formState.errors.name}</p>
+                        <p role="alert" className="text-xs text-red-600">{formState.errors.name}</p>
                       )}
                     </div>
 
@@ -175,7 +175,7 @@ export default function ContactPage() {
                         className="w-full bg-slate-50 border border-gray-200 focus:border-[#d97706] focus:bg-white focus:outline-none text-slate-900 px-4 py-3 rounded-xl text-base sm:text-sm transition-colors"
                       />
                       {formState.errors?.email && (
-                        <p className="text-xs text-red-500">{formState.errors.email}</p>
+                        <p role="alert" className="text-xs text-red-600">{formState.errors.email}</p>
                       )}
                     </div>
                   </div>
@@ -201,7 +201,7 @@ export default function ContactPage() {
                         <option value="Content Writing">SEO Content Writing & Copywriting</option>
                       </select>
                       {formState.errors?.service && (
-                        <p className="text-xs text-red-500">{formState.errors.service}</p>
+                        <p role="alert" className="text-xs text-red-600">{formState.errors.service}</p>
                       )}
                     </div>
 
@@ -237,7 +237,7 @@ export default function ContactPage() {
                       className="w-full bg-slate-50 border border-gray-200 focus:border-[#d97706] focus:bg-white focus:outline-none text-slate-900 px-4 py-3 rounded-xl text-base sm:text-sm transition-colors resize-none"
                     />
                     {formState.errors?.message && (
-                      <p className="text-xs text-red-500">{formState.errors.message}</p>
+                      <p role="alert" className="text-xs text-red-600">{formState.errors.message}</p>
                     )}
                   </div>
 
