@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import { ogImages } from '@/lib/seo';
 import Link from 'next/link';
 import { Globe, MapPin, Search, Code, CheckCircle2, ArrowUpRight, Zap, Bot, Building2, ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Explore dedicated location hubs for SEO services, WordPress optimization, and web development across Pakistan and international markets.',
     url: 'https://www.rashidazam.me/locations',
     type: 'website',
+    images: ogImages,
   },
 };
 
