@@ -4,7 +4,7 @@ import { Container } from '@/components/ui/Container';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Rashid Azam',
+  title: 'Terms of Service',
   description: 'Terms of Service for rashidazam.me — governing service agreements and website usage.',
   alternates: {
     canonical: 'https://www.rashidazam.me/terms-of-service',
