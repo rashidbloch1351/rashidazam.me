@@ -11,7 +11,7 @@ import { seoClusterTopics } from '@/data/clusters/seo';
 
 export const metadata: Metadata = {
   title: 'SEO Knowledge Hub | Technical Guides & Local SEO Resources',
-  description: 'Free SEO guides covering technical SEO audits, local SEO for Pakistan, schema markup, keyword research, and WordPress optimization. Educational resource by Rashid Azam.',
+  description: 'Free SEO guides: technical SEO audits, local SEO for Pakistan, schema markup, keyword research and WordPress optimization. Practical, no-fluff tutorials.',
   alternates: {
     canonical: 'https://www.rashidazam.me/seo',
   },
