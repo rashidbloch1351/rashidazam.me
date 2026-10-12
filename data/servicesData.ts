@@ -30,7 +30,7 @@ export const pillarServices: PillarService[] = [
     navLabel: "Web Development",
     metaTitle: "Custom Web Development Services Worldwide | Next.js, WordPress & Shopify",
     metaDescription:
-      "Global web development services by Rashid Azam. Fast Next.js applications, responsive WordPress themes, Shopify stores, and clean code built for SEO and high conversions.",
+      "Web development services: fast Next.js applications, responsive WordPress themes, Shopify stores and clean, SEO-ready code built for conversions.",
     h1: "Custom Web Development Services",
     tagline: "Fast, responsive web architecture built for organic reach and conversion.",
     intro:
@@ -164,7 +164,7 @@ export const pillarServices: PillarService[] = [
     navLabel: "Local SEO",
     metaTitle: "Local SEO Services & Optimization Worldwide",
     metaDescription:
-      "Drive local customer inquiries with local SEO services by Rashid Azam. Google Business Profile optimization, local pack rankings, hyper-local SEO, and city landing pages.",
+      "Local SEO services that drive customer inquiries: Google Business Profile optimization, local pack rankings, hyper-local SEO and city landing pages.",
     h1: "Local SEO Services & Local Search Optimization",
     tagline: "Dominating local map packs and high-intent city searches.",
     intro:
@@ -376,7 +376,7 @@ export const pillarServices: PillarService[] = [
     navLabel: "AEO / GEO",
     metaTitle: "Answer Engine Optimization (AEO) & GEO Services",
     metaDescription:
-      "Optimize your brand for ChatGPT, Perplexity, and Google AI Overviews with Answer Engine Optimization (AEO) & Generative Engine Optimization (GEO) by Rashid Azam.",
+      "Answer Engine Optimization (AEO) & Generative Engine Optimization (GEO) services: get your brand cited in ChatGPT, Perplexity and Google AI Overviews.",
     h1: "Answer Engine Optimization (AEO) & GEO Services",
     tagline: "Positioning your content as the primary answer for AI models.",
     intro:
@@ -475,7 +475,7 @@ export const pillarServices: PillarService[] = [
     navLabel: "SEO Services",
     metaTitle: "Full-Scale SEO Services Worldwide | Organic Search Specialist",
     metaDescription:
-      "Global full-scale SEO services by Rashid Azam. Technical SEO, on-page optimization, content strategy, authority link building, and conversion tracking for businesses worldwide.",
+      "Full-scale SEO services: technical SEO, on-page optimization, content strategy, link building and conversion tracking for businesses worldwide.",
     h1: "Full-Scale SEO Services & Organic Growth",
     tagline: "End-to-end organic search strategy engineered for business revenue.",
     intro:
