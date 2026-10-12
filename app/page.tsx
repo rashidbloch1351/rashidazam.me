@@ -38,12 +38,12 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const serviceIcons: Record<string, React.ReactNode> = {
-    'seo-services': <Search className="w-6 h-6 text-[#d97706]" />,
-    'digital-marketing': <TrendingUp className="w-6 h-6 text-[#d97706]" />,
-    'youtube-automation': <Video className="w-6 h-6 text-[#d97706]" />,
-    'web-development': <Code className="w-6 h-6 text-[#d97706]" />,
-    'ai-automation': <Bot className="w-6 h-6 text-[#d97706]" />,
-    'content-writing': <PenTool className="w-6 h-6 text-[#d97706]" />,
+    'seo-services': <Search className="w-6 h-6 text-[#b45309]" />,
+    'digital-marketing': <TrendingUp className="w-6 h-6 text-[#b45309]" />,
+    'youtube-automation': <Video className="w-6 h-6 text-[#b45309]" />,
+    'web-development': <Code className="w-6 h-6 text-[#b45309]" />,
+    'ai-automation': <Bot className="w-6 h-6 text-[#b45309]" />,
+    'content-writing': <PenTool className="w-6 h-6 text-[#b45309]" />,
   };
 
   const getSocialIcon = (label: string) => {
@@ -156,7 +156,7 @@ export default function HomePage() {
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-7 space-y-6">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-[#d97706] text-xs font-semibold uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-[#b45309] text-xs font-semibold uppercase tracking-wider">
                   Pakistan &amp; International SEO &amp; Web Development
                 </div>
                 
@@ -235,7 +235,7 @@ export default function HomePage() {
                 <ServiceCard
                   key={service.slug}
                   service={service}
-                  icon={serviceIcons[service.slug] || <Code className="w-6 h-6 text-[#d97706]" />}
+                  icon={serviceIcons[service.slug] || <Code className="w-6 h-6 text-[#b45309]" />}
                 />
               ))}
             </div>

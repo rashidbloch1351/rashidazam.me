@@ -103,7 +103,7 @@ export default function SeoClusterHubPage() {
         <Breadcrumbs items={[{ label: 'SEO Knowledge Hub' }]} />
 
         <div className="max-w-3xl space-y-4 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
             Free Educational Resource
           </span>
           <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight leading-tight">
@@ -141,10 +141,10 @@ export default function SeoClusterHubPage() {
                 className="bg-slate-50 border border-slate-200/90 hover:border-amber-400/60 p-8 rounded-2xl space-y-4 flex flex-col justify-between group transition-all shadow-2xs hover:shadow-xs"
               >
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-[#d97706]">
+                  <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-[#b45309]">
                     <Search className="w-5 h-5" />
                   </div>
-                  <h3 className="text-xl font-heading font-semibold text-slate-900 group-hover:text-[#d97706] transition-colors">
+                  <h3 className="text-xl font-heading font-semibold text-slate-900 group-hover:text-[#b45309] transition-colors">
                     {topic.title}
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">
@@ -155,7 +155,7 @@ export default function SeoClusterHubPage() {
                 <div className="pt-4 border-t border-slate-200/80">
                   <Link
                     href={`/seo/${topic.slug}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#d97706] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#b45309] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
                   >
                     <span>Read Topic Guide</span>
                     <ArrowUpRight className="w-4 h-4" />
@@ -213,7 +213,7 @@ export default function SeoClusterHubPage() {
                 </div>
                 <Link
                   href={`/seo/${item.guide.slug}`}
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#d97706] hover:text-[#b45309] whitespace-nowrap shrink-0"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#b45309] hover:text-[#b45309] whitespace-nowrap shrink-0"
                 >
                   <span>{item.guide.label}</span>
                   <ArrowUpRight className="w-4 h-4" />
@@ -235,10 +235,10 @@ export default function SeoClusterHubPage() {
           />
           <div className="space-y-4 text-sm text-slate-600 leading-relaxed">
             <p>
-              A full <Link href="/services/seo-audit" className="font-semibold text-[#d97706] hover:text-[#b45309]">technical SEO audit</Link> is worth it when traffic has dropped and you cannot isolate the cause, when you are migrating or redesigning a site, or when you compete in a crowded niche where small technical edges compound. An audit gives you a prioritized fix list instead of months of guessing.
+              A full <Link href="/services/seo-audit" className="font-semibold text-[#b45309] hover:text-[#b45309]">technical SEO audit</Link> is worth it when traffic has dropped and you cannot isolate the cause, when you are migrating or redesigning a site, or when you compete in a crowded niche where small technical edges compound. An audit gives you a prioritized fix list instead of months of guessing.
             </p>
             <p>
-              Ongoing <Link href="/services/seo-services" className="font-semibold text-[#d97706] hover:text-[#b45309]">SEO services</Link> make sense when optimization needs consistent execution — content publishing, link building, and technical maintenance — that you do not have time to run in-house. And if your customers come from a specific area, <Link href="/services/local-seo" className="font-semibold text-[#d97706] hover:text-[#b45309]">local SEO</Link> work on your Business Profile and local citations typically pays back faster than broad national targeting.
+              Ongoing <Link href="/services/seo-services" className="font-semibold text-[#b45309] hover:text-[#b45309]">SEO services</Link> make sense when optimization needs consistent execution — content publishing, link building, and technical maintenance — that you do not have time to run in-house. And if your customers come from a specific area, <Link href="/services/local-seo" className="font-semibold text-[#b45309] hover:text-[#b45309]">local SEO</Link> work on your Business Profile and local citations typically pays back faster than broad national targeting.
             </p>
             <p>
               For everything else, the guides above are a solid starting point — and they will also help you evaluate any SEO provider you talk to, because you will know what good work looks like.

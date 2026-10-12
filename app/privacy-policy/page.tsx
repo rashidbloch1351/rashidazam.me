@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
             </h2>
             <p>
               If you have any questions regarding this Privacy Policy, please contact Rashid Azam directly at{' '}
-              <a href="mailto:rashidbloch1351@gmail.com" className="text-[#d97706] hover:underline">
+              <a href="mailto:rashidbloch1351@gmail.com" className="text-[#b45309] hover:underline">
                 rashidbloch1351@gmail.com
               </a>.
             </p>

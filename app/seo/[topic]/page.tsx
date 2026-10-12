@@ -55,7 +55,7 @@ export default function SeoTopicPage({ params }: { params: { topic: string } }) 
         />
 
         <div className="max-w-4xl space-y-6 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3 py-1 rounded-full border border-amber-200/60">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-amber-50 px-3 py-1 rounded-full border border-amber-200/60">
             SEO Cluster Guide
           </span>
           <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight leading-tight">
@@ -106,7 +106,7 @@ export default function SeoTopicPage({ params }: { params: { topic: string } }) 
               I provide comprehensive{' '}
               <Link
                 href="/services/seo-services"
-                className="text-[#d97706] font-semibold underline hover:text-[#b45309]"
+                className="text-[#b45309] font-semibold underline hover:text-[#b45309]"
               >
                 Technical SEO Services
               </Link>{' '}
@@ -131,10 +131,10 @@ export default function SeoTopicPage({ params }: { params: { topic: string } }) 
                 href={`/seo/${sib.slug}`}
                 className="bg-white border border-gray-200 hover:border-amber-400 p-6 rounded-2xl space-y-2 group transition-all shadow-2xs hover:shadow-xs"
               >
-                <span className="text-xs text-[#d97706] font-semibold uppercase tracking-wider block">
+                <span className="text-xs text-[#b45309] font-semibold uppercase tracking-wider block">
                   SEO Guide
                 </span>
-                <h3 className="font-heading font-semibold text-base text-slate-900 group-hover:text-[#d97706] transition-colors">
+                <h3 className="font-heading font-semibold text-base text-slate-900 group-hover:text-[#b45309] transition-colors">
                   {sib.title}
                 </h3>
               </Link>

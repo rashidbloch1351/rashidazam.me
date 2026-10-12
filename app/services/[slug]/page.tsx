@@ -79,7 +79,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
           />
 
           <div className="max-w-3xl space-y-6 pt-4">
-            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
               Pillar Service
             </span>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight">
@@ -113,7 +113,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                     key={idx}
                     className="bg-slate-50 border border-slate-200/90 p-6 rounded-2xl space-y-3 hover:border-amber-400/80 transition-all shadow-2xs"
                   >
-                    <div className="flex items-center gap-2 text-[#d97706]">
+                    <div className="flex items-center gap-2 text-[#b45309]">
                       <CheckCircle2 className="w-5 h-5 shrink-0" />
                       <h3 className="font-heading font-semibold text-slate-900 text-base">
                         {item.title}

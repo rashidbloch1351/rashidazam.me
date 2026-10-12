@@ -8,7 +8,7 @@ export default function NotFoundPage() {
     <div className="py-20 bg-white">
       <Container size="small" className="text-center space-y-8">
         <div className="space-y-3">
-          <span className="font-heading font-bold text-6xl text-[#d97706] block">
+          <span className="font-heading font-bold text-6xl text-[#b45309] block">
             404
           </span>
           <h1 className="text-3xl sm:text-4xl font-heading font-bold text-slate-900">
@@ -24,11 +24,11 @@ export default function NotFoundPage() {
             href="/"
             className="bg-slate-50 border border-slate-200 hover:border-[#d97706]/40 p-4 rounded-xl flex items-center gap-3 group transition-all"
           >
-            <div className="w-9 h-9 rounded bg-amber-50 border border-amber-200/60 flex items-center justify-center text-[#d97706]">
+            <div className="w-9 h-9 rounded bg-amber-50 border border-amber-200/60 flex items-center justify-center text-[#b45309]">
               <Home className="w-4 h-4" />
             </div>
             <div>
-              <span className="font-heading font-semibold text-sm text-slate-900 group-hover:text-[#d97706] transition-colors block">
+              <span className="font-heading font-semibold text-sm text-slate-900 group-hover:text-[#b45309] transition-colors block">
                 Homepage
               </span>
               <span className="text-[11px] text-slate-500">Return to main page</span>
@@ -39,11 +39,11 @@ export default function NotFoundPage() {
             href="/services"
             className="bg-slate-50 border border-slate-200 hover:border-[#d97706]/40 p-4 rounded-xl flex items-center gap-3 group transition-all"
           >
-            <div className="w-9 h-9 rounded bg-amber-50 border border-amber-200/60 flex items-center justify-center text-[#d97706]">
+            <div className="w-9 h-9 rounded bg-amber-50 border border-amber-200/60 flex items-center justify-center text-[#b45309]">
               <Search className="w-4 h-4" />
             </div>
             <div>
-              <span className="font-heading font-semibold text-sm text-slate-900 group-hover:text-[#d97706] transition-colors block">
+              <span className="font-heading font-semibold text-sm text-slate-900 group-hover:text-[#b45309] transition-colors block">
                 Pillar Services
               </span>
               <span className="text-[11px] text-slate-500">SEO, Dev & Marketing</span>
@@ -54,11 +54,11 @@ export default function NotFoundPage() {
             href="/seo"
             className="bg-slate-50 border border-slate-200 hover:border-[#d97706]/40 p-4 rounded-xl flex items-center gap-3 group transition-all"
           >
-            <div className="w-9 h-9 rounded bg-amber-50 border border-amber-200/60 flex items-center justify-center text-[#d97706]">
+            <div className="w-9 h-9 rounded bg-amber-50 border border-amber-200/60 flex items-center justify-center text-[#b45309]">
               <Code className="w-4 h-4" />
             </div>
             <div>
-              <span className="font-heading font-semibold text-sm text-slate-900 group-hover:text-[#d97706] transition-colors block">
+              <span className="font-heading font-semibold text-sm text-slate-900 group-hover:text-[#b45309] transition-colors block">
                 SEO Knowledge Hub
               </span>
               <span className="text-[11px] text-slate-500">SEO guides & audits</span>
@@ -69,11 +69,11 @@ export default function NotFoundPage() {
             href="/locations"
             className="bg-slate-50 border border-slate-200 hover:border-[#d97706]/40 p-4 rounded-xl flex items-center gap-3 group transition-all"
           >
-            <div className="w-9 h-9 rounded bg-amber-50 border border-amber-200/60 flex items-center justify-center text-[#d97706]">
+            <div className="w-9 h-9 rounded bg-amber-50 border border-amber-200/60 flex items-center justify-center text-[#b45309]">
               <MapPin className="w-4 h-4" />
             </div>
             <div>
-              <span className="font-heading font-semibold text-sm text-slate-900 group-hover:text-[#d97706] transition-colors block">
+              <span className="font-heading font-semibold text-sm text-slate-900 group-hover:text-[#b45309] transition-colors block">
                 Locations Directory
               </span>
               <span className="text-[11px] text-slate-500">Pakistan & global hubs</span>
