@@ -9,6 +9,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { CTABanner } from '@/components/CTABanner';
 import { youtubeClusterTopics } from '@/data/clusters/youtube';
+import { FAQAccordion } from '@/components/FAQAccordion';
 
 export async function generateStaticParams() {
   return youtubeClusterTopics.map((topic) => ({
@@ -82,6 +83,17 @@ export default function YoutubeTopicPage({ params }: { params: { topic: string }
               ))}
             </div>
           ))}
+
+
+          {/* Guide FAQs */}
+          {topic.faqs && topic.faqs.length > 0 && (
+            <div className="space-y-6">
+              <h2 className="text-2xl sm:text-3xl font-heading font-bold text-[#f3f4f6]">
+                Frequently Asked Questions
+              </h2>
+              <FAQAccordion items={topic.faqs} />
+            </div>
+          )}
 
           {/* Contextual Link to Primary Service */}
           <div className="bg-[#17181c] border border-[#d97706]/30 p-6 rounded-xl space-y-3 my-8">
