@@ -16,7 +16,7 @@ import { pillarServices } from '@/data/servicesData';
 
 export const metadata: Metadata = {
   title: 'SEO & Web Development Services in Pakistan',
-  description: 'Technical SEO, local SEO, WordPress SEO, web development, YouTube automation, and digital marketing services by Rashid Azam. Serving businesses in Pakistan and internationally.',
+  description: 'SEO, web development, YouTube automation and digital marketing services: technical SEO, local SEO, WordPress SEO and more, for Pakistan and global clients.',
   alternates: {
     canonical: 'https://www.rashidazam.me/services',
   },
@@ -76,6 +76,7 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section>
         <Container>
+          <h2 className="sr-only">All Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {pillarServices.map((service) => (
               <ServiceCard
