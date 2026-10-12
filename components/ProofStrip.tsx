@@ -75,7 +75,7 @@ export function ProofStrip() {
               </div>
 
               <div className="min-w-0">
-                <span className="font-heading font-semibold text-sm text-slate-900 group-hover:text-[#d97706] transition-colors block truncate">
+                <span className="font-heading font-semibold text-sm text-slate-900 group-hover:text-[#b45309] transition-colors block truncate">
                   {platform.name}
                 </span>
                 <span className="text-xs text-slate-500 block truncate mt-0.5">

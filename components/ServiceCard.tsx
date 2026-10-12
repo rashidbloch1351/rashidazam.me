@@ -12,7 +12,7 @@ export function ServiceCard({ service, icon }: { service: PillarService; icon?: 
             {icon}
           </div>
         )}
-        <h3 className="text-xl font-heading font-semibold text-slate-900 group-hover:text-[#d97706] transition-colors">
+        <h3 className="text-xl font-heading font-semibold text-slate-900 group-hover:text-[#b45309] transition-colors">
           {service.name}
         </h3>
         <p className="text-sm text-slate-600 leading-relaxed line-clamp-3">
@@ -22,7 +22,7 @@ export function ServiceCard({ service, icon }: { service: PillarService; icon?: 
       <div className="pt-6 border-t border-gray-100 mt-6">
         <Link
           href={`/services/${service.slug}`}
-          className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#d97706] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
+          className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#b45309] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
         >
           <span>Explore {service.name}</span>
           <ArrowUpRight className="w-4 h-4" />

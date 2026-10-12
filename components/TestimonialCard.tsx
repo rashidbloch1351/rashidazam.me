@@ -107,7 +107,7 @@ export function TestimonialCard({ testimonial, className = '', onInteraction }: 
             <button
               type="button"
               onClick={handleToggle}
-              className="inline-flex items-center gap-0.5 ml-1 text-xs font-semibold text-slate-900 hover:text-[#d97706] focus:outline-none cursor-pointer"
+              className="inline-flex items-center gap-0.5 ml-1 text-xs font-semibold text-slate-900 hover:text-[#b45309] focus:outline-none cursor-pointer"
             >
               <span>{isExpanded ? 'LESS' : 'READ MORE'}</span>
               {isExpanded ? (

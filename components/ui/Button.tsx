@@ -24,9 +24,9 @@ export function Button({
   const baseStyles = "inline-flex items-center justify-center font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#d97706] focus:ring-offset-2 focus:ring-offset-white";
 
   const variantStyles = {
-    primary: "bg-[#d97706] hover:bg-[#b45309] text-white shadow-xs hover:shadow-md",
+    primary: "bg-[#b45309] hover:bg-[#92400e] text-white shadow-xs hover:shadow-md",
     secondary: "bg-slate-100 hover:bg-slate-200 text-slate-800 border border-gray-200",
-    outline: "border border-[#d97706] text-[#d97706] hover:bg-amber-50",
+    outline: "border border-[#d97706] text-[#b45309] hover:bg-amber-50",
     ghost: "text-slate-600 hover:text-slate-900 hover:bg-slate-100",
   };
 

@@ -21,11 +21,11 @@ export function RelatedLinks({ pageId }: { pageId: string }) {
             href={item.url}
             className="bg-white border border-slate-200 hover:border-amber-400 p-5 rounded-xl space-y-2 group transition-all shadow-2xs hover:shadow-xs"
           >
-            <div className="flex items-center justify-between text-xs text-[#d97706] font-semibold uppercase tracking-wider">
+            <div className="flex items-center justify-between text-xs text-[#b45309] font-semibold uppercase tracking-wider">
               <span>{item.category}</span>
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </div>
-            <h4 className="font-heading font-semibold text-base text-slate-900 group-hover:text-[#d97706] transition-colors">
+            <h4 className="font-heading font-semibold text-base text-slate-900 group-hover:text-[#b45309] transition-colors">
               {item.anchorText}
             </h4>
             <p className="text-xs text-slate-600 leading-relaxed line-clamp-2">
