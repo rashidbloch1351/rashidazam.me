@@ -209,9 +209,9 @@ export function LocationPageTemplate({ location }: LocationPageTemplateProps) {
                   <div className="text-xs font-semibold text-[#d97706] uppercase tracking-wider">
                     Challenge 0{index + 1}
                   </div>
-                  <h4 className="font-heading font-bold text-slate-900 text-lg">
+                  <h3 className="font-heading font-bold text-slate-900 text-lg">
                     {item.title}
-                  </h4>
+                  </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     {item.description}
                   </p>
@@ -268,9 +268,9 @@ export function LocationPageTemplate({ location }: LocationPageTemplateProps) {
                     <span className="text-3xl font-heading font-bold text-amber-500/40 block">
                       {proc.step}
                     </span>
-                    <h4 className="font-heading font-bold text-slate-900 text-base">
+                    <h3 className="font-heading font-bold text-slate-900 text-base">
                       {proc.title}
-                    </h4>
+                    </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       {proc.description}
                     </p>
@@ -301,9 +301,9 @@ export function LocationPageTemplate({ location }: LocationPageTemplateProps) {
                       <Sparkles className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="font-heading font-bold text-slate-900 text-base mb-1">
+                      <h3 className="font-heading font-bold text-slate-900 text-base mb-1">
                         {why.title}
-                      </h4>
+                      </h3>
                       <p className="text-xs text-slate-600 leading-relaxed">
                         {why.description}
                       </p>
