@@ -25,7 +25,7 @@ export function Footer() {
   return (
     <footer className="bg-slate-50 border-t border-gray-200 text-slate-600 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-12">
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="inline-flex items-center group py-1">
@@ -77,6 +77,22 @@ export function Footer() {
               <li><Link href="/locations/uk" className="hover:text-[#d97706] transition-colors">UK Market</Link></li>
               <li><Link href="/locations/germany" className="hover:text-[#d97706] transition-colors">Germany Market</Link></li>
               <li><Link href="/locations/uae" className="hover:text-[#d97706] transition-colors">UAE & Dubai</Link></li>
+            </ul>
+          </div>
+
+          {/* Guides & Resources */}
+          <div>
+            <h3 className="font-heading font-semibold text-slate-900 text-sm uppercase tracking-wider mb-4">
+              Guides
+            </h3>
+            <ul className="space-y-2 text-xs">
+              <li><Link href="/youtube" className="hover:text-[#d97706] transition-colors">YouTube Growth Hub</Link></li>
+              <li><Link href="/youtube/faceless-channel-niche-selection" className="hover:text-[#d97706] transition-colors">Faceless Niche Selection</Link></li>
+              <li><Link href="/marketing" className="hover:text-[#d97706] transition-colors">Marketing Growth Hub</Link></li>
+              <li><Link href="/marketing/google-ads-search-campaign-setup" className="hover:text-[#d97706] transition-colors">Google Ads Setup Guide</Link></li>
+              <li><Link href="/seo/technical-seo-audit-guide" className="hover:text-[#d97706] transition-colors">Technical SEO Audit Guide</Link></li>
+              <li><Link href="/seo/keyword-research-intent" className="hover:text-[#d97706] transition-colors">Keyword Research Guide</Link></li>
+              <li><Link href="/tools" className="hover:text-[#d97706] transition-colors">Free Web Tools</Link></li>
             </ul>
           </div>
 
