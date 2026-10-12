@@ -21,7 +21,7 @@ export function AuthorBox() {
             <p className="font-heading font-bold text-lg text-slate-900">
               Written by Rashid Azam
             </p>
-            <p className="text-xs text-[#d97706] font-semibold">
+            <p className="text-xs text-[#b45309] font-semibold">
               Web Developer & Technical SEO Specialist (BS IT)
             </p>
           </div>
@@ -30,7 +30,7 @@ export function AuthorBox() {
             className="text-xs font-semibold text-slate-700 hover:text-slate-900 inline-flex items-center gap-1 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-2xs hover:border-amber-400 transition-all"
           >
             <span>Full Bio</span>
-            <ArrowUpRight className="w-3.5 h-3.5 text-[#d97706]" />
+            <ArrowUpRight className="w-3.5 h-3.5 text-[#b45309]" />
           </Link>
         </div>
         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">

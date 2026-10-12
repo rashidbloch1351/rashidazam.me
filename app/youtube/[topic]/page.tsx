@@ -54,7 +54,7 @@ export default function YoutubeTopicPage({ params }: { params: { topic: string }
         />
 
         <div className="max-w-4xl space-y-6 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
             YouTube Cluster Guide
           </span>
           <h1 className="text-4xl sm:text-5xl font-heading font-bold text-[#f3f4f6] tracking-tight leading-tight">
@@ -104,7 +104,7 @@ export default function YoutubeTopicPage({ params }: { params: { topic: string }
               I provide complete end-to-end{' '}
               <Link
                 href="/services/youtube-automation"
-                className="text-[#d97706] font-medium underline hover:text-[#b45309]"
+                className="text-[#b45309] font-medium underline hover:text-[#b45309]"
               >
                 YouTube Automation Services
               </Link>{' '}
@@ -129,10 +129,10 @@ export default function YoutubeTopicPage({ params }: { params: { topic: string }
                 href={`/youtube/${sib.slug}`}
                 className="bg-[#0f1012] border border-[#272a30] hover:border-[#d97706]/40 p-6 rounded-xl space-y-2 group transition-all"
               >
-                <span className="text-xs text-[#d97706] font-medium uppercase tracking-wider block">
+                <span className="text-xs text-[#b45309] font-medium uppercase tracking-wider block">
                   YouTube Guide
                 </span>
-                <h3 className="font-heading font-semibold text-base text-[#f3f4f6] group-hover:text-[#d97706] transition-colors">
+                <h3 className="font-heading font-semibold text-base text-[#f3f4f6] group-hover:text-[#b45309] transition-colors">
                   {sib.title}
                 </h3>
               </Link>

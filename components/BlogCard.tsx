@@ -21,7 +21,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
 
         <div className="p-6 space-y-3">
           <div className="flex items-center justify-between text-xs text-slate-500">
-            <span className="bg-amber-50 text-[#d97706] font-semibold px-2.5 py-0.5 rounded-full border border-amber-200/60">
+            <span className="bg-amber-50 text-[#b45309] font-semibold px-2.5 py-0.5 rounded-full border border-amber-200/60">
               {post.category}
             </span>
             <div className="flex items-center gap-3">
@@ -36,7 +36,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
             </div>
           </div>
 
-          <h3 className="text-lg font-heading font-semibold text-slate-900 group-hover:text-[#d97706] transition-colors line-clamp-2">
+          <h3 className="text-lg font-heading font-semibold text-slate-900 group-hover:text-[#b45309] transition-colors line-clamp-2">
             <Link href={`/blog/${post.id}`}>
               {post.title}
             </Link>
@@ -51,7 +51,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
       <div className="p-6 pt-0">
         <Link
           href={`/blog/${post.id}`}
-          className="inline-flex items-center gap-1 text-xs font-semibold text-[#d97706] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
+          className="inline-flex items-center gap-1 text-xs font-semibold text-[#b45309] hover:text-[#b45309] group-hover:translate-x-1 transition-transform"
         >
           <span>Read Article</span>
           <ArrowUpRight className="w-3.5 h-3.5" />

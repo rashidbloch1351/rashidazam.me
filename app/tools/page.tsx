@@ -36,7 +36,7 @@ export default function ToolsHubPage() {
         <Breadcrumbs items={[{ label: 'Free Tools Hub' }]} />
 
         <div className="max-w-3xl space-y-4 pt-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-[#d97706]/10 px-3 py-1 rounded-full border border-[#d97706]/20">
             Free Online Utilities
           </span>
           <h1 className="text-4xl sm:text-5xl font-heading font-bold text-[#f3f4f6] tracking-tight">
@@ -91,11 +91,11 @@ export default function ToolsHubPage() {
                 className="bg-[#17181c] border border-[#272a30] hover:border-[#d97706]/40 p-8 rounded-xl space-y-4 flex flex-col justify-between group transition-all"
               >
                 <div className="space-y-3">
-                  <div className="flex items-center justify-between text-xs text-[#d97706]">
+                  <div className="flex items-center justify-between text-xs text-[#b45309]">
                     <span className="font-semibold uppercase tracking-wider">{tool.category}</span>
                     <Wrench className="w-4 h-4" />
                   </div>
-                  <h3 className="text-xl font-heading font-semibold text-[#f3f4f6] group-hover:text-[#d97706] transition-colors">
+                  <h3 className="text-xl font-heading font-semibold text-[#f3f4f6] group-hover:text-[#b45309] transition-colors">
                     {tool.name}
                   </h3>
                   <p className="text-xs text-[#9ca3af] leading-relaxed">
@@ -115,7 +115,7 @@ export default function ToolsHubPage() {
                     href={tool.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-medium text-[#d97706] hover:text-[#b45309]"
+                    className="inline-flex items-center gap-1.5 text-xs font-medium text-[#b45309] hover:text-[#b45309]"
                   >
                     <span>Launch Live Tool</span>
                     <ExternalLink className="w-3.5 h-3.5" />

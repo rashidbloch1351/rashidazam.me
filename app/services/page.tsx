@@ -38,20 +38,20 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   const serviceIcons: Record<string, React.ReactNode> = {
-    'web-development': <Code className="w-6 h-6 text-[#d97706]" />,
-    'wordpress-seo': <Zap className="w-6 h-6 text-[#d97706]" />,
-    'local-seo': <MapPin className="w-6 h-6 text-[#d97706]" />,
-    'technical-seo': <Code className="w-6 h-6 text-[#d97706]" />,
-    'seo-audit': <FileSearch className="w-6 h-6 text-[#d97706]" />,
-    'ai-seo': <Cpu className="w-6 h-6 text-[#d97706]" />,
-    'answer-engine-optimization': <MessageSquare className="w-6 h-6 text-[#d97706]" />,
-    'ecommerce-seo': <ShoppingCart className="w-6 h-6 text-[#d97706]" />,
-    'seo-services': <Search className="w-6 h-6 text-[#d97706]" />,
-    'digital-marketing': <TrendingUp className="w-6 h-6 text-[#d97706]" />,
-    'youtube-automation': <Video className="w-6 h-6 text-[#d97706]" />,
-    'ai-automation': <Bot className="w-6 h-6 text-[#d97706]" />,
-    'content-writing': <PenTool className="w-6 h-6 text-[#d97706]" />,
-    'wordpress-development': <Globe className="w-6 h-6 text-[#d97706]" />,
+    'web-development': <Code className="w-6 h-6 text-[#b45309]" />,
+    'wordpress-seo': <Zap className="w-6 h-6 text-[#b45309]" />,
+    'local-seo': <MapPin className="w-6 h-6 text-[#b45309]" />,
+    'technical-seo': <Code className="w-6 h-6 text-[#b45309]" />,
+    'seo-audit': <FileSearch className="w-6 h-6 text-[#b45309]" />,
+    'ai-seo': <Cpu className="w-6 h-6 text-[#b45309]" />,
+    'answer-engine-optimization': <MessageSquare className="w-6 h-6 text-[#b45309]" />,
+    'ecommerce-seo': <ShoppingCart className="w-6 h-6 text-[#b45309]" />,
+    'seo-services': <Search className="w-6 h-6 text-[#b45309]" />,
+    'digital-marketing': <TrendingUp className="w-6 h-6 text-[#b45309]" />,
+    'youtube-automation': <Video className="w-6 h-6 text-[#b45309]" />,
+    'ai-automation': <Bot className="w-6 h-6 text-[#b45309]" />,
+    'content-writing': <PenTool className="w-6 h-6 text-[#b45309]" />,
+    'wordpress-development': <Globe className="w-6 h-6 text-[#b45309]" />,
   };
 
   return (
@@ -61,7 +61,7 @@ export default function ServicesPage() {
 
         {/* Hero Section */}
         <div className="max-w-3xl space-y-4">
-          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#d97706] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#b45309] bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
             Complete Digital Growth System
           </span>
           <h1 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 tracking-tight">
@@ -101,7 +101,7 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 shadow-xs">
-              <div className="w-10 h-10 rounded-xl bg-amber-50 text-[#d97706] border border-amber-200 flex items-center justify-center font-bold text-lg font-heading">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 text-[#b45309] border border-amber-200 flex items-center justify-center font-bold text-lg font-heading">
                 01
               </div>
               <h3 className="font-heading font-semibold text-lg text-slate-900">
@@ -113,7 +113,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 shadow-xs">
-              <div className="w-10 h-10 rounded-xl bg-amber-50 text-[#d97706] border border-amber-200 flex items-center justify-center font-bold text-lg font-heading">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 text-[#b45309] border border-amber-200 flex items-center justify-center font-bold text-lg font-heading">
                 02
               </div>
               <h3 className="font-heading font-semibold text-lg text-slate-900">
@@ -125,7 +125,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 shadow-xs">
-              <div className="w-10 h-10 rounded-xl bg-amber-50 text-[#d97706] border border-amber-200 flex items-center justify-center font-bold text-lg font-heading">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 text-[#b45309] border border-amber-200 flex items-center justify-center font-bold text-lg font-heading">
                 03
               </div>
               <h3 className="font-heading font-semibold text-lg text-slate-900">
