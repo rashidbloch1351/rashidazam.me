@@ -62,9 +62,9 @@ export function TestimonialCard({ testimonial, className = '', onInteraction }: 
             </div>
 
             <div className="min-w-0">
-              <h4 className="font-heading font-semibold text-slate-900 text-sm truncate leading-snug">
+              <span className="font-heading font-semibold text-slate-900 text-sm truncate leading-snug block">
                 {testimonial.name}
-              </h4>
+              </span>
               <p className="text-[11px] text-slate-500 truncate mt-0.5">
                 {testimonial.date} &bull; {testimonial.location}, {testimonial.country}
               </p>
