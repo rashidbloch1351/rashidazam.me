@@ -717,7 +717,7 @@ export const pillarServices: PillarService[] = [
         answer: "I specialize in lightweight custom Gutenberg builds as well as tailored Elementor setups based on project requirements.",
       },
     ],
-    relatedServices: ["web-development", "wordpress-seo", "speed-optimization"],
+    relatedServices: ["web-development", "wordpress-seo", "technical-seo"],
   },
 ];
 
