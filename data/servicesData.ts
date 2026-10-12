@@ -478,7 +478,7 @@ export const pillarServices: PillarService[] = [
     faqs: [
       {
         question: "Do you optimize both Shopify and WooCommerce stores?",
-        answer: "Yes, I specialize in technical SEO for Shopify, WooCommerce, Magento, and custom headless e-commerce builds.",
+        answer: "Yes. Shopify and WooCommerce are my core platforms. For other setups like Magento or headless builds, I assess what is feasible during the audit and only take on what I can genuinely optimize.",
       },
       {
         question: "Should every product page be indexed by Google?",
