@@ -10,6 +10,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { CTABanner } from '@/components/CTABanner';
 import { seoClusterTopics } from '@/data/clusters/seo';
+import { FAQAccordion } from '@/components/FAQAccordion';
 
 export async function generateStaticParams() {
   return seoClusterTopics.map((topic) => ({
@@ -84,6 +85,17 @@ export default function SeoTopicPage({ params }: { params: { topic: string } }) 
               ))}
             </div>
           ))}
+
+
+          {/* Guide FAQs */}
+          {topic.faqs && topic.faqs.length > 0 && (
+            <div className="space-y-6">
+              <h2 className="text-2xl sm:text-3xl font-heading font-bold text-slate-900">
+                Frequently Asked Questions
+              </h2>
+              <FAQAccordion items={topic.faqs} />
+            </div>
+          )}
 
           {/* Mandatory Contextual Link to Primary Service */}
           <div className="bg-amber-50/80 border border-amber-200 p-6 rounded-2xl space-y-3 my-8 shadow-2xs">
