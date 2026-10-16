@@ -50,18 +50,18 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/blog',
-        destination: '/seo',
+        source: '/seo',
+        destination: '/blog',
         permanent: true,
       },
       {
-        source: '/blog/:path*',
-        destination: '/seo',
+        source: '/seo/:path*',
+        destination: '/blog/:path*',
         permanent: true,
       },
       {
-        source: '/blog.html',
-        destination: '/seo',
+        source: '/seo.html',
+        destination: '/blog',
         permanent: true,
       },
       {

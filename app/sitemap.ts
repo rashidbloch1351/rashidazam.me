@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const coreRoutes = [
     { route: '', priority: 1.0, changeFrequency: 'weekly' as const },
     { route: '/services', priority: 0.9, changeFrequency: 'weekly' as const },
-    { route: '/seo', priority: 0.9, changeFrequency: 'weekly' as const },
+    { route: '/blog', priority: 0.9, changeFrequency: 'weekly' as const },
     { route: '/locations', priority: 0.9, changeFrequency: 'weekly' as const },
     { route: '/about', priority: 0.8, changeFrequency: 'monthly' as const },
     { route: '/contact', priority: 0.8, changeFrequency: 'monthly' as const },
@@ -40,9 +40,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  // 4. SEO Cluster Guides & Topics (dynamically derived from seo cluster data)
+  // 4. Blog Articles (dynamically derived from blog data)
   const seoClusterRoutes = seoClusterTopics.map((t) => ({
-    url: `${baseUrl}/seo/${t.slug}`,
+    url: `${baseUrl}/blog/${t.slug}`,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));

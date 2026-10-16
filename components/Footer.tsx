@@ -90,8 +90,8 @@ export function Footer() {
               <li><Link href="/youtube/faceless-channel-niche-selection" className="hover:text-[#b45309] transition-colors">Faceless Niche Selection</Link></li>
               <li><Link href="/marketing" className="hover:text-[#b45309] transition-colors">Marketing Growth Hub</Link></li>
               <li><Link href="/marketing/google-ads-search-campaign-setup" className="hover:text-[#b45309] transition-colors">Google Ads Setup Guide</Link></li>
-              <li><Link href="/seo/technical-seo-audit-guide" className="hover:text-[#b45309] transition-colors">Technical SEO Audit Guide</Link></li>
-              <li><Link href="/seo/keyword-research-intent" className="hover:text-[#b45309] transition-colors">Keyword Research Guide</Link></li>
+              <li><Link href="/blog/technical-seo-audit-guide" className="hover:text-[#b45309] transition-colors">Technical SEO Audit Guide</Link></li>
+              <li><Link href="/blog/keyword-research-intent" className="hover:text-[#b45309] transition-colors">Keyword Research Guide</Link></li>
               <li><Link href="/tools" className="hover:text-[#b45309] transition-colors">Free Web Tools</Link></li>
             </ul>
           </div>
@@ -103,7 +103,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-xs mb-4">
               <li><Link href="/about" className="hover:text-[#b45309] transition-colors">About Rashid Azam</Link></li>
-              <li><Link href="/seo" className="hover:text-[#b45309] transition-colors">SEO Knowledge Hub</Link></li>
+              <li><Link href="/blog" className="hover:text-[#b45309] transition-colors">Blog & Insights</Link></li>
               <li><Link href="/contact" className="hover:text-[#b45309] transition-colors">Contact / Consultations</Link></li>
             </ul>
             <div className="flex flex-wrap gap-2.5">

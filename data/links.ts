@@ -8,24 +8,24 @@ export interface LinkItem {
 
 export const relatedLinksMap: Record<string, LinkItem[]> = {
   'seo-services': [
-    { id: 'seo-cluster', url: '/seo', anchorText: 'SEO Knowledge Hub', description: 'Deep technical SEO guides, schema tutorials, and local ranking frameworks.', category: 'cluster' },
+    { id: 'seo-cluster', url: '/blog', anchorText: 'Blog & Insights', description: 'Deep technical SEO guides, schema tutorials, and local ranking frameworks.', category: 'cluster' },
     { id: 'proj-tech-seo', url: '/services/technical-seo', anchorText: 'Technical SEO Services', description: 'Deep crawl audits, Core Web Vitals, and structured data implementation.', category: 'service' },
-    { id: 'guide-tech-audit', url: '/seo/technical-seo-audit-guide', anchorText: 'Technical SEO Audit Guide', description: 'Comprehensive checklist for optimizing technical on-page elements.', category: 'cluster' },
+    { id: 'guide-tech-audit', url: '/blog/technical-seo-audit-guide', anchorText: 'Technical SEO Audit Guide', description: 'Comprehensive checklist for optimizing technical on-page elements.', category: 'cluster' },
   ],
   'technical-seo': [
     { id: 'seo-audit-link', url: '/services/seo-audit', anchorText: 'SEO Audit Services', description: 'Full technical health checks and priority issue diagnostic logs.', category: 'service' },
     { id: 'speed-link', url: '/services/web-development', anchorText: 'Web Performance & Speed Optimization', description: 'Eliminating render-blocking scripts and optimizing Core Web Vitals.', category: 'service' },
-    { id: 'tech-guide', url: '/seo/technical-seo-audit-guide', anchorText: 'Technical SEO Guide', description: 'Step-by-step crawlability and indexation framework.', category: 'cluster' },
+    { id: 'tech-guide', url: '/blog/technical-seo-audit-guide', anchorText: 'Technical SEO Guide', description: 'Step-by-step crawlability and indexation framework.', category: 'cluster' },
   ],
   'wordpress-seo': [
     { id: 'wp-dev', url: '/services/wordpress-development', anchorText: 'WordPress Development', description: 'Custom Gutenberg block themes built for speed and search reach.', category: 'service' },
     { id: 'local-seo-link', url: '/services/local-seo', anchorText: 'Local SEO Services', description: 'Google Business Profile and local search optimization.', category: 'service' },
-    { id: 'wp-guide', url: '/seo/on-page-seo-schema-markup', anchorText: 'Schema Markup Guide', description: 'Structured JSON-LD schema implementation for WordPress.', category: 'cluster' },
+    { id: 'wp-guide', url: '/blog/on-page-seo-schema-markup', anchorText: 'Schema Markup Guide', description: 'Structured JSON-LD schema implementation for WordPress.', category: 'cluster' },
   ],
   'local-seo': [
     { id: 'lahore-link', url: '/locations/lahore', anchorText: 'SEO Services in Lahore', description: 'Commercial core search optimization for Lahore businesses.', category: 'cluster' },
     { id: 'islamabad-link', url: '/locations/islamabad', anchorText: 'SEO Services in Islamabad', description: 'Capital territory local search & technical optimization.', category: 'cluster' },
-    { id: 'local-guide', url: '/seo/local-seo-pakistan-uae', anchorText: 'Local SEO Pakistan & UAE Guide', description: 'Map pack rankings and local search citations framework.', category: 'cluster' },
+    { id: 'local-guide', url: '/blog/local-seo-pakistan-uae', anchorText: 'Local SEO Pakistan & UAE Guide', description: 'Map pack rankings and local search citations framework.', category: 'cluster' },
   ],
   'digital-marketing': [
     { id: 'marketing-cluster', url: '/marketing', anchorText: 'Digital Marketing Growth Hub', description: 'Guides on Google Search Ads, Meta scaling, and CRO playbooks.', category: 'cluster' },
@@ -50,6 +50,6 @@ export const relatedLinksMap: Record<string, LinkItem[]> = {
   ],
   'content-writing': [
     { id: 'aeo-content-link', url: '/services/answer-engine-optimization', anchorText: 'Answer Engine Optimization', description: 'Writing content optimized for AI search engine answers.', category: 'service' },
-    { id: 'seo-hub-link', url: '/seo', anchorText: 'SEO Knowledge Hub', description: 'Framework for high-conversion technical content.', category: 'cluster' },
+    { id: 'seo-hub-link', url: '/blog', anchorText: 'Blog & Insights', description: 'Framework for high-conversion technical content.', category: 'cluster' },
   ],
 };

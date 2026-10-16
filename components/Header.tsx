@@ -66,49 +66,41 @@ export function Header() {
   ];
 
 
-  const seoHubItems = [
+  const blogFeaturedPosts = [
     {
       name: 'Technical SEO Audit Guide',
-      description: 'Step-by-step diagnostic framework',
-      href: '/seo/technical-seo-audit-guide',
+      category: 'Technical SEO',
+      href: '/blog/technical-seo-audit-guide',
       icon: <ShieldAlert className="w-4 h-4 text-[#b45309]" />,
     },
     {
-      name: 'Local SEO Guide',
-      description: 'Map Pack & Google Business Profile',
-      href: '/seo/local-seo-pakistan-uae',
+      name: 'Local SEO Framework for Pakistan & UAE',
+      category: 'Local SEO',
+      href: '/blog/local-seo-pakistan-uae',
       icon: <MapPin className="w-4 h-4 text-[#b45309]" />,
     },
     {
-      name: 'On-Page SEO & Schema',
-      description: 'Intent, structure, internal links',
-      href: '/seo/on-page-seo-schema-markup',
-      icon: <Search className="w-4 h-4 text-[#b45309]" />,
-    },
-    {
-      name: 'Keyword & Intent Guide',
-      description: 'Search intent & keyword research',
-      href: '/seo/keyword-research-intent',
+      name: 'Keyword Research and Search Intent',
+      category: 'Keyword Research',
+      href: '/blog/keyword-research-intent',
       icon: <Globe className="w-4 h-4 text-[#b45309]" />,
     },
     {
-      name: 'WordPress SEO Guide',
-      description: 'Speed, plugins, architecture',
-      href: '/seo/wordpress-seo-guide',
-      icon: <Zap className="w-4 h-4 text-[#b45309]" />,
-    },
-    {
-      name: 'E-Commerce SEO Guide',
-      description: 'Category & product pages',
-      href: '/seo/ecommerce-seo-guide',
-      icon: <ShoppingCart className="w-4 h-4 text-[#b45309]" />,
-    },
-    {
-      name: 'Answer Engine Optimization Guide',
-      description: 'ChatGPT & Perplexity visibility',
-      href: '/seo/answer-engine-optimization-guide',
+      name: 'Answer Engine Optimization (AEO) and GEO Guide',
+      category: 'AI & Automation',
+      href: '/blog/answer-engine-optimization-guide',
       icon: <Smartphone className="w-4 h-4 text-[#b45309]" />,
     },
+  ];
+
+  const blogMenuCategories = [
+    { label: 'Technical SEO', href: '/blog?category=technical-seo' },
+    { label: 'On-Page SEO', href: '/blog?category=on-page-seo' },
+    { label: 'Local SEO', href: '/blog?category=local-seo' },
+    { label: 'Keyword Research', href: '/blog?category=keyword-research' },
+    { label: 'WordPress SEO', href: '/blog?category=wordpress-seo' },
+    { label: 'E-Commerce SEO', href: '/blog?category=ecommerce-seo' },
+    { label: 'AI & Automation', href: '/blog?category=ai-automation' },
   ];
 
   // Locations Grouped Structure for Dropdown
@@ -308,7 +300,7 @@ export function Header() {
           />
         </Link>
 
-        {/* Desktop Navigation: Home > About > Services ▼ > SEO Hub ▼ > Locations ▼ > Contact */}
+        {/* Desktop Navigation: Home > About > Services ▼ > Blog ▼ > Locations ▼ > Contact */}
         <nav className="hidden md:flex items-center gap-7">
           {/* 1. Home */}
           <Link
@@ -429,7 +421,7 @@ export function Header() {
             </div>
           </div>
 
-          {/* 4. SEO Hub (Mega Dropdown) */}
+          {/* 4. Blog (Mega Dropdown) */}
           <div
             ref={seoHubRef}
             className="relative"
@@ -438,21 +430,21 @@ export function Header() {
           >
             <div className="inline-flex items-center gap-1">
               <Link
-                href="/seo"
+                href="/blog"
                 className={`text-sm font-medium transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md ${
-                  pathname.startsWith('/seo')
+                  pathname.startsWith('/blog')
                     ? 'text-[#b45309] font-semibold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
-                SEO Hub
+                Blog
               </Link>
               <button
                 type="button"
                 onClick={() => setSeoHubOpen(!seoHubOpen)}
                 aria-expanded={seoHubOpen}
                 aria-haspopup="true"
-                aria-label="Toggle SEO Hub Menu"
+                aria-label="Toggle Blog Menu"
                 className="min-w-[44px] min-h-[44px] inline-flex items-center justify-center p-2 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md transition-colors"
               >
                 <ChevronDown
@@ -463,7 +455,7 @@ export function Header() {
               </button>
             </div>
 
-            {/* SEO Hub Mega Dropdown Card */}
+            {/* Blog Mega Dropdown Card */}
             <div
               className={`absolute -left-12 top-full pt-2 w-[620px] transition-all duration-200 z-50 ${
                 seoHubOpen
@@ -475,50 +467,74 @@ export function Header() {
                 <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100">
                   <div>
                     <span className="font-heading font-semibold text-sm text-slate-900">
-                      SEO Knowledge Hub
+                      Blog & Insights
                     </span>
                     <p className="text-xs text-slate-500">
-                      Free educational guides, tutorials, and actionable SEO frameworks.
+                      SEO strategies, digital marketing insights, practical tutorials, and web development guides.
                     </p>
                   </div>
                   <Link
-                    href="/seo"
+                    href="/blog"
                     onClick={() => setSeoHubOpen(false)}
                     className="inline-flex items-center gap-1 text-xs font-semibold text-[#b45309] hover:underline"
                   >
-                    <span>Overview</span>
+                    <span>View All Posts</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2">
-                  {seoHubItems.map((item) => {
-                    const isActive = pathname === item.href;
-                    return (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        onClick={() => setSeoHubOpen(false)}
-                        className={`flex items-start gap-3 p-2.5 rounded-xl transition-all ${
-                          isActive
-                            ? 'bg-amber-50/80 border border-amber-200/60'
-                            : 'hover:bg-slate-50 border border-transparent'
-                        }`}
-                      >
-                        <div className="p-2 rounded-lg bg-amber-50 border border-amber-200/60 shrink-0 mt-0.5">
-                          {item.icon}
-                        </div>
-                        <div className="min-w-0">
-                          <span className="font-heading font-semibold text-slate-900 text-xs truncate">
-                            {item.name}
-                          </span>
-                          <p className="text-[11px] text-slate-500 truncate mt-0.5">
-                            {item.description}
-                          </p>
-                        </div>
-                      </Link>
-                    );
-                  })}
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 px-1 pb-2">
+                      Featured Posts
+                    </p>
+                    <div className="grid grid-cols-2 gap-2">
+                      {blogFeaturedPosts.map((item) => {
+                        const isActive = pathname === item.href;
+                        return (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            onClick={() => setSeoHubOpen(false)}
+                            className={`flex items-start gap-3 p-2.5 rounded-xl transition-all ${
+                              isActive
+                                ? 'bg-amber-50/80 border border-amber-200/60'
+                                : 'hover:bg-slate-50 border border-transparent'
+                            }`}
+                          >
+                            <div className="p-2 rounded-lg bg-amber-50 border border-amber-200/60 shrink-0 mt-0.5">
+                              {item.icon}
+                            </div>
+                            <div className="min-w-0">
+                              <span className="font-heading font-semibold text-slate-900 text-xs leading-snug block">
+                                {item.name}
+                              </span>
+                              <p className="text-[11px] text-[#b45309] font-medium mt-0.5">
+                                {item.category}
+                              </p>
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                  <div className="pt-3 border-t border-gray-100">
+                    <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 px-1 pb-2">
+                      Browse by Topic
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {blogMenuCategories.map((cat) => (
+                        <Link
+                          key={cat.label}
+                          href={cat.href}
+                          onClick={() => setSeoHubOpen(false)}
+                          className="text-xs font-medium text-slate-600 bg-slate-50 hover:bg-amber-50 hover:text-[#b45309] border border-slate-200/70 hover:border-amber-200 px-3 py-1.5 rounded-full transition-all"
+                        >
+                          {cat.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -793,23 +809,23 @@ export function Header() {
               )}
             </div>
 
-            {/* 4. SEO Hub Accordion */}
+            {/* 4. Blog Accordion */}
             <div className="space-y-1">
               <div className="flex items-center justify-between min-h-[44px] px-3 py-2 rounded-md hover:bg-slate-50">
                 <Link
-                  href="/seo"
+                  href="/blog"
                   onClick={() => setMobileMenuOpen(false)}
                   className={`text-base font-medium transition-colors ${
-                    pathname.startsWith('/seo') ? 'text-[#b45309] font-semibold' : 'text-slate-700 hover:text-slate-900'
+                    pathname.startsWith('/blog') ? 'text-[#b45309] font-semibold' : 'text-slate-700 hover:text-slate-900'
                   }`}
                 >
-                  SEO Hub
+                  Blog
                 </Link>
                 <button
                   type="button"
                   onClick={() => setMobileSeoOpen(!mobileSeoOpen)}
                   aria-expanded={mobileSeoOpen}
-                  aria-label="Expand SEO Hub Submenu"
+                  aria-label="Expand Blog Submenu"
                   className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d97706] rounded-md transition-colors"
                 >
                   <ChevronDown
@@ -822,7 +838,17 @@ export function Header() {
 
               {mobileSeoOpen && (
                 <div className="pl-4 space-y-1 border-l-2 border-amber-500/40 my-1">
-                  {seoHubItems.map((item) => {
+                  <Link
+                    href="/blog"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setMobileSeoOpen(false);
+                    }}
+                    className="flex items-center min-h-[44px] px-3 py-2 text-sm font-semibold text-[#b45309] rounded-md hover:bg-amber-50 transition-colors"
+                  >
+                    View All Posts
+                  </Link>
+                  {blogFeaturedPosts.map((item) => {
                     const isActive = pathname === item.href;
                     return (
                       <Link
@@ -839,7 +865,7 @@ export function Header() {
                         }`}
                       >
                         <span className="font-medium text-xs text-slate-900">{item.name}</span>
-                        <span className="text-[10px] text-slate-500">{item.description}</span>
+                        <span className="text-[10px] text-[#b45309]">{item.category}</span>
                       </Link>
                     );
                   })}
