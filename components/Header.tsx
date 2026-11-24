@@ -7,7 +7,8 @@ import { usePathname } from 'next/navigation';
 import { 
   Menu, X, ArrowUpRight, ChevronDown, ArrowRight, Search, MapPin, 
   Code, ShoppingCart, Globe, Zap, FileSearch, ShieldAlert, Cpu, 
-  Smartphone, Building2, Phone, Mail, Linkedin, Github, Youtube, Instagram, Facebook 
+  Smartphone, Building2, Phone, Mail, Linkedin, Github, Youtube, Instagram, Facebook,
+  KeyRound, Bot
 } from 'lucide-react';
 import { socialLinks } from '@/data/socialLinks';
 import { contactInfo } from '@/data/contactInfo';
@@ -60,11 +61,10 @@ export function Header() {
       links: [
         { label: 'WordPress SEO', href: '/services/wordpress-seo' },
         { label: 'AI SEO', href: '/services/ai-seo' },
-        { label: 'Answer Engine Optimization', href: '/services/answer-engine-optimization' },
+        { label: 'Answer Engine Optimization (AEO)', href: '/services/answer-engine-optimization' },
       ],
     },
   ];
-
 
   const blogFeaturedPosts = [
     {
@@ -83,13 +83,13 @@ export function Header() {
       name: 'Keyword Research and Search Intent',
       category: 'Keyword Research',
       href: '/blog/keyword-research-intent',
-      icon: <Globe className="w-4 h-4 text-[#b45309]" />,
+      icon: <KeyRound className="w-4 h-4 text-[#b45309]" />,
     },
     {
       name: 'Answer Engine Optimization (AEO) and GEO Guide',
       category: 'AI & Automation',
       href: '/blog/answer-engine-optimization-guide',
-      icon: <Smartphone className="w-4 h-4 text-[#b45309]" />,
+      icon: <Bot className="w-4 h-4 text-[#b45309]" />,
     },
   ];
 
@@ -103,13 +103,7 @@ export function Header() {
     { label: 'AI & Automation', href: '/blog?category=ai-automation' },
   ];
 
-  // Locations Grouped Structure for Dropdown
-  const globalLocations = [
-    { name: 'Worldwide', href: '/locations/worldwide', description: 'Global remote engagements' },
-  ];
-
   const pakistanLocations = [
-    { name: 'Pakistan (All)', href: '/locations', description: 'National search & web builds' },
     { name: 'Lahore', href: '/locations/lahore', description: 'Commercial core & local SEO' },
     { name: 'Islamabad', href: '/locations/islamabad', description: 'Capital territory & technical SEO' },
     { name: 'Karachi', href: '/locations/karachi', description: 'Financial capital & e-commerce' },
@@ -118,10 +112,10 @@ export function Header() {
   ];
 
   const internationalLocations = [
-    { name: 'USA', href: '/locations/usa', description: 'North America remote SEO & builds' },
-    { name: 'UK', href: '/locations/uk', description: 'United Kingdom technical SEO' },
-    { name: 'Germany', href: '/locations/germany', description: 'European Union international SEO' },
-    { name: 'UAE', href: '/locations/uae', description: 'Dubai & GCC market optimization' },
+    { name: 'USA Market', href: '/locations/usa', description: 'North America remote SEO & builds' },
+    { name: 'UK Market', href: '/locations/uk', description: 'United Kingdom technical SEO' },
+    { name: 'Germany Market', href: '/locations/germany', description: 'European Union international SEO' },
+    { name: 'UAE & Dubai', href: '/locations/uae', description: 'Dubai & GCC market optimization' },
   ];
 
   // Close dropdowns on route change
@@ -220,12 +214,12 @@ export function Header() {
             </a>
 
             <a
-              href="mailto:rashidbloch1351@gmail.com"
+              href={`mailto:${contactInfo.email}`}
               className="inline-flex items-center gap-1.5 hover:text-[#d97706] transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#d97706] rounded px-1 py-0.5"
-              aria-label="Email Rashid Azam at rashidbloch1351@gmail.com"
+              aria-label={`Email Rashid Azam at ${contactInfo.email}`}
             >
               <Mail className="w-3.5 h-3.5 text-[#d97706]" />
-              <span className="font-medium truncate max-w-[200px] sm:max-w-none">rashidbloch1351@gmail.com</span>
+              <span className="font-medium truncate max-w-[200px] sm:max-w-none">{contactInfo.email}</span>
             </a>
           </div>
 
@@ -293,10 +287,10 @@ export function Header() {
           <Image
             src="/images/branding/logo.png"
             alt="Rashid Azam logo"
-            width={200}
-            height={48}
+            width={240}
+            height={60}
             priority
-            className="h-10 sm:h-11 w-auto object-contain group-hover:opacity-90 transition-opacity"
+            className="h-11 sm:h-13 md:h-14 w-auto object-contain group-hover:opacity-90 transition-opacity"
           />
         </Link>
 
@@ -362,7 +356,7 @@ export function Header() {
 
             {/* Services Mega Dropdown Card */}
             <div
-              className={`absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[700px] max-w-[calc(100vw-2rem)] transition-all duration-200 z-50 ${
+              className={`absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[720px] max-w-[calc(100vw-2rem)] transition-all duration-200 z-50 ${
                 servicesOpen
                   ? 'opacity-100 translate-y-0 pointer-events-auto'
                   : 'opacity-0 -translate-y-1 pointer-events-none'
@@ -388,34 +382,107 @@ export function Header() {
                   </Link>
                 </div>
 
-                <div className="grid grid-cols-3 gap-6">
-                  {serviceMenuColumns.map((col) => (
-                    <div key={col.heading}>
-                      <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400 px-3 mb-2">
-                        {col.heading}
-                      </p>
-                      <div className="space-y-1">
-                        {col.links.map((service) => {
-                          const isActive = pathname === service.href;
-                          return (
-                            <Link
-                              key={service.href}
-                              href={service.href}
-                              onClick={() => setServicesOpen(false)}
-                              className={`flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                                isActive
-                                  ? 'bg-amber-50 text-[#b45309] font-semibold'
-                                  : 'text-slate-700 hover:bg-slate-50 hover:text-[#b45309]'
-                              }`}
-                            >
-                              <span>{service.label}</span>
-                              {isActive && <span className="w-2 h-2 rounded-full bg-[#d97706] shrink-0" />}
-                            </Link>
-                          );
-                        })}
+                <div className="grid grid-cols-12 gap-5">
+                  {/* Column 1: Core Services */}
+                  <div className="col-span-5 space-y-2">
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400 px-3">
+                      Core Services
+                    </p>
+                    <div className="space-y-1">
+                      {serviceMenuColumns[0].links.map((service) => {
+                        const isActive = pathname === service.href;
+                        const isSeoPillar = service.href === '/services/seo-services';
+                        return (
+                          <Link
+                            key={service.href}
+                            href={service.href}
+                            onClick={() => setServicesOpen(false)}
+                            className={`flex items-center justify-between px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                              isActive
+                                ? 'bg-amber-50 text-[#b45309] font-semibold'
+                                : 'text-slate-700 hover:bg-slate-50 hover:text-[#b45309]'
+                            }`}
+                          >
+                            <span>{service.label}</span>
+                            {isSeoPillar ? (
+                              <span className="text-[10px] font-semibold text-[#b45309] bg-amber-100/70 px-1.5 py-0.5 rounded">
+                                Pillar
+                              </span>
+                            ) : isActive ? (
+                              <span className="w-2 h-2 rounded-full bg-[#d97706] shrink-0" />
+                            ) : null}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Columns 2 & 3: SEO Ecosystem Subservices */}
+                  <div className="col-span-7 bg-amber-50/30 rounded-xl p-3.5 border border-amber-100/70">
+                    <div className="flex items-center justify-between mb-3 px-1">
+                      <span className="text-xs font-bold text-slate-900 uppercase tracking-wider">
+                        SEO Hierarchy & Subservices
+                      </span>
+                      <span className="text-[10px] text-[#b45309] font-semibold">
+                        Under SEO Services
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      {/* SEO Services */}
+                      <div>
+                        <p className="text-[10px] font-bold uppercase tracking-wider text-[#b45309] px-2 mb-1.5">
+                          SEO Services
+                        </p>
+                        <div className="space-y-0.5">
+                          {serviceMenuColumns[1].links.map((service) => {
+                            const isActive = pathname === service.href;
+                            return (
+                              <Link
+                                key={service.href}
+                                href={service.href}
+                                onClick={() => setServicesOpen(false)}
+                                className={`flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+                                  isActive
+                                    ? 'bg-amber-100/80 text-[#b45309] font-semibold'
+                                    : 'text-slate-700 hover:bg-white hover:text-[#b45309]'
+                                }`}
+                              >
+                                <span>{service.label}</span>
+                                {isActive && <span className="w-1.5 h-1.5 rounded-full bg-[#d97706] shrink-0" />}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+
+                      {/* Specialized SEO */}
+                      <div>
+                        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500 px-2 mb-1.5">
+                          Specialized SEO
+                        </p>
+                        <div className="space-y-0.5">
+                          {serviceMenuColumns[2].links.map((service) => {
+                            const isActive = pathname === service.href;
+                            return (
+                              <Link
+                                key={service.href}
+                                href={service.href}
+                                onClick={() => setServicesOpen(false)}
+                                className={`flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+                                  isActive
+                                    ? 'bg-amber-100/80 text-[#b45309] font-semibold'
+                                    : 'text-slate-700 hover:bg-white hover:text-[#b45309]'
+                                }`}
+                              >
+                                <span>{service.label}</span>
+                                {isActive && <span className="w-1.5 h-1.5 rounded-full bg-[#d97706] shrink-0" />}
+                              </Link>
+                            );
+                          })}
+                        </div>
                       </div>
                     </div>
-                  ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -457,29 +524,29 @@ export function Header() {
 
             {/* Blog Mega Dropdown Card */}
             <div
-              className={`absolute -left-12 top-full pt-2 w-[620px] transition-all duration-200 z-50 ${
+              className={`absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[680px] max-w-[calc(100vw-2rem)] transition-all duration-200 z-50 ${
                 seoHubOpen
                   ? 'opacity-100 translate-y-0 pointer-events-auto'
                   : 'opacity-0 -translate-y-1 pointer-events-none'
               }`}
             >
               <div className="bg-white rounded-2xl shadow-2xl border border-gray-200/80 p-5">
-                <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100">
-                  <div>
-                    <span className="font-heading font-semibold text-sm text-slate-900">
+                <div className="flex items-start sm:items-center justify-between gap-4 pb-3 mb-4 border-b border-gray-100">
+                  <div className="min-w-0 pr-2">
+                    <span className="font-heading font-semibold text-sm text-slate-900 block">
                       Blog & Insights
                     </span>
-                    <p className="text-xs text-slate-500">
+                    <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
                       SEO strategies, digital marketing insights, practical tutorials, and web development guides.
                     </p>
                   </div>
                   <Link
                     href="/blog"
                     onClick={() => setSeoHubOpen(false)}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-[#b45309] hover:underline"
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-[#b45309] hover:underline whitespace-nowrap shrink-0"
                   >
                     <span>View All Posts</span>
-                    <ArrowRight className="w-3 h-3" />
+                    <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
 
@@ -488,7 +555,7 @@ export function Header() {
                     <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 px-1 pb-2">
                       Featured Posts
                     </p>
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="grid grid-cols-2 gap-3">
                       {blogFeaturedPosts.map((item) => {
                         const isActive = pathname === item.href;
                         return (
@@ -496,20 +563,20 @@ export function Header() {
                             key={item.name}
                             href={item.href}
                             onClick={() => setSeoHubOpen(false)}
-                            className={`flex items-start gap-3 p-2.5 rounded-xl transition-all ${
+                            className={`flex items-start gap-3 p-3 rounded-xl transition-all group ${
                               isActive
-                                ? 'bg-amber-50/80 border border-amber-200/60'
-                                : 'hover:bg-slate-50 border border-transparent'
+                                ? 'bg-amber-50/80 border border-amber-200/80 shadow-2xs'
+                                : 'bg-slate-50/60 hover:bg-amber-50/50 border border-slate-200/60 hover:border-amber-200'
                             }`}
                           >
-                            <div className="p-2 rounded-lg bg-amber-50 border border-amber-200/60 shrink-0 mt-0.5">
+                            <div className="p-2 rounded-lg bg-white border border-slate-200/80 group-hover:border-amber-300 shrink-0 mt-0.5 text-[#b45309]">
                               {item.icon}
                             </div>
-                            <div className="min-w-0">
-                              <span className="font-heading font-semibold text-slate-900 text-xs leading-snug block">
+                            <div className="min-w-0 flex-1">
+                              <span className="font-heading font-semibold text-slate-900 group-hover:text-[#b45309] text-xs leading-snug block transition-colors">
                                 {item.name}
                               </span>
-                              <p className="text-[11px] text-[#b45309] font-medium mt-0.5">
+                              <p className="text-[11px] text-[#b45309] font-medium mt-1">
                                 {item.category}
                               </p>
                             </div>
@@ -518,6 +585,7 @@ export function Header() {
                       })}
                     </div>
                   </div>
+
                   <div className="pt-3 border-t border-gray-100">
                     <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 px-1 pb-2">
                       Browse by Topic
@@ -574,9 +642,9 @@ export function Header() {
               </button>
             </div>
 
-            {/* Structured Locations Dropdown Card (Matching Phase 7 visual direction) */}
+            {/* Structured Locations Dropdown Card */}
             <div
-              className={`absolute -left-20 top-full pt-2 w-[560px] transition-all duration-200 z-50 ${
+              className={`absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[560px] max-w-[calc(100vw-2rem)] transition-all duration-200 z-50 ${
                 locationsOpen
                   ? 'opacity-100 translate-y-0 pointer-events-auto'
                   : 'opacity-0 -translate-y-1 pointer-events-none'
@@ -588,18 +656,17 @@ export function Header() {
                   <span className="font-heading font-semibold text-xs text-slate-900 uppercase tracking-wider">
                     Location Directory & Markets
                   </span>
-                  <span className="text-[11px] text-[#b45309] font-medium">11 Active Locations</span>
+                  <span className="text-[11px] text-[#b45309] font-medium">9 Active Locations</span>
                 </div>
 
-                <div className="grid grid-cols-12 gap-5">
-                  {/* Left Column: GLOBAL & INTERNATIONAL */}
-                  <div className="col-span-5 space-y-4">
-                    {/* Group: GLOBAL */}
-                    <div className="space-y-1.5">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2">
-                        Global
-                      </span>
-                      {globalLocations.map((loc) => {
+                <div className="grid grid-cols-2 gap-5">
+                  {/* Left Column: INTERNATIONAL MARKETS */}
+                  <div className="space-y-1.5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2">
+                      International Markets
+                    </span>
+                    <div className="space-y-1">
+                      {internationalLocations.map((loc) => {
                         const isActive = pathname === loc.href;
                         return (
                           <Link
@@ -610,7 +677,7 @@ export function Header() {
                               isActive ? 'bg-amber-50 text-[#b45309]' : 'hover:bg-slate-50'
                             }`}
                           >
-                            <span className="font-heading font-bold text-xs text-slate-900 group-hover:text-[#b45309] transition-colors flex items-center justify-between">
+                            <span className="font-heading font-semibold text-xs text-slate-900 group-hover:text-[#b45309] transition-colors flex items-center justify-between">
                               <span>{loc.name}</span>
                               <Globe className="w-3.5 h-3.5 text-[#b45309]" />
                             </span>
@@ -621,41 +688,14 @@ export function Header() {
                         );
                       })}
                     </div>
-
-                    {/* Group: INTERNATIONAL */}
-                    <div className="space-y-1">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2">
-                        International
-                      </span>
-                      {internationalLocations.map((loc) => {
-                        const isActive = pathname === loc.href;
-                        return (
-                          <Link
-                            key={loc.name}
-                            href={loc.href}
-                            onClick={() => setLocationsOpen(false)}
-                            className={`flex flex-col px-3 py-1.5 rounded-lg transition-colors group ${
-                              isActive ? 'bg-amber-50 text-[#b45309]' : 'hover:bg-slate-50'
-                            }`}
-                          >
-                            <span className="font-heading font-semibold text-xs text-slate-900 group-hover:text-[#b45309] transition-colors">
-                              {loc.name}
-                            </span>
-                            <span className="text-[10px] text-slate-500">
-                              {loc.description}
-                            </span>
-                          </Link>
-                        );
-                      })}
-                    </div>
                   </div>
 
-                  {/* Right Column: PAKISTAN & CITIES */}
-                  <div className="col-span-7 space-y-1 border-l border-gray-100 pl-4">
+                  {/* Right Column: PAKISTAN CITIES */}
+                  <div className="space-y-1.5 border-l border-gray-100 pl-4">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2">
-                      Pakistan Cities & Market
+                      Pakistan Cities
                     </span>
-                    <div className="grid grid-cols-1 gap-0.5">
+                    <div className="space-y-1">
                       {pakistanLocations.map((loc) => {
                         const isActive = pathname === loc.href;
                         return (
@@ -668,14 +708,10 @@ export function Header() {
                             }`}
                           >
                             <span className="font-heading font-semibold text-xs text-slate-900 group-hover:text-[#b45309] transition-colors flex items-center justify-between">
-                              <span>{loc.name}</span>
-                              {loc.name.includes('All') && (
-                                <span className="text-[9px] bg-amber-100 text-[#b45309] font-bold px-1.5 py-0.5 rounded">
-                                  Main Hub
-                                </span>
-                              )}
+                              <span>{loc.name}, Pakistan</span>
+                              <MapPin className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#b45309]" />
                             </span>
-                            <span className="text-[10px] text-slate-500">
+                            <span className="text-[10px] text-slate-500 mt-0.5">
                               {loc.description}
                             </span>
                           </Link>
@@ -902,16 +938,6 @@ export function Header() {
 
               {mobileLocationsOpen && (
                 <div className="pl-3 space-y-3 border-l-2 border-amber-500/40 my-2">
-                  {/* Worldwide */}
-                  <Link
-                    href="/locations/worldwide"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="flex flex-col min-h-[44px] px-3 py-2 text-sm rounded-md bg-amber-50/50 text-[#b45309]"
-                  >
-                    <span className="font-bold text-xs">Worldwide Remote</span>
-                    <span className="text-[10px] text-slate-500">Global remote engagements</span>
-                  </Link>
-
                   {/* Pakistan Group */}
                   <div className="space-y-1">
                     <button

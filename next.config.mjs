@@ -79,6 +79,11 @@ const nextConfig = {
         destination: '/terms-of-service',
         permanent: true,
       },
+      {
+        source: '/locations/worldwide',
+        destination: '/locations',
+        permanent: true,
+      },
     ];
   },
 };

@@ -13,5 +13,5 @@ export const contactInfo = {
       return `https://wa.me/923276434422?text=${encodeURIComponent(message)}`;
     },
   },
-  email: 'rashidbloch1351@gmail.com',
+  email: 'info@rashidazam.com',
 };

@@ -1,26 +1,5 @@
-import React from 'react';
-import type { Metadata } from 'next';
-import { ogImages } from '@/lib/seo';
-import { locationsData } from '@/data/locationsData';
-import { LocationPageTemplate } from '@/components/LocationPageTemplate';
-
-const location = locationsData.worldwide;
-
-export const metadata: Metadata = {
-  title: location.title,
-  description: location.metaDescription,
-  alternates: {
-    canonical: location.canonical,
-  },
-  openGraph: {
-    title: location.title,
-    description: location.metaDescription,
-    url: location.canonical,
-    type: 'website',
-    images: ogImages,
-  },
-};
+import { redirect } from 'next/navigation';
 
 export default function WorldwideLocationPage() {
-  return <LocationPageTemplate location={location} />;
+  redirect('/locations');
 }

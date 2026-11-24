@@ -65,8 +65,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <span className="text-xs text-slate-500 font-medium block">Email Me Directly</span>
-                      <a href="mailto:rashidbloch1351@gmail.com" className="text-slate-900 hover:text-[#b45309] font-semibold transition-colors">
-                        rashidbloch1351@gmail.com
+                      <a href="mailto:info@rashidazam.com" className="text-slate-900 hover:text-[#b45309] font-semibold transition-colors">
+                        info@rashidazam.com
                       </a>
                     </div>
                   </div>

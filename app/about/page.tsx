@@ -105,29 +105,17 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="lg:col-span-5 relative mb-10 lg:mb-6">
+          <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl border border-amber-500/20 bg-gradient-to-b from-amber-50/40 to-slate-50 p-3.5 shadow-xl shadow-slate-200/60">
               <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden bg-slate-100">
                 <Image
-                  src="/images/branding/rashid-azam-portrait.jpg"
+                  src="/images/branding/rashid-azam-about.webp"
                   alt="Rashid Azam, web developer and technical SEO specialist"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 450px"
                   className="object-cover object-center transform hover:scale-[1.02] transition-transform duration-500 ease-out"
                 />
-              </div>
-              {/* Second photograph accent */}
-              <div className="absolute -bottom-6 -left-3 sm:-left-5 w-32 sm:w-40 -rotate-6 bg-white p-2 pb-7 rounded-xl shadow-xl shadow-slate-900/20 border border-slate-200">
-                <div className="relative aspect-[3/4] w-full rounded-lg overflow-hidden bg-slate-100">
-                  <Image
-                    src="/images/branding/rashid-azam-about.webp"
-                    alt="Rashid Azam portrait"
-                    fill
-                    sizes="(max-width: 640px) 112px, 144px"
-                    className="object-cover object-center"
-                  />
-                </div>
               </div>
             </div>
           </div>

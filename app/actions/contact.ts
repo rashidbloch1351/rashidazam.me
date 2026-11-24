@@ -66,7 +66,7 @@ export async function submitContactForm(
         },
         body: JSON.stringify({
           from: 'Rashid Azam Website <onboarding@resend.dev>',
-          to: process.env.CONTACT_RECIPIENT_EMAIL || 'rashidbloch1351@gmail.com',
+          to: process.env.CONTACT_RECIPIENT_EMAIL || 'info@rashidazam.com',
           subject: `New Lead Inquiry: ${service} from ${name}`,
           html: `
             <h2>New Portfolio Website Lead Inquiry</h2>

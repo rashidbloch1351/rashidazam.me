@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { socialLinks } from '@/data/socialLinks';
-import { Linkedin, Github, Youtube, Instagram, Facebook, Globe } from 'lucide-react';
+import { Linkedin, Github, Youtube, Instagram, Facebook } from 'lucide-react';
 
 export function Footer() {
   const getSocialIcon = (label: string) => {
@@ -18,7 +18,7 @@ export function Footer() {
       case 'facebook':
         return <Facebook className="w-4 h-4 text-blue-500" />;
       default:
-        return <Globe className="w-4 h-4 text-amber-600" />;
+        return null;
     }
   };
 
@@ -41,7 +41,7 @@ export function Footer() {
               Full-Stack Web Developer, Technical SEO Specialist, and Digital Growth Consultant serving clients, startups, and agencies worldwide.
             </p>
             <div className="pt-1 text-xs text-slate-500">
-              Email: <a href="mailto:rashidbloch1351@gmail.com" className="text-[#b45309] hover:underline font-medium">rashidbloch1351@gmail.com</a>
+              Email: <a href="mailto:info@rashidazam.com" className="text-[#b45309] hover:underline font-medium">info@rashidazam.com</a>
             </div>
           </div>
 
@@ -67,7 +67,6 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-xs">
               <li><Link href="/locations" className="font-bold text-[#b45309] hover:underline">All Locations Directory</Link></li>
-              <li><Link href="/locations/worldwide" className="hover:text-[#b45309] transition-colors">Worldwide Remote</Link></li>
               <li><Link href="/locations/lahore" className="hover:text-[#b45309] transition-colors">Lahore, Pakistan</Link></li>
               <li><Link href="/locations/islamabad" className="hover:text-[#b45309] transition-colors">Islamabad, Pakistan</Link></li>
               <li><Link href="/locations/karachi" className="hover:text-[#b45309] transition-colors">Karachi, Pakistan</Link></li>
@@ -106,30 +105,32 @@ export function Footer() {
               <li><Link href="/blog" className="hover:text-[#b45309] transition-colors">Blog & Insights</Link></li>
               <li><Link href="/contact" className="hover:text-[#b45309] transition-colors">Contact / Consultations</Link></li>
             </ul>
-            <div className="flex flex-wrap gap-2.5">
-              {socialLinks.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  title={`${s.label} (${s.handle})`}
-                  className="w-9 h-9 rounded-xl bg-white border border-gray-200 flex items-center justify-center shadow-xs hover:border-amber-500 hover:bg-amber-50/50 hover:scale-105 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
-                >
-                  {getSocialIcon(s.label)}
-                </a>
-              ))}
+            <div className="flex flex-wrap items-center gap-2.5">
+              {socialLinks
+                .filter((s) => ['linkedin', 'github', 'youtube', 'instagram', 'facebook'].includes(s.label.toLowerCase()))
+                .map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Visit Rashid Azam on ${s.label}`}
+                    title={`${s.label} (${s.handle})`}
+                    className="w-9 h-9 rounded-xl bg-white border border-gray-200 flex items-center justify-center shadow-xs hover:border-amber-500 hover:bg-amber-50/50 hover:scale-105 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                  >
+                    {getSocialIcon(s.label)}
+                  </a>
+                ))}
             </div>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div className="pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© {new Date().getFullYear()} Rashid Azam. All rights reserved.</p>
-          <div className="flex items-center gap-6">
-            <Link href="/privacy-policy" className="hover:text-slate-900">Privacy Policy</Link>
-            <Link href="/terms-of-service" className="hover:text-slate-900">Terms of Service</Link>
-            <Link href="/sitemap.xml" className="hover:text-slate-900">Sitemap</Link>
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            <Link href="/privacy-policy" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-slate-900 transition-colors">Terms of Service</Link>
+            <Link href="/sitemap.xml" className="hover:text-slate-900 transition-colors">Sitemap</Link>
           </div>
         </div>
       </div>

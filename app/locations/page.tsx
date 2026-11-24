@@ -12,13 +12,13 @@ import { CTABanner } from '@/components/CTABanner';
 import { ProofStrip } from '@/components/ProofStrip';
 
 export const metadata: Metadata = {
-  title: 'SEO & Web Development Services Worldwide | Locations Directory',
-  description: 'SEO and web development location hubs across Pakistan (Lahore, Islamabad, Karachi, Faisalabad, Multan), USA, UK, Germany, UAE and worldwide remote.',
+  title: 'SEO & Web Development Services | Locations Directory',
+  description: 'SEO and web development location hubs across Pakistan (Lahore, Islamabad, Karachi, Faisalabad, Multan), USA, UK, Germany, and UAE.',
   alternates: {
     canonical: 'https://www.rashidazam.me/locations',
   },
   openGraph: {
-    title: 'SEO & Web Development Services Worldwide | Locations Directory',
+    title: 'SEO & Web Development Services | Locations Directory',
     description: 'Explore dedicated location hubs for SEO services, WordPress optimization, and web development across Pakistan and international markets.',
     url: 'https://www.rashidazam.me/locations',
     type: 'website',
@@ -28,22 +28,6 @@ export const metadata: Metadata = {
 
 export default function LocationsPage() {
   const allLocationCards = [
-    {
-      name: 'Worldwide Remote',
-      tagline: 'Global Engagements',
-      href: '/locations/worldwide',
-      description: 'Delivering Next.js web applications, technical SEO audits, and AI growth workflows for founders, startups, and agencies across international time zones.',
-      badge: 'Global Remote',
-      icon: <Globe className="w-5 h-5 text-[#b45309]" />,
-    },
-    {
-      name: 'Pakistan Market',
-      tagline: 'National Reach',
-      href: '/locations',
-      description: 'Helping Pakistani enterprises, software houses, retail brands, and e-commerce stores build high-performance web platforms and capture national search market share.',
-      badge: 'National Hub',
-      icon: <Building2 className="w-5 h-5 text-[#b45309]" />,
-    },
     {
       name: 'Lahore',
       tagline: 'Commercial Core',
@@ -138,7 +122,7 @@ export default function LocationsPage() {
   const locationFaqs = [
     {
       question: 'Do all location pages represent actual implemented services?',
-      answer: 'Yes. Each location page (Lahore, Islamabad, Karachi, Faisalabad, Multan, USA, UK, Germany, UAE, and Worldwide) is a fully implemented, independent page with tailored content, specific keyword targets, and distinct FAQs.',
+      answer: 'Yes. Each location page (Lahore, Islamabad, Karachi, Faisalabad, Multan, USA, UK, Germany, and UAE) is a fully implemented, independent page with tailored content, specific keyword targets, and distinct FAQs.',
     },
     {
       question: 'Can you work with international clients outside Pakistan?',

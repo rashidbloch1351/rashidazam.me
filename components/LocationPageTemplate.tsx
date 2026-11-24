@@ -345,14 +345,14 @@ export function LocationPageTemplate({ location }: LocationPageTemplateProps) {
                 <Link href="/locations" className="text-xs font-semibold text-[#b45309] bg-amber-50 hover:bg-amber-100 px-3.5 py-2 rounded-lg border border-amber-200/60 transition-colors">
                   All Locations Directory →
                 </Link>
-                <Link href="/locations/worldwide" className="text-xs font-semibold text-slate-700 bg-white hover:bg-slate-100 px-3.5 py-2 rounded-lg border border-slate-200 transition-colors">
-                  Worldwide Remote →
-                </Link>
                 <Link href="/locations/lahore" className="text-xs font-semibold text-slate-700 bg-white hover:bg-slate-100 px-3.5 py-2 rounded-lg border border-slate-200 transition-colors">
                   Lahore →
                 </Link>
                 <Link href="/locations/islamabad" className="text-xs font-semibold text-slate-700 bg-white hover:bg-slate-100 px-3.5 py-2 rounded-lg border border-slate-200 transition-colors">
                   Islamabad →
+                </Link>
+                <Link href="/locations/karachi" className="text-xs font-semibold text-slate-700 bg-white hover:bg-slate-100 px-3.5 py-2 rounded-lg border border-slate-200 transition-colors">
+                  Karachi →
                 </Link>
                 <Link href="/locations/usa" className="text-xs font-semibold text-slate-700 bg-white hover:bg-slate-100 px-3.5 py-2 rounded-lg border border-slate-200 transition-colors">
                   USA →

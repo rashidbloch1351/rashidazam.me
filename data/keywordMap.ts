@@ -348,7 +348,7 @@ export const keywordMap: KeywordMapping[] = [
       'cross border digital growth',
       'global next.js web application development',
     ],
-    targetPath: '/locations/worldwide',
+    targetPath: '/locations',
     intent: 'Location',
     priority: 'High',
   },
