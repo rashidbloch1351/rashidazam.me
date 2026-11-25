@@ -28,6 +28,13 @@ export async function generateMetadata({
   return {
     title: item.metaTitle,
     description: item.metaDescription,
+    keywords: [
+      item.title,
+      item.h1,
+      ...item.relatedTopics.map((t) => t.replace(/-/g, ' ')),
+      'YouTube Automation Strategy',
+      'Channel Growth Guide',
+    ],
     alternates: {
       canonical: `https://www.rashidazam.me/youtube/${item.slug}`,
     },

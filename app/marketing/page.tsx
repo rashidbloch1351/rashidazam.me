@@ -13,6 +13,16 @@ import { FAQAccordion } from '@/components/FAQAccordion';
 export const metadata: Metadata = {
   title: 'Digital Marketing & PPC Growth Hub',
   description: 'Guides on high-intent Google Search Ads, scaling Meta Facebook/Instagram campaigns, and conversion rate optimization (CRO).',
+  keywords: [
+    'Digital Marketing Hub',
+    'PPC Growth Guide',
+    'Google Search Ads Management',
+    'Meta Ads Optimization',
+    'Facebook Ads Strategy',
+    'Conversion Rate Optimization',
+    'CRO Frameworks',
+    'Performance Marketing Pakistan',
+  ],
   alternates: {
     canonical: 'https://www.rashidazam.me/marketing',
   },

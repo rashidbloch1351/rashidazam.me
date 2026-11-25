@@ -15,6 +15,15 @@ import { Testimonials } from '@/components/Testimonials';
 export const metadata: Metadata = {
   title: 'About Rashid Azam | Technical SEO Consultant & Web Developer in Pakistan',
   description: 'About Rashid Azam: technical SEO specialist & web developer in Pakistan. SEO, WordPress optimization and web development for local & global clients.',
+  keywords: [
+    'About Rashid Azam',
+    'Rashid Azam Background',
+    'Technical SEO Consultant',
+    'Web Developer Pakistan',
+    'Full Stack Engineer Lahore',
+    'WordPress Developer Pakistan',
+    'Hire Technical SEO Expert',
+  ],
   alternates: {
     canonical: 'https://www.rashidazam.me/about',
   },

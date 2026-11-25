@@ -10,6 +10,16 @@ export const metadata: Metadata = {
   title: 'Blog & Insights | SEO, Marketing & Web Development Guides',
   description:
     'Practical guides on SEO, digital marketing, web development, and AI automation — written by Rashid Azam from direct client experience. No fluff, no skipped steps.',
+  keywords: [
+    'SEO Blog',
+    'Technical SEO Guides',
+    'Local SEO Tutorials',
+    'Digital Marketing Insights',
+    'Web Development Tutorials',
+    'Core Web Vitals Optimization',
+    'Next.js Tutorials',
+    'WordPress SEO Guides',
+  ],
   alternates: {
     canonical: 'https://www.rashidazam.me/blog',
   },

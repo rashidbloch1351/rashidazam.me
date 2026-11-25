@@ -9,6 +9,7 @@ const location = locationsData.faisalabad;
 export const metadata: Metadata = {
   title: location.title,
   description: location.metaDescription,
+  keywords: location.targetKeywords,
   alternates: {
     canonical: location.canonical,
   },

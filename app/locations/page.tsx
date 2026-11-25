@@ -14,6 +14,20 @@ import { ProofStrip } from '@/components/ProofStrip';
 export const metadata: Metadata = {
   title: 'SEO & Web Development Services | Locations Directory',
   description: 'SEO and web development location hubs across Pakistan (Lahore, Islamabad, Karachi, Faisalabad, Multan), USA, UK, Germany, and UAE.',
+  keywords: [
+    'SEO Services Locations',
+    'SEO Expert Pakistan',
+    'SEO Services Lahore',
+    'SEO Services Islamabad',
+    'SEO Services Karachi',
+    'SEO Services Faisalabad',
+    'SEO Services Multan',
+    'SEO Services USA',
+    'SEO Services UK',
+    'SEO Services UAE',
+    'SEO Services Germany',
+    'Worldwide Web Development Services',
+  ],
   alternates: {
     canonical: 'https://www.rashidazam.me/locations',
   },

@@ -6,6 +6,12 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description: 'Terms of Service for rashidazam.me — governing service agreements and website usage.',
+  keywords: [
+    'Terms of Service',
+    'Rashid Azam Terms',
+    'Service Agreement',
+    'Website Usage Terms',
+  ],
   alternates: {
     canonical: 'https://www.rashidazam.me/terms-of-service',
   },

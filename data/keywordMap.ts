@@ -353,3 +353,15 @@ export const keywordMap: KeywordMapping[] = [
     priority: 'High',
   },
 ];
+
+export function getKeywordsForPath(path: string): string[] {
+  const normalized = path.replace(/\/$/, '') || '/';
+  const match = keywordMap.find(
+    (k) => k.targetPath === normalized || k.targetPath.replace(/\/$/, '') === normalized
+  );
+  if (match) {
+    return [match.primaryKeyword, ...match.secondaryKeywords, ...match.supportingKeywords];
+  }
+  return [];
+}
+

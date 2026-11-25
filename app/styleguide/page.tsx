@@ -14,6 +14,8 @@ import { pillarServices } from '@/data/servicesData';
 
 export const metadata: Metadata = {
   title: 'Design System & Component Styleguide',
+  description: 'Design system and component styleguide for rashidazam.me.',
+  keywords: ['Design System', 'Component Styleguide', 'UI Tokens'],
   robots: {
     index: false,
     follow: false,

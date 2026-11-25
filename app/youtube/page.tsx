@@ -14,6 +14,15 @@ import { FAQAccordion } from '@/components/FAQAccordion';
 export const metadata: Metadata = {
   title: 'YouTube Automation & Channel Growth Hub',
   description: 'Strategies for building faceless YouTube channels, optimizing CTR and retention, and multi-stream monetization.',
+  keywords: [
+    'YouTube Automation Hub',
+    'Faceless YouTube Channels',
+    'YouTube CTR Optimization',
+    'Audience Retention Strategies',
+    'YouTube Channel Monetization',
+    'Automated Video Production Pipelines',
+    'YouTube Growth Pakistan',
+  ],
   alternates: {
     canonical: 'https://www.rashidazam.me/youtube',
   },

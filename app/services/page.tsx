@@ -17,6 +17,17 @@ import { pillarServices } from '@/data/servicesData';
 export const metadata: Metadata = {
   title: 'SEO & Web Development Services in Pakistan',
   description: 'SEO, web development, YouTube automation and digital marketing services: technical SEO, local SEO, WordPress SEO and more, for Pakistan and global clients.',
+  keywords: [
+    'SEO Services Pakistan',
+    'Web Development Services',
+    'Technical SEO Services',
+    'Local SEO Services',
+    'WordPress SEO Services',
+    'Custom Web Development',
+    'YouTube Automation Services',
+    'AI SEO Optimization',
+    'E-Commerce SEO Services',
+  ],
   alternates: {
     canonical: 'https://www.rashidazam.me/services',
   },

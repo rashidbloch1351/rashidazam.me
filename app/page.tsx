@@ -17,6 +17,20 @@ import { socialLinks } from '@/data/socialLinks';
 export const metadata: Metadata = {
   title: 'Rashid Azam | SEO Expert in Pakistan & Web Developer',
   description: 'Technical SEO expert & full-stack developer in Pakistan. SEO services, WordPress SEO, local SEO & web development for Pakistani and global businesses.',
+  keywords: [
+    'SEO Expert in Pakistan',
+    'Technical SEO Expert',
+    'Web Developer Pakistan',
+    'Full Stack Web Developer',
+    'SEO Services Lahore',
+    'SEO Expert Lahore',
+    'WordPress SEO Specialist',
+    'Local SEO Pakistan',
+    'Next.js Web Developer',
+    'Core Web Vitals Optimization',
+    'E-Commerce SEO Specialist',
+    'Rashid Azam',
+  ],
   alternates: {
     canonical: 'https://www.rashidazam.me',
   },
@@ -150,9 +164,9 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeEntitySchema) }}
       />
 
-      <div className="space-y-20 pb-16 bg-white">
+      <div className="space-y-16 pb-16 bg-white">
         {/* Hero Section */}
-        <section className="relative pt-12 lg:pt-20">
+        <section className="relative pt-4 sm:pt-6 lg:pt-8">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-7 space-y-6">

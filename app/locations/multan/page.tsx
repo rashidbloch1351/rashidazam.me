@@ -9,6 +9,7 @@ const location = locationsData.multan;
 export const metadata: Metadata = {
   title: location.title,
   description: location.metaDescription,
+  keywords: location.targetKeywords,
   alternates: {
     canonical: location.canonical,
   },

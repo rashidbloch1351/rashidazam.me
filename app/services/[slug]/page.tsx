@@ -13,6 +13,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { ProjectCard } from '@/components/ProjectCard';
 import { pillarServices } from '@/data/servicesData';
 import { projectCategories } from '@/data/projectsData';
+import { getKeywordsForPath } from '@/data/keywordMap';
 
 export async function generateStaticParams() {
   return pillarServices.map((s) => ({
@@ -28,9 +29,19 @@ export async function generateMetadata({
   const service = pillarServices.find((s) => s.slug === params.slug);
   if (!service) return {};
 
+  const mappedKeywords = getKeywordsForPath(`/services/${service.slug}`);
+  const fallbackKeywords = [
+    service.name,
+    service.h1,
+    `${service.name} services`,
+    ...service.capabilities.map((c) => c.title),
+  ];
+  const keywords = mappedKeywords.length > 0 ? mappedKeywords : fallbackKeywords;
+
   return {
     title: service.metaTitle,
     description: service.metaDescription,
+    keywords,
     alternates: {
       canonical: `https://www.rashidazam.me/services/${service.slug}`,
     },

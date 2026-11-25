@@ -29,6 +29,13 @@ export async function generateMetadata({
   return {
     title: item.metaTitle,
     description: item.metaDescription,
+    keywords: [
+      item.title,
+      item.h1,
+      ...item.relatedTopics.map((t) => t.replace(/-/g, ' ')),
+      'SEO Guide',
+      'Rashid Azam SEO',
+    ],
     alternates: {
       canonical: `https://www.rashidazam.me/seo/${item.slug}`,
     },

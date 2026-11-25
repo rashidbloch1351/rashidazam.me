@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/Button';
 
 export const metadata: Metadata = {
   title: 'Thank You for Reaching Out | Rashid Azam',
+  description: 'Thank you for reaching out to Rashid Azam. Your message has been received.',
+  keywords: ['Thank You', 'Rashid Azam Message Received'],
   robots: {
     index: false,
     follow: false,

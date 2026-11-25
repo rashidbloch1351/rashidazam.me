@@ -3,6 +3,14 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Contact Rashid Azam | Start Your Web & SEO Project',
   description: 'Get in touch with Rashid Azam for full-stack web development, technical SEO audits, WordPress optimization, and digital growth services worldwide.',
+  keywords: [
+    'Contact Rashid Azam',
+    'Hire SEO Expert',
+    'Hire Web Developer Pakistan',
+    'Technical SEO Consultation',
+    'SEO Audit Inquiry',
+    'Full Stack Web Development Project',
+  ],
   alternates: {
     canonical: 'https://www.rashidazam.me/contact',
   },
